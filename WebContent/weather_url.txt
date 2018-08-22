@@ -1,0 +1,4 @@
+city -> ÉÏº£
+url1 -> http://php.weather.sina.com.cn/search_sheng.php?f=1&sheng=%C9%CF%BA%A3&day=0&dpc=1
+url2 -> http://php.weather.sina.com.cn/search_sheng.php?f=1&sheng=%C9%CF%BA%A3&day=1&dpc=1
+url3 -> http://php.weather.sina.com.cn/search_sheng.php?f=1&sheng=%C9%CF%BA%A3&day=2&dpc=1

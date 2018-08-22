@@ -1,0 +1,26 @@
+1,联合利华64位win2008系统，不支持32位加密狗驱动
+
+--------------------------------------------------------
+设置myeclipse中.properties文件的编码方式
+打开myeclipse的： Window ->Perferences ->General ->Editors ->Context Types 
+或者： Window ->Perferences ->General ->Context Types 展开右边的Text节点，选中Java Properties File。
+把下面的Default Character Set的值：ISO-8859-1改成UTF-8
+然后点击update按钮.最后确定.
+
+--------------------------------------------------------
+
+在线转码
+http://www.00bug.com/native2ascii.html
+
+国际化  
+<%@ taglib prefix="bean" uri="http://struts.apache.org/tags-bean"%> 
+
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %> 
+
+ <bean:message key="header.Terminal"/>
+<!--  -->
+
+-------------------------------------------------------------
+cd C:\Program Files\Java\jdk1.7.0_40\bin
+
+native2ascii E:\MessageResources.properties E:\MessageResources_zh_CN.properties

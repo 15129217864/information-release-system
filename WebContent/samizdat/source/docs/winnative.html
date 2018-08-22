@@ -1,0 +1,330 @@
+<HTML>
+<HEAD>
+
+<TITLE>Windows Native Code Files</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Windows Native Code Files
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This is a description of the files in the 'files\win' directory.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+
+
+
+<P>
+<PRE>
+AppUtilsMSVM.*	sehstubs.*
+</PRE>
+<BLOCKQUOTE>
+These files contain the exported native methods. These routines convert their arguments to and from Java format,
+and call through to the S-Files to do most of the work.
+
+<P>
+See AppUtilsMSVM.java for documentation on each of these methods.
+
+<P>
+There is different behavior depending on whether 'DO_SEH' is defined or not:
+<UL>
+<LI>if DO_SEH is not defined, sehstubs.* are not used, and 'AppUtilsMSVM.cpp' contains the exported
+native methods...
+<LI>if DO_SEH is defined, sehstubs.cpp contains the exported native methods, which are just stub routines
+which call the routines in AppUtilsMSVM.cpp.
+</UL>
+This way, the code can be compiled with CW2, which doesn't support SEH.
+
+<P>
+AppUtilsMSVM.h switches on the native selectors (DO_JNI, etc.), and includes the appropriate javah-generated header
+file.
+
+</BLOCKQUOTE>
+
+
+
+<PRE>
+JDK10_AppUtilsMSVM.h
+JNI_AppUtilsMSVM.h
+RNI1_AppUtilsMSVM.h
+RNI2_AppUtilsMSVM.h
+</PRE>
+<BLOCKQUOTE>
+These are the javah/msjavah-generated native method header files.
+
+<P>
+Only one of these files is used when compiling; AppUtilsMSVM.h includes the appropriate file,
+depending on which native architecture is defined
+(i.e., whether DO_JNI, DO_RNI1, DO_RNI2, or DO_JRI is defined.)
+</BLOCKQUOTE>
+
+
+
+<PRE>
+SVolumes.*
+SFileInfo.*
+SAppInfo.*
+SAppFinder.*
+SAliases.*
+SMonitors.*
+SFileIterate.*
+SVersionInfo.*
+SWebBrowser.*
+SIconInfo.*
+</PRE>
+<BLOCKQUOTE>
+The 'S-Files', which are called from the native method layer to do most of the work.
+</BLOCKQUOTE>
+
+<PRE>
+unicodeOn95.h
+</PRE>
+<BLOCKQUOTE>
+Defines 'USING_UNICODE_ON_W95_FOR_TESTING_ONLY', which in most cases should be commented out. If not commented
+out, this allows you to test the WinNT version on Windows95. Since most WinAPI W routines don't work on 95, this
+offers limited functionality. Currently, this file is included in XToolkit.cpp and Debugger.cpp.
+</BLOCKQUOTE>
+
+
+
+<PRE>
+AppData.h
+</PRE>
+<BLOCKQUOTE>
+Contains the definition of the AppDataType used with Windows processes.
+</BLOCKQUOTE>
+
+
+<PRE>
+utils.*
+</PRE>
+<BLOCKQUOTE>
+Contains one routine, used to work around a CW2 problem.
+</BLOCKQUOTE>
+
+
+<PRE>
+entry.cpp
+</PRE>
+<BLOCKQUOTE>
+Contains RNIGetCompatibleVersion(); used only in RNI2 builds.
+</BLOCKQUOTE>
+
+
+
+<PRE>
+CRegUtils.*
+CFileUtils.*
+CIconUtils.*
+CLinkFileUtils.*
+</PRE>
+<BLOCKQUOTE>
+General utility routines, used mainly by the S-Files.
+</BLOCKQUOTE>
+
+<PRE>
+XToolkit.*
+</PRE>
+<BLOCKQUOTE>
+Contains wrappers around several WinAPI routines. Most of the WinAPI routines used by the DLLs which take string
+arguments, or which are available in A and W versions, are wrapped in this file. This is designed to shield
+the rest of the code from using the CStr getBuf()/getByteCapacity()/getCharCapacity() routines.
+</BLOCKQUOTE>
+
+<PRE>
+W95trace.*
+</PRE>
+<BLOCKQUOTE>
+Emulates OutputDebugString on Win95.
+</BLOCKQUOTE>
+
+<PRE>
+icon1.ico
+resource.h
+Script1.aps
+Script1.rc
+</PRE>
+<BLOCKQUOTE>
+Icon and version information for the DLLs
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+
+</BODY>
+</HTML>
+

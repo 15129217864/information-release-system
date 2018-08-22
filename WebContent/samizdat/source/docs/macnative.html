@@ -1,0 +1,301 @@
+<HTML>
+<HEAD>
+
+<TITLE>Mac Native Code Files</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+<BR>
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Mac Native Code Files
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This is a description of the files in the 'files\mac' directory.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+<P>
+<PRE>
+<B>mac:</B>
+
+    CFilePath.*
+        Represents a file path.
+
+    CFSpec.*
+        Represents an FSSpec.
+
+    CUtils.*
+        Various utility routines.
+
+    Debug.*
+        Interface to the DebugWindow application, used by Debugger.cpp
+
+    MiniBackground.*
+        GWorld routines, used by SIconDrawer.cpp
+
+    MyFindIconMacros.h
+        Used with the Find_icon package.
+
+
+    <B>stubs:</B>
+        AppFinder.*
+        AppUtils.*
+        IConfig.*
+        ResFile.*
+            The .cpp files contain the implementations of the native methods,
+            written using the native macros.
+            In most cases, these routines verify arguments, translate the arguments
+            from Java format, and then call through to a routine in one of the 'sfiles'
+            (SAliases.cpp, etc.)
+            Then, they translate the return values from the 'sfile' routine back
+            into Java format.
+
+            The .h files include the appropriate interface-specific header, depending on the native
+            architecture.
+            For instance, if DO_JNI is defined, 'AppFinder.h' just includes 'AppFinderCW.h';
+            if DO_JRI is defined, 'AppFinder.h' just includes 'AppFinderMRJ.h'
+
+    <B>cw:</B>      (CodeWarrior-specific files)
+        AppFinderCW.h
+        AppUtilsCW.h
+        IConfigCW.h
+        ResFileCW.h
+            The javah-generated JNI headers, used in CodeWarrior builds.
+
+        CWmain.cpp
+            Contains the entry points for the shared library initialization and
+            termination routines. Only used for CodeWarrior builds.
+
+    <B>mrj:</B>      (MRJ-specific files)
+        AppFinderMRJ.h
+        AppUtilsMRJ.h
+        IConfigMRJ.h
+        ResFileMRJ.h
+            The hand-made JRI headers, used in MRJ builds.
+
+
+        MRJmain.cpp
+            Contains the entry points for the shared library initialization and
+            termination routines. Also, initializes JRI with the name and signature
+            of each native method. Only used for MRJ builds.
+
+        vtbls.h
+             Contains the name and signature of each native method in a series of
+            arrays. Used by 'MRJMain.cpp'.
+
+
+    <B>sfiles:</B>
+        SAliases.*
+            Create and resolve aliases.
+
+        SAppFinder.*
+            Searches for applications.
+
+        SAppUtils.*
+            Launching and other application-related routines.
+
+        SFiles.*
+            Routines for working with files.
+
+        SFlags.*
+            Returns flags for disk objects.
+
+        SIconDrawer.*
+            Copies icons to a pixel array.
+
+        SIConfig.*
+            An interface to Internet Config
+
+        SIcons.*
+            Returns the icons for files, volumes, and file types.
+
+        SIterate.*
+            Iterates the contents of volumes and folders.
+
+        SMonitors.*
+            Routines for working with video monitors.
+
+        SProcesses.*
+            Routines for working with processes.
+
+        SResFile.*
+            Routines for working with resource forks.
+
+        SVolumes.*
+            Routines for working with volumes.
+
+        SWebBrowser.*
+            Used to launch URLs.
+
+</PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

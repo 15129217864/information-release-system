@@ -1,0 +1,698 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:26:32 PDT 2002 -->
+<!-- com.jconfig.AppFile | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Interface com.jconfig.AppFile
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Interface com.jconfig.AppFile
+</FONT></B>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public interface  <STRONG>AppFile</STRONG>
+     extends com.jconfig.<A HREF="pow064f2.htm">DiskFile</A>
+{
+          // Fields 27
+     public static final int <A HREF="#AF_32">AF_32</A>;
+     public static final int <A HREF="#AF_68K">AF_68K</A>;
+     public static final int <A HREF="#AF_ACTIVATE_FG">AF_ACTIVATE_FG</A>;
+     public static final int <A HREF="#AF_APPE">AF_APPE</A>;
+     public static final int <A HREF="#AF_APP_DIED_MSG">AF_APP_DIED_MSG</A>;
+     public static final int <A HREF="#AF_CAN_BG">AF_CAN_BG</A>;
+     public static final int <A HREF="#AF_CFM68">AF_CFM68</A>;
+     public static final int <A HREF="#AF_DESKACC">AF_DESKACC</A>;
+     public static final int <A HREF="#AF_DISPLAYMANAGER">AF_DISPLAYMANAGER</A>;
+     public static final int <A HREF="#AF_DOS">AF_DOS</A>;
+     public static final int <A HREF="#AF_FRONT_CLICKS">AF_FRONT_CLICKS</A>;
+     public static final int <A HREF="#AF_HLE_AWARE">AF_HLE_AWARE</A>;
+     public static final int <A HREF="#AF_LOCAL_REMOTE_EVENTS">AF_LOCAL_REMOTE_EVENTS</A>;
+     public static final int <A HREF="#AF_MULTILAUNCH">AF_MULTILAUNCH</A>;
+     public static final int <A HREF="#AF_NO_LAYER_SWITCH">AF_NO_LAYER_SWITCH</A>;
+     public static final int <A HREF="#AF_OS216">AF_OS216</A>;
+     public static final int <A HREF="#AF_OSXPACKAGE">AF_OSXPACKAGE</A>;
+     public static final int <A HREF="#AF_PEF">AF_PEF</A>;
+     public static final int <A HREF="#AF_PIF">AF_PIF</A>;
+     public static final int <A HREF="#AF_POSIX">AF_POSIX</A>;
+     public static final int <A HREF="#AF_STAT_AWARE">AF_STAT_AWARE</A>;
+     public static final int <A HREF="#AF_SUSPEND_RESUME">AF_SUSPEND_RESUME</A>;
+     public static final int <A HREF="#AF_UNKNOWN">AF_UNKNOWN</A>;
+     public static final int <A HREF="#AF_USE_TES">AF_USE_TES</A>;
+     public static final int <A HREF="#AF_W32">AF_W32</A>;
+     public static final int <A HREF="#AF_WOW">AF_WOW</A>;
+     public static final String <A HREF="#copyrightString">copyrightString</A>;
+
+          // Methods 11
+     public abstract String <A HREF="#executableTypeToString(int)">executableTypeToString</A>(int);
+     public abstract AppCommand[] <A HREF="#getAllCommands()">getAllCommands</A>();
+     public abstract AppCommand <A HREF="#getCommand(java.lang.String)">getCommand</A>(String);
+     public abstract int <A HREF="#getExecutableType()">getExecutableType</A>();
+     public abstract FileType[] <A HREF="#getFileTypes(int)">getFileTypes</A>(int);
+     public abstract IconBundle <A HREF="#getIconBundle(com.jconfig.FileType)">getIconBundle</A>(FileType);
+     public abstract AppProcess[] <A HREF="#getInstances()">getInstances</A>();
+     public abstract int <A HREF="#getMinimumPartition()">getMinimumPartition</A>();
+     public abstract int <A HREF="#getSizeFlags()">getSizeFlags</A>();
+     public abstract int <A HREF="#getSuggestedPartition()">getSuggestedPartition</A>();
+     public abstract AppProcess <A HREF="#performCommand(com.jconfig.AppCommand, int)">performCommand</A>(AppCommand, int);
+}
+</PRE>
+<P>
+<DL>
+<P>
+Interface for objects which represent an application's disk file. This does not represent a
+running instance of the application, only the file.
+
+Arrays of objects of this class are returned from the 'getApps()' methods of the FileRegistry
+class.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Returned By: </B>
+<DD>AppProcess.<A HREF="pow04c9.htm#getAppFile()">getAppFile()</A>, FileRegistryI.<A HREF="pow08d70.htm#createAppFile(java.io.File)">createAppFile()</A>, FileRegistryI.<A HREF="pow08d70.htm#getApps(com.jconfig.FileExtension, int, int)">getApps()</A>, FileRegistryI.<A HREF="pow08d70.htm#getApps(com.jconfig.FinderInfo, int, int)">getApps()</A>, FileRegistryI.<A HREF="pow08d70.htm#getApps(java.lang.String, int, int)">getApps()</A>, FileRegistry.<A HREF="pow0b9ae.htm#createAppFile(java.io.File)">createAppFile()</A>, FileRegistry.<A HREF="pow0b9ae.htm#getApps(com.jconfig.FileExtension, int, int)">getApps()</A>, FileRegistry.<A HREF="pow0b9ae.htm#getApps(com.jconfig.FinderInfo, int, int)">getApps()</A>, FileRegistry.<A HREF="pow0b9ae.htm#getApps(java.lang.String, int, int)">getApps()</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_NO_LAYER_SWITCH"><FONT COLOR="#0000FF">&middot;</FONT> AF_NO_LAYER_SWITCH</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_NO_LAYER_SWITCH
+</PRE>
+<BLOCKQUOTE>
+<P>
+Used with the performCommand() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_DISPLAYMANAGER"><FONT COLOR="#0000FF">&middot;</FONT> AF_DISPLAYMANAGER</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_DISPLAYMANAGER
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_USE_TES"><FONT COLOR="#0000FF">&middot;</FONT> AF_USE_TES</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_USE_TES
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_STAT_AWARE"><FONT COLOR="#0000FF">&middot;</FONT> AF_STAT_AWARE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_STAT_AWARE
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_LOCAL_REMOTE_EVENTS"><FONT COLOR="#0000FF">&middot;</FONT> AF_LOCAL_REMOTE_EVENTS</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_LOCAL_REMOTE_EVENTS
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_HLE_AWARE"><FONT COLOR="#0000FF">&middot;</FONT> AF_HLE_AWARE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_HLE_AWARE
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_32"><FONT COLOR="#0000FF">&middot;</FONT> AF_32</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_32
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_APP_DIED_MSG"><FONT COLOR="#0000FF">&middot;</FONT> AF_APP_DIED_MSG</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_APP_DIED_MSG
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_FRONT_CLICKS"><FONT COLOR="#0000FF">&middot;</FONT> AF_FRONT_CLICKS</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_FRONT_CLICKS
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_APPE"><FONT COLOR="#0000FF">&middot;</FONT> AF_APPE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_APPE
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_ACTIVATE_FG"><FONT COLOR="#0000FF">&middot;</FONT> AF_ACTIVATE_FG</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_ACTIVATE_FG
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_CAN_BG"><FONT COLOR="#0000FF">&middot;</FONT> AF_CAN_BG</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_CAN_BG
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_SUSPEND_RESUME"><FONT COLOR="#0000FF">&middot;</FONT> AF_SUSPEND_RESUME</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_SUSPEND_RESUME
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_MULTILAUNCH"><FONT COLOR="#0000FF">&middot;</FONT> AF_MULTILAUNCH</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_MULTILAUNCH
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_DESKACC"><FONT COLOR="#0000FF">&middot;</FONT> AF_DESKACC</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_DESKACC
+</PRE>
+<BLOCKQUOTE>
+<P>
+A Mac-specific flag returned by the getSizeFlags method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_W32"><FONT COLOR="#0000FF">&middot;</FONT> AF_W32</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_W32
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_DOS"><FONT COLOR="#0000FF">&middot;</FONT> AF_DOS</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_DOS
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_WOW"><FONT COLOR="#0000FF">&middot;</FONT> AF_WOW</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_WOW
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_PIF"><FONT COLOR="#0000FF">&middot;</FONT> AF_PIF</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_PIF
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_POSIX"><FONT COLOR="#0000FF">&middot;</FONT> AF_POSIX</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_POSIX
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_OS216"><FONT COLOR="#0000FF">&middot;</FONT> AF_OS216</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_OS216
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_PEF"><FONT COLOR="#0000FF">&middot;</FONT> AF_PEF</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_PEF
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_CFM68"><FONT COLOR="#0000FF">&middot;</FONT> AF_CFM68</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_CFM68
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_68K"><FONT COLOR="#0000FF">&middot;</FONT> AF_68K</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_68K
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_UNKNOWN"><FONT COLOR="#0000FF">&middot;</FONT> AF_UNKNOWN</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_UNKNOWN
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="AF_OSXPACKAGE"><FONT COLOR="#0000FF">&middot;</FONT> AF_OSXPACKAGE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int AF_OSXPACKAGE
+</PRE>
+<BLOCKQUOTE>
+<P>
+Returned by the getExecutableType method.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getIconBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getIconBundle(com.jconfig.FileType)">getIconBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0326d.htm">IconBundle</A> getIconBundle(<A HREF="pow07264.htm">FileType</A> ft) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the IconBundle associated with this application. May return null if the
+	application's icons can't be found.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileTypes"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileTypes(int)">getFileTypes</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow07264.htm">FileType</A>[] getFileTypes(int maxToReturn) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the set of FileType's which are associated with this application. May return null
+if no file types could be determined.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> maxToReturn</I></TD> <TD>the maximum number of file types requested. The actual number returned
+may be less or more than the requested amount.</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getCommand"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getCommand(java.lang.String)">getCommand</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0d54e.htm">AppCommand</A> getCommand(String commandName) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the indicated command. The 'commandName' argument is one of the constants defined in
+the AppCommand interface. If this instance cannot accept commands of the indicated type,
+null is returned.
+<BR>
+After retrieving a command using this method, you can add arguments to it, if desired, and then
+pass the command to the 'performCommand' method to execute the command.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getAllCommands"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getAllCommands()">getAllCommands</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0d54e.htm">AppCommand</A>[] getAllCommands() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns all the commands which this application can accept.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="performCommand"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="performCommand(com.jconfig.AppCommand, int)">performCommand</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow04c9.htm">AppProcess</A> performCommand(<A HREF="pow0d54e.htm">AppCommand</A> command, 
+                                             int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Performs the indicated command. If an error occurs, or if that command does not
+	cause the creation of a new instance of the application, returns null. Otherwise,
+	returns an AppProcess object representing the new application instance. To open
+	the instance in the background, OR the flags argument with 'AF_NO_LAYER_SWITCH'. If
+	the command is not one of those recognized by this application, an IllegalArgumentException
+	exception is thrown.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getInstances"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getInstances()">getInstances</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow04c9.htm">AppProcess</A>[] getInstances() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the set of all instances of this application currently running.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getExecutableType"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getExecutableType()">getExecutableType</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getExecutableType() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Indicates the architecture of this application. Returns one of the preceding constants.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getSizeFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getSizeFlags()">getSizeFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getSizeFlags() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Mac-specific method which returns the 'SIZE' flags for this application.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getMinimumPartition"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getMinimumPartition()">getMinimumPartition</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getMinimumPartition() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Mac-specific method which returns the minimum memory space which an instance of this application
+would occupy.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getSuggestedPartition"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getSuggestedPartition()">getSuggestedPartition</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getSuggestedPartition() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Mac-specific method which returns the suggested memory space which an instance of this application
+would occupy.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="executableTypeToString"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="executableTypeToString(int)">executableTypeToString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String executableTypeToString(int f) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convenience method which converts the return value of getExecutableType() into a string representation.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

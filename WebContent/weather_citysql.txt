@@ -1,0 +1,3572 @@
+use xctweb 
+
+Create Table weather_city(
+	id	int IDENTITY (1, 1)   NOT NULL ,
+	province	nvarchar(100)  NULL ,
+	city	nvarchar(100)  NULL 
+) 
+
+ALTER TABLE weather_city ADD  PRIMARY KEY  clustered 
+   ( id )  ON [PRIMARY] 
+
+
+insert into weather_city ( province, city) values 
+    ( '北京' , '北京' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '大兴' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '昌平' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '通州' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '怀柔' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '顺义' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '延庆' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '门头沟' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '房山' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '平谷' ) 
+insert into weather_city ( province, city) values 
+    ( '北京' , '密云' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '合肥' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '长丰' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '肥西' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '肥东' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '黄山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '祁门' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '黟县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '歙县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '休宁' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '屯溪' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '九华山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '芜湖' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '繁昌' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '南陵' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '芜湖县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '蚌埠' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '怀远' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '固镇' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '五河' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '淮南' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '凤台' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '马鞍山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '当涂' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '淮北' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '铜陵' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '安庆' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '岳西' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '桐城' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '太湖' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '潜山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '怀宁' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '宿松' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '望江' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '枞阳' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '阜阳' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '临泉' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '界首' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '阜南' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '颍上' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '太和' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '宿州' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '萧县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '巢湖' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '庐江' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '无为' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '含山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '和县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '亳州' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '涡阳' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '利辛' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '蒙城' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '池州' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '东至' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '贵池' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '石台' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '青阳' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '宣城' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '泾县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '旌德' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '宁国' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '绩溪' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '广德' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '六安' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '金寨' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '舒城' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '寿县' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '霍山' ) 
+insert into weather_city ( province, city) values 
+    ( '安徽' , '滁州' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '重庆' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '奉节' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '涪陵' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '梁平' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '开县' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '黔江' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '潼南' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '垫江' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '巫山' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '江津' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '合川' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '永川' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '丰都' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '北碚' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '璧山' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '南川' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '长寿' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '武隆' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '彭水' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '綦江' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '秀山' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '万州' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '荣昌' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '铜梁' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '城口' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '巫溪' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '忠县' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '石柱' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '大足' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '酉阳' ) 
+insert into weather_city ( province, city) values 
+    ( '重庆' , '江北' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '福州' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '闽清' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '闽侯' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '罗源' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '连江' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '长乐' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '福清' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '平潭' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '永泰' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '厦门' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '同安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '莆田' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '仙游' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '秀屿' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '三明' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '宁化' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '清流' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '将乐' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '建宁' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '明溪' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '沙县' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '尤溪' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '大田' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '泰宁' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '永安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '泉州' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '安溪' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '崇武' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '永春' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '德化' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '晋江' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '南安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '漳州' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '华安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '南靖' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '平和' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '龙海' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '诏安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '云霄' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '漳浦' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '东山' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '南平' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '武夷山' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '浦城' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '光泽' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '建阳' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '松溪' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '建瓯' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '顺昌' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '邵武' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '政和' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '龙岩' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '连城' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '武平' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '长汀' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '上杭' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '漳平' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '永定' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '宁德' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '寿宁' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '周宁' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '福安' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '柘荣' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '古田' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '霞浦' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '屏南' ) 
+insert into weather_city ( province, city) values 
+    ( '福建' , '福鼎' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '兰州' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '皋兰' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '榆中' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '永登' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '白银' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '会宁' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '景泰' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '靖远' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '天水' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '甘谷' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '武山' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '清水' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '张家川' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '嘉峪关' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '酒泉' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '敦煌' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '瓜州' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '玉门' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '金塔' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '肃北' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '武威' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '古浪' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '民勤' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '张掖' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '临泽' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '民乐' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '肃南' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '山丹' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '平凉' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '泾川' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '灵台' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '静宁' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '庄浪' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '华亭' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '崇信' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '庆阳' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '华池' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '镇原' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '合水' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '宁县' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '正宁' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '西峰' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '环县' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '定西' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '陇西' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '通渭' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '渭源' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '漳县' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '临洮' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '岷县' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '甘南' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '夏河' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '临潭' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '卓尼' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '碌曲' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '迭部' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '舟曲' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '玛曲' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '合作' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '临夏' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '永靖' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '广河' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '和政' ) 
+insert into weather_city ( province, city) values 
+    ( '甘肃' , '康乐' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '广州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '从化' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '增城' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '番禺' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '汕头' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '潮阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '澄海' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '南澳' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '深圳' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '珠海' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '斗门' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '湛江' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '遂溪' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '廉江' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '吴川' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '徐闻' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '雷州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '佛山' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '三水' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '南海' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '顺德' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '梅州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '平远' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '蕉岭' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '大埔' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '丰顺' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '梅县' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '五华' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '兴宁' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '肇庆' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '封开' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '怀集' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '四会' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '德庆' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '广宁' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '高要' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '阳江' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '阳春' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '韶关' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '乐昌' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '仁化' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '乳源' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '曲江' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '始兴' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '翁源' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '新丰' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '南雄' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '江门' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '恩平' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '新会' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '台山' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '鹤山' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '开平' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '茂名' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '高州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '化州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '电白' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '信宜' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '惠州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '龙门' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '博罗' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '惠东' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '惠阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '汕尾' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '海丰' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '陆丰' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '河源' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '龙川' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '紫金' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '连平' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '和平' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '清远' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '连南' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '连州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '阳山' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '英德' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '佛冈' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '东莞' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '中山' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '潮州' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '饶平' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '揭阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '揭西' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '普宁' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '惠来' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '云浮' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '郁南' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '罗定' ) 
+insert into weather_city ( province, city) values 
+    ( '广东' , '新兴' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '南宁' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '隆安' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '马山' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '上林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '武鸣' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '宾阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '邕宁' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '横县' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '桂林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '资源' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '永福' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '临桂' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '灵川' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '全州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '灌阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '阳朔' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '平乐' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '龙胜' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '恭城' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '兴安' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '荔浦' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '北海' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '合浦' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '涠洲岛' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '柳州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '三江' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '融水' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '柳城' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '柳江' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '融安' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '鹿寨' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '防城港' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '上思' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '防城' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '东兴' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '钦州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '浦北' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '灵山' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '贵港' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '平南' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '桂平' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '玉林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '博白' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '北流' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '容县' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '陆川' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '百色' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '隆林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '乐业' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '凌云' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '田林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '德保' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '田东' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '田阳' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '那坡' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '靖西' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '平果' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '西林' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '贺州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '昭平' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '富川' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '钟山' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '河池' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '天峨' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '宜州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '南丹' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '东兰' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '巴马' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '罗城' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '都安' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '凤山' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '来宾' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '忻城' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '金秀' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '象州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '武宣' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '崇左' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '天等' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '凭祥' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '大新' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '扶绥' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '宁明' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '龙州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '梧州' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '藤县' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '苍梧' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '岑溪' ) 
+insert into weather_city ( province, city) values 
+    ( '广西' , '蒙山' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '贵阳' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '息烽' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '开阳' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '修文' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '清镇' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '六盘水' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '盘县' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '六枝' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '遵义' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '习水' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '正安' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '道真' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '务川' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '仁怀' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '绥阳' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '湄潭' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '凤冈' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '余庆' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '桐梓' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '赤水' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '安顺' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '普定' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '平坝' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '紫云' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '镇宁' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '铜仁' ) 
+insert into weather_city ( province, city) values 
+    ( '贵州' , '毕节' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '海口' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '龙华' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '三亚' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '琼海' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '儋州' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '文昌' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '万宁' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '东方' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '澄迈' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '定安' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '屯昌' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '临高' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '白沙' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '乐东' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '陵水' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '保亭' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '琼中' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '五指山' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '昌江' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '西沙群岛' ) 
+insert into weather_city ( province, city) values 
+    ( '海南' , '南沙群岛' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '石家庄' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '灵寿' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '行唐' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '正定' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '井陉' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '新乐' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '藁城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '无极' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '赵县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '栾城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '高邑' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '元氏' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '赞皇' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '深泽' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '辛集' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '平山' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '承德' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '隆化' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '平泉' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '滦平' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '兴隆' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '丰宁' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '围场' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '承德县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '秦皇岛' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '昌黎' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '抚宁' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '北戴河' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '青龙' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '保定' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '涞源' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '曲阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '阜平' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '唐县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '定州' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '涿州' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '容城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '易县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '徐水' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '高阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '安国' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '安新' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '望都' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '满城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '蠡县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '雄县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '高碑店' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '唐山' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '迁西' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '滦南' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '迁安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '玉田' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '滦县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '丰润' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '丰南' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '唐海' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '遵化' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '乐亭' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '邯郸' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '临漳' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '涉县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '武安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '曲周' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '永年' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '魏县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '磁县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '广平' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '肥乡' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '成安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '鸡泽' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '大名' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '馆陶' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '丘县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '邢台' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '沙河' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '柏乡' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '临城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '隆尧' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '宁晋' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '内丘' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '巨鹿' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '任县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '南和' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '广宗' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '平乡' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '南宫' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '威县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '临西' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '清河' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '张家口' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '康保' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '尚义' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '怀安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '阳原' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '万全' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '沽源' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '崇礼' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '赤城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '涿鹿' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '张北' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '蔚县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '怀来' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '宣化' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '沧州' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '河间' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '青县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '献县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '肃宁' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '盐山' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '海兴' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '孟村' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '东光' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '吴桥' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '南皮' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '泊头' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '黄骅' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '廊坊' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '大厂' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '固安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '永清' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '三河' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '香河' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '文安' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '大城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '霸州' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '衡水' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '饶阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '安平' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '武强' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '武邑' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '故城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '枣强' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '阜城' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '景县' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '冀州' ) 
+insert into weather_city ( province, city) values 
+    ( '河北' , '任丘' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '郑州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '荥阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '登封' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '新郑' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '中牟' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '新密' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '巩义' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '洛阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '宜阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '洛宁' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '新安' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '伊川' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '汝阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '嵩县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '偃师' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '孟津' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '栾川' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '开封' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '兰考' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '尉氏' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '杞县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '通许' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '平顶山' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '汝州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '鲁山' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '郏县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '叶县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '宝丰' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '焦作' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '沁阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '博爱' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '修武' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '武陟' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '温县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '孟州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '鹤壁' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '淇县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '浚县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '新乡' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '安阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '汤阴' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '内黄' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '滑县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '林州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '濮阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '台前' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '南乐' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '清丰' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '范县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '许昌' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '长葛' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '禹州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '鄢陵' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '襄城' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '漯河' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '三门峡' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '灵宝' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '渑池' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '卢氏' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '南阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '镇平' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '方城' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '社旗' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '淅川' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '新野' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '唐河' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '邓州' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '西峡' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '南召' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '信阳' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '周口' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '驻马店' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '济源' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '商丘' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '睢县' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '民权' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '虞城' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '柘城' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '宁陵' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '夏邑' ) 
+insert into weather_city ( province, city) values 
+    ( '河南' , '永城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '武汉' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '汉阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '新洲' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '武昌' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '宜昌' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '秭归' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '远安' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '当阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '长阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '枝江' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '五峰' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '兴山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '恩施' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '巴东' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '利川' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '建始' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '咸丰' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '鹤峰' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '黄石' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '大冶' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '阳新' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '襄阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '谷城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '保康' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '南漳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '枣阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '宜城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '老河口' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '荆门' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '京山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '钟祥' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '鄂州' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '孝感' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '安陆' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '云梦' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '大悟' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '应城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '汉川' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '黄冈' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '红安' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '罗田' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '浠水' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '黄梅' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '麻城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '英山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '蕲春' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '咸宁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '崇阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '通城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '通山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '嘉鱼' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '赤壁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '仙桃' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '天门' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '潜江' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '神农架' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '荆州' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '松滋' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '公安' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '石首' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '监利' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '洪湖' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '十堰' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '竹溪' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '竹山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '丹江口' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '郧西' ) 
+insert into weather_city ( province, city) values 
+    ( '湖北' , '房县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '长沙' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '宁乡' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '浏阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '张家界' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '益阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '南县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '桃江' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '安化' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '沅江' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '株洲' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '攸县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '茶陵' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '株州' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '醴陵' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '炎陵县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '湘潭' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '湘乡' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '韶山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '衡阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '常宁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '衡山' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '衡南' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '祁东' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '耒阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '南岳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '衡东' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '衡阳县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '邵阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '洞口' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '隆回' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '新邵' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '邵东' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '绥宁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '新宁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '城步' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '武冈' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '邵阳县' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '岳阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '临湘' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '湘阴' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '汨罗' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '平江' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '华容' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '常德' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '郴州' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '安仁' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '永兴' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '桂东' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '桂阳' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '嘉禾' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '宜章' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '资兴' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '汝城' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '临武' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '怀化' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '娄底' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '永州' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '零陵' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '江永' ) 
+insert into weather_city ( province, city) values 
+    ( '湖南' , '东安' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '哈尔滨' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '巴彦' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '双城' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '呼兰' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '宾县' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '木兰' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '方正' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '延寿' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '五常' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '阿城' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '依兰' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '通河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '尚志' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '大兴安岭' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '漠河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '塔河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '呼玛' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '新林' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '黑河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '逊克' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '孙吴' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '北安' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '嫩江' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '齐齐哈尔' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '讷河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '克东' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '龙江' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '依安' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '拜泉' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '克山' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '富裕' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '泰来' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '鹤岗' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '双鸭山' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '集贤' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '饶河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '宝清' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '鸡西' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '密山' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '鸡东' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '大庆' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '林甸' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '杜尔伯特' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '肇源' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '肇州' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '伊春' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '嘉荫' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '乌伊岭' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '五营' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '铁力' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '牡丹江' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '林口' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '海林' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '穆棱' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '宁安' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '东宁' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '绥芬河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '佳木斯' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '桦川' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '桦南' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '汤原' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '同江' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '富锦' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '抚远' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '七台河' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '勃利' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '绥化' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '绥棱' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '青冈' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '望奎' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '肇东' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '兰西' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '庆安' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '海伦' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '明水' ) 
+insert into weather_city ( province, city) values 
+    ( '黑龙江' , '安达' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '长春' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '榆树' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '德惠' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '九台' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '农安' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '双阳' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '吉林' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '舒兰' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '蛟河' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '桦甸' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '永吉' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '辽源' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '通化' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '梅河口' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '柳河' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '辉南' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '集安' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '通化县' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '白山' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '靖宇' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '临江' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '长白' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '松原' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '乾安' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '扶余' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '长岭' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '白城' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '洮南' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '镇赉' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '通榆' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '大安' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '四平' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '公主岭' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '伊通' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '双辽' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '梨树' ) 
+insert into weather_city ( province, city) values 
+    ( '吉林' , '东岗' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '南京' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '六合' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '江宁' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '高淳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '溧水' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '浦口' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '苏州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '张家港' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '吴江' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '常熟' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '昆山' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '太仓' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '无锡' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '江阴' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '宜兴' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '扬州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '宝应' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '仪征' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '江都' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '高邮' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '徐州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '丰县' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '沛县' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '新沂' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '睢宁' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '邳州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '常州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '金坛' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '溧阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '南通' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '海安' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '如皋' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '如东' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '启东' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '海门' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '连云港' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '东海' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '灌云' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '灌南' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '赣榆' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '淮安' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '洪泽' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '涟水' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '盱眙' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '盐城' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '大丰' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '建湖' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '阜宁' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '滨海' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '东台' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '射阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '镇江' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '扬中' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '丹阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '句容' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '泰州' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '兴化' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '泰兴' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '靖江' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '宿迁' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '泗阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '沭阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江苏' , '泗洪' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '南昌' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '安义' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '进贤' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '新建' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '南昌县' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '景德镇' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '乐平' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '赣州' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '萍乡' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '莲花' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '新余' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '分宜' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '九江' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '庐山' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '瑞昌' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '武宁' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '德安' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '永修' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '湖口' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '彭泽' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '星子' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '修水' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '都昌' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '鹰潭' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '余江' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '贵溪' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '宜春' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '抚州' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '上饶' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '余干' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '万年' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '德兴' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '弋阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '玉山' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '铅山' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '广丰' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '横峰' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '鄱阳' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '上饶县' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '吉安' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '安福' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '永新' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '井冈山' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '泰和' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '新干' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '峡江' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '永丰' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '吉水' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '万安' ) 
+insert into weather_city ( province, city) values 
+    ( '江西' , '宁冈' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '沈阳' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '康平' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '法库' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '辽中' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '新民' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '大连' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '金州' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '长海' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '庄河' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '瓦房店' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '旅顺' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '丹东' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '凤城' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '宽甸' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '鞍山' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '台安' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '岫岩' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '海城' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '锦州' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '北镇' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '义县' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '抚顺' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '新宾' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '清原' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '章党' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '本溪' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '桓仁' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '本溪县' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '葫芦岛' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '建昌' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '兴城' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '绥中' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '营口' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '盖州' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '盘锦' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '大洼' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '盘山' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '阜新' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '太平' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '彰武' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '辽阳' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '灯塔' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '辽阳县' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '铁岭' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '昌图' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '西丰' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '开原' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '朝阳' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '北票' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '凌源' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '喀左' ) 
+insert into weather_city ( province, city) values 
+    ( '辽宁' , '建平' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '呼和浩特' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '武川' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '土默特左旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '托克托' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '和林格尔' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '阿拉善盟' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '阿拉善右旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '额济纳旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '包头' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '固阳' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '土默特右旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '达尔罕茂明安联合旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌海' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '赤峰' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '克什克腾旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '喀喇沁旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '宁城' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '巴林右旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '巴林左旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '林西' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '翁牛特旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '通辽' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '奈曼旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '科尔沁左翼后旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '库伦旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '扎鲁特旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '开鲁' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '科左中旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '呼伦贝尔' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '陈巴尔虎旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '新巴尔虎左旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '扎兰屯' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '阿荣旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '牙克石' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '海拉尔' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '新巴尔虎右旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '满洲里' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '根河' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '莫力达瓦旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '额尔古纳' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '鄂尔多斯' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '达拉特旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '杭锦旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '伊金霍洛旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '准格尔旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '东胜' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '鄂托克前旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌审旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '巴彦淖尔' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌拉特后旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '五原' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '磴口' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '杭锦后旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '临河' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌拉特中旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌拉特前旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '兴安盟' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '突泉' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '科尔沁右翼中旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌兰浩特' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '阿尔山' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '乌兰察布' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '察哈尔右翼后旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '商都' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '卓资' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '凉城' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '察哈尔右翼前旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '兴和' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '丰镇' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '四子王旗' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '化德' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '集宁' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '图里河' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '博克图' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '拐子湖' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '巴音毛道' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '那仁宝力格' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '满都拉' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '海力素' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '朱日和' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '吉兰太' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '锡林郭勒盟' ) 
+insert into weather_city ( province, city) values 
+    ( '内蒙古' , '宝国图' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '银川' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '贺兰' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '永宁' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '灵武' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '石嘴山' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '平罗' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '惠农' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '陶乐' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '固原' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '隆德' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '泾源' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '西吉' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '吴忠' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '青铜峡' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '盐池' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '同心' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '中卫' ) 
+insert into weather_city ( province, city) values 
+    ( '宁夏' , '中宁' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '西宁' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '湟源' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '湟中' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '海东' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '互助' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '乐都' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '化隆' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '循化' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '民和' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '果洛' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '甘德' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '玛多' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '达日' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '久治' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '班玛' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '玉树' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '治多' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '杂多' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '曲麻莱' ) 
+insert into weather_city ( province, city) values 
+    ( '青海' , '囊谦' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '济南' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '商河' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '章丘' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '平阴' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '济阳' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '青岛' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '胶州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莱西' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '崂山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '即墨' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '胶南' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '平度' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '烟台' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莱州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '蓬莱' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '招远' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '福山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '牟平' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '长岛' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '龙口' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莱阳' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '海阳' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '栖霞' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '威海' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '文登' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '乳山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '荣成' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '潍坊' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '青州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '寿光' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临朐' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '昌乐' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '高密' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '诸城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '昌邑' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '安丘' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '淄博' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '高青' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '博山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '周村' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '桓台' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临淄' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '淄川' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '沂源' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '枣庄' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '东营' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '利津' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '广饶' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '垦利' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '济宁' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '梁山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '汶上' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '泗水' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '微山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '鱼台' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '金乡' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '兖州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '曲阜' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '邹城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '泰安' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '肥城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '东平' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '新泰' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '宁阳' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '日照' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莒县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莱芜' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '德州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '武城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临邑' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '宁津' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '平原' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '乐陵' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '庆云' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '夏津' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '禹城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '齐河' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '陵县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临沂' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '平邑' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '费县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '沂水' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '沂南' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '莒南' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '苍山' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临沭' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '郯城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '聊城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '临清' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '冠县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '阳谷' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '高唐' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '茌平' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '东阿' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '滨州' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '无棣' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '阳信' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '沾化' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '惠民' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '博兴' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '邹平' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '菏泽' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '郓城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '东明' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '巨野' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '曹县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '成武' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '单县' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '鄄城' ) 
+insert into weather_city ( province, city) values 
+    ( '山东' , '定陶' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '西安' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '周至' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '高陵' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '临潼' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '户县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '长安' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '蓝田' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '延安' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '志丹' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '甘泉' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '延长' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '宜川' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '富县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '黄陵' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '黄龙' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '延川' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '铜川' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '宜君' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '耀州' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '宝鸡' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '陇县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '千阳' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '麟游' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '岐山' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '凤翔' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '扶风' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '眉县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '太白' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '凤县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '汉中' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '渭南' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '合阳' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '澄城' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '白水' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '蒲城' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '富平' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '大荔' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '华县' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '华阴' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '潼关' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '韩城' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '榆林' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '安康' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '宁陕' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '汉阴' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '紫阳' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '平利' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '旬阳' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '镇坪' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '白河' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '石泉' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '岚皋' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '商洛' ) 
+insert into weather_city ( province, city) values 
+    ( '陕西' , '咸阳' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '太原' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '娄烦' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '阳曲' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '清徐' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '大同' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '阳高' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '天镇' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '左云' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '浑源' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '广灵' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '大同县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '灵丘' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '阳泉' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '盂县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '平定' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '长治' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '平顺' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '沁县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '潞城' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '壶关' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '屯留' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '长子' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '襄垣' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '沁源' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '武乡' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '黎城' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '晋城' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '沁水' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '高平' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '陵川' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '阳城' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '朔州' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '怀仁' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '应县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '山阴' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '平鲁' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '右玉' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '忻州' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '保德' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '五台山' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '定襄' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '代县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '繁峙' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '宁武' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '神池' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '五寨' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '岢岚' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '静乐' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '偏关' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '河曲' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '原平' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '五台' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '临汾' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '永和' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '大宁' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '吉县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '襄汾' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '蒲县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '汾西' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '洪洞' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '霍州' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '古县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '安泽' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '乡宁' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '曲沃' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '翼城' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '浮山' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '隰县' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '侯马' ) 
+insert into weather_city ( province, city) values 
+    ( '山西' , '运城' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '上海' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '崇明' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '宝山' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '金山' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '青浦' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '南汇' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '奉贤' ) 
+insert into weather_city ( province, city) values 
+    ( '上海' , '松江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '成都' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '温江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '郫县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '新津' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '蒲江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '邛崃' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '大邑' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '龙泉驿' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '双流' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '新都' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '金堂' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '都江堰' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '绵阳' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '安县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '江油' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '梓潼' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '三台' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '盐亭' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '平武' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '北川' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '自贡' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '荣县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '富顺' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '攀枝花' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '盐边' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '米易' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '仁和' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '德阳' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '什邡' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '中江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '广汉' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '绵竹' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '广元' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '青川' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '剑阁' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '旺苍' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '苍溪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '遂宁' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '射洪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '蓬溪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '乐山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '峨眉山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '夹江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '峨边' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '犍为' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '井研' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '马边' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '沐川' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '南充' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '西充' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '南部' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '仪陇' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '蓬安' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '营山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '阆中' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '宜宾' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '南溪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '屏山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '兴文' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '筠连' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '珙县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '高县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '江安' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '长宁' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '宜宾县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '广安' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '岳池' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '邻水' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '武胜' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '达州' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '雅安' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '宝兴' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '天全' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '芦山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '名山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '汉源' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '石棉' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '巴中' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '南江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '通江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '平昌' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '资阳' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '简阳' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '乐至' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '安岳' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '阿坝' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '壤塘' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '南坪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '理县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '黑水' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '茂县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '马尔康' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '红原' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '小金' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '松潘' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '汶川' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '金川' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '甘孜' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '白玉' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '炉霍' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '丹巴' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '泸定' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '雅江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '得荣' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '乡城' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '稻城' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '石渠' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '德格' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '道孚' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '巴塘' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '新龙' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '理塘' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '康定' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '九龙' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '泸州' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '合江' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '纳溪' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '古蔺' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '泸县' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '叙永' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '眉山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '彭山' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '仁寿' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '洪雅' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '丹棱' ) 
+insert into weather_city ( province, city) values 
+    ( '四川' , '青神' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '天津' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '塘沽' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '蓟县' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '汉沽' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '大港' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '东丽' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '津南' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '北辰' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '武清' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '宝坻' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '宁河' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '静海' ) 
+insert into weather_city ( province, city) values 
+    ( '天津' , '西青' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '拉萨' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '当雄' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '尼木' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '林芝' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '察隅' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '那曲' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '申扎' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '嘉黎' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '昌都' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '洛隆' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '左贡' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '丁青' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '茫康' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '泽当' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '日喀则' ) 
+insert into weather_city ( province, city) values 
+    ( '西藏' , '狮泉河' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '乌鲁木齐' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '吐鲁番' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '托克逊' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '鄯善' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '伊犁' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '克拉玛依' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '石河子' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '哈密' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '巴里坤' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '伊吾' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '和田' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '墨玉' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '洛浦' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '皮山' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '民丰' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '于田' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '策勤' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '阿克苏' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '喀什' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '昌吉' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '玛纳斯' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '呼图壁' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '阜康' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '吉木萨尔' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '奇台' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '米泉' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '木垒' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '阿勒泰' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '吉木乃' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '布尔津' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '哈巴河' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '福海' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '富蕴' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '青河' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '塔城' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '额敏' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '裕民' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '和布克赛尔' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '托里' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '乌苏' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '沙湾' ) 
+insert into weather_city ( province, city) values 
+    ( '新疆' , '阿拉山口' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '昆明' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '大理' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '丽江' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '宁蒗' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '永胜' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '华坪' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '西双版纳' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '勐海' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '景洪' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '勐腊' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '普洱' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '景谷' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '江城' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '墨江' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '西盟' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '孟连' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '思茅' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '景东' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '澜沧' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '玉溪' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '保山' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '龙陵' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '施甸' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '昌宁' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '腾冲' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '昭通' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '临沧' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '镇康' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '永德' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '云县' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '沧源' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '双江' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '耿马' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '风庆' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '红河' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '弥勒' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '石屏' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '建水' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '元阳' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '绿春' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '开远' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '个旧' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '泸西' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '蒙自' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '屏边' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '楚雄' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '永仁' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '大姚' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '姚安' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '牟定' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '南华' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '武定' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '禄丰' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '双柏' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '元谋' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '德宏' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '文山' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '怒江' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '兰坪' ) 
+insert into weather_city ( province, city) values 
+    ( '云南' , '贡山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '杭州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '富阳' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '临安' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '萧山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '桐庐' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '淳安' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '建德' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '宁波' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '慈溪' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '余姚' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '镇海' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '奉化' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '鄞州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '宁海' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '象山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '温州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '泰顺' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '乐清' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '文成' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '平阳' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '瑞安' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '洞头' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '嘉兴' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '海盐' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '嘉善' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '海宁' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '平湖' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '桐乡' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '湖州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '安吉' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '德清' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '长兴' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '绍兴' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '诸暨' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '上虞' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '新昌' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '舟山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '岱山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '嵊泗' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '定海' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '衢州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '开化' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '龙游' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '常山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '江山' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '金华' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '浦江' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '兰溪' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '义乌' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '东阳' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '武义' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '永康' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '台州' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '天台' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '洪家' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '三门' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '仙居' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '温岭' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '临海' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '玉环' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '丽水' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '缙云' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '青田' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '云和' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '庆元' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '遂昌' ) 
+insert into weather_city ( province, city) values 
+    ( '浙江' , '龙泉' ) 
+insert into weather_city ( province, city) values 
+    ( '香港' , '香港' ) 
+insert into weather_city ( province, city) values 
+    ( '澳门' , '澳门' ) 
+insert into weather_city ( province, city) values 
+    ( '台湾' , '台北' ) 
+insert into weather_city ( province, city) values 
+    ( '台湾' , '高雄' ) 

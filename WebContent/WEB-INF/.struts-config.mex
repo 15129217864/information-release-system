@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="gbk"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/do/login" location="50,50" dimension="236,104" />
+  <StrutsActivity path="/do/terminalList" location="50,250" dimension="273,104" />
+  <StrutsActivity path="/do/terminalServer" location="50,450" dimension="291,104" />
+  <StrutsActivity path="/do/monitoringAjax" location="650,450" dimension="273,104" />
+  <StrutsActivity path="/do/searchTerminal" location="50,850" dimension="293,104" />
+  <StrutsActivity path="/do/viwe" location="50,1050" dimension="231,104" />
+  <StrutsActivity path="/do/auditCnt" location="350,1250" dimension="262,104" />
+  <StrutsActivity path="/do/requestClientOperating" location="950,1250" dimension="342,104" />
+  <StrutsActivity path="/do/receivingClientCmd" location="1250,450" dimension="318,104" />
+  <StrutsActivity path="/do/viewCntResponseResult" location="1250,1050" dimension="342,104" />
+  <StrutsActivity path="/do/programList" location="1250,1450" dimension="329,104" />
+  <StrutsActivity path="/do/leftmenu" location="350,1650" dimension="296,104" />
+  <StrutsActivity path="/do/mediaList" location="1550,1250" dimension="299,104" />
+  <StrutsActivity path="/do/fileUpload" location="350,1850" dimension="310,104" />
+  <StrutsActivity path="/do/progressdetail" location="950,1850" dimension="332,104" />
+  <StrutsActivity path="/admin/index.jsp" location="950,50" dimension="129,53" />
+  <StrutsActivity path="/login/login.jsp" location="350,50" dimension="120,53" />
+  <StrutsActivity path="/admin/terminal/list.jsp" location="650,650" dimension="166,53" />
+  <StrutsActivity path="/admin/terminal/monitoringList.jsp" location="950,250" dimension="233,53" />
+  <StrutsActivity path="/admin/terminal/list_ifrm.jsp" location="950,650" dimension="194,53" />
+  <StrutsActivity path="/admin/terminal/notaudit.jsp" location="650,1050" dimension="198,53" />
+  <StrutsActivity path="/admin/media/left_category.jsp" location="1550,650" dimension="213,53" />
+  <StrutsActivity path="/admin/terminal/terminal_zu.jsp" location="950,850" dimension="215,53" />
+  <StrutsActivity path="/admin/terminal/tree_zu.jsp" location="50,1250" dimension="191,53" />
+  <StrutsActivity path="/admin/terminal/audit.jsp" location="950,1050" dimension="179,53" />
+  <StrutsActivity path="/admin/terminal/view.jsp" location="350,1050" dimension="175,53" />
+  <StrutsActivity path="/rq/viewCntResponseResult" location="1250,850" dimension="191,53" />
+  <StrutsActivity path="/admin/terminal/viewProjectMenu.jsp" location="950,1450" dimension="248,53" />
+  <StrutsActivity path="/admin/terminal/restartResult.jsp" location="350,1450" dimension="223,53" />
+  <StrutsActivity path="/admin/terminal/guiCamera.jsp" location="650,1450" dimension="213,53" />
+  <StrutsActivity path="/admin/program/programList.jsp" location="50,1650" dimension="226,53" />
+  <StrutsActivity path="/admin/media/left_media.jsp" location="950,1650" dimension="198,53" />
+  <StrutsActivity path="/admin/media/left_date.jsp" location="1550,850" dimension="188,53" />
+  <StrutsActivity path="/admin/media/media_list.jsp" location="1550,1650" dimension="196,53" />
+  <StrutsActivity path="/admin/terminal/restart.jsp" location="50,1450" dimension="188,53" />
+  <StrutsActivity path="" location="650,50" dimension="32,53" />
+  <StrutsActivity path="/admin/terminal/List.jsp" location="650,250" dimension="169,53" />
+  <StrutsActivity path="/admin/terminal/monitoringList.jsp.jsp" location="50,650" dimension="253,53" />
+  <StrutsActivity path="/admin" location="650,850" dimension="73,53" />
+  <StrutsActivity path="/admin/terminal/" location="1250,650" dimension="130,53" />
+  <StrutsActivity path="/admin/media/medialist.jsp" location="1250,1650" dimension="191,53" />
+  <StrutsActivity path="/admin./" location="50,1850" dimension="81,53" />
+  <StrutsActivity path="/admin/media/tree_zu.jsp" location="1550,1850" dimension="180,53" />
+  <StrutsTransition id="/do/programList,listOK,/admin/program/programList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1414,1502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/searchTerminal,MEDIA,/admin/media/tree_zu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="326,954" />
+      <AbsolutePoint location="326,2029" />
+      <AbsolutePoint location="1640,2029" />
+      <AbsolutePoint location="1640,1903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/leftmenu,CATEGORY,/admin/media/left_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,1748" />
+      <AbsolutePoint location="1924,1748" />
+      <AbsolutePoint location="1924,676" />
+      <AbsolutePoint location="1763,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/requestClientOperating,SENDNOTICE,/rq/viewCntResponseResult,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1198,1250" />
+      <AbsolutePoint location="1198,778" />
+      <AbsolutePoint location="1345,778" />
+      <AbsolutePoint location="1345,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/terminalList,monitoringList,/admin/terminal/monitoringList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="323,318" />
+      <AbsolutePoint location="1036,318" />
+      <AbsolutePoint location="1036,303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viewCntResponseResult,GUICAMERA,/admin/terminal/guiCamera.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1148" />
+      <AbsolutePoint location="756,1148" />
+      <AbsolutePoint location="756,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/login,loginOk,/admin/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="286,148" />
+      <AbsolutePoint location="1014,148" />
+      <AbsolutePoint location="1014,103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viwe,viweOk,/admin/terminal/view.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="281,1088" />
+      <AbsolutePoint location="350,1088" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/monitoringAjax,list,/admin/terminal/list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="786,554" />
+      <AbsolutePoint location="786,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/searchTerminal,MEDIA,/admin/media/left_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="196,902" />
+      <AbsolutePoint location="1656,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/requestClientOperating,RESTART,/rq/viewCntResponseResult,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1144,1250" />
+      <AbsolutePoint location="1144,1008" />
+      <AbsolutePoint location="1345,1008" />
+      <AbsolutePoint location="1345,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/leftmenu,DATE,/admin/media/left_date.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="627,1650" />
+      <AbsolutePoint location="627,1208" />
+      <AbsolutePoint location="1644,1208" />
+      <AbsolutePoint location="1644,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/requestClientOperating,GUICAMERA,/rq/viewCntResponseResult,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1228,1250" />
+      <AbsolutePoint location="1228,876" />
+      <AbsolutePoint location="1250,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/terminalList,notaudit,/admin/terminal/notaudit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="186,302" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/searchTerminal,TERMINAL,/admin/terminal/terminal_zu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="343,918" />
+      <AbsolutePoint location="1057,918" />
+      <AbsolutePoint location="1057,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/terminalList,list_ifrm,/admin/terminal/list_ifrm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="323,348" />
+      <AbsolutePoint location="1036,348" />
+      <AbsolutePoint location="1036,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/terminalList,list,/admin/terminal/list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="323,288" />
+      <AbsolutePoint location="545,288" />
+      <AbsolutePoint location="545,676" />
+      <AbsolutePoint location="650,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viwe,AUDIT,/admin/terminal/audit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="281,1118" />
+      <AbsolutePoint location="1039,1118" />
+      <AbsolutePoint location="1039,1103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/requestClientOperating,VIEWPROJECTMENU,/rq/viewCntResponseResult,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1302" />
+      <AbsolutePoint location="878,1302" />
+      <AbsolutePoint location="878,978" />
+      <AbsolutePoint location="1315,978" />
+      <AbsolutePoint location="1315,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/searchTerminal,NEWMEDIA_ZU,/admin/media/tree_zu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="196,902" />
+      <AbsolutePoint location="1640,1876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/monitoringAjax,monitoringList,/admin/terminal/monitoringList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="923,502" />
+      <AbsolutePoint location="1066,502" />
+      <AbsolutePoint location="1066,303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login/login.jsp,null,/do/login,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,76" />
+      <AbsolutePoint location="286,76" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viewCntResponseResult,RESTART,/admin/terminal/restartResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1421,1154" />
+      <AbsolutePoint location="1421,1399" />
+      <AbsolutePoint location="461,1399" />
+      <AbsolutePoint location="461,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/login,loginError,/login/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="286,118" />
+      <AbsolutePoint location="410,118" />
+      <AbsolutePoint location="410,103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/leftmenu,MEDIA,/admin/media/left_media.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,1688" />
+      <AbsolutePoint location="950,1688" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viewCntResponseResult,SENDNOTICE,/admin/terminal/restartResult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1421,1102" />
+      <AbsolutePoint location="461,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/auditCnt,auditOk,/admin/terminal/audit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="481,1302" />
+      <AbsolutePoint location="1039,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/viewCntResponseResult,VIEWPROJECTMENU,/admin/terminal/viewProjectMenu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1421,1102" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/mediaList,mediaList,/admin/media/media_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1699,1354" />
+      <AbsolutePoint location="1699,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/do/searchTerminal,AUDIT,/admin/terminal/tree_zu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="296,954" />
+      <AbsolutePoint location="296,1276" />
+      <AbsolutePoint location="241,1276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

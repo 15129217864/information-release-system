@@ -1,0 +1,165 @@
+<!--NewPage--><!--Copyright © 1998 Samizdat Productions. All Rights Reserved.-->
+<html>
+<head>
+<title>ImageMeister Plugin Tutorial</title>
+</head>
+<body bgcolor=#FFFFFF>
+
+<CENTER>
+<H2>
+ImageMeister Plugin Tutorial
+</H2>
+</CENTER>
+<P>
+
+This file describes how to create a plugin for ImageMeister.
+In this example, we'll assume that you want to create a plugin to view text files, and that the URL
+of your home page is the ( heretofore hypothetical address ) http://www.valzavala.com.
+<P>
+
+The source code for this example is included in the 'imeister\SDK\example' folder. This folder also
+contains the compiled version of the classes in this folder, stored in the 'vztv9832.zip' file.
+
+<P>
+This folder also includes <CODE>macproj.sit</CODE>, a CodeWarrior Pro2 (Mac) project file and
+<CODE>make.bat</CODE>, a Windows batch file.
+If you aren't on Mac or Win, or if you don't have CodeWarrior, use your favorite environment or SDK to compile
+the .java files.
+
+<P>
+The documentation for the classes of ImageMeister which are used by plugins is included with the
+JConfig documentation in the main 'docs' folder. <A HREF="../../docs/packages.htm">Click here for
+the ImageMeister docs</A>
+<P>
+<HR>
+<P>
+
+In the simplest case, you need to create three classes which implement the following three interfaces:
+<P>
+
+<UL>
+<LI><B>com.tolstoy.imagemeister.PluginFactoryI</B> - registers your plugin(s) with ImageMeister
+
+<P><LI><B>com.tolstoy.imagemeister.PluginI</B> - represents a plugin: returns information about the plugin,
+and creates viewer instances
+
+<P><LI><B>com.tolstoy.imagemeister.ImageViewerI</B> - the object which displays the file
+</UL>
+<P>
+
+We will put the classes which implement these interfaces in their own package:
+<PRE>
+	com.valzavala.TextViewer.*
+
+</PRE>
+
+The class which implements PluginFactoryI <B>must</B> be named 'IMPluginFactory'; because it will have your package name, it won't be confused with plugins from other vendors.
+<P>
+
+The class which implements PluginI does not have to be named anything in particular; in this example, we'll name it 'TextViewerPlugin'.
+<P>
+
+The class which implements ImageViewerI also does not have to be named anything in particular; in this example, we'll name it 'TextImageViewer'.
+<P>
+
+
+So, after putting these classes which we need to create in their own package, we decide we need to create the following three classes:
+<PRE>
+
+	com.valzavala.TextViewer.IMPluginFactory
+	com.valzavala.TextViewer.TextViewerPlugin
+	com.valzavala.TextViewer.TextImageViewer
+</PRE>
+
+A description of each class follows.
+<P>
+
+<B>
+com.valzavala.TextViewer.IMPluginFactory
+</B>
+<P>
+This class will be used to register your plugin with ImageMeister. The most important method which this class implements is registerPlugins(). When ImageMeister starts up, it will call this method. This method should then register any plugins with ImageMeister by calling the PluginManager singleton's addPlugin() method:
+<P>
+<PRE>
+	com.valzavala.TextViewer.TextViewerPlugin	plug;
+	plug = new com.valzavala.TextViewer.TextViewerPlugin();
+	com.tolstoy.imagemeister.PluginManager.addPlugin( plug, 0 );
+
+</PRE>
+
+<B>
+com.valzavala.TextViewer.TextViewerPlugin
+</B>
+<P>
+This class represents the actual plugin. It returns information on the plugin, and creates instances of the 'TextImageViewer' class on request. The two most important methods which this class implements are 'canCreateImageViewer()' and 'createImageViewer()'. For instance, when 'canCreateImageViewer()' is called, this method should indicate whether this plugin can create image viewers for the file passed into the method:
+<P>
+<PRE>
+	boolean canCreateImageViewer( FileSpecifier spec ) {
+		examine the DiskObject or File contained by 'spec'
+
+		if 'spec' specifies a text file
+			return true
+		else
+			return false
+	}
+
+	com.valzavala.TextViewer.TextImageViewer createImageViewer(
+	ImageViewerOwner onr,
+	FileSpecifier spec,
+	Rectangle rect ) {
+		examine the DiskObject or File contained by 'spec'
+
+		if 'spec' specifies a text file
+			return a new instance of com.valzavala.TextViewer.TextImageViewer
+		else
+			return null
+	}
+
+</PRE>
+<P>
+
+<B>
+com.valzavala.TextViewer.TextImageViewer
+</B>
+<P>
+This class extends java.awt.Panel, and displays the first line of the text file.
+<P>
+<HR>
+<P>
+
+After writing these classes, we need to put them in a zip file, and then put the zip file in ImageMeister's 'plugins' folder. The name of the zip file is not important, except insofar as avoiding conflicts with plugins from other vendors is concerned. In this case, we've chosen to name the zip file 'vztv9832.zip'.
+<P>
+
+<HR>
+<CENTER>
+<H2>Windows Notes</H2>
+</CENTER>
+The Mac shell application which runs ImageMeister scans the plugins folder for new plugins. Since the Windows version
+currently doesn't have a shell application, you need to do a couple extra steps on Windows:
+
+<UL>
+<LI>Add your plugin to the classpath in the batch file which comes with ImageMeister.
+<LI>Add the full name of your plugin's 'IMPluginFactory' class to the file 'plugins.txt', which is inside the
+'data' folder.
+</UL>
+<P>
+So, using this example, we would add the following line to 'imrunSN.bat':
+<PRE>
+	set classpath=%classpath%;c:\samizdat\imeister\plugins\vztv9832.zip
+</PRE>
+<P>
+And, we would add the following line to 'plugins.txt':
+<PRE>
+	com.valzavala.TextViewer.IMPluginFactory
+</PRE>
+<P>
+
+
+For final versions of the classes described above, see the sample project.
+<P>
+
+See the package documentation for the complete ImageMeister plugin API.
+<P>
+
+</body>
+</html>

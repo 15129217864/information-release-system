@@ -1,0 +1,494 @@
+<HTML><HEAD><TITLE>Mac Installation and Configuration Notes</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+&nbsp; &nbsp; <A HREF="please_vote.html"><FONT SIZE="2">Please Vote!</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+<CENTER>
+<H1>
+Mac Installation and Configuration Notes
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+Platforms
+</H2>
+
+<BLOCKQUOTE>
+
+This version has been tested on a PowerMac 7100/80 with the following VMs:
+<PRE>
+  MRJ 1.0.2, 1.5, 2.0d2, and 2.2
+  CodeWarrior Pro2, Standard and JIT
+</PRE>
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<H2>
+Installation
+</H2>
+
+<BLOCKQUOTE>
+
+Unzipping the archive containing this file will produce a folder named 'samizdat'. You can put this
+folder anywhere you wish.
+
+<P>
+In the 'samizdat' folder, there are five Stuffit archives which contain the Mac-specific files.
+Installing JConfig on the Mac consists of unstuffing these files, and moving one of the resulting
+folders into your Extensions folder.
+
+<P>
+The Mac-specific files are stored in the locations shown below. The Mac-specific files
+are shown in bold. A description of the contents of each file is given in the 'Mac Manifest' section below.
+
+<PRE>
+samizdat
+    <B><I>SamizdatClasses.sit</I></B>        a folder containing the Mac shared library
+    <B><I>macdebug.sit</I></B>               a folder containing the DebugWindow application
+    <B><I>macrescp.sit</I></B>               a folder containing the IC Res Copy application
+    imeister
+        <B><I>IMapp.sit</I></B>              the ImageMeister application
+        SDK
+            example
+                <B><I>macproj.sit</I></B>    a CodeWarrior project and its support files
+</PRE>
+
+
+<P>
+<B>Please follow the instructions below exactly, in order to avoid problems.</B>
+
+<P>
+<B>Step 1.</B> Unstuff each of these files <B>in place</B>: i.e., unstuff them into the locations where they're currently
+stored: 'macdebug.sit' into the 'samizdat' folder, 'IMapp.sit' into the 'imeister' folder, etc.
+
+<P>
+<B>NOTE:</B> If Stuffit does not recognize the .sit files as Stuffit archives, you'll need to change 
+the creator of each of these files to 'SIT!', and the type of each of these files to 'SITD'.
+
+<P>
+<B>Step 2.</B> Copy the files 'JConfig.zip' and 'imeister.zip' from the 'common' folder into the 
+'SamizdatClasses' folder. The 'SamizdatClasses' folder was created when you unstuffed 'SamizdatClasses.sit'.
+The 'SamizdatClasses' folder should now contain three items: 'JConfig.shlb', 'JConfig.zip', and 'imeister.zip'.
+
+<P>
+<B>Step 3.</B> In order for JBindery and other Mac applications to be able to work with 'JConfig.zip'
+and 'imeister.zip', you may need to change the creator of these two files to 'JAVA', and the type of these
+two files to 'ZIP '.
+
+<P>
+<B>Step 4.</B> Move the 'SamizdatClasses' folder into your 'Extensions' folder. The 'Extensions' folder is
+inside your System Folder.
+
+<P>
+<B>NOTE:</B> When you redistribute the JConfig binaries, you do not need to store 'JConfig.zip' or 'JConfig.shlb'
+in this same location. This is only done because the ImageMeister application looks for its Java classes,
+which are stored in the 'imeister.zip' file, in a folder named 'SamizdatClasses' inside the Extensions folder.
+
+</BLOCKQUOTE>
+
+
+
+
+<H2>
+Running ImageMeister
+</H2>
+
+<BLOCKQUOTE>
+
+The ImageMeister application is now ready to run, just double-click its icon in the 'imeister' folder.
+
+<P>
+For more information on ImageMeister, see <A HREF="imagemeister.html">imagemeister.html</A>.
+
+</BLOCKQUOTE>
+
+
+
+
+
+<H2>
+Running The Sample Applications
+</H2>
+
+<BLOCKQUOTE>
+
+<P>
+This distribution contains two sample applications which illustrate various
+features of JConfig: 
+
+<UL>
+<LI>
+The first application is a sample disk browser, the source code for which is
+the DiskBrowser.java and BrowserPanel.java files in the <CODE>source/com/tolstoy/testjc</CODE> folder.
+
+<BR>
+<LI>
+The other application brings up a console window, finds and opens the
+SimpleText application, displays the application icon for SimpleText, and
+launches your Web browser. The source code for this sample application is
+Tester.java, in the <CODE>source/com/tolstoy/testjc</CODE> folder.
+</UL>
+
+
+<P>
+In addition to Tester and DiskBrowser, three other samples are provided.
+
+<P>
+Run these in a similar fashion to running Tester. See the comments in these files for more information.
+
+<UL>
+<LI><CODE>com.tolstoy.testjc.FileAttributesTest</CODE>: Lets you view and set the attributes for files and folders.
+
+<LI><CODE>com.tolstoy.testjc.TestResFork</CODE>: shows how to copy a Mac file's data and resource forks to a new file.
+									Copying the file's attributes is left as an exercise.
+
+<LI><CODE>com.tolstoy.testjc.MakeLink</CODE>: shows how to create a Windows shortcut, but could be adapted for the Mac.
+</UL>
+ 
+
+<BR>
+<P>
+To run these applications, follow
+the instructions appropriate for either MRJ or CW.
+<P>
+
+
+<P>
+<B>MRJ Instructions</B>
+
+<P>
+1) Open the 'SamizdatClasses' folder which was installed in your 'Extensions' folder,
+inside your System Folder.
+
+<P>
+2) Put a copy of the JBindery application in the 'jconfig' folder, which is inside
+the 'samizdat' folder. JBindery comes with the MRJ SDK.
+
+<P>
+3) Drag 'JConfig.zip' from the 'SamizdatClasses' folder onto the JBindery application.
+JBindery will open, and in the 'Command' section ( the first section ), enter the
+following in the 'Class Name' text box:
+<PRE>
+	com.tolstoy.testjc.DiskBrowser
+</PRE>
+
+<P>
+4) Click the 'Save Settings...' button. In the file dialog that opens, click
+the 'Save as application' check box, and then save the file. This will create
+a double-clickable application.
+
+<P>
+5) Open the information box on the resulting application, and increase its
+memory partitions to around 1 Meg. Otherwise, the console window will stop
+displaying output at some point.
+
+<P>
+6) Create another double-clickable application by repeating steps 3-5, except
+this time enter the following in the 'Class Name' text box:
+<PRE>
+	com.tolstoy.testjc.Tester
+
+</PRE>
+
+
+<P>
+<B>CodeWarrior Instructions</B>
+
+<P>
+1) Copy the following files into the same folder as the 'Metrowerks Java'
+application:
+
+<PRE>
+	JConfig.zip
+	JConfig.shlb
+	jconfig.cfg
+	jcfactrz.txt
+</PRE>
+
+The first two files are in your 'SamizdatClasses' folder, which was installed in your
+'Extensions' folder. The last two files are in the 'samizdat:jconfig' folder.
+<P>
+
+For instance, your folder hierarchy might look like:
+
+<PRE>
+Macintosh HD:
+    Metrowerks:
+        Metrowerks Java:
+            Metrowerks VM:
+                Metrowerks Java ( the application )
+                JConfig.zip
+                JConfig.shlb
+                jconfig.cfg
+                jcfactrz.txt
+</PRE>
+
+<P>
+2) Drag JConfig.zip onto the 'Metrowerks Java' application, and open the
+'Application' window. The command for this is on the 'Windows' menu.
+
+<P>
+3) In the 'Class Name' text box, enter the following:
+
+<PRE>
+	com.tolstoy.testjc.DiskBrowser
+</PRE>
+
+<P>
+Then, press the 'Run' button. This will run the Disk Browser sample
+application.
+
+<P>
+4) To run the other sample application, quit 'Metrowerks Java', and then
+repeat steps 2-3, except enter the following in the 'Class Name' text
+box:
+
+<PRE>
+	com.tolstoy.testjc.Tester
+</PRE>
+
+
+
+
+</BLOCKQUOTE>
+
+ 
+
+
+
+<H2>
+Paths and Classpaths
+</H2>
+
+<BLOCKQUOTE>
+
+<P>
+First, you have to make sure that JConfig.zip is in the classpath. Since the Mac doesn't have a command line,
+this is generally handled by dragging and dropping .zip files onto an application runner of some kind.
+
+<P>
+One such application runner is JBindery, the use of which was described in the MRJ section above. When you drag
+a .zip file onto the JBindery icon, JBindery add that .zip file to its classpath. JBindery also has a dialog
+box which allows you to add something to the classpath via a file selection dialog box.
+
+<P>
+For more information on JBindery, read the documentation which comes with the MRJ SDK, or ask a question
+on Apple's MRJ-Dev mailing list. Both of these are available at Apple's Web site.
+
+<P>
+Also, you need to make sure that JConfig.shlb is in the "shared library search path". Basically, this means
+that JConfig.shlb should be either in the same folder as your application, or somewhere in the Extensions folder. The
+Extensions folder is in your System Folder, and is where items such as MRJ are stored. JConfig.shlb does
+not have to be in the root level of the Extensions folder; it can be inside another folder, which is how
+we do it: we store JConfig.shlb in the 'SamizdatClasses' folder.
+
+<P>
+<B>NOTE:</B> If you want to put JConfig.shlb next to your app, you have to be running your app standalone:
+not directly from the JBindery setup program. After setting up your app with JBindery, make sure that the
+'Save As Application' checkbox is selected on the JBindery 'Save' dialog.
+
+ 
+</BLOCKQUOTE>
+
+
+
+
+
+<H2>
+Debugging
+</H2>
+
+<BLOCKQUOTE>
+
+<P>
+Although JConfig.shlb does not call DebugStr, it is highly recommended that you have MacsBug installed.
+
+<P>
+The folder 'DebugWindow 1.4 Ä' contains the application DebugWindow.
+DebugWindow displays a window on your screen, similar to the console window opened by JBindery.
+
+<P>
+JConfig writes debugging information to this window. It is highly recommended that you
+have DebugWindow open when working with JConfig. If there are any problems, please copy
+the information from DebugWindow, and send it to us with your bug report.
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+<H2>
+Mac Manifest
+</H2>
+
+<BLOCKQUOTE>
+
+The Mac-related files contain the following items:
+
+<PRE>
+macdebug.sit
+    Contains the 'DebugWindow' application, which is described in the
+    'Debugging' section above.
+
+macrescp.sit
+    Contains the 'IC Res Copy' application. The use of this application
+    is described in the file 'macrescp.txt' inside this archive.
+
+IMapp.sit
+    Contains the Mac shell application for the ImageMeister application.
+    This application was created by modifying the 'ApplicationSample'
+    included with the MRJ SDK.
+
+macproj.sit
+    Contains a CodeWarrior project and its support files. This is used
+    to build the sample ImageMeister plugin described in the file
+    'tutorial.html' inside the 'imeister/SDK' folder.
+</PRE>
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+
+<CENTER><HR><B><FONT size=-1>
+  <a href="http://www.tolstoy.com/samizdat/index.html">Main Page</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/jconfig.html">JConfig</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/imagemeister.html">ImageMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/sysprops.html">System Properties Repository</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Native Macros</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/Samples.html">Free Samples</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html">WordMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Java Freeware</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/links.html">Links</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/contact.html">Contact Us</a>
+</FONT></B><HR></CENTER>
+
+<font size=-2>Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+JConfig and ImageMeister are trademarks of Samizdat Productions. Other trademarks are the property of
+their respective owners.<BR>
+<A href=MAILTO:samizdat@tolstoy.com>samizdat@tolstoy.com</A></font>
+
+
+</BODY>
+</HTML>
+
+

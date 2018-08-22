@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+    "http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+
+<dwr>
+  <allow>
+    <create creator="new" javascript="DwrClass">
+      <param name="class" value="com.xct.cms.dwr.DwrClass"/>
+    </create>
+	<convert converter="bean" match="com.xct.cms.xy.domain.ClientProjectBean">
+		<param name="include" value="jmid,playclient,jmurl,name,setdate,enddate,clientip,isloop,playsecond,playtype,playtypeZh" />
+	</convert>
+	<convert converter="bean" match="com.xct.cms.domin.Media">
+		<param name="include" value="id,media_id,media_title,media_type,zu_id,m_play_time,m_resolution,file_name,file_size,file_path,slightly_img_name,slightly_img_size,slightly_img_path,userid,create_date,last_date,zuname,is_exist" />
+	</convert>
+	
+	<convert converter="bean" match="com.xct.cms.domin.Logs">
+		<param name="include" value="logid,loguser,logdate,logtime,loglog,logdel" />
+	</convert>
+	<convert converter="bean" match="com.xct.cms.domin.Terminal">
+		<param name="include" value="cnt_name,cnt_ip,cnt_mac,cnt_playstyle,cnt_islink,cnt_islink_zh,cnt_nowProgramName,cnt_playprojecttring" />
+	</convert>
+	<convert converter="bean" match="com.xct.cms.domin.ProgramHistory">
+		<param name="include" value="program_Name,project_url_datetime,xyenddatetime,xystatus,program_typeZh,program_JMurl,program_SetDate,program_type,program_long,isforover" />
+	</convert>
+  </allow>
+</dwr>
+
+

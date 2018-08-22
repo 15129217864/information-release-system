@@ -1,0 +1,285 @@
+<HTML>
+<HEAD>
+
+<TITLE>OSX Installation</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+OSX Installation
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file contains installation and setup notes for OSX.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+
+
+
+
+<P>
+<H2>
+Installation
+</H2>
+
+
+<P>
+We recommend that you unzip the distribution into <CODE>/home/jconfig</CODE>, as is done on Linux.
+
+<P>
+However, it can be placed at any other location, so long as the variables in <CODE>mm.sh</CODE> are changed
+to reflect the new location.
+
+
+
+<P>
+<H2>
+Requirements
+</H2>
+
+<P>
+To compile the OSX shared libraries, you need:
+
+<UL>
+
+<LI><B>gcc</B>
+<BR>
+CodeWarrior might also work, however, this has not been tested.
+<BR>
+Open a Terminal and type <CODE>gcc</CODE>. If that can't be found, you may need to download
+the Mac OSX Developer Tools from 
+<A HREF="http://developer.apple.com/tools/macosxtools.html">developer.apple.com/tools/macosxtools.html</A>
+
+<P>
+<LI><B>MoreFiles</B>
+<BR>
+The JConfig binaries were compiled using MoreFiles 1.5.2.
+<BR>
+You can get this from
+<A HREF="http://developer.apple.com/samplecode/Sample_Code/Files/MoreFiles.htm">developer.apple.com/samplecode/Sample_Code/Files/MoreFiles.htm</A>
+<BR>
+<CODE>mm.sh</CODE> assumes that this is stored in the source folder (i.e., source:MoreFiles)
+<BR>
+An earlier version of this SDK is used with the classic Mac builds; compiling those sources with this version
+has not been tested.
+
+
+</UL>
+
+<P>
+To compile the Java code, you'll need a Java compiler, such as Metrowerks or the tools included with MRJ. Since
+we only support compiling the Java code on Windows, you'll need to create a project yourself.
+
+
+
+
+
+<P>
+<H2>
+Compiling
+</H2>
+
+<P>
+You'll need to edit <CODE>mm.sh</CODE> to reflect the locations where you've stored
+the distribution, MoreFiles, and any other relevant files.
+
+<P>
+To compile, open a Terminal and type
+<PRE>
+cd /home/jconfig/samizdat/jconfig/source
+chmod +x mm.sh
+./mm.sh
+</PRE> 
+
+You only need to enter <CODE>chmod +x mm.sh</CODE> the first time.
+
+
+<P>
+<H2>
+Notes
+</H2>
+
+
+<P>
+<B>IMPORTANT NOTE:</B>
+Don't modify the relative locations of files or folders within the distribution;
+doing so may require editing <CODE>mm.sh</CODE> and may interfere with compiling the classic Mac projects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+
+</BODY>
+</HTML>
+
+
+

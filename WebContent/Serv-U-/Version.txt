@@ -1,0 +1,964 @@
+VERSION.TXT (Serv-U Release Notes) (+ new feature / enhancement, - bug fix)
+
+6.4.0.2 (January 29, 2007)
+==========================
+- Corrected invalid Start menu shortcut to the Serv-U Help file.  It now brings up Serv-U.chm
+- Updated all DLL and .EXE resource version numbers to match.
+- Corrected an installer error where an old link to "Serv-U Online Help" under the Start menu may not have been deleted when upgrading.
+
+
+6.4.0.1 (January 24, 2007)
+==========================
+- Corrected a GPF problem when running without a registration ID, or as a trial version.
+
+
+6.4.0.0 (January 23, 2007)
+==========================
++ Converted help files to Windows CHM (Compiled HTML Help) files for Windows Vista compatibility.  Microsoft eliminated WinHlp32.exe (Windows Help) support in Windows Vista.
++ Upgraded development environment from Microsoft Developer Studio 2003 to Microsoft Developer Studio 2005.  Microsoft changes and additions here address certain Windows and MFC security issues.
++ Added the ability to disable SSL version 2 (SSLv2).
++ Windows 98, 98 SE, Me, and NT 4.0 are no longer supported.  Microsoft has discontinued support for these operating systems and no longer provides DLLs and libraries to developers that are compatible on these operating systems.
+
+
+6.3.0.1 (October 5, 2006)
+=========================
++ Updated OpenSSL libraries from 0.9.8b to 0.9.8d.
+- Corrected bug where installer and uninstaller attempted to shutdown the Daemon and tray applications, even if they weren't initially installed.
+- Corrected a bug, introduced in version 2.5 (April 1999), where caching of disk quota would not work properly if a user account logged into Serv-U multiple times.
+
+
+6.3.0.0 (June 12, 2006)
+=======================
++ Increased the maximum user name size from 39 to 150.
++ Changed the RClientEventStr add-on structure to have a user size of 151 bytes (150 characters plus a NULL terminator) from 40.  This requires add-ons to be rebuilt with the new structure size.
++ Updated OpenSSL libraries from 0.9.8a to 0.9.8b.
++ Updated the Splash graphic and other graphics to a new look.
++ Added Windows XP style alpha blended icons.
+- Updated User Quota image and text in Help documentation that indicated quotas were displayed by the Administrator in KB.  Quotas have been displayed in MB since version 5.1.0.0.
+- Corrected usage of kilobits (kb or Kb) throughout Help documentation where kilobytes (kB or KB) was intended.
+- Corrected a problem where zlib1.lib was actually 1.2.2.0, not 1.2.3.0.  Now the distribution contains the correct zlib DLL.
+- Corrected a bug where changing the PASV port range would cause UPnP to perform operations.
+- Corrected a path conversion bug introduced in 6.2.0.0 discovered only in testing environment.  This problem never turned up in production environments.
+
+
+6.2.0.1 (March 6, 2006)
+=======================
++ Changed the UPnP interface to be more forgiving of different brand routers and to search for other resources that might help to perform port mapping.
++ Changed the UPnP behavior when disabled, the UPnP discovery no longer occurs, no UPnP requests are made when disabled.
+- Corrected a bug, introduced in 6.2.0.0, where virtual directories would not work when using long physical path names.
+- Corrected a bug, introduced in 6.2.0.0, folder names ending with a tilde character (~) were treated as the user's home directory to the left of the tilde (~)
+- Corrected a bug, introduced in 6.2.0.0, folder names either "COM" or "LPT" (without the port or printer number) were treated as DOS devices.
+
+
+6.2.0.0 (January 23, 2006)
+==========================
++ Added support for Asian character sets.  Serv-U now properly handles Asian characters in paths and file names on Asian language Windows.
++ Added support for "Universal Plug and Play" (UPnP) to automatically configure NAT routers to allow incoming connections.
++ Added support to add Serv-U to the Windows Firewall exception list.
++ Changed "Start Administrator" menu option to be bold, since this is the default tray icon (i.e., double click action on the tray).
++ Many enhancements and optimizations throughout to use MS Visual C++ 2003 .NET compiler.
++ Converted tray icon to be built by MS Visual C++ compiler.
++ Converted from using Wise installer to using Inno Setup, resulting in smaller installation executable (approximately 33% smaller).
++ Added %ServerVersionShort and %ServerVersionLong keywords to the system parameters list.
++ Added additional command line parameters for ServUDaemon.exe.  See "Engine Overview" topic in the Help documentation for more information.
++ Optimized help documentation images, reducing help doc size by 50% without noticeable image quality degradation.
++ Updated ServUPerfCount.dll to build with MS Visual C++ 2003 .NET compiler.
++ Added version information to resources for all .EXE and .DLL files.
++ Updated Version.txt style to be consistent with other RhinoSoft.com products.
++ Removed McAfee warning dialog from installer (added in version 6.0.0.1 release).
++ Increased automatic server shutdown time from 15 seconds to 30 seconds to compensate for longer shutdown times due to UPnP.
++ Added the Serv-U Daemon build date to the global system log.
+- Corrected daemon string that reported trial usage in the log as "Professional Edition."  Serv-U operates as the "Corporate Edition" during trials.
+- Corrected a minor memory leak at shutdown only.  This memory leak did not have any affect on Serv-U itself while running.
+
+
+6.1.0.5 (November 7, 2005)
+==========================
+- Changed "150" connection response of STOU command to comply with RFC1123.
+- Fixed bug in handling 64-bit numbers caused by porting to MSVC compiler.
+
+
+6.1.0.4 (October 31, 2005)
+==========================
++ Added 1 second timer tick event for add-on DLLs, EVNT_TimerTick.
++ Added support for S/Key one-time-passwords for remote administrator accounts.
++ Changed to ZLib v1.2.3 and OpenSSL v0.9.8a.
++ Changed timer code in Serv-U to use multi-media timers, to avoid timer starvation on a busy server.
++ Many code changes due to porting code to MS Visual C++ compiler.
++ File ServUDaemon.ini now restricted to Serv-U directory.
+- Fixed bug when using '~' as part of path names.
+- Fixed bug allowing malformed packets to remotely crash the server.
+- Fixed bug causing server crashes when using the option to disable an account at a specified date.
+- Fixed bug causing excessive memory use by Daemon under certain conditions.
+- Fixed bug in handling of CCC command.
+
+
+6.1.0.1 (July 4, 2005)
+======================
++ Added version resources to ServUTray.exe file.
++ Removed pointed-to-path for links from MLSD, to avoid possibility of spaces within 'facts' section.
+- Fixed bug in MLST preventing listing of some files.
+
+
+6.1.0.0 (June 30, 2005)
+=======================
++ Added support for MLST/MLSD commands.
++ Added support for Windows event logging.
++ Added support for minimum password length, password expiration, and requiring complex passwords.
++ Changed dir listing code for "LIST -T" to include all files (as per '-a' option).
++ Added option to interpret Windows' shortcuts as UNIX-style links, or regular files.
++ Changed "only lower case for files/dirs" from server to domain setting.
++ Added tamper-proofing of the executable to prevent abuse of Serv-U for Trojans.
++ Changed code to restrict INI file to ServUDaemon.ini only, it is no longer optional.
++ Changed code to restrict EXE file to ServUDaemon.exe only.
+- Fixed bug where upper case %USER% was not recognized for the physical part of virtual paths.
+- Fixed bug that erronously showed 127.0.0.1 as the server IP for connected clients.
+- Fixed bug where REST offset did not get canceled after STOR or RETR.
+
+
+6.0.0.2 (January 5, 2005)
+=========================
++ Changed default socket buffer sizes from 8K to 32K to improve server throughput.
+- Fixed bug causing compressed uploads to fail occasionally.
+
+
+6.0.0.1 (December 13, 2004)
+===========================
++ Changed "Always allow login" so this user also has no bandwidth limits.
++ Added dialogbox to installer to warn against McAfee flagging/deleting Serv-U.
+- Fixed bug in NT-SAM/AD domains, causing users to be unable to use network shares.
+
+
+6.0.0.0 (December 7, 2004)
+==========================
++ Added support for NT-SAM / Active Directory domains.
++ Added support for local Admin password.
++ Added support for disabling account on expiration.
++ Added support of %user% directive in the physical part of virtual directory mappings.
+- Fixed bug causing compressed downloads to fail occasionally.
+
+
+5.2.0.1 (September 27, 2004)
+============================
+- Fixed bug in STOU command causing Daemon crashes.
+
+
+5.2.0.0 (September 7, 2004)
+===========================
++ Major rewrite of ODBC code to be compatible with more dB engines.
++ Added SQL templates used by Serv-U to Admin program.
++ Added detailed ODBC logging at the domain level.
++ Changed all ODBC lookups to use upper case account names.
++ Changed ODBC account storage to only store changed fields.
++ Added Admin option to enable low-security SSL ciphers.
++ Changed password checking code to be case insensitive to storage in INI file and registry.
++ Changed ODBC code to work around MS SQL Server bug.
+- Fixed bug causing empty lines in long dir listings.
+- Fixed bug causing Admin to hang at startup if many client-to-server messages are saved.
+
+
+5.1.0.0 (July 8, 2004)
+======================
++ Added support for CCC ( = Clear Command Channel) command.
++ Added support for MODE Z ( = ZLib compression) command.
++ Added support for XCRC calculation of files while in transfer.
++ Changed quota setup in Admin program to use MB instead of kB.
+- Fixed bug in log file name and rotation mechanism.
+
+
+5.0.0.11 (May 21, 2004)
+=======================
++ Changed registration key auto-enter-from-clipboard to be less sensitive to format.
++ Added domain ID and name to log file name options.
++ Added logging of resume point for transfers.
+- Fixed bug of S/Key failing for unencrypted passwords.
+- Fixed bug in auto-reconnect for ODBC domains.
+- Fixed bug in SSCN handling, causing server-to-server (FXP) dir listings to fail.
+
+
+5.0.0.9 (April 15, 2004)
+========================
++ Added support for SSCN command.
++ Added ODBC connection retry in case connection fails immidiately after server start.
++ Changed registration key mechanism, key is valid when the last major version was released within update period.
++ Ported code to Borland C++ Builder v6.
++ Changed MDTM so it can now change the date/time of directories as well as files.
++ Added better crash logging to Administrator program, logs to file ServUCrashReport.elf.
+- Fixed bug in performance counters, value for 'Total KB transferred' was wrong.
+- Fixed bug in path parser causing crashes for certain paths.
+- Fixed a number of Admin bugs causing crashes.
+- Fixed bug in Daemon dir listing code causing crashes.
+- Fixed bug causing crashes on Daemon exit.
+
+
+5.0.0.4 (February 23, 2004)
+===========================
++ Added domain settings option to auto-create homedir if it doesn't exist.
++ Added automatic connection retry in case ODBC connectivity is lost.
++ Changed Windows' port checking code to better detect ports in paths.
+- Fixed bug where enabling/disabling directory cache does not get saved.
+- Fixed bug of tray-icon not starting automatically upon reboot.
+- Fixed SQL statement bug for lookups in dir access and IP access rules tables.
+- Fixed bug in access DLL mechanism, causing events to not get dispatched under certain circumstances.
+- Fixed bug causing SSL transfers to fail when a speed limit is used.
+- Fixed bug in MDTM command that potentially caused the daemon to crash.
+
+
+5.0.0.0 (January 20, 2004)
+==========================
++ Added ODBC database support.
++ Added XCRC support.
++ Added support for CLNT command.
++ Added support for independent server-level uplink/downlink bandwidth limits.
++ Added support for more SSL ciphers.
++ Added support for Corporate Edition.
++ Added support for user account setting that requires a secure connection to log in.
++ Added support for putting individual domains online/offline.
++ Added 'Apply' and 'Restore' buttons to various panes.
++ Added support for NLST command to list dirs on a per-domain basis.
++ Added 'up' button to Administrator program. 
++ Changed Admin code to trap certain exceptions in XP.
++ Added code to auto-create user's homedir if it does not exist yet.
++ Added code to enforce that domain/group admins cannot assign rights they don't have.
++ Changed symbolic message parameters to show "unlimited" when needed.
++ Changed check for the need of a secure connection from PASS to USER command.
++ Changed MDTM command to work with UTC instead of local time.
++ Changed PORT command to block use of ports below 1024.
++ Changed NLST command to return 550 error reply in case no entries are found.
++ Made tray icon persistent in case of Explorer crashes/restarts.
++ Added license volume checking.
++ Added per-domain user/group account settings cache time-to-live.
++ Changed password encryption from a server-wide setting to a per-domain setting.
++ Changed listening socket handling, now running in seperate thread.
++ Fixed XP problem with long server startup times.
+- Fixed bug in deleting user accounts starting with same partial name.
+- Fixed bug not showing custom domain message for "no anymous access".
+- Fixed bug causing crashes when using "%ServerAvg" message directive.
+- Fixed bug in dir listing of root dirs with path as argument.
+- Fixed bug with Windows 2003 in setting up listening sockets.
+- Fixed bug causing use of ports (ie. printing-via-FTP) to fail.
+- Fixed bug causing disk quota to fail under certain conditions.
+- Fixed bug in dir listing cache, when caching more than 63 entries.
+- Fixed buffer overflow bug in MDTM command.
+
+
+4.1.0.3 (January 3, 2003)
+=========================
++ Changed handling in case Anonymous account doesn't exist.
+- Fixed bug causing status bar info to get sent when status bar is hidden.
+- Fixed bug in renaming files for Win95.
+- Fixed bug where SSL certificates were erronously tagged as v4, now they are v3.
+
+
+4.1.0.0 (November 4, 2002)
+==========================
++ Added support for files over 2GB, now works for files up to around 9,000,000TB. 
++ Added universal dynamic-DNS support.
++ Changed install and master wizard so Serv-U is not a (system) service by default.
++ Added support for P@SW command to allow certain SMC Barricade routers work with passive mode. 
++ Changed certificate creation to verify country code input.
++ Internationalized forms and code, to enable localization.
++ Various layout changes to accomodate localization of the Administrator program.
++ Changed code to remove unescaped telnet characters.
++ Added code to block paths using "alternate data streams".
++ Created 90 second session time-out before login.
++ Log message "Starting FTP Server..." now logged by all domains to indicate server start.
++ Changed RNTO command so it works when a different destination volume is specified.
++ Added domain port and domain ID fields to access verification DLL structure.
++ Added domain port and domain ID fields to event verification DLL structure.
++ Changed Administrator program to load SSL libraries on demand.
++ Changed telnet escape sequence handling to fix problems with 8-bit languages.
++ Changed layout of Admin for local server login.
++ Added option to enable/disable SSL for remote admin connection.
++ Changed "Apply" button/menu layout to make confusion less likely.
++ Changed socket handling to make daemon less sensitive to DOS attacks.
++ Implicit SFTP now allows insecure data channel if negotiated through PROT command.
++ Added tray icon shortcut to start menu.
++ Changed code to pass SRVU_Password to add-on DLLs in case account has no password.
++ Added menu toggle for startup splash screen.
++ Added support for clipboard entry of alternate registration key format from SERV-UID.TXT file.
++ Changed code so Admin program no longer requests status bar info when bar is not visible.
++ Removed TZO support.
+- Fixed bug allowing read-only admins to kick users.
+- Fixed bug with MDTM not sending a reply in case no date is available.
+- Fixed bug where WinSock activity didn't get logged for data sockets with limited port range.
+- Fixed bug allowing clients to start transfers while server stop was pending after transfers finish.
+- Fixed bug with dir listing mask for some mapped UNC paths not showing read-write bits.
+- Fixed bug in SITE CHMOD command when file name starts with digits.
+- Fixed bug in session time-out mechanism.
+- Fixed bug allowing entry of ports over 65535 for a domain.
+- Changed code so account home directory cannot be deleted by client.
+
+
+4.0.0.4 (February 4, 2002)
+==========================
++ Added TLS/SSL support, both for implicit and explicit SFTP.
++ Adherence to RFC2228, RFC2246, RFC2389 and the IETF draft "Securing FTP with TLS".
++ Added support for FEAT, OPTS, PBSZ, PROT and AUTH commands.
+- Fixed bug in tray icon not showing server stop in case performance counters are used.
+- Fixed bug in Admin program about clearing all sysop messages not working.
+
+
+3.1.0.3 (January 1, 2002)
+=========================
+- Fixed bug causing crashes with access verification DLLs.
+- Fixed bug in Admin program about clearing all sysop messages not working.
+
+
+3.1.0.1 (December 26, 2001)
+===========================
+- Fixed bug causing Daemon crashes on Win98 due to insufficient stack space.
+- Fixed bug of tray icon not auto-starting in some instances.
+- Fixed installer bug causing start-menu to be missing on Win9x.
+
+
+3.1.0.0 (December 20, 2001)
+===========================
++ Added event notification for raw FTP commands and FTP replies.
++ Added support for TZO.com dynamic DNS.
++ Removed left-click menu from tray-icon due to conflict with double-click.
++ Fixed various problems related with Terminal Services and Fast User Switching (XP).
++ Changed installer to install start menu items for all users.
++ Added option to enable/disable conversion of URL characters (like '%20').
++ Changed QUIT reply code from 220 to 221 to be in compliance with RFC959.
++ Changed admin program to be hidden when minimized while viewing local server.
++ Changed no. of login attempts after a successful login to only 1.
+- Fixed bug in reporting cause of failed transfers ("killed by server" used erronously).
+- Fixed bug causing Admin program crashes upon exit.
+- Fixed bug not showing user info when very long file paths were involved.
+- Fixed bug preventing user info details from auto-updating.
+- Fixed bug preventing program from getting minimized.
+- Fixed bug in using a passive mode port range.
+- Fixed bug to list contents for NLST with a specific directory argument.
+- Fixed bug preventing renaming of directories in some cases.
+
+
+3.0.0.17 (May 30, 2001)
+=======================
++ Added menu item to find lost registration ID via Internet.
++ Changed tray-icon to (also) enable/disable its auto-start when starting/stopping.
++ Added installer code to replace IMAGEHLP.DLL when old DLL has no version info.
++ Added caching of domain settings to speed up server start and reloading of settings.
++ Added registration button to license panel.
+- Fixed bug in file times displayed in dir listings, sometimes off one hour.
+- Fixed bug when using "\" as an access rule.
+- Fixed bug with "Help | Getting Started" menu selection.
+- Fixed bug with "Del" key not working when editing in some panels.
+- Fixed bug in total user acount count shown in license just after install.
+- Fixed bug in uninstaller when admin program is running.
+- Fixed installer bug causing errors with IMAGEHLP.DLL when a reboot was needed.
+- Fixed bug erronously enabling current quota button for remote admin.
+- Fixed bug when running server on systems without C:\ drive.
+
+
+3.0.0.16 (May 15, 2001)
+=======================
++ Created brand-new administrator program for server setup.
++ Changed RNTO command so renaming to same file/dir name always succeeds.
++ Added crash logging to server and admin program. Logs in ServUCrashReport.txt file on crashes.
++ A successful login now resets anti-hammering for that user.
++ Changed "delete" access to no longer auto-include "write" and "append" access.
++ Added support for automatic account expiration date.
++ Added support for limiting PASV port range for use over firewalls.
++ Changed product name from "FTP Serv-U" To "Serv-U".
++ Changed SIZE command to work with either read, write, append, modify or list access.
++ Changed memory managers for daemon and admin to use SmartHeap instead of RTL.
++ Added support for messages to/from the sysop between client and server.
++ Changed defaults for keep-alive and inlining-OOB, now off by default.
++ Added support for killing file transfers.
++ Added auto-blocking for 1 minute of users where session time-out is exceeded.
++ Added support for system tray icon.
++ Added support for maximum session duration.
++ Completely removed OWL class library from daemon code.
++ Changed "current transfer speed" in user activity info to be more accurate.
++ Changed daemon compiler from BC++ 5.02 to BCB 5.0.
++ Added menu item to view local IPs (for people with dynamic IP).
++ Various installer changes/enhancements.
++ Added logging of blocked IPs as part of the "security" related log messages.
++ Changed dir listing code to improve efficiency.
++ Changed reported current speed for users to be a 6 second average.
++ Added support to lock files while downloading.
++ Extended blocking FTP_bounce attacks to also block FXP.
++ Added support for disabling PASV.
++ Added support to disable date/time changes through MDTM.
++ Added support to block future date/time changes through MDTM.
++ Added SITE CHMOD command to set/reset read-only and hidden attributes.
++ Changed dir listings to properly reflect read-only and hidden attributes.
++ Added option to filter domain and session log text.
++ Added support for mapped directories (virtual paths).
++ Added full support for UNC paths.
++ Added various ways to kick a user off the server.
++ Added remote viewing of current list of blocked IPs on server.
++ Added support for F6 to toggle focus between left and right panels.
++ Added NT performance monitor support.
++ Added support for running as Win95/98 or native NT system service.
++ Added support for registry based domains in addition to .ini file domains.
++ Added extensive caching for user setup data.
++ Added caching for message files (signon, login etc).
++ Added caching for server response messages.
++ Added support for various user defined server response messages.
++ Added support for configurable log file name when using automatic rotation.
++ Added domain-specific user activity.
++ Changed WinSock logging to be more efficient.
++ Added split speed limits for uploads/downloads to user setup.
++ Added support for dynamic IP and multiple domains sharing same listening socket.
++ Added support for remote server shutdown and placing server offline.
++ Added support for domain-specific logging.
++ Added support for domain-specific server ports.
++ Changed passwords to use MD5 hash instead of UNIX 'crypt'.
++ Changed speed calculations to use more precise (1ms) timer.
++ Added control over low-level socket options.
+
+
+2.5k (April 16, 2001)
+=====================
++ Changed RNTO command so renaming to same file/dir name always succeeds.
+- Fixed bug in setting server user limit to 0.
+
+
+2.5j (March 19, 2001)
+=====================
++ Added (much) more WinSock logging.
+- Fixed bug in link handling of certain Windows' shortcuts.
+- Fixed bug causing server to run out of memory during DOS attack.
+- Fixed problem with using UNC paths from the Emerald access DLL.
+- Fixed bug sometimes causing 'hidden' files to get listed while they should not. 
+
+
+2.5i (December 4, 2000)
+=======================
++ Changed default for LIST to show all files (ie. '-a' option of 'ls').
+- Fixed bug allowing unauthorized access using paths like "\..%20.".
+
+
+2.5h (November 3, 2000)
+=======================
++ Limited no. of login attempts for account changes after a successful login.
+- Fixed bug in NLST causing it to only show files regardless of command line.
+
+
+2.5g (October 30, 2000)
+=======================
++ Now flushing dir listing cache when using "ReloadSettings=TRUE" in .ini file.
++ Changed server-to-stack transfer buffer back from 8192 to 4096 bytes.
++ Changed REST command to allow PORT and PASV without canceling the restart.
++ Changed NLST command to only show files (no more dirs).
++ Added 'e' option to the 'ls' dir listing emulation, for files-only.
++ Changed MDTM to not allow future date/times.
+- Fixed bug which sometimes caused stuck connections to stay after their time-out.
+- Fixed bug in log message in case client is kicked off by sysop or server.
+- Fixed bug in transfer count in case of tranfers ending in error.
+- Fixed bug causing premature time-out when anti-time-out is enabled.
+- Fixed bug handling Telnet command sequences.
+
+
+2.5f (August 1, 2000)
+=====================
++ Changed event hook handling to allow file/path changes.
++ Changed server-to-stack transfer buffer from 4096 to 8192 bytes.
+- Fixed bug causing crashes when rapidly receiving large amounts of bogus commands.
+
+
+2.5e (March 24, 2000)
+=====================
++ Changed quota handling to allow a maximum of around 4000000000 Gb.
+- Fixed handling of Windows' shortcuts that point to mapped drives.
+- Fixed bug in use of multiple backslashes in paths.
+
+
+2.5d (February 14, 2000)
+========================
+- Fixed bug introduced in v2.5c causing inability to rename directories.
+
+
+2.5c (February 8, 2000)
+=======================
+- Fixed bug causing ill-formed Windows' links (shortcuts) to crash the server.
+- Fixed bug using ports in certain commands which caused server to hang.
+- Fixed problem in dealing with characters values over hex F0 in paths.
+- Fixed handling of UNC paths, was fixed in v2.5a, broken again in v2.5b.
+
+
+2.5b (December 4, 1999)
+=======================
++ Added control of PacketTimeOut via .INI file.
++ Removed check for UNC paths, they are allowed now but (still) not supported.
++ Added support for HEX password strings with S/KEY.
++ Changed handling of passive mode transfers that never connect.
++ Changed default dir listing mask to 'rwxrwxrwx' to make AOL FTP clients happy.
++ Changed handling of uploads for UL/DL ratios to be less sensitive to abuse.
+- Fixed bug in S/KEY causing it to store the wrong password after changing seed.
+- Fixed bug denying access when using wildcards in rules for a drive root.
+- Fixed bug in file transfer percentage of user info when file gets renamed.
+- Fixed bug causing alternate passive IP to be ignored.
+- Fixed bug in SITE PSWD command causing server to crash with bogus input.
+- Fixed bug causing crashes upon exit in NT.
+
+
+2.5a (May 5, 1999)
+==================
++ Fixed the "check for update" menu bitmap to equal that of FTP Voyager.
++ Bitmap-enhanced menus are now disabled in NT3.51.
++ Added logging of speed and bytes tranferred for aborted transfers.
++ Added control over low-level socket options.  
+- Fixed bug in count of transferred bytes.
+- Fixed problem of showing Serv-U window from tray-icon in Win2000 or with IE5.
+- Fixed bug introduced in v2.5 causing crashes with long paths in FTP commands.
+- Fixed bug in handling links in root directories, sometimes caused server to hang.
+- Fixed bug which caused Windows shortcuts in root dir to fail as links.
+- Fixed bug which caused no transfer progress to be sent during uploads.
+- Fixed label for SRVU_QuotaMax event during logging of DLL events.
+
+
+2.5 (April 14, 1999)
+====================
++ Added on-line help.
++ Added SITE SET TRANSFERPROGRESS command, to inform client of the progress of data transfers for server-to-server use.
++ Added automatic update checking to the 'help' menu.
++ Added support for Win9x/NT .lnk 'links', they are now resolved like Serv-U links.
++ Changed user info mechanism to be vastly more efficient in CPU use.
++ Added support for home-IP specific sign-on and sign-off messages.
++ Added 'SRVU_SignOnMes' and 'SRVU_SignOffMes' access verification DLL events.
++ Added file/path info to the user information dialogbox.
++ Added percentage complete info for downloads to the user informatino dialogbox.
++ Added menu item to toggle between conventional/enhanced style menus, to make screen readers work (they can't read bitmap menus).
++ Added server IP address(es) to "About" dialogbox
++ Added 'append' access right for users, to facilitate resuming of uploads.
++ Added 'SRVU_AppendFile' access verification DLL event for append access.
++ Added button to "Kill user" dialogbox to auto-calculate subnet mask.
++ Added keyboard shortcuts to menus.
++ Added anti-hammer measures.
++ Added menu item and button to suspend logging to screen.
++ Changed menu style in 32-bit to have images associated with them.
++ Changed 'resume' for uploads, now only requires write access if upload is resumed within 12 hours.
++ If server is closed while maximized this is now properly restored on startup.
++ Maximum concurrent no. of logins from same IP is now configurable.
++ Password changes by the client are now logged.
++ S/KEY passwords can now also be changed remotely through SITE PSWD.
++ Logging of local IPs is now switched off by default, and part of the logging setup.
++ Added log file rotation, on daily, weekly, monthly, or yearly basis.
++ Added logging of access DLL event info for debugging.
++ Added support for listening to home IP addresses only.
++ Added EVNT_ProgUp and EVNT_ProgDown for event nofication DLL progress notification during file uploads and downloads.
++ Added .ini file 'OpenFilesUploadMode' option to force server to open files exclusively or shared during uploads (32-bit only).
++ Added .ini file 'DirListMask' option to select a dir listing access mask.
++ Default dir listing access mask is now "rwx------".
++ Added dynamic adaptation of packet time-out for uploads to a minimum of 1.5 minute for fast consistent uploads. Helps free up files faster for resuming.
++ The user is now warned if a new user/group is entered which already exists.
++ Added .ini file 'ReloadSettings' entry to force the server to reload its settings.
++ Added dynamic caching of disk quota, making this much more efficient.
++ Added protection for starting Serv-U with a vastly wrong date, also fixed crashes in case the date gets out-of-whack.
++ Fixed bugs in try-out mechanism, added use of TCP to reach permission server.
+- Fixed bug causing premature time-outs during file transfers.
+- Fixed bug with user names containing '@'.
+- Changed SITE INDEX command to be non-recursive, to solve crashes on Win98.
+- Fixed bug which denied access to ports, even if proper access rules were present.
+- Fixed bug causing Serv-U to slowly leak sockets.
+- Fixed bug in key entry mechanism when reading new style key (with "[BEGINKEY]" ...) from KEY.TXT file.
+
+
+2.4a (September 23, 1998)
+=========================
++ User/group setup now prompts if homedir does not exist and offers to create it.
++ Added "/s" option to start only a single instance of Serv-U.
++ Changed access rule interpretation mechanism.
++ Changed path resolver to convert double backslashes to single ones.
++ In case the password type is changed the user is now prompted for a new password.
++ Single dir/file names (with/without wildcards) are now allowed as access rules.
++ Added user interface to option for not logging connections from certain IPs.
++ Added tray icons to represent offline state, with a little help from John Hiemenz.
++ Changed on/offline mechanism to simulate going offline rather than destroying its listening socket due to problems reliably reacquiring a new listening socket.
++ Added two access verification DLL events, SRVU_Connect and SRVU_Close, to make it easier for DLLs to keep track of state for a user.
++ Added more appropriate local error message in case server can not open a data connection to the client in active mode.
++ Changed share modes for files to upload/download to make opening files which are in use more likely to succeed.
++ Added "%LoggedInAll" message directive for total no. of logged in users since server start.
++ Added "%ServerAvg" message directive for average bandwidth use since server start.
++ Added "%ServerKBps" message directive for current server bandwidth use.
++ Added more socket status info to WinSock activity logging.
++ Added user selectable log screen font to logging setup.
++ Added support for S/KEY one-time passwords.
++ For external access verification DLLs the session ID is passed on now.
++ Added 'Flush cache' button to directory cache setup to flush the cache.
++ Added selection list of available IP homes to multi-homed IP setup.
++ Added button to disk quota setup to pre-set the current value.
++ Links pointing to a directory are no longer shown in the dir they point to.
++ Added support for descriptive names and passive mode address translation to IP home setup and multi-homed IP handling.
+- Fixed bug in SITE INDEX command.
+- Fixed bug in link handling causing long dir listing delays in some cases.
+- Fixed bug in access rule mechanism to allow access to a dir if it contains files with access (while dir itself has no specified access).
+- Fixed bug in socket stack handling causing WSAENOTSOCK error messages.
+- Fixed bug in handling single letter absolute dirs (eg. "/c") for relative paths.
+- Fixed bug in directory changes to short-name (ie. DOS8.3 style) directories.
+- Fixed bug in handling of wildcards in access rules.
+- Fixed bug in renaming an existing file.
+- Fixed tray-icon tooltip to read proper KBps.
+
+
+2.4 (July 20, 1998)
+===================
++ The original user name (in original case and length) is now passed as a second parameter in the 'Aux' field for the SRVU_Password event.
++ Rename (RNTO) now renames over an existing file if needed.
++ STAT now shows ongoing transers with their progress.
++ HELP now shows the server type and version code in its last line.
++ Added browse buttons to various file selection items.
++ Added SITE ZONE command to report server timezone to client.
++ Added on/off-line menu item to tray icon menus.
++ Changed "About" dialogbox.
++ Added Web links from 'help' menu items.
++ Added small delay between last message from server and actual disconnect so clients have a chance to display final message.
++ Changed command reply to use 425 code in case the data connection fails.
++ Alternative settings file (like SERV-U.INI) is now accepted on the command line.
++ Event notification for EVNT_EndDown, EVNT_EndUp, EVNT_AbortDown, EVNT_AbortUp now have transfer mode in 'AuxTwo'.
++ Added menu item 'file - on-line' to put server on/off-line.
++ Added CWD command to the event hooking mechanism.
++ To delete or rename a directory the user now needs access to that dir, and not its parent (as used to be the case).
++ User time-out is now part of the individual user account setup.
++ Changed status bar style.
++ Changed CWD so it always returns the path with the actual capatilization.
++ Changed signon/signoff text handling so leading spaces are preserved.
++ Max. no. of users is now part of the individual user account setup.
++ The default user account "ALL" is now named "** Default **".
++ When first started a default user account is created with 45 min. time-out.
++ Added option to block anti-timeout schemes as employed by most FTP clients.
++ Added toolbar and menu items to show/hide toolbar.
++ Added hint text to menus.
++ Added a number of new message directives.
++ Made registration key entry more mutation-proof.
++ Added interface for dir listing cache setup in 'setup - server - dir cache'.
++ If user's homedir does not exist this is now logged.
++ Changed all file handling code in 32-bit version to use native Windows functions.
++ Increased listen backlog queue size to avoid "connection refused" messages.
++ Access rules now support wildcards.
++ Dir listings are now cached in 32-bit version.
++ Dir listing now supports most UNIX 'ls' options.
++ Dir listing now only shows files/dirs/links the user has access to.
++ The command connection now uses "keep-alive" at the TCP level. This solves time-out problems by certain proxy servers during lengthy data transfers.
++ Changed FTP command replies to be more like UNIX.
++ Drive letters can be without colon (':'), ie. "/c/" is equal to "/c:/", "\c\", "c:" or "\c:\".
++ Added option to server setup to block "FTP_bounce" attacks (CERT advisory CA-97.27), to limit PORT IP addresses to the client IP only.
++ Added SITE PSWD command to allow FTP clients to change their password.
++ Added support for the OPEN command. Has no functionality, for testing only.
++ A double-click on a user name in the user setup will now open the miscellaneous menu for that user.
++ Extended support for leading '-' in passwords to suppress multi-line responses to all user names (used to be only for Anonymous).
++ Added extension to MDTM for changing file date/time by the client.
++ Any path reference of "..." or more dots is now converted to the drive root.
++ Files/dirs with multiple consecutive dots embedded in the name are now preserved correctly. Trailing dots are stripped.
++ Added 'copy' and 'paste' buttons to the 'about - register - enter key' menu. Registration menu now stays visible also after registration.
++ Changed code to constrain users with relative paths to their homedir and the subdirs of their homedir.
++ Changed time-out for command connection after it is initially set up.  Now 3 minutes for receiving a packet (was 5) and 5 minutes for sending.
++ Changed FTP reply messages for successful upload and download to be identical to UNIX messages.
+- Fixed bug in path handling for single character paths.
+- Fixed host IP passed with SRVU_LogClientIP and SRVU_IPAccess events.
+- Fixed rare bug that caused users to hang past their time-out.
+- Fixed bug in event notification DLL mechanism, in case the server is suspended.
+- Fixed bug in FTP reply which reports how much disk quota is left over.
+- Existance of an anonymous user account is now checked before determining if there are too many anonymous users so the proper reply is sent to client.
+- Fixed a rare bug which would show only the first of a list of "links".
+- Changed socket stack handling to solve rare bug in 16-bit causing failed transfers.
+- Fixed bug which caused Serv-U to show a window when started after it was stopped while a tray-icon in Win95/NT4.
+- Fixed bug in "store unique" (STOU) command when used with (partial) path names as an argument.
+- Fixed bug in recognizing the root directory of CD-ROMs under Win3.1.
+
+
+2.3b (October 11, 1997)
+=======================
++ Changed the end-of-try-out-time message box to show the message came from Serv-U.
++ Changed access verification DLL handling so event structure changes are only considered if the DLL handled the event (Fixes a problem with Emerald).
+- Fixed bug in file transfer count displayed in the status bar.
+- Fixed bug in handling of suspended events (in case of an event hook DLL) while there is an ongoing data transfer.
+
+
+2.3a (October 7, 1997)
+======================
+- Fixed bug in NLST and LIST commands (for dir listing) which prevented the use of wildcards in dir listings.
+
+
+2.3 (October 6, 1997)
+=====================
++ REST (=resume command) now supported for file uploads.
++ Added support for the SITE INDEX command (only in the 32-bit version) as used by Fetch.
++ Changed path parser to recognize all possible ports and isolate them.
++ Added 'Register' menu to the help section. This allows users to generate a registration form on the fly and fill it out using NotePad.
++ Added new mechanism to enter a registration key into Serv-U, also added support for a new key format.
++ Added new message directives to keep track of server stats: Total up-time, total uploads and downloads (bytes/files), total users.
++ Changed internal string handling to improve performance.
++ The STOU (=STOre Unique) command now handles long file names in Win95 and NT.
++ Changed compilers from Borland C++ 4.52 to BC++ 5.02 for the 32-bit version.  This necessitated several code changes.
++ Tray icon will now disappear by itself after exiting Serv-U.
++ Added "Notes" field to the user and group setup for notes about each user.
++ Logging to screen and file can now be separately specified.
++ The user info window can now be frozen for easier viewing.
++ The user info window can now be resized in height.
++ Passwords can now optionally be stored unencrypted. The default is that they get encrypted.
++ The 'kill user' dialogbox now allows editing of the IP address.
++ Renaming/moving a dir now requires 'remove' access to the path being removed, and 'make' access to the destination path.
++ The maximum transfer speed can now be set for each user via the 'setup - users - miscellaneous' menu.
++ Partially uploaded files can be automatically deleted via a 'setup - server' menu option.
++ In case a client closes the command connection while there are ongoing transfers this is now properly logged and passed to the event notification mechanism.
++ Files are now kept open during transfers. This means files being uploaded show zero length during the upload.
++ The reply message after a dir listing or file transfer now shows the client his/her ratio and quota status (if the client is using ratios and/or quota).
++ Added SITE command to the event hooking mechanism. Any SITE command can now be intercepted by an event notification DLL.
++ The CWD ('change working directory') command no longer actually changes the Serv-U task's current directory which caused locking of the dir in NT.
++ Added .ini file option to avoid logging of certain clients from IP numbers.
++ Closing Serv-U from the system menu (or the 'x' in Win95/NT4) now minimizes the window in case there is a tray icon. Exit the server from the tray menu.
++ The string "%20" in paths is converted to " " (=space) to please MSIE.
++ There no longer is any 'hard' limit to the maximum number of IP homes.
++ Serv-U now shows all the IP addresses it listens on at startup.
++ Upon startup a file IPSERVU.TXT is created in the Serv-U program dir with all the IP addresses it listens on. This file is updated every 5 minutes.  Through a .ini file option the interval and file name can be changed.
++ When restoring window from the tray-icon (Win95/NT4) the log will now scroll to the end.
++ When running as a Win95 system service there is no longer a regular icon if the user logs out and back into the system again.
++ External access verification DLLs now receive the SRVU_IPAccess event, also when no IP access rules were present.
++ Users with no password (ie. 'Password' entry in the .ini file explicitly set to nothing) are logged in immediately after the USER command.
++ Users can be given an empty password (ie. no password required when logging in) by entering "<<None>>" in the password field of the user setup.
++ To create or delete directories the user now needs the appropriate access to the parent of the dirs that are being created/deleted.
++ Users with setting "allow login when max. no. of users is reached" now also have no time-out after logging in.
++ Server now switches to 'crippled' try-out when try-out time is up.
++ When the version is out-of-date the server now allows 'crippled' use.
++ FTP response messages to clients now preserve case for file/path names.
++ The "Too many users ..." message no longer shows the maximum number to clients.
++ Try-out time has been changed from 30 to 45 days.
++ Added support for limiting the maximum bandwidth used by the server.
++ The event EVNT_Login of the event notification mechanism now has the anonymous password in AuxOne (for anonymous users only).
++ Minor changes to socket stack handing with the hopes that it will work with (even) more WinSock stacks.
++ The SIZE command now works with either 'list' or 'read' access to the file.  This used to require 'list' access.
++ Data transfers now use a socket bound to the same IP as their command connection. This should fix a rare problem with multi-homed sites and firewalls.
+- Fixed bug in total file transfers count as shown in the status bar.
+- Changed code so the maximum path length for the 16-bit version is 80 characters. This is conform the Win16 maximum path length. Longer paths caused crashes in Win16 functions.
+- Fixed bug in system tray menu (Win95) when Serv-U gets started automatically after system startup.
+- In case Serv-U is started for the first time, but with a KEY.TXT file present it will no longer ask for the try-out option but read in the key.
+- Transfer speed reports use 1024 bytes per Kb rather than (previously) 1000.
+- Fixed bug which would show a tray icon in NT4 even when the server was started 'hidden'.
+- Fixed bug in SIZE command causing it to deny access if directory didn't have 'inherit' access.
+
+
+2.2 (February 22, 1997)
+=======================
++ In case 'current' disk quota is set larger than 'maximum' uploads are no longer allowed.
++ Changed the data connection message for uploads/downloads to be more UNIX compatible (some browsers use this to get the file size from).
++ Serv-U now uses the native case for file/dir names, or optionally lower case.
++ The ALLO (=allocate) command now handles 4Gb instead of 2Gb of free space.
++ Added DLL interface for event notification and command hooks.
++ In case no IP address can be found for the server it'll display "?????".
++ Added support for IP names (with wildcards) in IP access rules.
++ Added option to limit a user from logging in more than once from the same IP address.
++ Changed IP access rule mechanism. It is now more flexible. Added .ini file conversion for new rule format.
++ Added option to specify IP access rules for each user individually.
++ Added tray icon support for Win95 and NT4.
++ Changed code so 32-bit version can handle more IP homes (now it'll do around 1800 IP numbers, while the 16-bit version handles about 180 IP numbers).
++ LIST now completely ignores any '-' type options. NLST only parses '-l' and converts that to a LIST command. This should make the latest CuteFTP work.
++ Added support for running Serv-U as a system service in Win95.
+- The security manager no longer checks for the presense of the SERV-U.INI file which hopefully solves a very rare problem where the server cannot read the .ini file after several days (in NT3.51 SP5).
+- Renaming directories works also now.
+- Fixed bug which prevented multi-homed IP numbers from showing in case no users were defined.
+- Fixed bug in reporting of no. of try-out days left for the 32-bit version.
+- Fixed bug introduced in v2.1: Killed users that were put on the IP bounce list now work properly.
+- Fixed bug introduced in v2.1: Putting the server in a directory path with spaces works now.
+- Fixed bug in links introduced in v2.1 which caused crashes.
+
+
+2.1 (November 8, 1996)
+======================
++ Added startup options /i (=iconic), /h (=hidden), and /u (=unconditional exit).
++ When Serv-U was stopped while iconic it'll start as an icon the next time.
++ The evaluation order of IP deny and allow rules can now be choosen.
++ Changed link handling so if there is a subdir with the same name as a link preferance will be given to the subdir.
++ Changed '%dfree' message file directive so it handles >2Gb of free space.
++ All links should now be absolute paths, even for users with 'rel. paths' enabled. Serv-U takes care of the conversion for dir listings etc.
++ Added support for the FTP command STAT, showing UL/DL ratios and quota.
++ Changed %bup, %bdown, %btot, and %dfree to report in Kb instead of bytes.
++ Added support for secundary 'dir change message file' and 'link file'.
++ Added a very beautiful status bar.
++ Added a bunch of message file directives for ratios and disk quota.
++ Added disk quota limitation support.
++ Added support for 'free files' for U/D ratios.
++ Added feature to allow users to log in even when user limit is reached.
++ User ID in log now always has 6 digits (with leading zeros if needed). To make programmatic sorting easier.
++ Changed code of security manager, simplifying it (and hopefully making it more robust).
++ Added 'upload/download ratios'.
++ Added support for 'relative paths' for all users.
++ Added support for hiding 'hidden' files for every user.
++ Changed the max. no. of characters that can be entered into the multi-homed setup box for the IP number from 14 to 15.
+- Fixed bug in 24h user count (sites with only a few hits a day would get bogus numbers).
+- Fixed bug which would not allow dir listings if 'inherit' was not enabled and a dir listing with argument was done (ie. 'dir *.*').
+- Fixed bug in 'restart' handling causing extraneous "450 Try later - Data connection in use" command error replies.
+- Fixed bug which caused IP home changes to be ignored until a restart.
+- Fixed bug causing GPF's for very long signon/signoff text lines.
+
+
+2.0c (August 10, 1996)
+======================
++ Added "%maxusers" and "%maxanonymous" directives.
++ Changed the implementation of the REST command ('resume') to be compatible with CuteFTP 1.5.
++ Added multi-homed IP support.
++ Changed dir listing format: Times before 10am now have a leading zero.  This to be more UNIX compatible and fix problems with WS_FTP.
++ More bullet proofing of the socket stack routines.
++ Added WinSock function logging.
++ Added support for external client verification DLLs. 
++ Bulletproofed the input buffer. It now handles any length strings.
+- Fixed problem with user setup changes that would not show up immidiately.
+- Fixed bug in MDTM command.
+- Fixed problem in NT preventing directory deletion.
+- Fixed bug causing GPF's while making server setup changes that resulted in a server restart.
+- The '&' character in the registration key (if present) is now displayed correctly.
+
+
+2.0b (May 4, 1996)
+==================
++ Bullet-proofed the 'relative paths anonymous' option. Now impossible to get out of the homedir (and subdirs below), even if user has access rights for other paths.
++ Changed '~' handling.  Now works when embedded inside a path.
+- Fixed bug in 'Resume' command (FTP command 'REST').
+- Changed code for painting text & images in 'About' box, hopefully solving problems on Win3.1 and WFW3.11.
+
+
+2.0a (April 18, 1996)
+=====================
++ Remote program execution (Through SITE EXEC) now launches the program from the current directory of the user.
++ The Serv-U directory is now searched first for SERV-U.INI, then it looks for an evironment variable named SERV-U, and finally the PATH and Window's directories are searched for the .ini file (Order changed over previous).\
++ Added option to make server exit pending upon the logged in users.
++ Added the FTP command REST (=RESTart).
++ Changing the file name for directory change messages no longer causes the server to log out all users.
++ Added the FTP command MDTM (=Modification Date & TiMe).
++ Hidden directories are now hidden from anonymous users (as are hidden files) in the 32-bit version.
++ Transfer speed in 'User Info' box is now averaged.
++ Links embedded in a path will now be resolved correctly. This will make things work better with Netscape which keeps links as part of the path.
++ 'Maximize' system menu item is now disabled in the user info box.
++ Added file size to transfer logs.
+- Fixed problem with window size/position when user info box got closed while minimized.
+- Fixed problem with links containing trailing '\'.
+- Fixed bug in '%dfree' text directive in 16-bit Serv-U.
+- Fixed bug in DNS lookups that caused GPF's.
+- Background colors of bitmaps (in 'About' etc.) now display correctly on non-gray windows.
+- Fixed error reply for 'SITE EXEC' in case no executable was specified.
+- Fixed bug that caused 'File - Exit' to skip the confirm dialogbox.
+- Fixed bug in '~' handling. It can now be used in links.
+- In case CTL3DV2.DLL is missing the 16-bit version will no longer throw an exception.
+
+
+2.0 (March 13, 1996)
+====================
++ This version will continue to work after March 15th (All previous versions stop at that date).
++ Converted code to BC 4.52 and OWL 2.5. 
++ Now 16- and 32-bit versions.
++ Added separate access right for 'list' access.
++ Added a luxurious 'user info' box.
++ Added IP Name logging.
++ Added a 'enable account' checkbox to quickly enable/disable a user.
++ Access rules can now be specific to a single directory, or inhereted by subdirs (the previous method).
++ Changed the FTP 'HELP' command reply to be more UNIX compatible.
++ Added a ton of new '%' directives for signon/signoff messages, directory change messages, and login messages.
++ Changed icons.
++ 'hidden' files are no longer indicated as such in dir listings (confused the Mac client 'Fetch').
++ The permission server now uses UDP messages instead of TCP.
++ Added support for user specific login messages.
++ Changed font and size of signon/off message dialog box.
++ Added support for 'links' (like UNIX).
++ User is now booted off the server if the password is guessed wrong 3 times.
++ Time a user was connected gets logged.
++ Inserting new paths in the access rule list is now done at current position instead of to the end of the list.
++ 'CWD ' (='cd') or 'CWD ~' will now put the user back in the home directory.
++ 'NLST *' (='ls') or 'LIST *' (='dir') will now convert to '*.*', ie. will use UNIX style globbing.
++ Now even softer on your socket stack...
++ Made the 'undocumented features' part of the setup.
++ Changed directory listing format to be more UNIX compatible.
++ Cleaned up local heap management, so the logwindow might actually work better.
++ Added transfer speed to file transfer log messages.
++ Changed all dialogboxes to use MS or Win95 3D-controls. No more BWCC.DLL.
++ Data connection now uses the RFC959 default local port, ie. local port 20 if the command connection uses 21. Should make some firewalls more happy.
++ Added the FTP command SIZE. Should make Netscape happy (so it can tell filesize on transfer).
+- Fixed client message in case 'anonymous' is disabled.
+- Fixed various dialogbox errors (text, formatting).
+- Non-anonymous users can now also delete 'read only' files.
+- Fixed logscreen: It will now do automatic horizontal scrolling when the cursor is moved.
+- Fixed bug that caused filenames like '/c:' to be seen as relative.
+
+
+1.1i (September 18, 1995)
+=========================
++ Change of address in all the documents.
++ The try-out version will continue to work after October 15th. 1995 (v1.1h won't).
+- Fixed bug in renaming long file names.
+- Fixed bug that caused rare GPF's with some firewall proxy clients.
+
+
+1.1h
+====
++ Added switch to explicitely disable long file/directory names in Windows 95.
+- Fixed a bug causing garbage to appear in some cases if a directory listing of an empty directory was made
+
+
+1.1g
+====
+- Fixed bug in making directories for Win3.1 and WFW3.11.
+- Fixed bug in deleting long file names under Win95.
+
+
+1.1f
+====
++ Windows 95 long file names are supported. Serv-U auto-detects the presence of Win95.
++ The current number of users is displayed in the window title.
++ The 'password' checks for anonymous users can be disabled.
++ MS-DOS or Windows programs can be started remotely, using the SITE command EXEC. The EXEC mechanism is also part of the regular access rules.
++ When the server is stopped while there are users logged in, a dialogbox will pop up to confirm the action.
++ Options to the LIST and NLST commands are handled (ie. 'ls -la' like some clients send to the server will produce output).
++ The FTP commands APPE (=append) and STOU (=store unique) are now supported.
++ Data type 'L8' (=local type 8 bits per byte) is now supported.
++ Server is not restarted any more if maximum number of users or time-out values are changed.
++ Anonymous users no longer see hidden files.
++ Drives are checked for accessability before usage, so no longer the 'retry - ignore' dialogboxes.
++ Info on the WinSock socket stack is shown on startup.
++ Made Serv-U more tolerant for firewalls using proxy servers that mix PASV and PORT commands.
+- The bug causing Serv-U to beep when it could not log to screen has been fixed (actually a MS-Windows bug).
+- Fixed bug causing false dir listings for 'dir .'.
+- Fixed bug that caused XCWD, XRMD, and XMKD to malfunction.
+
+
+1.1e
+====
++ Anonymous users no longer see 'hidden' files.
++ Paths are now reported back with a leading '/'. This is to ensure  more compatibility with the UNIX format and to make a number of Macintosh FTP clients even happier.
++ The start-up message of Serv-U now reports the socket stack it is running on.
++ When a user/group has a password it is now shown as '***********' in 'setup - users/groups'. Deleting this deletes the password entry for that user/group, ie. it no longer has a password. 
++ Spaces are now allowed in user names and passwords.
++ Stopping the server is logged (if logging to file is switched on).
++ Paths are now consistently reported back using '/' instead of '\', to be more in line with the UNIX way of working. Mac FTP clients need this to function properly.
++ A leading '/' or '\' in front of a full pathname is ignored, ie. '/c:/util' is equivalent to 'c:\util'. This allows for UNIX style changes of directory, and enables WWW browsers to change drives.
++ The response to an incorrect anonymous password is changed to be more informative.
++ Displaying a file when the client changes directory is supported.
++ When 'setup - logging - FTP commands' is switched on it no longer shows passwords, 'XXXXX' instead.
+- Fixed a rather nasty bug in the security system.
+- Fixed bug that assigned random passwords to users that should have no password (a situation found in users belonging to a group where the group password should also be the user's password).
+- Very long pathnames are now supported correctly.
+
+
+1.1 (March 19, 1995)
+====================
++ Added lots of logging. 
++ The SYST command now replies with the code for a UNIX system. This is because some clients use it to determine the format of directory listings.
++ Time-out values for idle/hung connections are now part of server setup. 
++ Drastically increased packet time-out for data transfer, now set at 5 minutes (was 30 seconds). Should be sufficient to allow transfer even on bad connections. 
++ Log messages for failed data transfers now have a specification showing why. 
++ Changed the HELP response to make WS_FTP work properly with Serv-U. 
++ Added support for transfer to/from ports (PRN: AUX: LPTx: and COMx:). 
++ Made a work-around for FTP Inc.'s WinSock stack. This stack does not handle SO_LINGER properly on closing a socket, causing 'data channel in use' errors. 
++ Changed response messages to file transfers, only the filename is shown now, not the path name. 
++ Added a retry period for the server to come online. This should solve problems with socket stacks that do not allow to re-use a port immediately after closing it. 
++ Changed the timing of the '150-' response message for PASV transfers. It is now sent after the data connection is established instead of at the time of a transfer command. 
++ The listening socket will now automatically be restarted when killed by the socket stack. Some stacks kill listening sockets without reason (Trumpet for one). 
++ Username 'FTP' is now synonymous to 'ANONYMOUS'. 
++ Clients that connect but never log in are now kicked off the system after 5 minutes. 
++ User can now select the try-out method: Fully functional with contacts to my permission server, or, crippled but no permission server contacts. 
++ Installed selectable path mechanism for anonymous: Either absolute paths (like a regular user) allowing for drive changes, or paths relative to the home directory (needed for WWW browsers). 
++ Changed registration key to work with user/company name instead of IP number. Every time Serv-U is started it tries to read the key from a file KEY.TXT.  Registered version displays the key in the "About" box and in reply to the FTP HELP command. 
++ Changed the RETR and STOR replies (used for GET and PUT). They are now conform the average UNIX system. This makes WS_FTP more happy, so it shows a progress bar while downloading.
+- Fixed some spelling errors in messages. Fixed logging to screen for time-out messages. Added log message in case limit of no. of users is reached. Added log message when server is (re)started. 
+- Fixed bug that caused path for anonymous users with root as home directory to be reported without a '\' at beginning. The same bug caused absolute paths in CWD to be processed incorrectly. 
+- Fixed bug that caused random truncation of PUT files in combination with some clients. 
+- Fixed bug that allowed users to get 'dir' listings for paths with explicitly no access set to them. 
+- Fixed bug causing 'dir' with absolute path name to go wrong. 
+- Fixed a bug that made RMD (=remove directory) fail if the directory was on a drive other than the active drive. 
+- Fixed bug in very long directory listings (>64K data). 
+
+
+1.0 (February 7, 1995)
+======================
+* Initial release.

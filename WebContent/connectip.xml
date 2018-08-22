@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="GBK"?>
+<connectips>
+   <connectip dbClassName="com.microsoft.jdbc.sqlserver.SQLServerDriver"  dbUrl="jdbc:sqlserver://localhost:1433;databaseName=meeting" username="sa" password ="asdf"/>
+</connectips>

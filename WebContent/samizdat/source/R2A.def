@@ -1,0 +1,4 @@
+LIBRARY     jcnfigM2
+
+EXPORTS
+    RNIGetCompatibleVersion

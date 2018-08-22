@@ -1,0 +1,529 @@
+<html><head><title>XToolkit Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">XToolkit</a></h1>
+<dl>
+<dd>
+	Wrappers for some API routines.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Windows.html">Windows</a> | 
+<a href=../../../"XToolkit.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class XToolkit <br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetDiskFreeSpace2(_const_CStr_*csDriveName,_unsigned___int64_*totalCapP,_unsigned___int64_*totalFreeP,_unsigned___int64_*userCapP,_unsigned___int64_*userFreeP_)$"><font color=green>XGetDiskFreeSpace2</font></a>( const CStr *csDriveName, unsigned __int64 *totalCapP, unsigned __int64 *totalFreeP, unsigned __int64 *userCapP, unsigned __int64 *userFreeP );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetDriveDisplayName(_const_CStr_*csDriveName,_DWORD_dwFileAttributes,_CStr_*csDisplayName_)$"><font color=green>XGetDriveDisplayName</font></a>( const CStr *csDriveName, DWORD dwFileAttributes, CStr *csDisplayName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_LPDWORD_lpVolumeSerialNumber,_LPDWORD_lpMaximumComponentLength,_LPDWORD_lpFileSystemFlags,_CStr_*csFileSystemName_)$"><font color=green>XGetVolumeInformation</font></a>( const CStr *csDriveName, CStr *csOutVolName, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, CStr *csFileSystemName );
+<dd><strong>static</strong> HIMAGELIST <a href="XToolkit.html#HIMAGELIST_XSHGetFileInfoIcon(_const_CStr_*csName,_DWORD_dwFileAttr,_DWORD_dwFlags,_long_*iconID_)$"><font color=green>XSHGetFileInfoIcon</font></a>( const CStr *csName, DWORD dwFileAttr, DWORD dwFlags, long *iconID );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetShortPathName(_const_CStr_*fullPath,_CStr_*shortPath_)$"><font color=green>XGetShortPathName</font></a>( const CStr *fullPath, CStr *shortPath );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XGetLogicalDriveStrings(_CStr_*toStr_)$"><font color=green>XGetLogicalDriveStrings</font></a>( CStr *toStr );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XCreateProcess(_const_CStr_*commandLine,_DWORD_dwFlags,_WORD_wShowWindow,_LPPROCESS_INFORMATION_lpPI_)$"><font color=green>XCreateProcess</font></a>( const CStr *commandLine, DWORD dwFlags, WORD wShowWindow, LPPROCESS_INFORMATION lpPI );
+<dd><strong>static</strong> HINSTANCE <a href="XToolkit.html#HINSTANCE_XFindExecutable(_const_CStr_*csDocFile,_const_CStr_*csDirectory,_CStr_*csExeFullPath_)$"><font color=green>XFindExecutable</font></a>( const CStr *csDocFile, const CStr *csDirectory, CStr *csExeFullPath );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetDiskFreeSpace(_const_CStr_*csDriveName,_DWORD_*sectorsPerClst,_DWORD_*bytesPerSector,_DWORD_*numFreeClst,_DWORD_*totNumClst_)$"><font color=green>XGetDiskFreeSpace</font></a>( const CStr *csDriveName, DWORD *sectorsPerClst, DWORD *bytesPerSector, DWORD *numFreeClst, DWORD *totNumClst );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetDriveType(_const_CStr_*csDriveName_)$"><font color=green>XGetDriveType</font></a>( const CStr *csDriveName );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XFindFirstFileGetDates(_const_CStr_*csSearchString,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><font color=green>XFindFirstFileGetDates</font></a>( const CStr *csSearchString, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XFindFirstFile(_const_CStr_*csSearchString,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><font color=green>XFindFirstFile</font></a>( const CStr *csSearchString, DWORD *dwAttrs, CStr *csFileName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XFindNextFile(_HANDLE_findH,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><font color=green>XFindNextFile</font></a>( HANDLE findH, DWORD *dwAttrs, CStr *csFileName );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetFileAttributes(_const_CStr_*csFullPath_)$"><font color=green>XGetFileAttributes</font></a>( const CStr *csFullPath );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XGetFileAttributes2(_const_CStr_*csFullPath,_DWORD_*attributes_)$"><font color=green>XGetFileAttributes2</font></a>( const CStr *csFullPath, DWORD *attributes );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_isGetFileAttributesExAvailable()$"><font color=green>isGetFileAttributesExAvailable</font></a>();
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XSetFileAttributes(_const_CStr_*csFullPath,_DWORD_dwAttributes_)$"><font color=green>XSetFileAttributes</font></a>( const CStr *csFullPath, DWORD dwAttributes );
+<dd><strong>static</strong> HINSTANCE <a href="XToolkit.html#HINSTANCE_XShellExecute(_HWND_hwnd,_const_CStr_*csOp,_const_CStr_*csFile,_const_CStr_*csParams,_const_CStr_*csDir,_INT_nShowCmd_)$"><font color=green>XShellExecute</font></a>( HWND hwnd, const CStr *csOp, const CStr *csFile, const CStr *csParams, const CStr *csDir, INT nShowCmd );
+<dd><strong>static</strong> UINT <a href="XToolkit.html#UINT_XWinExec(_const_CStr_*csCmdLine,_UINT_uCmdShow_)$"><font color=green>XWinExec</font></a>( const CStr *csCmdLine, UINT uCmdShow );
+<dd><strong>static</strong> HSZ <a href="XToolkit.html#HSZ_XDdeCreateStringHandle(_DWORD_idInst,_const_CStr_*csStr,_int_iCodePage_)$"><font color=green>XDdeCreateStringHandle</font></a>( DWORD idInst, const CStr *csStr, int iCodePage );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XDeleteFile(_const_CStr_*csFullPath_)$"><font color=green>XDeleteFile</font></a>( const CStr *csFullPath );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XCreateFile(_const_CStr_*csFileName,_DWORD_dwDesiredAccess,_DWORD_dwShareMode,_LPSECURITY_ATTRIBUTES_lpSecurityAttributes,_DWORD_dwCreationDistribution,_DWORD_dwFlagsAndAttributes,_HANDLE_hTemplateFile_)$"><font color=green>XCreateFile</font></a>( const CStr *csFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDistribution, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegQueryValue(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><font color=green>XRegQueryValue</font></a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegQueryValueEx(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><font color=green>XRegQueryValueEx</font></a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegOpenKeyEx(_HKEY_hKey,_const_CStr_*csSubKey,_DWORD_ulOptions,_REGSAM_samDesired,_PHKEY_phkResult_)$"><font color=green>XRegOpenKeyEx</font></a>( HKEY hKey, const CStr *csSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegEnumKey(_HKEY_hKey,_DWORD_dwIndex,_CStr_*csName_)$"><font color=green>XRegEnumKey</font></a>( HKEY hKey, DWORD dwIndex, CStr *csName );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetFileVersionInfoSize(_const_CStr_*csFileName,_LPDWORD_lpdwHandle_)$"><font color=green>XGetFileVersionInfoSize</font></a>( const CStr *csFileName, LPDWORD lpdwHandle );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetFileVersionInfo(_const_CStr_*csFileName,_DWORD_dwHandle,_DWORD_dwLen,_LPVOID_lpData_)$"><font color=green>XGetFileVersionInfo</font></a>( const CStr *csFileName, DWORD dwHandle, DWORD dwLen, LPVOID lpData );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XVerQueryValue(_const_LPVOID_pBlock,_const_CStr_*csSubBlock,_LPVOID_*lplpBuffer,_PUINT_puLen_)$"><font color=green>XVerQueryValue</font></a>( const LPVOID pBlock, const CStr *csSubBlock, LPVOID *lplpBuffer, PUINT puLen );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XSHGetFileInfoExeType(_const_CStr_*fileName_)$"><font color=green>XSHGetFileInfoExeType</font></a>( const CStr *fileName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XSHGetPathFromIDList(_LPCITEMIDLIST_pidl,_CStr_*csLongFileName_)$"><font color=green>XSHGetPathFromIDList</font></a>( LPCITEMIDLIST pidl, CStr *csLongFileName );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // XToolkit <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>XToolkit</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Wraps some API routines, mainly to make them easier to use with CStr's.
+	Most of these simply call the associated WinAPI routine, however some
+	parameter validation is also performed.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>XToolkit</i><p>
+<a name="BOOL_XGetDiskFreeSpace2(_const_CStr_*csDriveName,_unsigned___int64_*totalCapP,_unsigned___int64_*totalFreeP,_unsigned___int64_*userCapP,_unsigned___int64_*userFreeP_)$"><hr><p></p><h3>BOOL XGetDiskFreeSpace2( const CStr *csDriveName, unsigned __int64 *totalCapP, unsigned __int64 *totalFreeP, unsigned __int64 *userCapP, unsigned __int64 *userFreeP );</h3></a>
+<p>
+		    Calls GetDiskFreeSpaceEx() if it's available
+		  	GetDiskFreeSpace() if not
+<p>
+<dl><dl>
+<dt><i>out</i><strong>	totalCapP</strong>
+<dd>will contain the total capacity of the volume
+<dt><i>out</i><strong>	totalFreeP</strong>
+<dd>will contain the total free space of the volume
+<dt><i>out</i><strong>	userCapP</strong>
+<dd>will contain the total capacity of the volume which is available to the current user
+<dt><i>out</i><strong>	userFreeP</strong>
+<dd>will contain the total free space of the volume which is available to the current user
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XGetDiskFreeSpace2(_const_CStr_*csDriveName,_unsigned___int64_*totalCapP,_unsigned___int64_*totalFreeP,_unsigned___int64_*userCapP,_unsigned___int64_*userFreeP_)$">XGetDiskFreeSpace2</a>( const CStr *csDriveName, unsigned __int64 *totalCapP,
+											unsigned __int64 *totalFreeP, unsigned __int64 *userCapP,
+											unsigned __int64 *userFreeP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="DWORD_XGetDriveDisplayName(_const_CStr_*csDriveName,_DWORD_dwFileAttributes,_CStr_*csDisplayName_)$"><hr><p></p><h3>DWORD XGetDriveDisplayName( const CStr *csDriveName, DWORD dwFileAttributes, CStr *csDisplayName );</h3></a>
+<p>
+		    Wraps GetDriveDisplayName()
+<p>
+<p><pre>
+	static	DWORD		<a href="#DWORD_XGetDriveDisplayName(_const_CStr_*csDriveName,_DWORD_dwFileAttributes,_CStr_*csDisplayName_)$">XGetDriveDisplayName</a>( const CStr *csDriveName, DWORD dwFileAttributes, CStr *csDisplayName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_LPDWORD_lpVolumeSerialNumber,_LPDWORD_lpMaximumComponentLength,_LPDWORD_lpFileSystemFlags,_CStr_*csFileSystemName_)$"><hr><p></p><h3>BOOL XGetVolumeInformation( const CStr *csDriveName, CStr *csOutVolName, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, CStr *csFileSystemName );</h3></a>
+<p>
+		    Wraps GetVolumeInformation()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_LPDWORD_lpVolumeSerialNumber,_LPDWORD_lpMaximumComponentLength,_LPDWORD_lpFileSystemFlags,_CStr_*csFileSystemName_)$">XGetVolumeInformation</a>( const CStr *csDriveName,
+												CStr *csOutVolName,
+												LPDWORD lpVolumeSerialNumber,
+												LPDWORD lpMaximumComponentLength,
+												LPDWORD lpFileSystemFlags,
+												CStr *csFileSystemName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HIMAGELIST_XSHGetFileInfoIcon(_const_CStr_*csName,_DWORD_dwFileAttr,_DWORD_dwFlags,_long_*iconID_)$"><hr><p></p><h3>HIMAGELIST XSHGetFileInfoIcon( const CStr *csName, DWORD dwFileAttr, DWORD dwFlags, long *iconID );</h3></a>
+<p>
+		    Wraps SHGetFileInfo() relating to getting the icon of a file.
+<p>
+<p><pre>
+	static	HIMAGELIST	<a href="#HIMAGELIST_XSHGetFileInfoIcon(_const_CStr_*csName,_DWORD_dwFileAttr,_DWORD_dwFlags,_long_*iconID_)$">XSHGetFileInfoIcon</a>( const CStr *csName, DWORD dwFileAttr, DWORD dwFlags, long *iconID );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XGetShortPathName(_const_CStr_*fullPath,_CStr_*shortPath_)$"><hr><p></p><h3>BOOL XGetShortPathName( const CStr *fullPath, CStr *shortPath );</h3></a>
+<p>
+		    Wraps GetShortPathName()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XGetShortPathName(_const_CStr_*fullPath,_CStr_*shortPath_)$">XGetShortPathName</a>( const CStr *fullPath, CStr *shortPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XGetLogicalDriveStrings(_CStr_*toStr_)$"><hr><p></p><h3>ErrCode XGetLogicalDriveStrings( CStr *toStr );</h3></a>
+<p>
+		    Wraps GetLogicalDriveStrings()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XGetLogicalDriveStrings(_CStr_*toStr_)$">XGetLogicalDriveStrings</a>( CStr *toStr );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XCreateProcess(_const_CStr_*commandLine,_DWORD_dwFlags,_WORD_wShowWindow,_LPPROCESS_INFORMATION_lpPI_)$"><hr><p></p><h3>BOOL XCreateProcess( const CStr *commandLine, DWORD dwFlags, WORD wShowWindow, LPPROCESS_INFORMATION lpPI );</h3></a>
+<p>
+		    Wraps CreateProcess()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XCreateProcess(_const_CStr_*commandLine,_DWORD_dwFlags,_WORD_wShowWindow,_LPPROCESS_INFORMATION_lpPI_)$">XCreateProcess</a>( const CStr *commandLine, DWORD dwFlags, WORD wShowWindow,
+										LPPROCESS_INFORMATION lpPI );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HINSTANCE_XFindExecutable(_const_CStr_*csDocFile,_const_CStr_*csDirectory,_CStr_*csExeFullPath_)$"><hr><p></p><h3>HINSTANCE XFindExecutable( const CStr *csDocFile, const CStr *csDirectory, CStr *csExeFullPath );</h3></a>
+<p>
+		    Wraps FindExecutable()
+<p>
+<p><pre>
+	static	HINSTANCE	<a href="#HINSTANCE_XFindExecutable(_const_CStr_*csDocFile,_const_CStr_*csDirectory,_CStr_*csExeFullPath_)$">XFindExecutable</a>( const CStr *csDocFile, const CStr *csDirectory, CStr *csExeFullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XGetDiskFreeSpace(_const_CStr_*csDriveName,_DWORD_*sectorsPerClst,_DWORD_*bytesPerSector,_DWORD_*numFreeClst,_DWORD_*totNumClst_)$"><hr><p></p><h3>BOOL XGetDiskFreeSpace( const CStr *csDriveName, DWORD *sectorsPerClst, DWORD *bytesPerSector, DWORD *numFreeClst, DWORD *totNumClst );</h3></a>
+<p>
+		    Wraps GetDiskFreeSpace()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XGetDiskFreeSpace(_const_CStr_*csDriveName,_DWORD_*sectorsPerClst,_DWORD_*bytesPerSector,_DWORD_*numFreeClst,_DWORD_*totNumClst_)$">XGetDiskFreeSpace</a>( const CStr *csDriveName, DWORD *sectorsPerClst, DWORD *bytesPerSector,
+											DWORD *numFreeClst, DWORD *totNumClst );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="DWORD_XGetDriveType(_const_CStr_*csDriveName_)$"><hr><p></p><h3>DWORD XGetDriveType( const CStr *csDriveName );</h3></a>
+<p>
+		    Wraps GetDriveType()
+<p>
+<p><pre>
+	static	DWORD		<a href="#DWORD_XGetDriveType(_const_CStr_*csDriveName_)$">XGetDriveType</a>( const CStr *csDriveName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HANDLE_XFindFirstFileGetDates(_const_CStr_*csSearchString,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><hr><p></p><h3>HANDLE XFindFirstFileGetDates( const CStr *csSearchString, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );</h3></a>
+<p>
+		    Uses FindFirstFile() to get the dates for a file.
+<p>
+<p><pre>
+	static	HANDLE		<a href="#HANDLE_XFindFirstFileGetDates(_const_CStr_*csSearchString,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$">XFindFirstFileGetDates</a>( const CStr *csSearchString, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HANDLE_XFindFirstFile(_const_CStr_*csSearchString,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><hr><p></p><h3>HANDLE XFindFirstFile( const CStr *csSearchString, DWORD *dwAttrs, CStr *csFileName );</h3></a>
+<p>
+		    Wraps FindFirstFile()
+<p>
+<p><pre>
+	static	HANDLE		<a href="#HANDLE_XFindFirstFile(_const_CStr_*csSearchString,_DWORD_*dwAttrs,_CStr_*csFileName_)$">XFindFirstFile</a>( const CStr *csSearchString, DWORD *dwAttrs, CStr *csFileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XFindNextFile(_HANDLE_findH,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><hr><p></p><h3>BOOL XFindNextFile( HANDLE findH, DWORD *dwAttrs, CStr *csFileName );</h3></a>
+<p>
+		    Wraps FindNextFile()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XFindNextFile(_HANDLE_findH,_DWORD_*dwAttrs,_CStr_*csFileName_)$">XFindNextFile</a>( HANDLE findH, DWORD *dwAttrs, CStr *csFileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="DWORD_XGetFileAttributes(_const_CStr_*csFullPath_)$"><hr><p></p><h3>DWORD XGetFileAttributes( const CStr *csFullPath );</h3></a>
+<p>
+		    Wraps GetFileAttributes()
+<p>
+<p><pre>
+	static	DWORD		<a href="#DWORD_XGetFileAttributes(_const_CStr_*csFullPath_)$">XGetFileAttributes</a>( const CStr *csFullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XGetFileAttributes2(_const_CStr_*csFullPath,_DWORD_*attributes_)$"><hr><p></p><h3>ErrCode XGetFileAttributes2( const CStr *csFullPath, DWORD *attributes );</h3></a>
+<p>
+		    Calls GetFileAttributesEx() if it's available, GetFileAttributes if not
+<p>
+<dl><dl>
+<dt><i>out</i><strong>	attributes</strong>
+<dd>contains the attributes if the return value is zero
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XGetFileAttributes2(_const_CStr_*csFullPath,_DWORD_*attributes_)$">XGetFileAttributes2</a>( const CStr *csFullPath, DWORD *attributes );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_isGetFileAttributesExAvailable()$"><hr><p></p><h3>BOOL isGetFileAttributesExAvailable();</h3></a>
+<p>
+		    Indicates whether GetFileAttributesEx() is available
+<p>
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_isGetFileAttributesExAvailable()$">isGetFileAttributesExAvailable</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XSetFileAttributes(_const_CStr_*csFullPath,_DWORD_dwAttributes_)$"><hr><p></p><h3>ErrCode XSetFileAttributes( const CStr *csFullPath, DWORD dwAttributes );</h3></a>
+<p>
+		    Wraps SetFileAttributes()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XSetFileAttributes(_const_CStr_*csFullPath,_DWORD_dwAttributes_)$">XSetFileAttributes</a>( const CStr *csFullPath, DWORD dwAttributes );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HINSTANCE_XShellExecute(_HWND_hwnd,_const_CStr_*csOp,_const_CStr_*csFile,_const_CStr_*csParams,_const_CStr_*csDir,_INT_nShowCmd_)$"><hr><p></p><h3>HINSTANCE XShellExecute( HWND hwnd, const CStr *csOp, const CStr *csFile, const CStr *csParams, const CStr *csDir, INT nShowCmd );</h3></a>
+<p>
+		    Wraps ShellExecute()
+<p>
+<p><pre>
+	static	HINSTANCE	<a href="#HINSTANCE_XShellExecute(_HWND_hwnd,_const_CStr_*csOp,_const_CStr_*csFile,_const_CStr_*csParams,_const_CStr_*csDir,_INT_nShowCmd_)$">XShellExecute</a>( HWND hwnd, const CStr *csOp, const CStr *csFile,
+										const CStr *csParams, const CStr *csDir, INT nShowCmd );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="UINT_XWinExec(_const_CStr_*csCmdLine,_UINT_uCmdShow_)$"><hr><p></p><h3>UINT XWinExec( const CStr *csCmdLine, UINT uCmdShow );</h3></a>
+<p>
+		    Wraps WinExec()
+<p>
+<p><pre>
+	static	UINT		<a href="#UINT_XWinExec(_const_CStr_*csCmdLine,_UINT_uCmdShow_)$">XWinExec</a>( const CStr *csCmdLine, UINT uCmdShow );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HSZ_XDdeCreateStringHandle(_DWORD_idInst,_const_CStr_*csStr,_int_iCodePage_)$"><hr><p></p><h3>HSZ XDdeCreateStringHandle( DWORD idInst, const CStr *csStr, int iCodePage );</h3></a>
+<p>
+		    Wraps DdeCreateStringHandle()
+<p>
+<p><pre>
+	static	HSZ			<a href="#HSZ_XDdeCreateStringHandle(_DWORD_idInst,_const_CStr_*csStr,_int_iCodePage_)$">XDdeCreateStringHandle</a>( DWORD idInst, const CStr *csStr, int iCodePage );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XDeleteFile(_const_CStr_*csFullPath_)$"><hr><p></p><h3>BOOL XDeleteFile( const CStr *csFullPath );</h3></a>
+<p>
+		    Wraps DeleteFile()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XDeleteFile(_const_CStr_*csFullPath_)$">XDeleteFile</a>( const CStr *csFullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="HANDLE_XCreateFile(_const_CStr_*csFileName,_DWORD_dwDesiredAccess,_DWORD_dwShareMode,_LPSECURITY_ATTRIBUTES_lpSecurityAttributes,_DWORD_dwCreationDistribution,_DWORD_dwFlagsAndAttributes,_HANDLE_hTemplateFile_)$"><hr><p></p><h3>HANDLE XCreateFile( const CStr *csFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDistribution, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile );</h3></a>
+<p>
+		    Wraps CreateFile()
+<p>
+<p><pre>
+	static	HANDLE		<a href="#HANDLE_XCreateFile(_const_CStr_*csFileName,_DWORD_dwDesiredAccess,_DWORD_dwShareMode,_LPSECURITY_ATTRIBUTES_lpSecurityAttributes,_DWORD_dwCreationDistribution,_DWORD_dwFlagsAndAttributes,_HANDLE_hTemplateFile_)$">XCreateFile</a>( const CStr *csFileName, DWORD dwDesiredAccess, DWORD dwShareMode,
+								LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDistribution,
+								DWORD dwFlagsAndAttributes, HANDLE hTemplateFile );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XRegQueryValue(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><hr><p></p><h3>ErrCode XRegQueryValue( HKEY hKey, const CStr *csSubKey, CStr *csValue );</h3></a>
+<p>
+		    Wraps RegQueryValue()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XRegQueryValue(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$">XRegQueryValue</a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XRegQueryValueEx(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><hr><p></p><h3>ErrCode XRegQueryValueEx( HKEY hKey, const CStr *csSubKey, CStr *csValue );</h3></a>
+<p>
+		    Wraps RegQueryValueEx()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XRegQueryValueEx(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$">XRegQueryValueEx</a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XRegOpenKeyEx(_HKEY_hKey,_const_CStr_*csSubKey,_DWORD_ulOptions,_REGSAM_samDesired,_PHKEY_phkResult_)$"><hr><p></p><h3>ErrCode XRegOpenKeyEx( HKEY hKey, const CStr *csSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult );</h3></a>
+<p>
+		    Wraps RegOpenKeyEx()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XRegOpenKeyEx(_HKEY_hKey,_const_CStr_*csSubKey,_DWORD_ulOptions,_REGSAM_samDesired,_PHKEY_phkResult_)$">XRegOpenKeyEx</a>( HKEY hKey, const CStr *csSubKey, DWORD ulOptions,
+										REGSAM samDesired, PHKEY phkResult );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="ErrCode_XRegEnumKey(_HKEY_hKey,_DWORD_dwIndex,_CStr_*csName_)$"><hr><p></p><h3>ErrCode XRegEnumKey( HKEY hKey, DWORD dwIndex, CStr *csName );</h3></a>
+<p>
+		    Wraps RegEnumKey()
+<p>
+<p><pre>
+	static	ErrCode		<a href="#ErrCode_XRegEnumKey(_HKEY_hKey,_DWORD_dwIndex,_CStr_*csName_)$">XRegEnumKey</a>( HKEY hKey, DWORD dwIndex, CStr *csName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="DWORD_XGetFileVersionInfoSize(_const_CStr_*csFileName,_LPDWORD_lpdwHandle_)$"><hr><p></p><h3>DWORD XGetFileVersionInfoSize( const CStr *csFileName, LPDWORD lpdwHandle );</h3></a>
+<p>
+		    Wraps GetFileVersionInfoSize()
+<p>
+<p><pre>
+	static	DWORD		<a href="#DWORD_XGetFileVersionInfoSize(_const_CStr_*csFileName,_LPDWORD_lpdwHandle_)$">XGetFileVersionInfoSize</a>( const CStr *csFileName, LPDWORD lpdwHandle );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XGetFileVersionInfo(_const_CStr_*csFileName,_DWORD_dwHandle,_DWORD_dwLen,_LPVOID_lpData_)$"><hr><p></p><h3>BOOL XGetFileVersionInfo( const CStr *csFileName, DWORD dwHandle, DWORD dwLen, LPVOID lpData );</h3></a>
+<p>
+		    Wraps GetFileVersionInfo()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XGetFileVersionInfo(_const_CStr_*csFileName,_DWORD_dwHandle,_DWORD_dwLen,_LPVOID_lpData_)$">XGetFileVersionInfo</a>( const CStr *csFileName, DWORD dwHandle, DWORD dwLen, LPVOID lpData );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XVerQueryValue(_const_LPVOID_pBlock,_const_CStr_*csSubBlock,_LPVOID_*lplpBuffer,_PUINT_puLen_)$"><hr><p></p><h3>BOOL XVerQueryValue( const LPVOID pBlock, const CStr *csSubBlock, LPVOID *lplpBuffer, PUINT puLen );</h3></a>
+<p>
+		    Wraps VerQueryValue()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XVerQueryValue(_const_LPVOID_pBlock,_const_CStr_*csSubBlock,_LPVOID_*lplpBuffer,_PUINT_puLen_)$">XVerQueryValue</a>( const LPVOID pBlock, const CStr *csSubBlock, LPVOID *lplpBuffer, PUINT puLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="DWORD_XSHGetFileInfoExeType(_const_CStr_*fileName_)$"><hr><p></p><h3>DWORD XSHGetFileInfoExeType( const CStr *fileName );</h3></a>
+<p>
+		    Wraps SHGetFileInfo() relating to getting the type of an executable
+<p>
+<p><pre>
+	static	DWORD		<a href="#DWORD_XSHGetFileInfoExeType(_const_CStr_*fileName_)$">XSHGetFileInfoExeType</a>( const CStr *fileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="BOOL_XSHGetPathFromIDList(_LPCITEMIDLIST_pidl,_CStr_*csLongFileName_)$"><hr><p></p><h3>BOOL XSHGetPathFromIDList( LPCITEMIDLIST pidl, CStr *csLongFileName );</h3></a>
+<p>
+		    Wraps SHGetPathFromIDList()
+<p>
+<p><pre>
+	static	BOOL		<a href="#BOOL_XSHGetPathFromIDList(_LPCITEMIDLIST_pidl,_CStr_*csLongFileName_)$">XSHGetPathFromIDList</a>( LPCITEMIDLIST pidl, CStr *csLongFileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> XToolkit </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetDiskFreeSpace2(_const_CStr_*csDriveName,_unsigned___int64_*totalCapP,_unsigned___int64_*totalFreeP,_unsigned___int64_*userCapP,_unsigned___int64_*userFreeP_)$"><font color=green>XGetDiskFreeSpace2</font></a>( const CStr *csDriveName, unsigned __int64 *totalCapP, unsigned __int64 *totalFreeP, unsigned __int64 *userCapP, unsigned __int64 *userFreeP );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetDriveDisplayName(_const_CStr_*csDriveName,_DWORD_dwFileAttributes,_CStr_*csDisplayName_)$"><font color=green>XGetDriveDisplayName</font></a>( const CStr *csDriveName, DWORD dwFileAttributes, CStr *csDisplayName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_LPDWORD_lpVolumeSerialNumber,_LPDWORD_lpMaximumComponentLength,_LPDWORD_lpFileSystemFlags,_CStr_*csFileSystemName_)$"><font color=green>XGetVolumeInformation</font></a>( const CStr *csDriveName, CStr *csOutVolName, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, CStr *csFileSystemName );
+<dd><strong>static</strong> HIMAGELIST <a href="XToolkit.html#HIMAGELIST_XSHGetFileInfoIcon(_const_CStr_*csName,_DWORD_dwFileAttr,_DWORD_dwFlags,_long_*iconID_)$"><font color=green>XSHGetFileInfoIcon</font></a>( const CStr *csName, DWORD dwFileAttr, DWORD dwFlags, long *iconID );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetShortPathName(_const_CStr_*fullPath,_CStr_*shortPath_)$"><font color=green>XGetShortPathName</font></a>( const CStr *fullPath, CStr *shortPath );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XGetLogicalDriveStrings(_CStr_*toStr_)$"><font color=green>XGetLogicalDriveStrings</font></a>( CStr *toStr );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XCreateProcess(_const_CStr_*commandLine,_DWORD_dwFlags,_WORD_wShowWindow,_LPPROCESS_INFORMATION_lpPI_)$"><font color=green>XCreateProcess</font></a>( const CStr *commandLine, DWORD dwFlags, WORD wShowWindow, LPPROCESS_INFORMATION lpPI );
+<dd><strong>static</strong> HINSTANCE <a href="XToolkit.html#HINSTANCE_XFindExecutable(_const_CStr_*csDocFile,_const_CStr_*csDirectory,_CStr_*csExeFullPath_)$"><font color=green>XFindExecutable</font></a>( const CStr *csDocFile, const CStr *csDirectory, CStr *csExeFullPath );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetDiskFreeSpace(_const_CStr_*csDriveName,_DWORD_*sectorsPerClst,_DWORD_*bytesPerSector,_DWORD_*numFreeClst,_DWORD_*totNumClst_)$"><font color=green>XGetDiskFreeSpace</font></a>( const CStr *csDriveName, DWORD *sectorsPerClst, DWORD *bytesPerSector, DWORD *numFreeClst, DWORD *totNumClst );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetDriveType(_const_CStr_*csDriveName_)$"><font color=green>XGetDriveType</font></a>( const CStr *csDriveName );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XFindFirstFileGetDates(_const_CStr_*csSearchString,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><font color=green>XFindFirstFileGetDates</font></a>( const CStr *csSearchString, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XFindFirstFile(_const_CStr_*csSearchString,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><font color=green>XFindFirstFile</font></a>( const CStr *csSearchString, DWORD *dwAttrs, CStr *csFileName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XFindNextFile(_HANDLE_findH,_DWORD_*dwAttrs,_CStr_*csFileName_)$"><font color=green>XFindNextFile</font></a>( HANDLE findH, DWORD *dwAttrs, CStr *csFileName );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetFileAttributes(_const_CStr_*csFullPath_)$"><font color=green>XGetFileAttributes</font></a>( const CStr *csFullPath );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XGetFileAttributes2(_const_CStr_*csFullPath,_DWORD_*attributes_)$"><font color=green>XGetFileAttributes2</font></a>( const CStr *csFullPath, DWORD *attributes );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_isGetFileAttributesExAvailable()$"><font color=green>isGetFileAttributesExAvailable</font></a>();
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XSetFileAttributes(_const_CStr_*csFullPath,_DWORD_dwAttributes_)$"><font color=green>XSetFileAttributes</font></a>( const CStr *csFullPath, DWORD dwAttributes );
+<dd><strong>static</strong> HINSTANCE <a href="XToolkit.html#HINSTANCE_XShellExecute(_HWND_hwnd,_const_CStr_*csOp,_const_CStr_*csFile,_const_CStr_*csParams,_const_CStr_*csDir,_INT_nShowCmd_)$"><font color=green>XShellExecute</font></a>( HWND hwnd, const CStr *csOp, const CStr *csFile, const CStr *csParams, const CStr *csDir, INT nShowCmd );
+<dd><strong>static</strong> UINT <a href="XToolkit.html#UINT_XWinExec(_const_CStr_*csCmdLine,_UINT_uCmdShow_)$"><font color=green>XWinExec</font></a>( const CStr *csCmdLine, UINT uCmdShow );
+<dd><strong>static</strong> HSZ <a href="XToolkit.html#HSZ_XDdeCreateStringHandle(_DWORD_idInst,_const_CStr_*csStr,_int_iCodePage_)$"><font color=green>XDdeCreateStringHandle</font></a>( DWORD idInst, const CStr *csStr, int iCodePage );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XDeleteFile(_const_CStr_*csFullPath_)$"><font color=green>XDeleteFile</font></a>( const CStr *csFullPath );
+<dd><strong>static</strong> HANDLE <a href="XToolkit.html#HANDLE_XCreateFile(_const_CStr_*csFileName,_DWORD_dwDesiredAccess,_DWORD_dwShareMode,_LPSECURITY_ATTRIBUTES_lpSecurityAttributes,_DWORD_dwCreationDistribution,_DWORD_dwFlagsAndAttributes,_HANDLE_hTemplateFile_)$"><font color=green>XCreateFile</font></a>( const CStr *csFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDistribution, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegQueryValue(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><font color=green>XRegQueryValue</font></a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegQueryValueEx(_HKEY_hKey,_const_CStr_*csSubKey,_CStr_*csValue_)$"><font color=green>XRegQueryValueEx</font></a>( HKEY hKey, const CStr *csSubKey, CStr *csValue );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegOpenKeyEx(_HKEY_hKey,_const_CStr_*csSubKey,_DWORD_ulOptions,_REGSAM_samDesired,_PHKEY_phkResult_)$"><font color=green>XRegOpenKeyEx</font></a>( HKEY hKey, const CStr *csSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult );
+<dd><strong>static</strong> ErrCode <a href="XToolkit.html#ErrCode_XRegEnumKey(_HKEY_hKey,_DWORD_dwIndex,_CStr_*csName_)$"><font color=green>XRegEnumKey</font></a>( HKEY hKey, DWORD dwIndex, CStr *csName );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XGetFileVersionInfoSize(_const_CStr_*csFileName,_LPDWORD_lpdwHandle_)$"><font color=green>XGetFileVersionInfoSize</font></a>( const CStr *csFileName, LPDWORD lpdwHandle );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XGetFileVersionInfo(_const_CStr_*csFileName,_DWORD_dwHandle,_DWORD_dwLen,_LPVOID_lpData_)$"><font color=green>XGetFileVersionInfo</font></a>( const CStr *csFileName, DWORD dwHandle, DWORD dwLen, LPVOID lpData );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XVerQueryValue(_const_LPVOID_pBlock,_const_CStr_*csSubBlock,_LPVOID_*lplpBuffer,_PUINT_puLen_)$"><font color=green>XVerQueryValue</font></a>( const LPVOID pBlock, const CStr *csSubBlock, LPVOID *lplpBuffer, PUINT puLen );
+<dd><strong>static</strong> DWORD <a href="XToolkit.html#DWORD_XSHGetFileInfoExeType(_const_CStr_*fileName_)$"><font color=green>XSHGetFileInfoExeType</font></a>( const CStr *fileName );
+<dd><strong>static</strong> BOOL <a href="XToolkit.html#BOOL_XSHGetPathFromIDList(_LPCITEMIDLIST_pidl,_CStr_*csLongFileName_)$"><font color=green>XSHGetPathFromIDList</font></a>( LPCITEMIDLIST pidl, CStr *csLongFileName );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  XToolkit<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  XToolkit<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  XToolkit<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:10 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

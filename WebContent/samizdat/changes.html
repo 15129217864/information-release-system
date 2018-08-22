@@ -1,0 +1,1008 @@
+<HTML><HEAD><TITLE>JConfig Changes from v1.1 to v2.1.0</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+&nbsp; &nbsp; <A HREF="please_vote.html"><FONT SIZE="2">Please Vote!</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<CENTER>
+<H1>
+Changes from v2.1.1 to v2.2.0
+</H1>
+<P>
+</CENTER>
+
+
+<P>
+Overall, the main changes are:
+
+<UL>
+<LI>Created an OSX version.
+<LI>Added DiskFile.getShortName()
+<LI>Implemented FileRegistry.getProcesses() on Windows.
+</UL>
+
+<P>
+<BR>
+<H2>
+API Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+		<LI>Added the AF_OSXPACKAGE constant to AppFile
+		<LI>Added the getShortName() method to DiskFile
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Source Code/Build Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Implementation Changes
+</H2>
+
+	<BLOCKQUOTE>
+
+	<P>
+	<B>Common java:</B>
+	<P>
+	<OL>
+		<LI>AppFile.getExecutableType now can return the new constant AppFile.AF_OSXPACKAGE
+	</OL>
+
+
+
+	<B>Common native:</B>
+	<P>
+	<OL>
+		<LI>CStrA has a new ctor that takes a Pascal string
+		<LI>CStringVector now accepts and deals correctly with NULL elements
+		<LI>Fixed a bug where CStringVector wasn't deleting the CVector it owns
+	</OL>
+
+
+	<B>Mac java:</B>
+	<P>
+	<OL>
+		<LI>Added the IToolboxLock interface, which is used by the classes that use native code:
+		AppUtilsMRJ, IConfigMRJ, XUtilsOSX, AppFinderMRJ, ResFileMRJ. Those classes now have
+		setLockObject and getLockObject methods. Before each native method is called, if the
+		IToolboxLock object is not null, its lock() method is called in order to synchronize
+		access to native code. After the native method returns, the unlock() method is called.
+		In order to make this as easy to implement as possible, an additional layer of indirection
+		was added to each native-method-using file. For instance, AppUtilsMRJ.createFullPathName()
+		formerly called the native method directly. It has been changed to call the wrap_nCreateFullPathName()
+		method; that method uses a try/finally block to call the IToolboxLock objects methods
+		and the native method. Thus, the wrap_?? methods simply call the associated native method,
+		synchronizing the call if an IToolboxLock object has been set.
+
+		<LI>Added the ToolboxLockOSX class, which implements IToolboxLock using the
+		com.apple.mrj.macos.carbon.CarbonLock acquire() and release() methods.
+		This is currently the only class that implements IToolboxLock, and it's only used
+		on OSX.
+
+		<LI>The three getApps() methods in FileRegistryMRJ are now called getApps_classic, and they
+		return only Classic apps. The three current getApps() methods call the corresponding
+		getApps_classic methods, but also call XUtilsOSX methods to get an appropriate OSX app,
+		if available. The return values (possibly containing both Classic and OSX apps,
+		or just one or the other type) are merged before being returned to the client.
+
+		<LI>The file DOCreatorMRJ has been renamed to DOFactoryMRJ.
+
+		<LI>DOFactoryMRJ now contains factory methods for classes implementing DiskObject,
+		and all cases in which DiskObject objects were created directly are now routed through
+		DOFactoryMRJ instead.
+
+		<LI>Created the IMacDiskObject interface, which DiskVolumeMRJ and DiskFileMRJ now implement.
+		This avoids cases in which a DiskFileMRJ had had to be used instead of a more general class.
+		For instance, ResourceForkMRJ used to take a DiskFileMRJ in its constructor because it needed
+		access to a vRefNum etc. Now it can take a DiskFile object, which it casts to an IMacDiskObject
+		interface to get the vRefNum etc. Not 100% optimal, but better than before.
+
+		<LI>As noted above, ResourceForkMRJ and AppProcessMRJ now take DiskFiles and AppFiles in their
+		constructors instead of the MRJ-specific classes.
+ 
+		<LI>The AppUtilsMRJ.getFileCategory() method has been changed to return either basic information
+		or extended information. The constants kCategoryOSX??? have been added to AppUtilsMRJ
+		corresponding to the extended return information. The return from getFileCategory
+		can contain either the original information (kCategoryVolume, etc.) or, if the 
+		kCategoryOSXExtendedInfoBit bit is set, extended info instead (kCategoryOSXVolumeBit, etc.)
+		See AppUtilsMRJ.dumpCategory() for an example.
+		
+		<LI>ProcessHelperMRJ has been changed to take OSX processes into account. It first tries to
+		create process objects (using the DOFactoryMRJ.createAppFile method) using the FSSpec information
+		returned by AppUtilsMRJ.getProcesses(). However, in some cases those FSSpec might indicate files
+		inside a bundle. In that case, DOFactoryMRJ.createAppFile will fail, an exception will be thrown,
+		and the code in the catch block will try again after calling XUtilsOSX.getProcessBundleLocation
+		to get the main bundle directory for the process.
+		
+		<LI>The DiskAliasMRJ.getAliasType() method has been changed to take into account
+		the extended information possibly available from AppUtilsMRJ.getFileCategory()
+
+		<LI>The PlatformInfoMRJ class is now a singleton, and the isPlatformMRJOSX() method has been added.
+		 
+	</OL>
+
+ 
+																 .
+	<B>Mac native:</B>
+	<P>
+	<OL>
+	<LI>Created the osx folder, containing two new files: OSXmain.cpp and XUtilsJNI.h
+	<LI>Added the XUtils.cpp file, which contains the stubs for the OSX-specific native code.
+	<LI>Added the OSX-specific file SAppUtilsOSX.cpp, which implements the native methods and
+	contains: getPOSIXPath(), getProcessBundleLocation(), findApplicationForInfo(), and 
+	getApplicationForInfo()
+	<LI>Added getCDROMAndEjectableStatus.cpp file, which is used on OSX to get the indicated info
+	<LI>Added CFilePathOSX.*, which represents an OSX path
+	<LI>SIcons.cpp uses IconServices instead of the Find_icon library on OSX
+	<LI>To avoid confusion with an OSX macro, CFSpec.verify is now CFSpec.verifySpec
+	<LI>Added added findAPPLForInfoOSX() to SAppFinder.cpp.
+	This is used at the start of findAPPLMultiple or findAPPLSingle on OSX so that OSX-native
+	apps are found first.
+	<LI>In SIConfig.cpp, fixed a bug where indexing of records returned from IC started at 0 
+	instead of the Pascal and correct 1. Also created a completely OSX-specific version
+	to deal with naming changes between the older versions of IC and the OSX version. The OSX
+	version of this file includes InternetConfig.h which is part of the OS instead of
+	including any files from the IC SDK.
+	<LI>Switched UNUSED() statements so they appear after function return
+	<LI>#pragma export are not used when compiled on OSX
+	</OL>
+
+
+
+
+																 .
+	<B>Win java:</B>
+	<P>
+	<OL>
+	<LI>Added an additional findVerbs method to CommandLineUtilsMSVM that handles multiple paths
+	instead of just one. See the getProcesses notes.
+
+	<LI>Implemented ProcessHelperMSVM.getProcesses()
+
+	<LI>Changed AppFileCommandMgrMSVM.performCommand to take the extension of the arguments into account
+	when building the command line which is used to perform the command.
+	For instance, realplayer has different command lines for different types of files: it includes
+	the MIME type on the command line.
+	</OL>
+
+
+
+
+
+	<B>Win native:</B>
+	<P>
+	<OL>
+	<LI>Added fields from the PROCESSENTRY32 struct to the AppDataType struct
+	<LI>Added nativeGetShortPathName and nativeGetAllProcessInfo and changed first arg to 
+	nativeFindVerbs from fullpath to array of fullpaths in AppUtilsMSVM.cpp and related files
+	<LI>Added the files CWinProcess95.*, CWinProcessNT.*, and CWinProcess.h, which represent
+	a running process on 95/98/ME or NT systems. CWinProcess.h defines CWinProcess to be either
+	a CWinProcess95 or CWinProcessNT object depending on the compiler switches.
+
+	</OL>
+
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Configuration Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	</OL>
+	</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+<CENTER>
+<H1>
+Changes from v2.1.0 to v2.1.1
+</H1>
+<P>
+</CENTER>
+
+
+<P>
+<H2>
+API Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+		<LI>changed the getReferenceNumber method to return a long instead of an int in the following:
+			DiskVolume, DiskVolumeMRJ, DiskVolumeNix, DiskVolumeMSVM
+
+		<LI>Added the getReferenceNumber method to the FileSystem interface
+
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Source Code/Build Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Implementation Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+
+	<LI>Fixed a bug in the AppUtilsMSVM.getVolumeReferenceNumber method
+
+	<LI>Modified the FileSystemNix.getCapacity method to: use the block size specified by the
+	call to fstatfs (instead of the previous hardcoded 1024) and use the bavail value instead
+	of bfree value. The latter change means that this method returns the free space available
+	just to the current user, and not that which is available to the superuser as before.
+
+	<LI>Added the JUtils.intsToLong method
+
+
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Configuration Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	</OL>
+	</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+<CENTER>
+<H1>
+Changes from v2.0.0 to v2.1.0
+</H1>
+<P>
+</CENTER>
+
+
+<P>
+<H2>
+API Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+		<LI>Added new file attribute constants (FILE_READONLY, etc.) to	DiskFile.java
+
+		<LI>Added the setFlags() and getSetFlagsMask() methods to DiskObject.
+		However, these methods are currently only implemented in the Win and Mac versions.
+
+		<P>
+		For linux/nix, getSetFlagsMask() always returns 0, and
+		setFlags() throws an UnimplementedException
+
+		<P>
+		For more information on these flags on Mac, see:
+<PRE>http://developer.apple.com/technotes/tb/tb_09.html
+http://developer.apple.com/techpubs/mac/Toolbox/Toolbox-455.html#MARKER-9-356</PRE>
+
+		<LI>Added the com.tolstoy.testjc.FileAttributesTest class
+
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Source Code/Build Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+		<LI>
+		Removed an illegal character which had snuck into MyFindIconMacros.h
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Implementation Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	<LI>Changed setFlags() and getSetFlagsMask() in mac.DiskVolumeMRJ and mac.DiskFileMRJ to throw an OSException
+		instead of returning an error code. These methods had not previously been part of the DiskObject
+		interface, so this shouldn't cause client code to be changed.
+
+	<LI>Changed getFlags() and getGetFlagsMask() in win.DiskFileMSVM to throw an OSException if an error occurs.
+
+	<LI>Changed the implementation of the getDiskFileFlags() and setDiskFileFlags() methods 
+		in mac/sfiles/SFlags.cpp, and added the isShared() method.
+
+	<LI>Added file attribute constants (kFileAttributes_FILE_READONLY, etc.) to	mac/sfiles/SFlags.h
+		and win/SFileInfo.h to match the new constants in DiskFile.java
+
+	<LI>Now using WinAPI GetDiskFreeSpaceEx() to get the free space/capacity of a volume. If that's not available,
+		calls WinAPI GetDiskFreeSpace(). This was done by adding XGetDiskFreeSpace2() to XToolkit.cpp.
+		XToolkit::XGetDiskFreeSpace() is still there but no longer used.
+	
+	<LI>Added XGetFileAttributes2(), isGetFileAttributesExAvailable(), and XSetFileAttributes() to XToolkit
+
+	<LI>The AppUtilsMSVM.getVolumeCapInfo() method now takes a long array with four elements. The additonal two
+		elements have the user-specific free space and capacity. The AppUtilsMSVM.kVolumeCapInfoLen
+		constant was changed from 2 to 4, and AppUtilsMSVM.kVolumeCapInfoCapacityToUserOffset and
+		AppUtilsMSVM.kVolumeCapInfoFreeSpaceToUserOffset were added.
+
+	<LI>SVolumes::iGetVolumeCapInfo() was changed to reflect the previous two changes.
+
+	<LI>Changed MonitorPlain.getDepth() to just return 0.
+		In the last version, it had thrown an UnimplementedException	 
+
+	<LI>Removed the getCreationDate, getLastAccessDate, and
+	getModificationDate methods from various implementations of DiskObject
+
+
+	</OL>
+	</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Configuration Changes
+</H2>
+
+	<BLOCKQUOTE>
+	<OL>
+	</OL>
+	</BLOCKQUOTE>
+
+
+
+
+
+
+<CENTER>
+<H1>
+Changes from v1.2.5 to v2.0.0
+</H1>
+<P>
+</CENTER>
+
+
+<P>
+<H2>
+API Changes
+</H2>
+
+<BLOCKQUOTE>
+<OL>
+	<LI>
+	The main JConfig classes are now in the package <CODE>com.jconfig...</CODE>
+	instead of the previous <CODE>com.tolstoy.jconfig...</CODE>
+
+	<LI>
+	There is no longer a separate upper-case version (<CODE>COM.tolstoy.jconfig...</CODE>)
+	<BR>
+	There is only one JConfig version, which uses lower-case 'com' as the first part of the package name.
+	
+	<LI>
+	replaced return kParamErr with throw new IllegalArgumentException()
+	
+	<LI>
+	replaced return kUninitializedErr with throw new com.jconfig.UnitializedException()
+
+	<LI>
+	replaced return kUnimplementedErr with throw new com.jconfig.UnimplementedException()
+
+	<LI>
+	FinderInfo:
+	   now implements Cloneable;
+	   added setter methods for all fields;
+	   added 2 new int fields: attributes and flags;
+	   removed array constants from DiskFile, put into this class;
+	   added array constructor and toArray() method
+
+	<LI>
+	DiskFile.getFinderInfo/setFinderInfo:
+	   instead of arrays, these now take and return FinderInfo objects
+
+	<LI>
+	FileExtension:
+	   now implements Cloneable
+
+	<LI>
+	MIMEType:
+	   now implements Cloneable
+
+	<LI>
+	There is now just one test class, Tester.java; TesterW has been removed
+
+	<LI>
+	Created package com.tolstoy.testjc to hold testing classes
+
+	<LI>
+	Removed the following methods from com.jconfig.DiskObject: getCreationDate, getLastAccessDate, and
+	getModificationDate.
+	These had previously been deprecated. Use getDateBundle instead.
+
+	<LI>
+	Added the setDateBundle method to com.jconfig.DiskObject.
+
+	<LI>
+	Added toArray() and createFromArray() to DateBundle
+
+	<LI>
+	Added the new class OSException.
+
+	<LI>
+	Added the PlatformInfoI interface and the PlatformInfoPlain, PlatformInfoMSVM, PlatformInfoNix, and 
+	PlatformInfoMRJ classes. Added the FileRegistry.getPlatformInfo() method, and changed FileRegistryI, etc.
+	 accordingly.
+
+	<LI>
+	jcprops.txt: property names were changed: <PRE>
+old values:
+  com.tolstoy.jconfig.FileRegistryFactoryMac.findExtensions
+  com.tolstoy.jconfig.FileRegistryFactoryMac.findFinderInfo
+  com.tolstoy.jconfig.FileRegistryFactoryMac.getApps
+  com.tolstoy.jconfig.FileRegistryFactoryMac.iterate
+  com.tolstoy.jconfig.FileRegistryFactoryMac.launchURL
+  com.tolstoy.jconfig.mac.FileUtilsClassName
+new values:
+  com.jconfig.mac.FileRegistryFactoryMac.findExtensions
+  com.jconfig.mac.FileRegistryFactoryMac.findFinderInfo
+  com.jconfig.mac.FileRegistryFactoryMac.getApps
+  com.jconfig.mac.FileRegistryFactoryMac.iterate
+  com.jconfig.mac.FileRegistryFactoryMac.launchURL
+  com.jconfig.mac.FileRegistryMRJ.FileUtilsClassName</PRE>
+
+	<LI>
+	The following constant's names were changed. None of their functionality or values were
+	changed, they were just converted to uppercase to make this more palatable to a certain corp. ;)
+
+	For instance, AppFile.kDontSwitchLayer was changed to AppFile.AF_NO_LAYER_SWITCH<PRE>
+private static final String changes[][] = {
+
+			//	AppFile
+	{ "kDontSwitchLayer", "AF_NO_LAYER_SWITCH" },
+	{ "kDisplayManagerAware", "AF_DISPLAYMANAGER" },
+	{ "kUseTextEditServices", "AF_USE_TES" },
+	{ "kStationeryAware", "AF_STAT_AWARE" },
+	{ "kLocalAndRemoteHLEvents", "AF_LOCAL_REMOTE_EVENTS" },
+	{ "kHighLevelEventAware", "AF_HLE_AWARE" },
+	{ "k32BitCompatible", "AF_32" },
+	{ "kGetAppDiedMsg", "AF_APP_DIED_MSG" },
+	{ "kGetFrontClicks", "AF_FRONT_CLICKS" },
+	{ "kOnlyBackground", "AF_APPE" },
+	{ "kDoesActivateOnFGSwitch", "AF_ACTIVATE_FG" },
+	{ "kCanBackground", "AF_CAN_BG" },
+	{ "kNeedSuspendResume", "AF_SUSPEND_RESUME" },
+	{ "kMultiLaunch", "AF_MULTILAUNCH" },
+	{ "kDeskAccessory", "AF_DESKACC" },
+	{ "kWin32Exe", "AF_W32" },
+	{ "kDOSExe", "AF_DOS" },
+	{ "kWOWExe", "AF_WOW" },
+	{ "kPIFExe", "AF_PIF" },
+	{ "kPOSIXExe", "AF_POSIX" },
+	{ "kOS216Exe", "AF_OS216" },
+	{ "kPEFExe", "AF_PEF" },
+	{ "kCFM68Exe", "AF_CFM68" },
+	{ "k68kExe", "AF_68K" },
+	{ "kUnknownExe", "AF_UNKNOWN" },
+
+			//	AppProcess
+	{ "kMoveToFront", "APP_MOVE_TOFRONT" },
+	{ "kMoveToBack", "APP_MOVE_TOBACK" },
+	{ "kMinimize", "APP_MOVE_MINIMIZE" },
+	{ "kMaximize", "APP_MOVE_MAXIMIZE" },
+
+			//	DateBundle
+	{ "kModificationDate", "DATE_MOD" },
+	{ "kCreationDate", "DATE_CRE" },
+	{ "kBackupDate", "DATE_BKUP" },
+	{ "kAccessDate", "DATE_ACC" },
+
+			//	DiskAlias
+	{ "kToVolume", "ALIAS_VOL" },
+	{ "kToDirectory", "ALIAS_DIR" },
+	{ "kToFile", "ALIAS_FILE" },
+	{ "kToOther", "ALIAS_OTHER" },
+	{ "kNoLongerAlias", "ALIAS_NOLONGER" },
+
+			//	DiskFile
+	{ "kIsExecutable", "FILE_EXECUTABLE" },
+	{ "kIsDirectory", "FILE_DIR" },
+	{ "kIsHidden", "FILE_HIDDEN" },
+	{ "kIsStationery", "FILE_STAT" },
+	{ "kIsNameLocked", "FILE_NAME_LOCKED" },
+	{ "kHasCustomIcon", "FILE_CUSTOM_ICON" },
+
+			//	DiskFilter
+	{ "kIgnoreHidden", "IGNORE_HIDDEN" },
+	{ "kIgnoreFolders", "IGNORE_FOLDERS" },
+	{ "kIgnoreFiles", "IGNORE_FILES" },
+	{ "kIgnoreAliases", "IGNORE_ALIASES" },
+	{ "kIgnoreNameLocked", "IGNORE_NAME_LOCKED" },
+
+			//	FinderInfo
+	{ "kFInfoLen", "FI_ARRAYLEN" },
+	{ "kFInfoCreatorOffset", "FI_OFFS_CRE" },
+	{ "kFInfoTypeOffset", "FI_OFFS_TYPE" },
+	{ "kFInfoFlagsOffset", "FI_OFFS_FLAGS" },
+	{ "kFInfoAttribOffset", "FI_OFFS_ATTRIBUTES" },
+
+			//	DiskObject
+	{ "kCreateFile", "DO_CREATEFILE" },
+	{ "kCreateFolder", "DO_CREATEDIR" },
+
+			//	ErrCodes
+	{ "kNoErr", "ERROR_NONE" },
+	{ "kParamErr", "ERROR_PARAM" },
+	{ "kUnimplementedErr", "ERROR_UNIMPLEMENTED" },
+	{ "kUninitializedErr", "ERROR_UNINITIALIZED" },
+
+			//	FileRegistry
+	{ "kGetProcessesIgnoreSystem", "GETPROCESSES_IGNORE_SYSTEM" },
+	{ "kGetProcessesIgnoreHidden", "GETPROCESSES_IGNORE_HIDDEN" },
+
+			//	FileRegistry/FileRegistryI
+	{ "kInOnly", "IN_ONLY" },
+	{ "kOutOnly", "OUT_ONLY" },
+	{ "kInAndOutOnly", "INANDOUT_ONLY" },
+	{ "kResolveAliasNoUI", "ALIAS_NOUI" },
+	{ "kResolveAliasUI", "ALIAS_UI" },
+	{ "kGetAppsSearchLevel1", "GETAPPS_SEARCH1" },
+	{ "kGetAppsSearchLevel2", "GETAPPS_SEARCH2" },
+	{ "kGetAppsSearchLevel3", "GETAPPS_SEARCH3" },
+
+			//	DiskVolume
+	{ "kCaseIsPreserved", "VOL_CASE_PRESERVED" },
+	{ "kCaseSensitive", "VOL_CASE_SENSITIVE" },
+	{ "kUnicodeSupported", "VOL_UNICODE" },
+	{ "kFilesCompressed", "VOL_FILES_COMPRESSED" },
+	{ "kVolumeCompressed", "VOL_VOL_COMPRESSED" },
+	{ "kRemovable", "VOL_REMOVABLE" },
+	{ "kFixed", "VOL_FIXED" },
+	{ "kRemote", "VOL_REMOTE" },
+	{ "kCDROM", "VOL_CDROM" },
+	{ "kRAM", "VOL_RAM" },
+	{ "kSystem", "VOL_SYSTEM" },
+
+			//	FileSystem
+	{ "kGetCapLength", "FS_GETCAP_LENGTH" },
+	{ "kGetCapCapacityOffset", "FS_GETCAP_CAP_OFFSET" },
+	{ "kGetCapFreeSpaceOffset", "FS_GETCAP_FREESPACE_OFFSET" },
+
+			//	FileType
+	{ "kCreatedFromExt", "CREATED_FROM_EXT" },
+	{ "kCreatedFromFTAC", "CREATED_FROM_FTAC" },
+	{ "kCreatedFromMIME", "CREATED_FROM_MIME" },
+
+			//	FinderInfo
+	{ "kAPPLType", "APPLICATION_TYPE" },
+
+			//	IconBundle
+	{ "kLargeIcon", "ICON_LARGE" },
+	{ "kSmallIcon", "ICON_SMALL" },
+	{ "kAlignNone", "ICON_ALIGN_NONE" },
+	{ "kAlignVerticalCenter", "ICON_ALIGN_VCENTER" },
+	{ "kAlignTop", "ICON_ALIGN_TOP" },
+	{ "kAlignBottom", "ICON_ALIGN_BOTTOM" },
+	{ "kAlignHorizontalCenter", "ICON_ALIGN_HCENTER" },
+	{ "kAlignLeft", "ICON_ALIGN_LEFT" },
+	{ "kAlignRight", "ICON_ALIGN_RIGHT" },
+	{ "kXformNone", "ICON_CHANGE_NONE" },
+	{ "kXformDisabled", "ICON_CHANGE_DISABLED" },
+	{ "kXformOffline", "ICON_CHANGE_OFFLINE" },
+	{ "kXformOpen", "ICON_CHANGE_OPEN" },
+	{ "kXformLabel1", "ICON_CHANGE_LABEL1" },
+	{ "kXformLabel2", "ICON_CHANGE_LABEL2" },
+	{ "kXformLabel3", "ICON_CHANGE_LABEL3" },
+	{ "kXformLabel4", "ICON_CHANGE_LABEL4" },
+	{ "kXformLabel5", "ICON_CHANGE_LABEL5" },
+	{ "kXformLabel6", "ICON_CHANGE_LABEL6" },
+	{ "kXformLabel7", "ICON_CHANGE_LABEL7" },
+	{ "kXformSelected", "ICON_CHANGE_SELECTED" },
+
+			//	Monitor
+	{ "kTestOnlyMask", "TEST_ONLY_MASK" },
+
+			//	ResourceFork
+	{ "kOpenExisting", "RESFORK_OPENEXISTING" },
+	{ "kReadOnly", "RESFORK_READONLY" },
+
+			//	Tester/TesterW/TestResFork
+	{ "kMySignature", "MY_SIGNATURE" },
+
+			//	Trace
+	{ "kSystemOut", "TRACE_SYSOUT" },
+	{ "kFile", "TRACE_FILE" },
+	{ "kNull", "TRACE_NULL" }
+};
+</PRE>
+
+</OL>
+
+</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Source Code/Build Changes
+</H2>
+
+<BLOCKQUOTE>
+<OL>
+	<LI>
+	removed the file iscomlowercase.h which was used to switch between the upper and lower-case versions.
+
+	<LI>
+	removed references to the USING_LOWER_CASE_com constant which had been defined in iscomlowercase.h
+
+	<LI>
+	removed the native header files which ended in _lower and _upper, and are now just using the lower one
+	For instance, the new file 'JNI_AppUtilsMSVM.h' is just the previous 'JNI_AppUtilsMSVM_lower.h'
+	The file 'JNI_AppUtilsMSVM.h' was removed, and 'AppUtilsMSVM.h' was changed to include the correct header
+	based only on the native architecture being compiled (JNI,etc.), rather than the previous functionality
+	which also took the USING_LOWER_CASE_com constant into account as well.
+
+</OL>
+</BLOCKQUOTE>
+
+
+
+
+
+<P>
+<H2>
+Implementation Changes
+</H2>
+
+<BLOCKQUOTE>
+
+<OL>
+<LI>
+The getDateBundle methods now throw an OSException instead of returning null if an error occurs.
+
+</OL>
+
+</BLOCKQUOTE>
+
+
+<P>
+<H2>
+Configuration Changes
+</H2>
+
+<BLOCKQUOTE>
+<OL>
+<LI>Changed the various batch files and shell scripts to reflect the inclusion of the 'source' directory
+inside the main folder.
+</OL>
+</BLOCKQUOTE>
+
+
+
+
+
+
+<CENTER>
+<P>
+<H1>
+Changes from v1.2.2 to v1.2.3
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+API Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+Added the Trace class, used to output tracing and debugging messages.
+
+</BLOCKQUOTE>
+
+
+
+
+
+<H2>
+Implementation Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+Updated to use the latest version of Find_icon (Mac)
+
+<BR>
+Fixed some WinNT problems
+</BLOCKQUOTE>
+
+
+
+
+<CENTER>
+<H1>
+Changes from v1.2.1 to v1.2.2
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+Implementation Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+Changed the implementation of the launchURL method.
+</BLOCKQUOTE>
+
+
+
+
+<CENTER>
+<H1>
+Changes from v1.2 to v1.2.1
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+Implementation Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+See the 'WINDOWS NOTE' section in the first part of the documentation
+of the AppCommand interface.
+</BLOCKQUOTE>
+
+
+
+
+<BR>
+<BR>
+<P>
+<CENTER>
+<H1>
+Changes from v1.1 to v1.2
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+API Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+<B>1.</B> The following methods are deprecated:
+
+<PRE>
+    DiskObject.getCreationDate()
+    DiskObject.getLastAccessDate()
+    DiskObject.getModificationDate()
+</PRE>
+
+<P>
+These methods still work, however, they will be removed in a future version.
+These have been replaced with the following method:
+
+<PRE>
+    DiskObject.getDateBundle()
+</PRE>
+
+<P>
+This method returns a 'DateBundle' object, which is used to hold zero or more
+'RawDate' objects. Both of these classes are new in this version. The RawDate
+class holds the year, month, day, hour, minute, and second, but has no
+conversion or other routines. You can use the JUtils.rawDateToJDate() method
+to convert a RawDate into a java.util.Date object, however, if you're running
+on a 1.1.x system, you might want to write a method to convert a RawDate into
+a Calendar or other class.
+
+<P>
+<B>2.</B> A new interface has been added, named 'FileSystem'. 
+See the
+<A HREF="overview.html#FLSystems">overview.html 'Working with Files' section</A>
+for more information.
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<H2>
+Configuration Changes
+</H2>
+
+<BLOCKQUOTE>
+<P>
+With JConfig v1.1 and before, the directory passed to the FileRegistry.initialize() method
+was required to contain a file named 'jconfig.cfg'.
+
+<P>
+This is still true, however, with this version this directory must contain an additional
+file named 'jcfactrz.txt'.
+
+<P>
+Both of these files are included with this distribution, and you can provide your own versions
+of either file in order to customize JConfig. This is described in the 
+<A HREF="overview.html#Custom">overview.html 'Customizing JConfig' section</A>,
+
+<P>
+If JConfig cannot find either of these files, it will output warning messages, and will use
+default values stored internally. See the first section of 'overview.html' for more
+information.
+
+</BLOCKQUOTE>
+
+
+
+
+
+<CENTER><HR><B><FONT size=-1>
+  <a href="http://www.tolstoy.com/samizdat/index.html">Main Page</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/jconfig.html">JConfig</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/imagemeister.html">ImageMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/sysprops.html">System Properties Repository</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Native Macros</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/Samples.html">Free Samples</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html">WordMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Java Freeware</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/links.html">Links</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/contact.html">Contact Us</a>
+</FONT></B><HR></CENTER>
+
+<font size=-2>Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+JConfig and ImageMeister are trademarks of Samizdat Productions. Other trademarks are the property of
+their respective owners.<BR>
+<A href=MAILTO:samizdat@tolstoy.com>samizdat@tolstoy.com</A></font>
+
+
+</BODY>
+</HTML>

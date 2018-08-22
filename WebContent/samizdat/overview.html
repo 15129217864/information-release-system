@@ -1,0 +1,835 @@
+<HTML><HEAD><TITLE>JConfig Overview</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+&nbsp; &nbsp; <A HREF="please_vote.html"><FONT SIZE="2">Please Vote!</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+<CENTER>
+<H2>JConfig Overview</H2>
+<P>
+</CENTER>
+
+<P>
+This document contains a general overview of the various capabilities of JConfig. See the sample applications for
+specific examples of the use of these features. See the <A HREF="docs/packages.htm">package documentation</A>
+for details on specific classes.
+<P>
+<HR>
+<P>
+
+<UL>
+<LI><A HREF="#InitializingJConfig">Initializing JConfig</A>
+
+<LI><A HREF="#Files">Working with Files</A>
+  <UL>
+  <LI><A HREF="#FLEnumHD">Enumerating the user's hard drives</A>
+  <LI><A HREF="#FLEnumObj">Enumerating the contents of drives and directories</A>
+  <LI><A HREF="#FLConvert">Converting from java.io.File objects to JConfig DiskObject objects</A>
+  <LI><A HREF="#FLInfo">Get information on drives, directories, and files</A>
+  <LI><A HREF="#FLFlags">Get settings for files</A>
+  <LI><A HREF="#FLAlias">Working with aliases</A>
+  <LI><A HREF="#FLSystems">Working with file systems</A>
+  </UL>
+
+<LI><A HREF="#WebBrowsers">Working with Web Browsers</A>
+  <UL>
+  <LI><A HREF="#WBLaunch">Launching a URL or file</A>
+  </UL>
+
+<LI><A HREF="#VideoMonitors">Working with Video Monitors</A>
+  <UL>
+  <LI><A HREF="#VMEnum">Enumerating the user's monitors</A>
+  <LI><A HREF="#VMInfo">Getting monitor information</A>
+  </UL>
+
+<LI><A HREF="#ExternalProcesses">Working with External Processes</A>
+  <UL>
+  <LI><A HREF="#EPFinding">Finding Applications</A>
+  <LI><A HREF="#EPConvert">Converting a java.io.File into a JConfig AppFile object</A>
+  <LI><A HREF="#EPCreating">Creating processes</A>
+  <LI><A HREF="#EPSending">Sending messages to processes</A>
+  <LI><A HREF="#EPGetting">Getting Information on processes</A>
+  </UL>
+
+<LI><A HREF="#FileTypes">Working with File Types</A>
+  <UL>
+  <LI><A HREF="#FTConvert">Converting between Mac and Windows</A>
+  <LI><A HREF="#FTFile">Getting the file type of a file</A>
+  <LI><A HREF="#FTApp">Getting the file types associated with an application</A>
+  </UL>
+
+<LI><A HREF="#Custom">Customizing JConfig</A>
+  <UL>
+  <LI><A HREF="#CScfg">jconfig.cfg</A>
+  <LI><A HREF="#CSfac">jcfactrz.txt</A>
+  </UL>
+
+<LI><A HREF="#Unimplemented">Unimplemented Features</A>
+
+</UL>
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="InitializingJConfig">Initializing JConfig</A></H2></CENTER>
+<P>
+To use JConfig, you must make sure that JConfig can find the files it needs, and you must initialize JConfig
+correctly. If you have a problem with JConfig setup, please read the following, and look through the JConfig
+batch files and the sample programs for examples of how to initialize JConfig. The sample programs are in the
+<CODE>source/com/tolstoy/testjc</CODE> folder.
+
+<P>
+JConfig uses the following files:
+<UL>
+<LI><B>JConfig.zip</B> (used on all platforms) - contains the .class files for all platforms
+<P>
+<LI><B>jconfig.cfg, jcfactrz.txt, jcprops.txt</B> (used on all platforms) - these contain configuration information, and will be referred to as the <B><I>support files</I></B>
+<P>
+<LI><B>jcnfigSN.dll, jcnfigSW.dll, etc.</B> (used on Windows only) - the Windows DLLs
+<P>
+<LI><B>JConfig.shlb</B> (used on Mac only) - the Mac shared library 
+<P>
+<LI><B>libjconfiglx0.so</B> (used on Linux only) - the Linux shared library 
+</UL>
+
+<P>
+The 'Manifest' section of <A HREF="readme.html">readme.html</A> lists the location of each of these files
+in this distribution.
+
+
+
+<P>
+Using JConfig consists of three basic steps:
+
+<UL>
+<LI>
+Make sure that JConfig.zip is in the classpath. You can do this using a batch file on Windows, using a 
+shell script on Unix, or using the JBindery app on Mac...
+
+<P>
+<LI>
+Make sure that JConfig can find its native code libraries. You can do this using a batch file on Windows, using a 
+shell script on Unix, or by putting JConfig.shlb in the shared library search path on Mac...
+
+<P>
+<LI>
+Call the FileRegistry.initialize() method with a File object representing the directory which contains the
+support files (jconfig.cfg and jcfactrz.txt).
+
+</UL>
+
+
+Assuming that the support files are stored in the folder containing your app, one way to call 
+FileRegistry.initialize() is:
+<PRE>
+    curDir = new File( System.getProperty( "user.dir" ) );
+    FileRegistry.initialize( curDir, 0 );
+</PRE>
+
+<P>
+<B>NOTE:</B> The directory you pass to FileRegistry.initialize() must be writable;
+JConfig will create temporary files in this directory, but will delete them when they are no longer needed.
+A future version of JConfig may also create configuration files in this directory.
+
+<P>
+<B>NOTE:</B> the second argument to FileRegistry.initialize() is not currently used.
+
+
+
+<P>
+Additional platform-specific information, including instructions for setting the path and classpath,
+is provided in the following files:
+
+<UL>
+<LI><A HREF="wininfo.html">wininfo.html (Windows)</A>
+<LI><A HREF="macinfo.html">macinfo.html (Mac)</A>
+<LI><A HREF="nixinfo.html">nixinfo.html (Unix/Linux)</A>
+<LI><A HREF="osxinfo.html">osxinfo.html (OSX)</A>
+</UL>
+
+<P>
+If the directory passed to FileRegistry.initialize()
+does not contain both of the support files, JConfig will use default values, which are stored internally.
+However, don't rely on this behavior: make sure that the directory contains both these files.
+If JConfig can't find either of these files, a warning will be printed to System.out, 
+indicating which file couldn't be found.
+
+<P>
+<BLOCKQUOTE>
+<I>
+If this occurs, check that the directory passed to FileRegistry.initialize() contains both these files.
+The file 'Tester.java', in the <CODE>source/com/tolstoy/testjc</CODE> folder,
+contains a 'doubleCheckJConfigInitializationDirectory()'
+method which you can use to check whether a folder contains 'jconfig.cfg' and 'jcfactrz.txt'.
+</I>
+</BLOCKQUOTE>
+
+<P>
+If both the support files can be found, and your app is running on a supported VM, JConfig will initialize correctly
+provided that it can find its native code libraries.
+
+<P>
+However, if it can't find its native code libraries, only a limited set of functionality will be provided. 
+In this case, JConfig will output a message saying that FileRegistryPlain has been loaded.
+
+<P>
+<BLOCKQUOTE>
+<I>
+In this case, make sure that the appropriate native code library is in the path, using the instructions
+in <A HREF="wininfo.html">wininfo.html (Windows)</A>, 
+<A HREF="macinfo.html">macinfo.html (Mac)</A>,
+<A HREF="nixinfo.html">nixinfo.html (Unix/Linux)</A>, or
+<A HREF="osxinfo.html">osxinfo.html (OSX)</A>
+</I>
+</BLOCKQUOTE>
+
+
+
+<P>
+<B>More Details:</B>
+<BR>
+Depending on how it's initialized and what platform it's running on, JConfig has three modes of operation:
+<UL>
+<LI><B><I>full mode</I></B>: all FileRegistry methods work as expected
+<LI><B><I>fallback mode</I></B>: some FileRegistry methods work; most return null or -1
+<LI><B><I>error mode</I></B>: all FileRegistry methods return null or -1
+</UL>
+
+<P>
+For JConfig to enter 'full' mode, all of these must be true:
+<UL>
+<LI>JConfig must be running on one of the supported platforms
+<LI>JConfig must be initialized with the directory containing both 'jconfig.cfg' and 'jcfactrz.txt', and
+this directory must be writable.
+<LI>If this platform uses native code, JConfig must be able to find the native code.
+</UL>
+
+<P>
+If JConfig is initialized correctly, and it can find all the files it needs, it will be in 'full' mode on
+supported platforms, and in 'fallback' mode on unsupported platforms.
+
+<P>
+Note that JConfig currently supports
+the MRJ and CodeWarrior VMs on PowerMac, the SunJDK1.x and MS VMs on Win95/Win98/WinNT, and most, if not all,
+Unix systems.
+
+
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="Files">Working with Files</A></H2></CENTER>
+JConfig lets you obtain extended information on drives, directories, and files, as well as letting you
+enumerate the contents of drives and directories. In JConfig, all objects which represent drives,
+directories, files, and aliases implement the DiskObject interface. The class hierarchy for these
+objects is as follows:
+<PRE>
+DiskObject
+	DiskVolume ( represents drives )
+	DiskFile ( represents directories and files )
+	    DiskAlias - represents aliases
+</PRE> 
+
+There are several ways to obtain these objects, as described below.
+<P>
+
+
+<P>
+  <CENTER><B><A NAME="FLEnumHD">Enumerating the user's hard drives</A></B></CENTER>
+<P>
+The FileRegistry.getVolumes() method returns an array containing each of the user's currently mounted hard drives.
+You can then get information on each drive, and enumerate their contents.
+
+
+<P>
+  <CENTER><B><A NAME="FLEnumObj">Enumerating the contents of drives and directories</A></B></CENTER>
+<P>
+Objects which implement the DiskObject interface have the 'iterate' method, which lets you enumerate the contents
+of the object. Of course, this only has meaning for drives and directories.
+
+<P>
+To use this method, you create an
+object which implements the DiskFilter interface, and pass it to the DiskObject's 'iterate()' method.
+The DiskFilter's visit() method will be called with a DiskObject which represents each item contained within 
+the containing object.
+
+
+<P>
+  <CENTER><B><A NAME="FLConvert">Converting from java.io.File objects to JConfig DiskObject objects</A></B></CENTER>
+<P>
+The FileRegistry.createDiskObject() method takes a java.io.File object, and returns an object which implements
+the DiskObject interface. The returned object may also implement the DiskVolume, DiskFile, or DiskAlias interface,
+depending on what type of object the java.io.File represents. Also, the FileRegistry.createAppFile creates an AppFile
+from a java.io.File object. The AppFile interface implements the DiskFile interface.
+
+
+<P>
+  <CENTER><B><A NAME="FLInfo">Get information on drives, directories, and files</A></B></CENTER>
+<P>
+Once you have an object implementing DiskObject, you can obtain information such as its creation and modification
+dates, its icons, version information, FinderInfo, etc.
+
+
+
+
+<P>
+  <CENTER><B><A NAME="FLFlags">Get settings for files</A></B></CENTER>
+<P>
+
+The following table shows the values returned from the DiskFile.getFlags() method, and those which can be
+set using the DiskFile.setFlags() method.
+
+<P>
+In each case, the flag is a public static member of the DiskFile interface, and its value is an in with just
+one bit on.
+
+<P>
+
+<TABLE BORDER="1" CELLPADDING="4" CELLSPACING="4" >
+  <CAPTION>DiskFile flags</CAPTION>
+  <THEAD>
+    <TR>
+      <TH>JConfig value</TH>
+      <TH>Win</TH>
+      <TH>Mac</TH>
+      <TH>Nix</TH>
+    </TR>
+  </THEAD>
+  <TBODY>
+    <TR>
+      <TD>FILE_EXECUTABLE</TD>
+      <TD>G</TD>
+      <TD>G</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_DIR</TD>
+      <TD>. </TD>
+      <TD>. </TD>
+      <TD>. </TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_HIDDEN</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_STATIONERY</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_NAME_LOCKED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_CUSTOM_ICON</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_HAS_BNDL</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_BEEN_INITED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_NO_INITS</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_SHARED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_READONLY</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_SYSTEM</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_ARCHIVE</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_DEVICE</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_TEMP</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_SPARSE</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_REPARSEPOINT</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_COMPRESSED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_OFFLINE</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_NOT_CONTENT_INDEXED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+
+    <TR>
+      <TD>FILE_ENCRYPTED</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+      <TD>.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+
+
+
+
+
+
+
+
+
+<P>
+  <CENTER><B><A NAME="FLAlias">Working with aliases</A></B></CENTER>
+<P>
+Given an object implementing the DiskObject interface, you can use java's 'instanceof' keyword to determine whether it's
+an alias or not. If it implements the DiskAlias interface, it's an alias.
+
+<P>
+Given an object implementing the DiskAlias interface, you can resolve the alias using the FileRegistry.resolveAlias()
+method. You can choose whether to allow or disallow user interaction.
+
+<P>
+The FileRegistry.createAlias() method lets you create an alias. You pass into this method a java.io.File object which
+represents the file you want to make into an alias, and an object implementing the DiskObject interface which you
+want the alias to point to. The new alias file must exist. 
+
+
+<P>
+  <CENTER><B><A NAME="FLSystems">Working with file systems</A></B></CENTER>
+<P>
+The latest version of JConfig includes a FileSystem interface, which represents the file system underlying
+a particular hierarchy of volumes and directories. The FileRegistry.getFileSystems() method returns a list
+of the mounted file systems as an array of FileSystem objects. You can query each FileSystem object for
+such information as its free and available space, its mount point, etc. Also, the DiskObject.getFileSystem()
+method returns a FileSystem object representing the FileSystem on which the DiskObject is mounted. These methods
+are currently implemented only in the Linux version, but will be implemented for other platforms in the 
+near future.
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="WebBrowsers">Working with Web Browsers</A></H2></CENTER>
+
+JConfig lets you launch files or URLs in the user's Web browser.
+
+<P>
+  <CENTER><B><A NAME="WBLaunch">Launching a URL or file</A></B></CENTER>
+
+<P>
+Use the FileRegistry.launchURL() method to launch a URL or file. The 'url' argument must be a fully-qualified URL
+in quoted-printable form, e.g.:
+<PRE>
+  http://www.tolstoy.com
+  file:///Blossom/A%20Very%20Special%20Blossom.jpg
+</PRE> 
+On Mac, if the user does not have Internet Config installed, applications with the creator types
+'MSIE' and 'MOS!' are searched for. This also occurs if Internet Config is installed, but returns an error.
+
+<P>
+The creator types which are searched for in this case are stored in JConfig.shlb, in a
+resource of type 'brws', with ID 5000. To change the browser creators which are searched
+for, edit this resource to include the desired creator values.
+
+<P>
+On Windows, JConfig first tries to use DDE to launch the URL in a currently running browser. If that fails,
+a new browser is opened using either url.dll via ShellExecute, or WinExec.
+
+
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="VideoMonitors">Working with Video Monitors</A></H2></CENTER>
+JConfig allows you to retrieve a list of the user's monitors, as well as information on each monitor.
+
+
+<P>
+  <CENTER><B><A NAME="VMEnum">Enumerating the user's monitors</A></B></CENTER>
+<P>
+Use the FileRegistry.getMonitors() method to obtain an 
+array of the user's monitors. Only currently
+active screen devices are returned. 
+<P>
+Use the FileRegistry.getMainMonitor() method to get an object
+representing the user's main monitor. On a Mac, the main monitor is
+the one with the menu bar.
+<P>
+If running on a VM other than those currently supported, a default
+monitor object with limited capabilities is returned from the preceding methods.
+
+<P>
+  <CENTER><B><A NAME="VMInfo">Getting monitor information</A></B></CENTER>
+<P>
+After retrieving a monitor object, as described in the preceding section, you can get information on it,
+such as the current bit depth, the bounds of the monitor, etc.
+<P>
+A common use is to find the 'workarea' of a monitor. This is the rectangular section which does not
+contain menu bars or tool bars. Use the Monitor.getWorkarea() method to get this information.
+
+<P>
+For instance, if the main monitor of a Mac is 640x480, and the menu bar
+is 20 pixels high, the workarea will be a rectangle where x=0, y=20, width=640, and height=460.
+
+<P>
+Note that the Rectangles returned by the Monitor class are in global coordinates. On a Mac, <0,0> is the 
+upper left corner of the screen containing the menu bar. On Windows, <0,0> is the upper left corner of the
+screen.
+
+
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="ExternalProcesses">Working with External Processes</A></H2></CENTER>
+<P>
+Two main interfaces let you work with external applications and processes: AppFile and AppProcess. AppFile implements
+the DiskFile interface, and represents an application as stored on disk. AppProcess represents a running instance
+of an AppFile.
+
+
+<P>
+  <CENTER><B><A NAME="EPFinding">Finding Applications</A></B></CENTER>
+<P>
+The FileRegistry singleton contains three methods named 'getApps', which allow you to find AppFile objects based
+on the name of an application ( e.g., SimpleText ) or the files which it can be used to open.
+
+<P>
+  <CENTER><B><A NAME="EPConvert">Converting a java.io.File into a JConfig AppFile object</A></B></CENTER>
+<P>
+The FileRegistry.createAppFile() method converts a java.io.File object into a JConfig AppFile object. The object
+must exist, and be an application. On Mac, this means the file type must be either 'APPL' or 'APPE'. On Windows,
+the file must end with ".exe".
+
+<P>
+  <CENTER><B><A NAME="EPCreating">Creating processes</A></B></CENTER>
+<P>
+You create an AppProcess from an AppFile using the AppFile's performCommand() method. For instance, if you want to
+launch an application with a document, you call the AppFile's getCommand() method with the constant 'kAppCommandOpenDoc',
+which returns an AppCommand object. Then, you use the AppCommand's addArg() method to add arguments to the command,
+in this case, the file to open. Then, you pass the AppCommand object to the performCommand() method. Assuming that
+no error occured, the performCommand() method returns an AppProcess object representing the running process.
+
+<P>
+  <CENTER><B><A NAME="EPSending">Sending messages to processes</A></B></CENTER>
+<P>
+Objects which implement the AppProcess interface have a performCommand() method, which is similar to the method
+of the same name of the AppFile interface, which was described in the previous section. This lets you send commands
+to a running process, such as a set of files to open or print. The process must have been created using the
+performCommand() method of an AppFile object.
+
+<P>
+  <CENTER><B><A NAME="EPGetting">Getting Information on processes</A></B></CENTER>
+<P>
+The AppProcess.getPlatformData() method returns platform-specific data on a process. On Mac, this is the process'
+ProcessSerialNumber, and on Windows it's the process' HWND and other information. You can use these to send
+specialized messages to processes.
+
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="FileTypes">Working with File Types</A></H2></CENTER>
+<P>
+JConfig contains two platform-specific classes for working with file types: FinderInfo represents a Mac
+creator/file type pair ( e.g., <'ttxt','TEXT'> ), and FileExtension represents a Windows file
+extension ( e.g., ".txt" ). In addition, the convenience class FileType represents a cross-platform file
+type; you initialize a FileType object using either a FinderInfo or FileExtension object, and can use
+the FileType object to convert between Mac creator/file type codes and Windows file extensions. FileType
+uses the FileRegistry to do the conversion.
+
+<P>
+  <CENTER><B><A NAME="FTConvert">Converting between Mac and Windows</A></B></CENTER>
+<P>
+The FileRegistry findExtensions() and findFinderInfo() methods let you convert between Windows file extensions
+and Mac creator/file type codes.
+
+<P>
+  <CENTER><B><A NAME="FTFile">Getting the file type of a file</A></B></CENTER>
+<P>
+The FileRegistry.getFileType() method takes a java.io.File object, and returns a FileType object which contains
+a cross-platform representation of the file type of that file. The method of FileType let you obtain the Windows
+file name extension or Mac file type code associated with that file type.
+
+<P>
+  <CENTER><B><A NAME="FTApp">Getting the file types associated with an application</A></B></CENTER>
+<P>
+The AppFile.getFileTypes() method returns an array of the file types associated with an application.
+
+
+
+
+
+
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="Custom">Customizing JConfig</A></H2></CENTER>
+
+<P>
+  <CENTER><B><A NAME="CScfg">jconfig.cfg</A></B></CENTER>
+<P>
+The file 'jconfig.cfg' supplied with this distribution is a default version
+of the Internet Config file mapping database. This database is used to map
+between file extensions, Mac creator/file types, and MIME types.
+
+<P>
+On Mac, if Internet Config is installed, JConfig uses Internet Config to
+do the mapping between file types, which will use the settings which have
+been configured by the user. 
+
+<P>
+However, on Mac if Internet Config is not installed, or on platforms other
+than Mac, the file 'jconfig.cfg' will be used to do the mappings.
+
+<P>
+If you want to provide your own version of this file, you can use the application
+'IC Res Copy' which is provided in the Mac section of this distribution, inside
+the 'macrescp' folder. This folder contains a file which describes the use of the
+'IC Res Copy' application. See the 'macinfo.html' file for general information on the Mac section of this
+distribution. You will, of course, need to have access to a Mac to use this
+application.
+
+<P>
+If you don't have access to a Mac, you'll need to write a small program
+which creates your own version of 'jconfig.cfg'. The format of the IC file
+mapping database is straightforward, and is provided with the IC Programming
+Kit.
+
+<P>
+In any case, if you want to supply your own version, it must be named
+'jconfig.cfg'.
+
+
+
+<P>
+  <CENTER><B><A NAME="CSfac">jcfactrz.txt</A></B></CENTER>
+<P>
+
+The file 'jcfactrz.txt' tells JConfig which platform-dependent modules to attempt
+to load. See the documentation of the FileRegistryFactoryI interface for more
+information on this file.
+
+
+
+<P>
+<HR>
+<CENTER><H2><A NAME="Unimplemented">Unimplemented Features</A></H2></CENTER>
+These features are not currently implemented, but will be in the near future.
+
+<UL>
+<LI>The search flags for the FileRegistry.getApps() methods are only used if the 'maxToReturn' argument
+is 1, and all three search levels map to the same search level.
+<LI>The 'flags' and 'preferredBrowsers' arguments to FileRegistry.launchURL() are not yet implemented.
+<LI>The Monitor.setDepth() and Monitor.setResolution() methods are not yet implemented.
+<LI>On Windows, the FileRegistry.getProcesses() method is not yet implemented.
+<LI>On Unix, only the file browsing related features have been implemented so far.
+</UL>
+
+
+<CENTER><HR><B><FONT size=-1>
+  <a href="http://www.tolstoy.com/samizdat/index.html">Main Page</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/jconfig.html">JConfig</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/imagemeister.html">ImageMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/sysprops.html">System Properties Repository</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Native Macros</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/Samples.html">Free Samples</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html">WordMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Java Freeware</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/links.html">Links</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/contact.html">Contact Us</a>
+</FONT></B><HR></CENTER>
+
+<font size=-2>Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+JConfig and ImageMeister are trademarks of Samizdat Productions. Other trademarks are the property of
+their respective owners.<BR>
+<A href=MAILTO:samizdat@tolstoy.com>samizdat@tolstoy.com</A></font>
+
+
+</BODY>
+</HTML>

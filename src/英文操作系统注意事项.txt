@@ -1,0 +1,34 @@
+1,联合利华64位win2008系统，不支持32位加密狗驱动
+
+================UrlEncodeUtil=调用如下========================================================
+	1，属于Ajax 推消息：修改了 终端管理里面的终端列表节目名 和 获取节目单 中文乱码 DwrClass.getcntProgramMenu,调用 UrlEncodeUtil.englishSysCharToBack("")；
+	2，属于后台获取消息：发送文字通知、批量选取终端树状菜单（GetGroupChange） 和 天气预报获取 System.out.println打印输出乱码，调用UrlEncodeUtil.englishSysCharTo("")；
+------------------------------------------------------------------------------------	
+英文版操作系统乱码的处理
+    
+    //如果System.out.println 打印处理出来是乱码，则用如下转码
+	public static String englishSysCharTo(String s){
+		
+		 String a="NOSTRING";
+		 try {
+			 a  = new String(s.getBytes("gb2312"),"ISO8859-1");
+			 System.out.println("5---englistSysCharTo------->"+a);
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		}
+		return a;
+	}
+	
+	//如果打印处理出来没乱码，用Ajax输出时乱码，到则用如下转码
+	public static String englishSysCharToBack(String s){
+		
+		 String a="NOSTRING";
+		 try {
+			 a  = new String(s.getBytes("ISO8859-1"),"GBK");
+//			 System.out.println("5---englistSysCharTo------->"+a);
+		 } catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		 }
+		return a;
+	}
+	=========================================================================

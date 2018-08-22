@@ -1,0 +1,574 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:26:32 PDT 2002 -->
+<!-- com.jconfig.FileRegistryI | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Interface com.jconfig.FileRegistryI
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Interface com.jconfig.FileRegistryI
+</FONT></B>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public interface  <STRONG>FileRegistryI</STRONG>
+{
+          // Fields 13
+     public static final int <A HREF="#ALIAS_NO_UI">ALIAS_NO_UI</A>;
+     public static final int <A HREF="#ALIAS_UI">ALIAS_UI</A>;
+     public static final int <A HREF="#APP_MOVE_MAXIMIZE">APP_MOVE_MAXIMIZE</A>;
+     public static final int <A HREF="#APP_MOVE_MINIMIZE">APP_MOVE_MINIMIZE</A>;
+     public static final int <A HREF="#APP_MOVE_TOBACK">APP_MOVE_TOBACK</A>;
+     public static final int <A HREF="#APP_MOVE_TOFRONT">APP_MOVE_TOFRONT</A>;
+     public static final int <A HREF="#GETAPPS_SEARCH1">GETAPPS_SEARCH1</A>;
+     public static final int <A HREF="#GETAPPS_SEARCH2">GETAPPS_SEARCH2</A>;
+     public static final int <A HREF="#GETAPPS_SEARCH3">GETAPPS_SEARCH3</A>;
+     public static final int <A HREF="#INANDOUT_ONLY">INANDOUT_ONLY</A>;
+     public static final int <A HREF="#IN_ONLY">IN_ONLY</A>;
+     public static final int <A HREF="#OUT_ONLY">OUT_ONLY</A>;
+     public static final String <A HREF="#copyrightString">copyrightString</A>;
+
+          // Methods 22
+     public abstract int <A HREF="#createAlias(com.jconfig.DiskObject, java.io.File, int, int)">createAlias</A>(DiskObject, File, int, int) throws FileNotFoundException, DiskFileException;
+     public abstract AppFile <A HREF="#createAppFile(java.io.File)">createAppFile</A>(File) throws FileNotFoundException, DiskFileException;
+     public abstract DiskObject <A HREF="#createDiskObject(java.io.File, int)">createDiskObject</A>(File, int) throws FileNotFoundException, DiskFileException;
+     public abstract FileExtension[] <A HREF="#findExtensions(com.jconfig.FinderInfo, int)">findExtensions</A>(FinderInfo, int);
+     public abstract FinderInfo[] <A HREF="#findFinderInfo(com.jconfig.FileExtension, int)">findFinderInfo</A>(FileExtension, int);
+     public abstract AppFile[] <A HREF="#getApps(com.jconfig.FileExtension, int, int)">getApps</A>(FileExtension, int, int);
+     public abstract AppFile[] <A HREF="#getApps(com.jconfig.FinderInfo, int, int)">getApps</A>(FinderInfo, int, int);
+     public abstract AppFile[] <A HREF="#getApps(java.lang.String, int, int)">getApps</A>(String, int, int);
+     public abstract int <A HREF="#getDirection()">getDirection</A>();
+     public abstract FileSystem[] <A HREF="#getFileSystems(int, int)">getFileSystems</A>(int, int);
+     public abstract FileType <A HREF="#getFileType(java.io.File)">getFileType</A>(File) throws FileNotFoundException, DiskFileException;
+     public abstract FileUtilsI <A HREF="#getFileUtils()">getFileUtils</A>();
+     public abstract Monitor <A HREF="#getMainMonitor()">getMainMonitor</A>();
+     public abstract Monitor[] <A HREF="#getMonitors()">getMonitors</A>();
+     public abstract PlatformInfoI <A HREF="#getPlatformInfo()">getPlatformInfo</A>();
+     public abstract AppProcess[] <A HREF="#getProcesses(int, int)">getProcesses</A>(int, int);
+     public abstract DiskVolume[] <A HREF="#getVolumes()">getVolumes</A>();
+     public abstract int <A HREF="#iterate(com.jconfig.ConfigEntryVisitor)">iterate</A>(ConfigEntryVisitor);
+     public abstract int <A HREF="#launchURL(java.lang.String, int, java.lang.String[])">launchURL</A>(String, int, String[]);
+     public abstract DiskObject <A HREF="#resolveAlias(com.jconfig.DiskAlias, int)">resolveAlias</A>(DiskAlias, int) throws FileNotFoundException, DiskFileException;
+     public abstract void <A HREF="#setDirection(int)">setDirection</A>(int);
+     public abstract void <A HREF="#setFileUtils(com.jconfig.FileUtilsI)">setFileUtils</A>(FileUtilsI);
+}
+</PRE>
+<P>
+<DL>
+<P>
+Interface for objects which implement the methods of the FileRegistry. See that class for
+information on each of these methods. Objects implementing this interface may be created
+by the FileRegistryFactory for use by the FileRegistry.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Returned By: </B>
+<DD>FileRegistryFactoryI.<A HREF="pow078af.htm#createFileRegistry(java.io.File, int)">createFileRegistry()</A>, FileRegistry.<A HREF="pow0b9ae.htm#getDelegate()">getDelegate()</A>, FileRegistryFactoryMac.<A HREF="pow056ff.htm#createFileRegistry(java.io.File, int)">createFileRegistry()</A>, FileRegistryFactoryNix.<A HREF="pow0e3b0.htm#createFileRegistry(java.io.File, int)">createFileRegistry()</A>, FileRegistryFactoryWin.<A HREF="pow0b1fa.htm#createFileRegistry(java.io.File, int)">createFileRegistry()</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="IN_ONLY"><FONT COLOR="#0000FF">&middot;</FONT> IN_ONLY</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int IN_ONLY
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="OUT_ONLY"><FONT COLOR="#0000FF">&middot;</FONT> OUT_ONLY</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int OUT_ONLY
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="INANDOUT_ONLY"><FONT COLOR="#0000FF">&middot;</FONT> INANDOUT_ONLY</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int INANDOUT_ONLY
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="APP_MOVE_TOFRONT"><FONT COLOR="#0000FF">&middot;</FONT> APP_MOVE_TOFRONT</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int APP_MOVE_TOFRONT
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="APP_MOVE_TOBACK"><FONT COLOR="#0000FF">&middot;</FONT> APP_MOVE_TOBACK</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int APP_MOVE_TOBACK
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="APP_MOVE_MINIMIZE"><FONT COLOR="#0000FF">&middot;</FONT> APP_MOVE_MINIMIZE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int APP_MOVE_MINIMIZE
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="APP_MOVE_MAXIMIZE"><FONT COLOR="#0000FF">&middot;</FONT> APP_MOVE_MAXIMIZE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int APP_MOVE_MAXIMIZE
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="ALIAS_NO_UI"><FONT COLOR="#0000FF">&middot;</FONT> ALIAS_NO_UI</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int ALIAS_NO_UI
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="ALIAS_UI"><FONT COLOR="#0000FF">&middot;</FONT> ALIAS_UI</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int ALIAS_UI
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="GETAPPS_SEARCH1"><FONT COLOR="#0000FF">&middot;</FONT> GETAPPS_SEARCH1</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int GETAPPS_SEARCH1
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="GETAPPS_SEARCH2"><FONT COLOR="#0000FF">&middot;</FONT> GETAPPS_SEARCH2</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int GETAPPS_SEARCH2
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="GETAPPS_SEARCH3"><FONT COLOR="#0000FF">&middot;</FONT> GETAPPS_SEARCH3</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int GETAPPS_SEARCH3
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getPlatformInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getPlatformInfo()">getPlatformInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0d946.htm">PlatformInfoI</A> getPlatformInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="findExtensions"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="findExtensions(com.jconfig.FinderInfo, int)">findExtensions</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0aba7.htm">FileExtension</A>[] findExtensions(<A HREF="pow07e8d.htm">FinderInfo</A> finfo, 
+                                                  int maxToReturn) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="findFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="findFinderInfo(com.jconfig.FileExtension, int)">findFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow07e8d.htm">FinderInfo</A>[] findFinderInfo(<A HREF="pow0aba7.htm">FileExtension</A> ext, 
+                                               int maxToReturn) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getApps"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getApps(java.lang.String, int, int)">getApps</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b796.htm">AppFile</A>[] getApps(String appName, 
+                                     int maxToReturn, 
+                                     int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getApps"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getApps(com.jconfig.FinderInfo, int, int)">getApps</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b796.htm">AppFile</A>[] getApps(<A HREF="pow07e8d.htm">FinderInfo</A> finfo, 
+                                     int maxToReturn, 
+                                     int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getApps"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getApps(com.jconfig.FileExtension, int, int)">getApps</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b796.htm">AppFile</A>[] getApps(<A HREF="pow0aba7.htm">FileExtension</A> ext, 
+                                     int maxToReturn, 
+                                     int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="iterate"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="iterate(com.jconfig.ConfigEntryVisitor)">iterate</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int iterate(<A HREF="pow04405.htm">ConfigEntryVisitor</A> fdv) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="launchURL"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="launchURL(java.lang.String, int, java.lang.String[])">launchURL</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int launchURL(String url, 
+                                 int flags, 
+                                 String[] preferredBrowsers) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVolumes"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVolumes()">getVolumes</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0917b.htm">DiskVolume</A>[] getVolumes() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createAppFile"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createAppFile(java.io.File)">createAppFile</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b796.htm">AppFile</A> createAppFile(File fl)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createDiskObject"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createDiskObject(java.io.File, int)">createDiskObject</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow087fb.htm">DiskObject</A> createDiskObject(File fl, 
+                                               int flags)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createAlias"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createAlias(com.jconfig.DiskObject, java.io.File, int, int)">createAlias</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int createAlias(<A HREF="pow087fb.htm">DiskObject</A> target, 
+                                   File newAlias, 
+                                   int creator, 
+                                   int flags)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="resolveAlias"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="resolveAlias(com.jconfig.DiskAlias, int)">resolveAlias</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow087fb.htm">DiskObject</A> resolveAlias(<A HREF="pow09de4.htm">DiskAlias</A> da, 
+                                           int flags)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileType"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileType(java.io.File)">getFileType</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow07264.htm">FileType</A> getFileType(File fl)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDirection"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDirection()">getDirection</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getDirection() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setDirection"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setDirection(int)">setDirection</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract void setDirection(int dir) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getMonitors"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getMonitors()">getMonitors</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0db22.htm">Monitor</A>[] getMonitors() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getMainMonitor"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getMainMonitor()">getMainMonitor</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0db22.htm">Monitor</A> getMainMonitor() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getProcesses"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getProcesses(int, int)">getProcesses</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow04c9.htm">AppProcess</A>[] getProcesses(int maxToReturn, 
+                                             int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileSystems"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileSystems(int, int)">getFileSystems</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow08d7c.htm">FileSystem</A>[] getFileSystems(int maxToReturn, 
+                                               int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFileUtils"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFileUtils(com.jconfig.FileUtilsI)">setFileUtils</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract void setFileUtils(<A HREF="pow0625d.htm">FileUtilsI</A> fi) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileUtils"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileUtils()">getFileUtils</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0625d.htm">FileUtilsI</A> getFileUtils() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

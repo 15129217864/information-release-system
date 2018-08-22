@@ -1,0 +1,547 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:32:12 PDT 2002 -->
+<!-- com.jconfig.DiskObject | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Interface com.jconfig.DiskObject
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Interface com.jconfig.DiskObject
+</FONT></B>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public interface  <STRONG>DiskObject</STRONG>
+     extends com.jconfig.<A HREF="pow04e2d.htm">DumpInfo</A>
+{
+          // Fields 3
+     public static final int <A HREF="#DO_CREATEDIR">DO_CREATEDIR</A>;
+     public static final int <A HREF="#DO_CREATEFILE">DO_CREATEFILE</A>;
+     public static final String <A HREF="#copyrightString">copyrightString</A>;
+
+          // Methods 18
+     public abstract DiskObject <A HREF="#createObject(java.lang.String, int, int)">createObject</A>(String, int, int);
+     public abstract boolean <A HREF="#exists()">exists</A>();
+     public abstract int <A HREF="#getColorCoding()">getColorCoding</A>();
+     public abstract DiskObject <A HREF="#getContainer()">getContainer</A>() throws FileNotFoundException, DiskFileException;
+     public abstract DateBundle <A HREF="#getDateBundle()">getDateBundle</A>();
+     public abstract String <A HREF="#getDisplayName()">getDisplayName</A>();
+     public abstract File <A HREF="#getFile()">getFile</A>();
+     public abstract FileSystem <A HREF="#getFileSystem()">getFileSystem</A>();
+     public abstract int <A HREF="#getFlags()">getFlags</A>();
+     public abstract int <A HREF="#getGetFlagsMask()">getGetFlagsMask</A>();
+     public abstract IconBundle <A HREF="#getIconBundle()">getIconBundle</A>();
+     public abstract String <A HREF="#getName()">getName</A>();
+     public abstract int <A HREF="#getSetFlagsMask()">getSetFlagsMask</A>();
+     public abstract int <A HREF="#iterate(com.jconfig.DiskFilter, int, int)">iterate</A>(DiskFilter, int, int);
+     public abstract void <A HREF="#setDateBundle(com.jconfig.DateBundle)">setDateBundle</A>(DateBundle);
+     public abstract void <A HREF="#setFlags(int, int)">setFlags</A>(int, int);
+     public abstract int <A HREF="#setName(java.lang.String)">setName</A>(String);
+     public abstract int <A HREF="#updateContainer()">updateContainer</A>();
+}
+</PRE>
+<P>
+<DL>
+<P>
+The interfaces DiskVolume, DiskFile, and DiskAlias extend this interface, which contains
+common methods for disk-related objects.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Extended By: </B>
+<DD><A HREF="pow064f2.htm">DiskFile</A>, <A HREF="pow0917b.htm">DiskVolume</A><P>
+<DT><B>Returned By: </B>
+<DD>Many
+<P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="DO_CREATEFILE"><FONT COLOR="#0000FF">&middot;</FONT> DO_CREATEFILE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int DO_CREATEFILE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the 'type' argument of the 'createObject() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="DO_CREATEDIR"><FONT COLOR="#0000FF">&middot;</FONT> DO_CREATEDIR</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int DO_CREATEDIR
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the 'type' argument of the 'createObject() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getName()">getName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String getName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the name of this object. If this object no longer exists or if an error occurs,
+returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setName(java.lang.String)">setName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int setName(String newName) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the name of this object. Returns 0 if the name was set successfully, non-zero otherwise.
+The name must be in quoted-printable form.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDisplayName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDisplayName()">getDisplayName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String getDisplayName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the name of this object, as it would be displayed to the user. Note that the display
+name may be different from the name of this object. If this object no longer exists,
+returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDateBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDateBundle()">getDateBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0f908.htm">DateBundle</A> getDateBundle() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a DateBundle containing zero or more of the dates associated with this object:
+the creation date, modification date, backup date, and access date. Use this instead of the
+following methods. Any or all of the dates in the DateBundle may be null if this object
+no longer exists, of if it is not possible to determine this information. This method can
+return null in those cases as well.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setDateBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setDateBundle(com.jconfig.DateBundle)">setDateBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract void setDateBundle(<A HREF="pow0f908.htm">DateBundle</A> newDates) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the set of dates associated with this file.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> newDates</I></TD> <TD>if one or more of the dates in this bundle are null, they will not be changed.</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getIconBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getIconBundle()">getIconBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0326d.htm">IconBundle</A> getIconBundle() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the icon bundle associated with this object. Returns null if this object does not have
+any associated icons, or if this object no longer exists.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getColorCoding"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getColorCoding()">getColorCoding</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getColorCoding() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the Mac-style color coding label for this object. Returns a number between 0 and 7;
+0 signifies that there is no color coding.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFlags()">getFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getFlags() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a set of binary flags associated with this object. Use the 'getGetFlagsMask' method
+to find out which bits of the returned value are significant.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getGetFlagsMask"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getGetFlagsMask()">getGetFlagsMask</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getGetFlagsMask() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a mask which indicates which bits returned by 'getFlags' are significant. For
+instance, if bit 0 of the return value of this method is set, bit 0 of 'getFlags' contains
+actual information, otherwise, this information is not available.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFlags(int, int)">setFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract void setFlags(int whichFlags, 
+                                 int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the binary flags associated with this object. Use the 'getSetFlagsMask' method
+to find out which bits can be set.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> whichFlags</I></TD> <TD>a mask which indicates which bits in 'flags' will be set or reset
+
+For instance, if whichFlags is 0011, and flags is 0101, and the rightmost digit
+in the preceding numbers is bit #0, then, only bits #0 and #1 will be changed;
+bit #0 (indicated by the rightmost digit of whichFlags being 1) will be changed to 1 (the rightmost value in flags),
+and bit #1 will be changed to 0. All the other flags will not be changed, because only bits #0 and bits #1 are
+set in the mask.</TD></TR>
+<TR VALIGN=TOP> <TD><I> flags</I></TD> <TD>contains the new values of the bits indicated by the whichFlags mask</TD></TR>
+</TABLE><P>
+<DT> <B>Throws:</B> <A HREF="pow04429.htm">OSException</A>
+<DD> if an OS error occurs
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getSetFlagsMask"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getSetFlagsMask()">getSetFlagsMask</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int getSetFlagsMask() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a mask which indicates which bits can be set by 'setFlags'.
+For instance, if bit 0 of the return value of this method is set,
+bit 0 of the argument to 'setFlags' can be set.
+<P>
+<DT> <B>Throws:</B> <A HREF="pow04429.htm">OSException</A>
+<DD> if an OS error occurs
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFile"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFile()">getFile</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract File getFile() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a copy of the File object associated with this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="exists"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="exists()">exists</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract boolean exists() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns true if this object still exists, false otherwise.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="iterate"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="iterate(com.jconfig.DiskFilter, int, int)">iterate</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int iterate(<A HREF="pow0cf1d.htm">DiskFilter</A> filter, 
+                               int flags, 
+                               int maxToIterate) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Enumerates the contents of this object. If this object does not contain other objects, returns
+-1. Other error codes may be returned. Returns 0 if no error occurs.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> filter</I></TD> <TD>a DiskFilter object, to which each of the contained items will be presented. The
+DiskFilter returns a boolean; true means to continue, false means to stop.</TD></TR>
+<TR VALIGN=TOP> <TD><I> flags</I></TD> <TD>indicates what type of objects should be ignored. If zero, all objects will be
+presented to the filter. If you want to exclude various types of objects, OR together the
+appropriate constants from the DiskFilter interface: kIgnoreHidden, kIgnoreFolders,
+kIgnoreFiles, kIgnoreAliases, kIgnoreNameLocked.</TD></TR>
+<TR VALIGN=TOP> <TD><I> maxToIterate</I></TD> <TD>the maximum number of files to present to the DiskFilter</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getContainer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getContainer()">getContainer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow087fb.htm">DiskObject</A> getContainer()  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the DiskObject which contains this object. If there is no such object ( i.e., this is
+a volume ), returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileSystem"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileSystem()">getFileSystem</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow08d7c.htm">FileSystem</A> getFileSystem() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the FileSystem which contains this object. If that information cannot be determined, returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="updateContainer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="updateContainer()">updateContainer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int updateContainer() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the modification date of the container of this object to the current time. Use this method,
+for instance, to inform the Finder that you've made changes to an object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createObject"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createObject(java.lang.String, int, int)">createObject</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow087fb.htm">DiskObject</A> createObject(String name, 
+                                           int type, 
+                                           int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Used to create a file, folder or other object which will be contained by this DiskObject.
+Returns the new DiskObject, or null if the object could not be created.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> name</I></TD> <TD>the name of the new object</TD></TR>
+<TR VALIGN=TOP> <TD><I> type</I></TD> <TD>either 'DO_CREATEFILE' or 'DO_CREATEDIR'</TD></TR>
+<TR VALIGN=TOP> <TD><I> flags</I></TD> <TD>reserved; set to 0
+The following logic is used to create the object:
+<PRE>
+if type == DO_CREATEDIR
+	if an object with that name already exists
+		if it's a folder
+			return a DiskObject representing that folder
+		else
+			return null
+	else
+		create a new folder, and return a DiskObject representing the new folder
+else if type == DO_CREATEFILE
+	if an object with that name already exists
+		if it's a file
+			return a DiskObject representing that file
+		else
+			return null
+	else
+		create a new, empty file, and return a DiskObject representing the new file
+</PRE></TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

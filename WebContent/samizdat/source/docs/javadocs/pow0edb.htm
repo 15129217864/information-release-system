@@ -1,0 +1,492 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:32:12 PDT 2002 -->
+<!-- com.jconfig.JUtils | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Class com.jconfig.JUtils
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Class com.jconfig.JUtils
+</FONT></B>
+<PRE>
+java.lang.Object
+   |
+   +----com.jconfig.JUtils
+</PRE>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public class  <STRONG>JUtils</STRONG>
+     extends java.lang.Object
+{
+          // Fields 2
+     private static final String <A HREF="#copyrightString">copyrightString</A>;
+     private static final char[] <A HREF="#hexDigits">hexDigits</A>;
+
+          // Constructors 1
+     private <A HREF="#JUtils()">JUtils</A>();
+
+          // Methods 19
+     public static final int <A HREF="#asciiToInt(java.lang.String)">asciiToInt</A>(String);
+     public static final int <A HREF="#bytesToInt(byte[], int)">bytesToInt</A>(byte[], int);
+     public static final int <A HREF="#bytesToIntSwap(byte[], int)">bytesToIntSwap</A>(byte[], int);
+     public static final short <A HREF="#bytesToShort(byte[], int)">bytesToShort</A>(byte[], int);
+     public static final short <A HREF="#bytesToShortSwap(byte[], int)">bytesToShortSwap</A>(byte[], int);
+     public static String <A HREF="#deQuoteDePrint(java.lang.String)">deQuoteDePrint</A>(String);
+     public static final String <A HREF="#enQP(byte[])">enQP</A>(byte[]);
+     public static final String <A HREF="#enQP(java.lang.String)">enQP</A>(String);
+     public static String[] <A HREF="#fileToStringArray(java.io.File)">fileToStringArray</A>(File);
+     public static String <A HREF="#getFileNameFromUser()">getFileNameFromUser</A>();
+     private static final char <A HREF="#getHexChar(int)">getHexChar</A>(int);
+     static final int <A HREF="#getHexValue(char)">getHexValue</A>(char);
+     public static final String <A HREF="#intToAscii(int)">intToAscii</A>(int);
+     public static final long <A HREF="#intsToLong(int, int)">intsToLong</A>(int, int);
+     public static final String <A HREF="#javaPathToWinPath(java.lang.String)">javaPathToWinPath</A>(String);
+     public static final String <A HREF="#pascalBytesToQPString(byte[])">pascalBytesToQPString</A>(byte[]);
+     public static final String <A HREF="#pascalBytesToString(byte[], int)">pascalBytesToString</A>(byte[], int);
+     public static final Date <A HREF="#rawDateToJDate(com.jconfig.RawDate)">rawDateToJDate</A>(RawDate);
+     public static final void <A HREF="#stringToPascalBytes(java.lang.String, byte[], int)">stringToPascalBytes</A>(String, byte[], int);
+
+}
+</PRE>
+<P>
+<DL>
+<P>
+Contains various utility routines.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="hexDigits"><FONT COLOR="#0000FF">&middot;</FONT> hexDigits</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private static final char[] hexDigits
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Constructors</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="JUtils"><FONT COLOR="#FFCC00">&middot;</FONT></A>
+<A NAME="JUtils()">JUtils</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private JUtils() </PRE>
+<BLOCKQUOTE>
+</BLOCKQUOTE> <BR>
+
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="fileToStringArray"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="fileToStringArray(java.io.File)">fileToStringArray</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static String[] fileToStringArray(File fl) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Reads a text file, and returns an array containing each line of the file. Stops at the end of the file,
+or if a blank line is found.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileNameFromUser"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="getFileNameFromUser()">getFileNameFromUser</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static String getFileNameFromUser() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Display a FileDialog and return a full path name. Returns null if the user chooses 'Cancel'.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="rawDateToJDate"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="rawDateToJDate(com.jconfig.RawDate)">rawDateToJDate</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final Date rawDateToJDate(<A HREF="pow05c42.htm">RawDate</A> rd) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert a RawDate into a java.util.Date.  If the year is less than 1901, it will be set to 1970.
+If rd is null, returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="bytesToShort"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="bytesToShort(byte[], int)">bytesToShort</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final short bytesToShort(byte[] buf, 
+                                          int offset) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert two bytes of a byte array into a short. Big-endian.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> offset</I></TD> <TD>the offset at which to start</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="bytesToShortSwap"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="bytesToShortSwap(byte[], int)">bytesToShortSwap</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final short bytesToShortSwap(byte[] buf, 
+                                              int offs) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert two bytes of a byte array into a short. Little-endian.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> offset</I></TD> <TD>the offset at which to start</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="bytesToInt"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="bytesToInt(byte[], int)">bytesToInt</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int bytesToInt(byte[] buf, 
+                                      int offset) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert four bytes of a byte array into an integer. Big-endian.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> offset</I></TD> <TD>the offset at which to start</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="bytesToIntSwap"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="bytesToIntSwap(byte[], int)">bytesToIntSwap</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int bytesToIntSwap(byte[] buf, 
+                                          int offs) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert four bytes of a byte array into an integer. Little-endian.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> offset</I></TD> <TD>the offset at which to start</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="intsToLong"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="intsToLong(int, int)">intsToLong</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final long intsToLong(int hi, 
+                                       int lo) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="asciiToInt"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="asciiToInt(java.lang.String)">asciiToInt</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int asciiToInt(String s) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Converts an ASCII string into an integer. The string must contain exactly 4 characters,
+e.g, "TEXT".
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="intToAscii"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="intToAscii(int)">intToAscii</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String intToAscii(int n) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert an integer into a four character string. If any characters would be zero,
+they are replaced with spaces.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="stringToPascalBytes"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="stringToPascalBytes(java.lang.String, byte[], int)">stringToPascalBytes</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final void stringToPascalBytes(String s, 
+                                                byte[] record, 
+                                                int offset) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert a java string into a Pascal string, and put it at the indicated position of a byte
+array.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="pascalBytesToString"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="pascalBytesToString(byte[], int)">pascalBytesToString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String pascalBytesToString(byte[] record, 
+                                                  int offset) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Read a pascal-style string from a byte array.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="pascalBytesToQPString"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="pascalBytesToQPString(byte[])">pascalBytesToQPString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String pascalBytesToQPString(byte[] record) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert a Pascal string in a byte array into a quoted-printable String.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="javaPathToWinPath"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="javaPathToWinPath(java.lang.String)">javaPathToWinPath</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String javaPathToWinPath(String javaPath) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert a java-style file name into a Win-style file name.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="deQuoteDePrint"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="deQuoteDePrint(java.lang.String)">deQuoteDePrint</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static String deQuoteDePrint(String srcStr) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convert a quoted-printable String into a regular String.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getHexValue"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="getHexValue(char)">getHexValue</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   static final int getHexValue(char cc) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="enQP"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="enQP(byte[])">enQP</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String enQP(byte[] in) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="enQP"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="enQP(java.lang.String)">enQP</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String enQP(String in) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getHexChar"><FONT COLOR="#00DD00">&middot;</FONT></A>
+<A NAME="getHexChar(int)">getHexChar</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private static final char getHexChar(int which) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

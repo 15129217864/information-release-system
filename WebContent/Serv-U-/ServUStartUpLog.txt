@@ -1,0 +1,11 @@
+Thu 26Jul12 13:40:04 - Serv-U FTP Server v6.4 (6.4.0.2) - Copyright (c) 1995-2007 Rhino Software, Inc., All Rights Reserved
+Thu 26Jul12 13:40:04 - Build Date: 2007Äê1ÔÂ29ÈÕ 8:04
+Thu 26Jul12 13:40:04 - Using WinSock 2.0 - max. 32767 sockets
+Thu 26Jul12 13:40:05 - Loaded SSL/TLS libraries
+Thu 26Jul12 13:40:05 - FTP Server listening on port number 43958, IP 127.0.0.1
+Thu 26Jul12 13:40:06 - SERVER IS NOT LISTENING ON IP 192.168.10.3: Trying to use non-existent IP address?
+Thu 26Jul12 13:40:06 - Valid registration key found
+Thu 26Jul12 13:40:16 - SERVER IS NOT LISTENING ON IP 192.168.10.130: Trying to use non-existent IP address?
+Thu 26Jul12 13:40:17 - SERVER IS NOT LISTENING ON IP 192.168.10.130: Trying to use non-existent IP address?
+Thu 26Jul12 13:40:17 - SERVER IS NOT LISTENING ON IP 192.168.10.130: Trying to use non-existent IP address?
+Thu 26Jul12 13:42:41 - FTP Server listening on port number 21, IP 192.168.10.200

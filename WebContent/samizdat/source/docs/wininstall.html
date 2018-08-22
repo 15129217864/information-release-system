@@ -1,0 +1,345 @@
+<HTML>
+<HEAD>
+
+<TITLE>Windows Installation</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Windows Installation
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file contains installation and setup notes for Windows.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+
+<P>
+<H2>
+Installation
+</H2>
+
+
+<P>
+It is recommended that you don't move the <CODE>source</CODE> folder. If you unzipped the distribution to
+the root of your <CODE>C:</CODE> drive as recommended, the batch files might require only minimal changes.
+Otherwise, you'll need to edit the batch files to reflect the location of the <CODE>source</CODE> folder.
+
+<P>
+It is also recommended that you use Windows as your 'homebase'; i.e., store the master copies of the JConfig files on
+Windows, copying to Mac or Linux only as necessary to compile the native code.
+
+<P>
+Two batch files are used to compile the Java and C++ code, <CODE>simpcomp.bat</CODE> and <CODE>buildall.bat</CODE>; 
+if you don't store the distribution into the folder given above, you'll need to edit the batch files as described below.
+
+<P>
+Also, you'll need to edit the first few lines of <CODE>simpcomp.bat</CODE> and <CODE>buildall.bat</CODE>, depending on the locations where you
+have the required software installed. See below for details.
+
+
+
+
+
+<P>
+<H2>
+Requirements
+</H2>
+
+<P>
+To compile the Java code, you need:
+<UL>
+
+<P>
+<LI><B>the Sun JDK 1.2 or greater</B>
+<BR>
+You can use another version of the 1.2 JDK
+<BR>
+<CODE>simpcomp.bat</CODE> assumes that this is stored in G:\myaps\jdk1.2, you'll need to change this.
+
+<P>
+<LI><B>Infozip's zip.exe</B>
+
+<BR>
+You can use another zipping program, if you wish.
+<BR>
+<CODE>simpcomp.bat</CODE> assumes that this is stored in e:\infozip, you'll need to change this.
+<BR>
+You can get this from <A HREF="http://www.cdrom.com/pub/infozip/Info-Zip.html">InfoZip</A>
+
+</UL>
+
+To compile the Windows native code DLLs, you need:
+
+<UL>
+
+<LI><B>MSVC++</B>
+
+<P>
+<LI><B>the Sun JDK 1.1.x</B>
+<BR>
+This is required for the JNI header files.
+<BR>
+<CODE>buildall.bat</CODE> assumes that this is stored in f:\jdk1.1.4
+
+
+<P>
+<LI><B>the MS Java SDK version 1.5</B>
+<BR>
+This is required for the RNI1 header files.
+<BR>
+<CODE>buildall.bat</CODE> assumes that this is stored in e:\sdk-java
+
+
+<P>
+<LI><B>the MS Java SDK version 2.0</B>
+<BR>
+This is required for the RNI2 header files.
+<BR>
+<CODE>buildall.bat</CODE> assumes that this is stored in e:\sdk-java.20
+
+
+<P>
+<LI><B>the MS platform SDK</B>
+<BR>
+Only one file from the platform SDK is used, 'multimon.h', and this is only required by one file,
+'files\win\SMonitors.cpp'.
+<BR>
+SMonitors.cpp assumes that the full path to multimon.h is e:\psdk\include\multimon.h. If you have
+it stored in a different location, you'll need to edit SMonitors.cpp.
+<BR>
+If necessary, you can edit SMonitors.cpp so this file is not needed; see that file for details.
+<BR>
+You can get the platform SDK from
+<A HREF="http://www.microsoft.com/msdownload/platformsdk/bldenv.htm">www.microsoft.com</A>
+or <A HREF="http://msdn.microsoft.com/developer/sdk/bldenv.htm">msdn.microsoft.com</A>
+</UL>
+
+
+
+
+<P>
+<H2>
+Compiling
+</H2>
+
+<P>
+The batch file <CODE>simpcomp.bat</CODE> is used to compile the Java code for all platforms. You'll need to edit the first few
+lines of this file depending on where the JDK and InfoZip are stored. See that file for details.
+
+<P>
+The batch file <CODE>buildall.bat</CODE> is used to compile the Windows native code DLLs. This file uses nmake and the make files
+for each of the six DLLs. You'll need to edit the first few lines of this file depending on where the JDK 
+and the MS Java SDKs are stored. See that file for details.
+
+<P>
+<B>IMPORTANT NOTE:</B>
+Previous JConfig versions included the file comp.bat instead of simpcomp.bat. Since the version of comp.bat
+which was used to compile the copy of JConfig.zip which is included with this distribution
+uses three versions of javac and is thus
+very complicated, it is no longer included. It is available on request however. comp.bat uses
+java 1.0.2 to compile most of the files, and 1.1 and 1.2 to compile a few files that require features
+available only in those releases of java. If you need to maintain full compatibility, you may need to
+use comp.bat instead of simpcomp.bat.
+
+<P>
+<B>IMPORTANT NOTE:</B>
+If necessary, you might also need to edit the .mak files. Try to edit the .mak files manually (i.e., as text)
+first before opening them with MSVC.
+
+If you open the .mdp files with MSVC, you might need to spend some time telling MSVC where to
+look for the correct include files and libraries.
+
+
+
+
+<P>
+<H2>
+Notes
+</H2>
+
+
+<P>
+<B>IMPORTANT NOTE:</B>
+Don't modify the relative locations of files or folders within the distribution;
+doing so may require editing the project files, batch files, etc.
+
+<P>
+<B>NOTE:</B> If you get the message 'Out of Environment Space' when running
+the batch files, right click on the batch file, and choose 'Properties'.
+On the 'Memory' tab, in the 'Conventional Memory' area, set the 'Initial
+Environment' popup menu to its highest setting.
+
+
+<BR>
+<BR>
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

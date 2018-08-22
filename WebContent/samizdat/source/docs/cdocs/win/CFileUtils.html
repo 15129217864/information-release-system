@@ -1,0 +1,303 @@
+<html><head><title>CFileUtils Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">CFileUtils</a></h1>
+<dl>
+<dd>
+	Utilities for working with files and directories
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Windows.html">Windows</a> | 
+<a href=../../../"CFileUtils.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class CFileUtils <br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_exists(_const_CStr_*fullPath_)$"><font color=green>exists</font></a>( const CStr *fullPath );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_createTempFile(_const_CStr_*csTempPath,_const_CStr_*csExt,_CStr_*csOutFilePath_)$"><font color=green>createTempFile</font></a>( const CStr *csTempPath, const CStr *csExt, CStr *csOutFilePath );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_deleteFile(_const_CStr_*fullPath_)$"><font color=green>deleteFile</font></a>( const CStr *fullPath );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_isMountedDrive(_const_CStr_*driveName_)$"><font color=green>isMountedDrive</font></a>( const CStr *driveName );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_isExeFile(_const_CStr_*fileName_)$"><font color=green>isExeFile</font></a>( const CStr *fileName );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_makeLongFileName(_const_CStr_*shortFileName,_CStr_*longFileName_)$"><font color=green>makeLongFileName</font></a>( const CStr *shortFileName, CStr *longFileName );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_getFileTime(_const_CStr_*fullPath,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><font color=green>getFileTime</font></a>( const CStr *fullPath, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // CFileUtils <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CFileUtils</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Utilities for working with files and directories
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CFileUtils</i><p>
+<a name="BOOL_exists(_const_CStr_*fullPath_)$"><hr><p></p><h3>BOOL exists( const CStr *fullPath );</h3></a>
+<p>
+		    Returns TRUE if the given file exists, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file to check.
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL	<a href="#BOOL_exists(_const_CStr_*fullPath_)$">exists</a>( const CStr *fullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="BOOL_createTempFile(_const_CStr_*csTempPath,_const_CStr_*csExt,_CStr_*csOutFilePath_)$"><hr><p></p><h3>BOOL createTempFile( const CStr *csTempPath, const CStr *csExt, CStr *csOutFilePath );</h3></a>
+<p>
+		    Creates a temporary file with a given extension.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csTempPath</strong>
+<dd>Path to a writable directory in which the file will be created.
+<dt><i>in</i><strong>	csExt</strong>
+<dd>The extension the file will have
+<dt><i>out</i><strong>	csOutFilePath</strong>
+<dd>On exit, contains the full path of the temp file.
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL	<a href="#BOOL_createTempFile(_const_CStr_*csTempPath,_const_CStr_*csExt,_CStr_*csOutFilePath_)$">createTempFile</a>( const CStr *csTempPath, const CStr *csExt, CStr *csOutFilePath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="ErrCode_deleteFile(_const_CStr_*fullPath_)$"><hr><p></p><h3>ErrCode deleteFile( const CStr *fullPath );</h3></a>
+<p>
+		    Deletes a file.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The full path of the file to delete.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_deleteFile(_const_CStr_*fullPath_)$">deleteFile</a>( const CStr *fullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="BOOL_isMountedDrive(_const_CStr_*driveName_)$"><hr><p></p><h3>BOOL isMountedDrive( const CStr *driveName );</h3></a>
+<p>
+		    Returns TRUE if the given drive is mounted, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	driveName</strong>
+<dd>The drive name.
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL	<a href="#BOOL_isMountedDrive(_const_CStr_*driveName_)$">isMountedDrive</a>( const CStr *driveName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="BOOL_isExeFile(_const_CStr_*fileName_)$"><hr><p></p><h3>BOOL isExeFile( const CStr *fileName );</h3></a>
+<p>
+		    Returns TRUE if the given file is an executable, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fileName</strong>
+<dd>The full path of the file to check.
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL	<a href="#BOOL_isExeFile(_const_CStr_*fileName_)$">isExeFile</a>( const CStr *fileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="ErrCode_makeLongFileName(_const_CStr_*shortFileName,_CStr_*longFileName_)$"><hr><p></p><h3>ErrCode makeLongFileName( const CStr *shortFileName, CStr *longFileName );</h3></a>
+<p>
+		    Creates a long file name.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	shortFileName</strong>
+<dd>A short ( or long ) path name.
+<dt><i>out</i><strong>	longFileName</strong>
+<dd>On exit, contains the long path name.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_makeLongFileName(_const_CStr_*shortFileName,_CStr_*longFileName_)$">makeLongFileName</a>( const CStr *shortFileName, CStr *longFileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="ErrCode_getFileTime(_const_CStr_*fullPath,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><hr><p></p><h3>ErrCode getFileTime( const CStr *fullPath, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );</h3></a>
+<p>
+		    Gets the creation, backup, and modification dates of a file.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The number of bytes to allocate.
+<dt><i>out</i><strong>	crDate</strong>
+<dd>On exit, the creation date.
+<dt><i>out</i><strong>	acDate</strong>
+<dd>On exit, the last access date.
+<dt><i>out</i><strong>	mdDate</strong>
+<dd>On exit, the modification date.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_getFileTime(_const_CStr_*fullPath,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$">getFileTime</a>( const CStr *fullPath, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFileUtils </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_exists(_const_CStr_*fullPath_)$"><font color=green>exists</font></a>( const CStr *fullPath );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_createTempFile(_const_CStr_*csTempPath,_const_CStr_*csExt,_CStr_*csOutFilePath_)$"><font color=green>createTempFile</font></a>( const CStr *csTempPath, const CStr *csExt, CStr *csOutFilePath );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_deleteFile(_const_CStr_*fullPath_)$"><font color=green>deleteFile</font></a>( const CStr *fullPath );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_isMountedDrive(_const_CStr_*driveName_)$"><font color=green>isMountedDrive</font></a>( const CStr *driveName );
+<dd><strong>static</strong> BOOL <a href="CFileUtils.html#BOOL_isExeFile(_const_CStr_*fileName_)$"><font color=green>isExeFile</font></a>( const CStr *fileName );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_makeLongFileName(_const_CStr_*shortFileName,_CStr_*longFileName_)$"><font color=green>makeLongFileName</font></a>( const CStr *shortFileName, CStr *longFileName );
+<dd><strong>static</strong> ErrCode <a href="CFileUtils.html#ErrCode_getFileTime(_const_CStr_*fullPath,_FILETIME_*crDate,_FILETIME_*acDate,_FILETIME_*mdDate_)$"><font color=green>getFileTime</font></a>( const CStr *fullPath, FILETIME *crDate, FILETIME *acDate, FILETIME *mdDate );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  CFileUtils<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CFileUtils<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CFileUtils<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:03 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

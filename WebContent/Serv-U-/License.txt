@@ -1,0 +1,33 @@
+License Agreement
+
+Please read the following terms and conditions before using this software.  Use of Serv-U indicates you accept the terms of this license agreement and warranty.
+
+Registered Version
+
+A single registered copy of Serv-U may either be used by a single person who uses the software himself on one computer, or installed on a single computer and used by multiple people.  One copy or license of Serv-U cannot be installed on multiple computers and cannot be used at the same time.  A license must be purchased for each computer Serv-U is installed on.
+
+Governing Law
+
+This agreement shall be governed by the laws of the State of Wisconsin, USA.
+
+Disclaimer of Warranty
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE SOLD "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.  Because of the various hardware and software environments into which Serv-U may be put, NO WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE IS OFFERED.
+
+Good data processing practice dictates that any new program should be thoroughly tested by the user with non-critical data before relying on it.  The user must assume the entire risk of using the program.  ANY LIABILITY OF THE SELLER WILL BE LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT OR, AT THE SELLER'S DISCRETION, A REFUND OF PURCHASE PRICE.
+
+Evaluation and Registration
+
+Subject to the terms below, you are hereby licensed to use this software for evaluation purposes without charge for a period of 30 days.  After 30 days, Serv-U operates with the limitations of Serv-U Personal, which can be used indefinitely without registration.  More information on Serv-U Personal can be found on the Serv-U website: http://www.Serv-U.com
+
+If you use this software after the 30-day evaluation period in an edition other than Personal, registration is required.  Registrations are fulfilled by RhinoSoft.com, P.O. Box 53, Helenville WI, 53137 USA.  For further information, visit the Serv-U Web site at:  http://www.Serv-U.com
+
+Credit card ordering and quantity discounts are available, visit the Serv-U website at: http://www.Serv-U.com for further information.  When payment is received, you will be sent a registration ID for Serv-U via e-mail.
+
+Unregistered use of Personal Serv-U editions other than Personal after the 30-day evaluation period is in violation of U.S. and international copyright laws.
+
+Distribution
+
+Provided that you are distributing the current non-registered Evaluation Version (select About from the Serv-U Help menu to check) you are hereby granted permission to duplicate and distribute the program; give exact copies of the original Evaluation version to anyone; and distribute the Evaluation version of the software and documentation in its unmodified form via electronic means.  There is no charge for any of the above.
+
+You are specifically prohibited from charging, or requesting donations, for any such copies, however made; from distributing the software and/or documentation with other products (commercial or otherwise) without prior written permission.

@@ -1,0 +1,393 @@
+<html><head><title>SVolumes Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SVolumes</a></h1>
+<dl>
+<dd>
+	Routines for working with volumes
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Windows.html">Windows</a> | 
+<a href=../../../"SVolumes.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SVolumes <br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iSetVolumeLabel(_const_CStr_*csDriveName,_const_CStr_*newLabel_)$"><font color=green>iSetVolumeLabel</font></a>( const CStr *csDriveName, const CStr *newLabel );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_CStr_*csFileSystemName,_unsigned_long_*theIntsP_)$"><font color=green>iGetVolumeInformation</font></a>( const CStr *csDriveName, CStr *csOutVolName, CStr *csFileSystemName, unsigned long *theIntsP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeCapInfo(_const_CStr_*csDriveName,_unsigned___int64_*cap_)$"><font color=green>iGetVolumeCapInfo</font></a>( const CStr *csDriveName, unsigned __int64 *cap );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeDates(_const_CStr_*csDriveName,_CDateBundle_*dateBundle_)$"><font color=green>iGetVolumeDates</font></a>( const CStr *csDriveName, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeFlags(_const_CStr_*csDriveName,_long_*flagsP_)$"><font color=green>iGetVolumeFlags</font></a>( const CStr *csDriveName, long *flagsP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeReadFlagsMask(_const_CStr_*csDriveName,_long_*maskP_)$"><font color=green>iGetVolumeReadFlagsMask</font></a>( const CStr *csDriveName, long *maskP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetDriveDisplayName(_const_CStr_*csDriveName,_CStr_*displayName_)$"><font color=green>iGetDriveDisplayName</font></a>( const CStr *csDriveName, CStr *displayName );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumes(_long_maxToReturn,_CStringVector_*retStringTable_)$"><font color=green>iGetVolumes</font></a>( long maxToReturn, CStringVector *retStringTable );
+<dd>enum <a href="SVolumes.html#enum_eVolumeCapInfo$"><font color=green>eVolumeCapInfo</font></a>;
+<dd>enum <a href="SVolumes.html#enum_eGVI$"><font color=green>eGVI</font></a>;
+<dd>enum <a href="SVolumes.html#enum_eDiskVolumeFlags$"><font color=green>eDiskVolumeFlags</font></a>;
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SVolumes <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SVolumes</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Routines for working with volumes
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SVolumes</i><p>
+<a name="ErrCode_iSetVolumeLabel(_const_CStr_*csDriveName,_const_CStr_*newLabel_)$"><hr><p></p><h3>ErrCode iSetVolumeLabel( const CStr *csDriveName, const CStr *newLabel );</h3></a>
+<p>
+		    Set the label of the given volume
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>in</i><strong>	newLabel</strong>
+<dd>The	new label.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iSetVolumeLabel(_const_CStr_*csDriveName,_const_CStr_*newLabel_)$">iSetVolumeLabel</a>( const CStr *csDriveName, const CStr *newLabel );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_CStr_*csFileSystemName,_unsigned_long_*theIntsP_)$"><hr><p></p><h3>ErrCode iGetVolumeInformation( const CStr *csDriveName, CStr *csOutVolName, CStr *csFileSystemName, unsigned long *theIntsP );</h3></a>
+<p>
+		    Calls the WinAPI routine GetVolumeInformation()
+		  	This routine returns two strings and three DWORDs, the strings are
+		  	placed into 'csOutVolName' and 'csFileSystemName', and the DWORDs are
+		  	placed into the 'theIntsP' array. See the enum eGVI for the length
+		  	and offsets of the values in this buffer.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	csOutVolName</strong>
+<dd>The	label of the volume
+<dt><i>out</i><strong>	csFileSystemName</strong>
+<dd>The	name of the file system on the volume
+<dt><i>out</i><strong>	theIntsP</strong>
+<dd>Longs with info about the volume
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_CStr_*csFileSystemName,_unsigned_long_*theIntsP_)$">iGetVolumeInformation</a>( const CStr *csDriveName, CStr *csOutVolName,
+										CStr *csFileSystemName, unsigned long *theIntsP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumeCapInfo(_const_CStr_*csDriveName,_unsigned___int64_*cap_)$"><hr><p></p><h3>ErrCode iGetVolumeCapInfo( const CStr *csDriveName, unsigned __int64 *cap );</h3></a>
+<p>
+		    Returns the free space and capacity of a volume
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	cap</strong>
+<dd>The	free space and capacity of the volume will
+		  							be placed at the offsets in cap given by the eVolumeCapInfo constants
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumeCapInfo(_const_CStr_*csDriveName,_unsigned___int64_*cap_)$">iGetVolumeCapInfo</a>( const CStr *csDriveName, unsigned __int64 *cap );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumeDates(_const_CStr_*csDriveName,_CDateBundle_*dateBundle_)$"><hr><p></p><h3>ErrCode iGetVolumeDates( const CStr *csDriveName, CDateBundle *dateBundle );</h3></a>
+<p>
+		    Retrieves the three dates associated with a volume, and puts them in the
+		  	given CDateBundle
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	dateBundle</strong>
+<dd>On exit, contains the three dates for the volume.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumeDates(_const_CStr_*csDriveName,_CDateBundle_*dateBundle_)$">iGetVolumeDates</a>( const CStr *csDriveName, CDateBundle *dateBundle );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumeFlags(_const_CStr_*csDriveName,_long_*flagsP_)$"><hr><p></p><h3>ErrCode iGetVolumeFlags( const CStr *csDriveName, long *flagsP );</h3></a>
+<p>
+		    Gets flags on a volume
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	flagsP</strong>
+<dd>The flags; see the 'kVolumeFlag...' constants
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumeFlags(_const_CStr_*csDriveName,_long_*flagsP_)$">iGetVolumeFlags</a>( const CStr *csDriveName, long *flagsP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumeReadFlagsMask(_const_CStr_*csDriveName,_long_*maskP_)$"><hr><p></p><h3>ErrCode iGetVolumeReadFlagsMask( const CStr *csDriveName, long *maskP );</h3></a>
+<p>
+		    Same
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	maskP</strong>
+<dd>Returns which bits from	iGetVolumeFlags are significant.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumeReadFlagsMask(_const_CStr_*csDriveName,_long_*maskP_)$">iGetVolumeReadFlagsMask</a>( const CStr *csDriveName, long *maskP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetDriveDisplayName(_const_CStr_*csDriveName,_CStr_*displayName_)$"><hr><p></p><h3>ErrCode iGetDriveDisplayName( const CStr *csDriveName, CStr *displayName );</h3></a>
+<p>
+		    Returns the display name of the volume.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	csDriveName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	displayName</strong>
+<dd>The display name.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetDriveDisplayName(_const_CStr_*csDriveName,_CStr_*displayName_)$">iGetDriveDisplayName</a>( const CStr *csDriveName, CStr *displayName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="ErrCode_iGetVolumes(_long_maxToReturn,_CStringVector_*retStringTable_)$"><hr><p></p><h3>ErrCode iGetVolumes( long maxToReturn, CStringVector *retStringTable );</h3></a>
+<p>
+		    Sets a string vector with a list of the mounted volumes.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	maxToReturn</strong>
+<dd>The	maximum number of volumes to return.
+<dt><i>out</i><strong>	retStringTable</strong>
+<dd>Each mounted volume will be appended to this vector
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetVolumes(_long_maxToReturn,_CStringVector_*retStringTable_)$">iGetVolumes</a>( long maxToReturn, CStringVector *retStringTable );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="enum_eVolumeCapInfo$"><hr><p></p><h3>enum eVolumeCapInfo;</h3></a>
+<p>
+		    The length of the buffer passed to iGetVolumeCapInfo, and the offset
+		  	in this buffer of the system-wide capacity, system-wide free space,
+		  	current-user-specific capacity, and current-user-specific free space
+<p>
+<p><pre>
+	enum {
+		kVolumeCapInfoLen = 4,
+		kVolumeCapInfoCapacityOffset = 0,
+		kVolumeCapInfoFreeSpaceOffset = 1,
+		kVolumeCapInfoCapacityToUserOffset = 2,
+		kVolumeCapInfoFreeSpaceToUserOffset = 3
+	} eVolumeCapInfo;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="enum_eGVI$"><hr><p></p><h3>enum eGVI;</h3></a>
+<p>
+		    The length of the long buffers passed to iGetVolumeInformation,
+		  	and the offsets in this buffer of the values returned from this routine.
+<p>
+<p><pre>
+	enum {
+		kGVIIntArrayLen = 3,
+		kGVIIntSerialNumberOffset = 0,
+		kGVIIntMaxComponentLengthOffset = 1,
+		kGVIIntFileSystemFlagsOffset = 2
+	} eGVI;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="enum_eDiskVolumeFlags$"><hr><p></p><h3>enum eDiskVolumeFlags;</h3></a>
+<p>
+		    Flags returned from iGetVolumeFlags
+<p>
+<p><pre>
+	enum {
+		kVolumeFlagCaseIsPreserved = 0x01,
+		kVolumeFlagCaseSensitive = 0x02,
+		kVolumeFlagUnicodeSupported = 0x04,
+		kVolumeFlagFilesCompressed = 0x08,
+		kVolumeFlagVolumeCompressed = 0x10,
+		kVolumeFlagRemovable = 0x20,
+		kVolumeFlagFixed = 0x40,
+		kVolumeFlagRemote = 0x80,
+		kVolumeFlagCDROM = 0x100,
+		kVolumeFlagRAM = 0x200,
+		kVolumeFlagSystem = 0x400,
+		kVolumeFlagSupportedFlags = (
+					kVolumeFlagCaseIsPreserved | kVolumeFlagCaseSensitive | kVolumeFlagUnicodeSupported |
+					kVolumeFlagFilesCompressed | kVolumeFlagVolumeCompressed | kVolumeFlagRemovable |
+					kVolumeFlagFixed | kVolumeFlagRemote | kVolumeFlagCDROM | kVolumeFlagRAM | kVolumeFlagSystem )
+	} eDiskVolumeFlags;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SVolumes </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iSetVolumeLabel(_const_CStr_*csDriveName,_const_CStr_*newLabel_)$"><font color=green>iSetVolumeLabel</font></a>( const CStr *csDriveName, const CStr *newLabel );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeInformation(_const_CStr_*csDriveName,_CStr_*csOutVolName,_CStr_*csFileSystemName,_unsigned_long_*theIntsP_)$"><font color=green>iGetVolumeInformation</font></a>( const CStr *csDriveName, CStr *csOutVolName, CStr *csFileSystemName, unsigned long *theIntsP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeCapInfo(_const_CStr_*csDriveName,_unsigned___int64_*cap_)$"><font color=green>iGetVolumeCapInfo</font></a>( const CStr *csDriveName, unsigned __int64 *cap );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeDates(_const_CStr_*csDriveName,_CDateBundle_*dateBundle_)$"><font color=green>iGetVolumeDates</font></a>( const CStr *csDriveName, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeFlags(_const_CStr_*csDriveName,_long_*flagsP_)$"><font color=green>iGetVolumeFlags</font></a>( const CStr *csDriveName, long *flagsP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumeReadFlagsMask(_const_CStr_*csDriveName,_long_*maskP_)$"><font color=green>iGetVolumeReadFlagsMask</font></a>( const CStr *csDriveName, long *maskP );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetDriveDisplayName(_const_CStr_*csDriveName,_CStr_*displayName_)$"><font color=green>iGetDriveDisplayName</font></a>( const CStr *csDriveName, CStr *displayName );
+<dd><strong>static</strong> ErrCode <a href="SVolumes.html#ErrCode_iGetVolumes(_long_maxToReturn,_CStringVector_*retStringTable_)$"><font color=green>iGetVolumes</font></a>( long maxToReturn, CStringVector *retStringTable );
+<dd>enum <a href="SVolumes.html#enum_eVolumeCapInfo$"><font color=green>eVolumeCapInfo</font></a>;
+<dd>enum <a href="SVolumes.html#enum_eGVI$"><font color=green>eGVI</font></a>;
+<dd>enum <a href="SVolumes.html#enum_eDiskVolumeFlags$"><font color=green>eDiskVolumeFlags</font></a>;
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SVolumes<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SVolumes<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SVolumes<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:09 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

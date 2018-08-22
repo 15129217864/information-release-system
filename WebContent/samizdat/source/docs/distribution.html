@@ -1,0 +1,342 @@
+<HTML>
+<HEAD>
+
+<TITLE>Minimizing the Redistribution Size</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Minimizing the Redistribution Size
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file describes how to reduce the size of the files that you're going to distribute to end users.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+<P>
+
+<B>
+Minimizing JConfig.zip
+</B>
+<P>
+
+<BLOCKQUOTE>
+You can remove packages from JConfig.zip if you aren't using them. However, some parts of the Java code are
+loaded dynamically, so you must be careful.
+
+<P>
+The .class files in the com\tolstoy\testjc subdirectory inside JConfig.zip are only
+used for testing purposes.
+Unless you're using them elsewhere, they can be removed
+
+<P>
+If you are providing separate distributions for each platform, you can remove the JConfig implementation
+classes used for platforms other than those that your distribution is designed to run on.
+
+<P>
+For instance, if your distribution is only designed to run on Windows, you can remove
+the .class files in the com\jconfig\nix and com\jconfig\mac subdirectories inside JConfig.zip.
+</BLOCKQUOTE>
+
+
+<P>
+<B>
+Minimizing JConfig.shlb
+</B>
+<P>
+
+<BLOCKQUOTE>
+This shared library actually consists of three shared libraries, not all of which
+might be needed for your distribution.
+
+<P>
+See the 'Compiling' section in <A HREF="macinstall.html">macinstall.html</A> for more information.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<B>
+Minimizing the <I>Number</I> of the Windows DLLs
+</B>
+<P>
+
+<BLOCKQUOTE>
+The six DLLs are specific to the following VMs:
+
+<TABLE BORDER="1" CELLPADDING="4" CELLSPACING="4" >
+	<TR>
+	<TD></TD>
+	<TD><B>Windows95/98</B></TD>
+	<TD><B>WindowsNT</B></TD>
+	</TR>
+
+	<TR>
+	<TD><B>Sun VM 1.1 or greater</B>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	<TD>jcnfigSN.dll</TD>
+	<TD>jcnfigSW.dll</TD>
+	</TR>
+
+	<TR>
+	<TD><B>MSVM1.5</B>                   </TD>
+	<TD>jcnfigMS.dll</TD>
+	<TD>jcnfigMW.dll</TD>
+	</TR>
+
+	<TR>
+	<TD><B>MSVM 2 or greater</B>         </TD>
+	<TD>jcnfigM2.dll</TD>
+	<TD>jcnfig2W.dll</TD>
+	</TR>
+</TABLE>
+
+
+<P>
+For instance, jcnfigSN.dll is only used with the Sun VM, and only on Win95 or 98.
+
+<P>
+You only need to ship the DLLs with which your application will be run. If you allow the user to select
+which VM they're going to run your app with, then you might need to ship all the DLLs. However, if you specify,
+for instance, that your app can only be run with later versions of the MSVM and only on Windows 95 or 98,
+then you only need to ship jcnfigM2.dll.
+
+<P>
+The RNI specification was changed with the introduction of the MSVM SDK 2.0. 
+The original version is shown above as MSVM1.5; the newer version is shown as "MSVM2 or greater".
+
+<P>
+This appears to correspond to Build 4.79.2174 of the MSVM, from approximately 7/97.
+So, if your distribution will only be used on versions
+of the MSVM which were produced after that Build, you do not need the two MSVM1.5 DLLs.
+You may even be able to run the MSVM2 DLLs with versions of the MSVM prior to that Build,
+but this hasn't been tested.
+
+<P>
+If you aren't running with the Sun VM, then you don't need the two SunJDK DLLs.
+
+<P>Another alternative is to modify the .java files to always load either jcnfigSN or jcnfigSW. That would
+limit you to running on either the Sun VM, or on the latest versions of the MSVM, which include JNI support.
+That has not been tested however.
+
+<P>
+If you aren't going to run on Windows NT, you don't need the DLLs so marked, and vice versa for Win95/98.
+
+<P>
+For more information, see <A HREF="http://support.microsoft.com/support/kb/articles/Q214/8/28.ASP">
+this chart on MSVM versioning.</A>
+</BLOCKQUOTE>
+
+
+
+<P>
+<B>
+Minimizing the <I>Size</I> of the Windows DLLs
+</B>
+<P>
+
+<BLOCKQUOTE>
+The LINK_OUT_??? defines at the beginning of sehstubs.cpp allow you to selectively remove parts of the native code.
+When those parts are removed and the DLL is relinked, the linker will usually make a smaller DLL which doesn't
+include the unwanted code.
+
+<P>
+For instance, if you add the following line to the beginning of sehstubs.cpp:
+
+<PRE>
+#define		LINK_OUT_nativeCreateVolumeAlias
+</PRE>
+
+the functionality associated with creating an alias for a volume will be removed.
+If this native method is called by the .java code, it will just return -1.
+
+<P>
+<B>
+IMPORTANT NOTE: ONLY USE THIS IF ABSOLUTELY NECESSARY
+</B>
+
+<BR>
+This feature has not been thoroughly tested, and the difference is only between an approximately 100k DLL and one
+that's 50 or 60k. If you use this, be sure to test your application thoroughly.
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+<P>
+<B>
+Custom solutions
+</B>
+<P>
+
+<BLOCKQUOTE>
+It might be possible to minimize the distribution size even further by removing even more .java or .cpp code
+that discussed above. However, this is highly app-specific.
+</BLOCKQUOTE>
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

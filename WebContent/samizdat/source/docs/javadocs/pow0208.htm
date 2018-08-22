@@ -1,0 +1,891 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:32:12 PDT 2002 -->
+<!-- com.jconfig.mac.DiskFileMRJ | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Class com.jconfig.mac.DiskFileMRJ
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-545a.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Class com.jconfig.mac.DiskFileMRJ
+</FONT></B>
+<PRE>
+java.lang.Object
+   |
+   +----com.jconfig.mac.DiskFileMRJ
+</PRE>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+class  <STRONG>DiskFileMRJ</STRONG>
+     extends java.lang.Object
+     implements com.jconfig.<A HREF="pow064f2.htm">DiskFile</A>, 
+                com.jconfig.mac.<A HREF="pow0d1b5.htm">IMacDiskObject</A>
+{
+          // Fields 8
+     private boolean <A HREF="#bAlreadyGotVersionInfo">bAlreadyGotVersionInfo</A>;
+     private boolean <A HREF="#bIsFolder">bIsFolder</A>;
+     private static final String <A HREF="#copyrightString">copyrightString</A>;
+     private byte[] <A HREF="#pName">pName</A>;
+     private int <A HREF="#parID">parID</A>;
+     private DiskVolume <A HREF="#theVolume">theVolume</A>;
+     private int <A HREF="#vRef">vRef</A>;
+     private VersionInfoMRJ <A HREF="#versionInfo">versionInfo</A>;
+
+          // Constructors 1
+     <A HREF="#DiskFileMRJ(int, int, byte[], boolean)">DiskFileMRJ</A>(int, int, byte[], boolean) throws FileNotFoundException, DiskFileException;
+
+          // Methods 36
+     public DiskObject <A HREF="#createObject(java.lang.String, int, int)">createObject</A>(String, int, int);
+     public String <A HREF="#diskFileFlagsToString(int)">diskFileFlagsToString</A>(int);
+     public void <A HREF="#dumpInfo(java.io.PrintStream, java.lang.String)">dumpInfo</A>(PrintStream, String);
+     public boolean <A HREF="#exists()">exists</A>();
+     public int <A HREF="#getColorCoding()">getColorCoding</A>();
+     public DiskObject <A HREF="#getContainer()">getContainer</A>() throws FileNotFoundException, DiskFileException;
+     public DateBundle <A HREF="#getDateBundle()">getDateBundle</A>();
+     protected String <A HREF="#getDateString()">getDateString</A>();
+     public String <A HREF="#getDisplayName()">getDisplayName</A>();
+     public File <A HREF="#getFile()">getFile</A>();
+     public long <A HREF="#getFileSize()">getFileSize</A>();
+     public FileSystem <A HREF="#getFileSystem()">getFileSystem</A>();
+     public FinderInfo <A HREF="#getFinderInfo()">getFinderInfo</A>();
+     public int <A HREF="#getFlags()">getFlags</A>();
+     public int <A HREF="#getGetFlagsMask()">getGetFlagsMask</A>();
+     public IconBundle <A HREF="#getIconBundle()">getIconBundle</A>();
+     public String <A HREF="#getName()">getName</A>();
+     public byte[] <A HREF="#getPName()">getPName</A>();
+     public int <A HREF="#getParID()">getParID</A>();
+     public int[] <A HREF="#getPlatformData()">getPlatformData</A>();
+     public ResourceFork <A HREF="#getResourceFork()">getResourceFork</A>();
+     public long <A HREF="#getResourceForkSize()">getResourceForkSize</A>();
+     public int <A HREF="#getSetFlagsMask()">getSetFlagsMask</A>();
+     public String <A HREF="#getShortName()">getShortName</A>();
+     public int <A HREF="#getVRef()">getVRef</A>();
+     public VersionInfo <A HREF="#getVersion()">getVersion</A>();
+     public DiskVolume <A HREF="#getVolume()">getVolume</A>();
+     public int <A HREF="#iterate(com.jconfig.DiskFilter, int, int)">iterate</A>(DiskFilter, int, int);
+     private void <A HREF="#makeVersionInfo()">makeVersionInfo</A>();
+     public int <A HREF="#setColorCoding(int)">setColorCoding</A>(int);
+     public void <A HREF="#setDateBundle(com.jconfig.DateBundle)">setDateBundle</A>(DateBundle);
+     public int <A HREF="#setFinderInfo(com.jconfig.FinderInfo)">setFinderInfo</A>(FinderInfo);
+     public void <A HREF="#setFlags(int, int)">setFlags</A>(int, int);
+     public int <A HREF="#setIconBundle(com.jconfig.IconBundle)">setIconBundle</A>(IconBundle);
+     public int <A HREF="#setName(java.lang.String)">setName</A>(String);
+     public int <A HREF="#updateContainer()">updateContainer</A>();
+}
+</PRE>
+<P>
+<DL>
+<P>
+Implements the DiskFile interface on the Mac. See that interface for more information.
+Most of the methods call methods in AppUtilsMRJ to obtain system information using native code.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Extended By: </B>
+<DD><A HREF="pow0b1d8.htm">AppFileMRJ</A>, <A HREF="pow062bc.htm">AppFileOSX</A>, <A HREF="pow0ff46.htm">DiskAliasMRJ</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="theVolume"><FONT COLOR="#FF00FF">&middot;</FONT> theVolume</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private <A HREF="pow0917b.htm">DiskVolume</A> theVolume
+</PRE>
+<BLOCKQUOTE>
+<P>
+The volume containing this file or folder.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="versionInfo"><FONT COLOR="#FF00FF">&middot;</FONT> versionInfo</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private <A HREF="pow0844.htm">VersionInfoMRJ</A> versionInfo
+</PRE>
+<BLOCKQUOTE>
+<P>
+Version info on the file. Only created when needed.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="vRef"><FONT COLOR="#FF00FF">&middot;</FONT> vRef</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private int vRef
+</PRE>
+<BLOCKQUOTE>
+<P>
+The vRefNum of this file's FSSpec.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="parID"><FONT COLOR="#FF00FF">&middot;</FONT> parID</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private int parID
+</PRE>
+<BLOCKQUOTE>
+<P>
+The parID of this file's FSSpec.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="pName"><FONT COLOR="#FF00FF">&middot;</FONT> pName</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private byte[] pName
+</PRE>
+<BLOCKQUOTE>
+<P>
+The name of this file's FSSpec.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="bIsFolder"><FONT COLOR="#FF00FF">&middot;</FONT> bIsFolder</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private boolean bIsFolder
+</PRE>
+<BLOCKQUOTE>
+<P>
+Indicates whether this is a folder.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="bAlreadyGotVersionInfo"><FONT COLOR="#FF00FF">&middot;</FONT> bAlreadyGotVersionInfo</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private boolean bAlreadyGotVersionInfo
+</PRE>
+<BLOCKQUOTE>
+<P>
+Used to lazily-create and cache the version info.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Constructors</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="DiskFileMRJ"><FONT COLOR="#FFCC00">&middot;</FONT></A>
+<A NAME="DiskFileMRJ(int, int, byte[], boolean)">DiskFileMRJ</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   DiskFileMRJ(int vRef, 
+               int parID, 
+               byte[] pName, 
+               boolean bIsFolder)  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Create using fields similar to those in an FSSpec.
+Does not check whether the file or folder exists.
+The vRef must be valid, however.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> vRef</I></TD> <TD>the vRefNum of the file or folder</TD></TR>
+<TR VALIGN=TOP> <TD><I> parID</I></TD> <TD>the parID of the file or folder</TD></TR>
+<TR VALIGN=TOP> <TD><I> pName</I></TD> <TD>the name of the file or folder, as a Pascal string</TD></TR>
+<TR VALIGN=TOP> <TD><I> bIsFolder</I></TD> <TD>set this to indicate whether this object is a file or folder</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="exists"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="exists()">exists</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public boolean exists() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Checks whether this file or folder exists.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getName()">getName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public String getName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the name in quoted-printable form. If the file does not exist, returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getShortName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getShortName()">getShortName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public String getShortName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the the short version of the file's name, if applicable
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getShortName()">getShortName</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileSystem"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileSystem()">getFileSystem</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow08d7c.htm">FileSystem</A> getFileSystem() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the file system containing this object.
+Calls FSCreatorMRJ.getFileFileSystem().
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setName(java.lang.String)">setName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int setName(String newName) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Renames this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDisplayName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDisplayName()">getDisplayName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public String getDisplayName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the name of this object, as it would be displayed to the user.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFlags()">getFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getFlags() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a set of binary flags associated with this object.
+These flags are defined in DiskFile.java.
+Use the 'getGetFlagsMask' method to find out which bits of the returned value are significant.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFlags(int, int)">setFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setFlags(int whichFlags, 
+                        int newValues) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Set the indicated flags.
+
+<P>
+For more information on these flags, see:
+<PRE>http://developer.apple.com/technotes/tb/tb_09.html
+http://developer.apple.com/techpubs/mac/Toolbox/Toolbox-455.html#MARKER-9-356</PRE>
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> whichFlags</I></TD> <TD>the mask indicating which bits in newValues are significant</TD></TR>
+<TR VALIGN=TOP> <TD><I> newValues</I></TD> <TD>contains the bits to be set/reset.</TD></TR>
+</TABLE><P>
+<DT> <B>Throws:</B> IllegalArgumentException
+<DD> if whichFlags is 0
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getGetFlagsMask"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getGetFlagsMask()">getGetFlagsMask</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getGetFlagsMask() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a mask which indicates which bits returned by 'getFlags' are significant. For
+instance, if bit 0 of the return value of this method is set, bit 0 of 'getFlags' contains
+actual information, otherwise, this information is not available.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getSetFlagsMask"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getSetFlagsMask()">getSetFlagsMask</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getSetFlagsMask() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a mask which indicates which bits in the argument to 'setFlags' can be set. For
+instance, if bit 0 of the return value of this method is set, bit 0 of 'setFlags' can be set.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDateBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDateBundle()">getDateBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow0f908.htm">DateBundle</A> getDateBundle() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a DateBundle containing the creation, modification, and backup dates of this file or folder.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setDateBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setDateBundle(com.jconfig.DateBundle)">setDateBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setDateBundle(<A HREF="pow0f908.htm">DateBundle</A> newDates) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the set of dates associated with this file.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getIconBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getIconBundle()">getIconBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow0326d.htm">IconBundle</A> getIconBundle() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns an IconBundle for this file or folder.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setIconBundle"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setIconBundle(com.jconfig.IconBundle)">setIconBundle</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int setIconBundle(<A HREF="pow0326d.htm">IconBundle</A> bndl) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Not yet implemented.
+<P>
+<DT> <B>Throws:</B> <A HREF="pow056b7.htm">UnimplementedException</A>
+<DD> this method always throws an UnimplementedException
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getColorCoding"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getColorCoding()">getColorCoding</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getColorCoding() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the color coding of this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setColorCoding"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setColorCoding(int)">setColorCoding</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int setColorCoding(int newCoding) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the color coding of this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFile"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFile()">getFile</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public File getFile() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Determines the full path name of this object, and returns a java.io.File object created from that path.
+Returns null if an error occurs.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileSize"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileSize()">getFileSize</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public long getFileSize() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the total length of this file.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getFileSize()">getFileSize</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getResourceForkSize"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getResourceForkSize()">getResourceForkSize</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public long getResourceForkSize() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the length of this file's resource fork, or 0 if an error occurs.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getResourceForkSize()">getResourceForkSize</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVolume"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVolume()">getVolume</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow0917b.htm">DiskVolume</A> getVolume() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the DiskVolume containing this object.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getVolume()">getVolume</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVersion"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVersion()">getVersion</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow03821.htm">VersionInfo</A> getVersion() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+The file's version info, if any, is assumed not to change and only created when needed and then cached.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getVersion()">getVersion</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getPlatformData"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getPlatformData()">getPlatformData</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int[] getPlatformData() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return a two int array containing the vRef of the file in the first int and the parID in the second.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getPlatformData()">getPlatformData</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFinderInfo()">getFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow07e8d.htm">FinderInfo</A> getFinderInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the FinderInfo for this object.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getFinderInfo()">getFinderInfo</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFinderInfo(com.jconfig.FinderInfo)">setFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int setFinderInfo(<A HREF="pow07e8d.htm">FinderInfo</A> newFI) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the FinderInfo (creator and type) for this object.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#setFinderInfo(com.jconfig.FinderInfo)">setFinderInfo</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVRef"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVRef()">getVRef</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getVRef() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the vRefNum.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow0d1b5.htm#getVRef()">getVRef</A> in interface <A HREF="pow0d1b5.htm">IMacDiskObject</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getParID"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getParID()">getParID</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getParID() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the parID.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow0d1b5.htm#getParID()">getParID</A> in interface <A HREF="pow0d1b5.htm">IMacDiskObject</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getPName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getPName()">getPName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public byte[] getPName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns a copy of the name as a Pascal string.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow0d1b5.htm#getPName()">getPName</A> in interface <A HREF="pow0d1b5.htm">IMacDiskObject</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="updateContainer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="updateContainer()">updateContainer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int updateContainer() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Updates the folder containing this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="makeVersionInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="makeVersionInfo()">makeVersionInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   private void makeVersionInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Open the resource fork, and try to read the <'VERS',1> resource.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="iterate"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="iterate(com.jconfig.DiskFilter, int, int)">iterate</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int iterate(<A HREF="pow0cf1d.htm">DiskFilter</A> filter, 
+                      int flags, 
+                      int maxToIterate) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Call the DiskFilter's visit() method for each file/folder inside this folder.
+Calls FileIteratorMRJ.iterateFolder()
+<P>
+<DT> <B>Throws:</B> IllegalArgumentException
+<DD> if this is not a folder.
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getContainer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getContainer()">getContainer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow087fb.htm">DiskObject</A> getContainer()  throws FileNotFoundException, <A HREF="pow0f7dd.htm">DiskFileException</A></PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+If this object is at the volume's root level, return the volume containing this object.
+Otherwise, return a DiskObject representing the folder containing this object.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="diskFileFlagsToString"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="diskFileFlagsToString(int)">diskFileFlagsToString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public String diskFileFlagsToString(int f) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convenience method which converts a given set of DiskFile flags into a string representation.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#diskFileFlagsToString(int)">diskFileFlagsToString</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createObject"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createObject(java.lang.String, int, int)">createObject</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow087fb.htm">DiskObject</A> createObject(String name, 
+                                  int type, 
+                                  int flags) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Not yet implemented.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getResourceFork"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getResourceFork()">getResourceFork</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public <A HREF="pow0dbbd.htm">ResourceFork</A> getResourceFork() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the ResourceForkMRJ object for this file.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow064f2.htm#getResourceFork()">getResourceFork</A> in interface <A HREF="pow064f2.htm">DiskFile</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getDateString"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getDateString()">getDateString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   protected String getDateString() </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="dumpInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="dumpInfo(java.io.PrintStream, java.lang.String)">dumpInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void dumpInfo(PrintStream ps, 
+                        String indent) </PRE>
+<BLOCKQUOTE>
+<DL>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-545a.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

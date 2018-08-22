@@ -1,0 +1,9 @@
+有这样一个需求，前端登录的用户名密码，密码必需加密，但不可使用MD5，因为后台要检测密码的复杂度，
+那么在保证安全的前提下将密码传到后台呢，答案就是使用RSA非对称加密算法解决 。
+
+<script src="js/jsencrypt.min.js"></script>
+<script type="text/javascript">
+    var encrypt = new JSEncrypt();
+    encrypt.setPublicKey('java生成的公钥');
+    var encrypted = encrypt.encrypt('加密的字符串');
+</script>

@@ -1,0 +1,475 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:26:32 PDT 2002 -->
+<!-- com.jconfig.FinderInfo | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Class com.jconfig.FinderInfo
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Class com.jconfig.FinderInfo
+</FONT></B>
+<PRE>
+java.lang.Object
+   |
+   +----com.jconfig.FinderInfo
+</PRE>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public class  <STRONG>FinderInfo</STRONG>
+     extends java.lang.Object
+     implements com.jconfig.<A HREF="pow0fba5.htm">FileCharacteristic</A>, 
+                java.lang.Cloneable
+{
+          // Fields 7
+     public static final int <A HREF="#APPLICATION_TYPE">APPLICATION_TYPE</A>;
+     public static final int <A HREF="#FI_ARRAYLEN">FI_ARRAYLEN</A>;
+     public static final int <A HREF="#FI_OFFS_ATTRIBUTES">FI_OFFS_ATTRIBUTES</A>;
+     public static final int <A HREF="#FI_OFFS_CRE">FI_OFFS_CRE</A>;
+     public static final int <A HREF="#FI_OFFS_FLAGS">FI_OFFS_FLAGS</A>;
+     public static final int <A HREF="#FI_OFFS_TYPE">FI_OFFS_TYPE</A>;
+     public static final int <A HREF="#UNKNOWN_TYPE">UNKNOWN_TYPE</A>;
+
+          // Constructors 3
+     public <A HREF="#FinderInfo(int, int)">FinderInfo</A>(int, int);
+     public <A HREF="#FinderInfo(int, int, int, int)">FinderInfo</A>(int, int, int, int);
+     public <A HREF="#FinderInfo(int[])">FinderInfo</A>(int[]);
+
+          // Methods 11
+     public int <A HREF="#getAttributes()">getAttributes</A>();
+     public int <A HREF="#getCreator()">getCreator</A>();
+     public int <A HREF="#getFileType()">getFileType</A>();
+     public int <A HREF="#getFlags()">getFlags</A>();
+     public boolean <A HREF="#isMatch(com.jconfig.FileCharacteristic)">isMatch</A>(FileCharacteristic);
+     public void <A HREF="#setAttributes(int)">setAttributes</A>(int);
+     public void <A HREF="#setCreator(int)">setCreator</A>(int);
+     public void <A HREF="#setFileType(int)">setFileType</A>(int);
+     public void <A HREF="#setFlags(int)">setFlags</A>(int);
+     public void <A HREF="#toArray(int[])">toArray</A>(int[]);
+     public String <A HREF="#toString()">toString</A>();
+}
+</PRE>
+<P>
+<DL>
+<P>
+Represents a Macintosh creator code/file type pair.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Returned By: </B>
+<DD>ConfigEntry.<A HREF="pow0c7e2.htm#getFinderInfo()">getFinderInfo()</A>, ConfigListFile.<A HREF="pow0a7d7.htm#findMatches(com.jconfig.FileExtension, int, int)">findMatches()</A>, ConfigList.<A HREF="pow0956f.htm#findMatches(com.jconfig.FileExtension, int, int)">findMatches()</A>, DiskFile.<A HREF="pow064f2.htm#getFinderInfo()">getFinderInfo()</A>, FileRegistryI.<A HREF="pow08d70.htm#findFinderInfo(com.jconfig.FileExtension, int)">findFinderInfo()</A>, FileRegistry.<A HREF="pow0b9ae.htm#findFinderInfo(com.jconfig.FileExtension, int)">findFinderInfo()</A>, FileType.<A HREF="pow07264.htm#getFinderInfos(int)">getFinderInfos()</A>, FileSpecifier.<A HREF="pow0649e.htm#getFinderInfo()">getFinderInfo()</A>, PluginI.<A HREF="pow0b735.htm#getFinderInfo()">getFinderInfo()</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="APPLICATION_TYPE"><FONT COLOR="#0000FF">&middot;</FONT> APPLICATION_TYPE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int APPLICATION_TYPE
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="UNKNOWN_TYPE"><FONT COLOR="#0000FF">&middot;</FONT> UNKNOWN_TYPE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int UNKNOWN_TYPE
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FI_ARRAYLEN"><FONT COLOR="#0000FF">&middot;</FONT> FI_ARRAYLEN</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FI_ARRAYLEN
+</PRE>
+<BLOCKQUOTE>
+<P>
+Required length of the array argument to the array constructor and to the toArray method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FI_OFFS_CRE"><FONT COLOR="#0000FF">&middot;</FONT> FI_OFFS_CRE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FI_OFFS_CRE
+</PRE>
+<BLOCKQUOTE>
+<P>
+Offset to the creator value to the array constructor and to the toArray method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FI_OFFS_TYPE"><FONT COLOR="#0000FF">&middot;</FONT> FI_OFFS_TYPE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FI_OFFS_TYPE
+</PRE>
+<BLOCKQUOTE>
+<P>
+Offset to the type value to the array constructor and to the toArray method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FI_OFFS_FLAGS"><FONT COLOR="#0000FF">&middot;</FONT> FI_OFFS_FLAGS</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FI_OFFS_FLAGS
+</PRE>
+<BLOCKQUOTE>
+<P>
+Offset to the flag value to the array constructor and to the toArray method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FI_OFFS_ATTRIBUTES"><FONT COLOR="#0000FF">&middot;</FONT> FI_OFFS_ATTRIBUTES</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FI_OFFS_ATTRIBUTES
+</PRE>
+<BLOCKQUOTE>
+<P>
+Offset to the attributes value to the array constructor and to the toArray method.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Constructors</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="FinderInfo"><FONT COLOR="#FFCC00">&middot;</FONT></A>
+<A NAME="FinderInfo(int, int)">FinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public FinderInfo(int c, 
+                     int t) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Construct from a creator and type.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="FinderInfo"><FONT COLOR="#FFCC00">&middot;</FONT></A>
+<A NAME="FinderInfo(int, int, int, int)">FinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public FinderInfo(int c, 
+                     int t, 
+                     int flgs, 
+                     int attr) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Construct from a creator, type, flags, and attributes.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="FinderInfo"><FONT COLOR="#FFCC00">&middot;</FONT></A>
+<A NAME="FinderInfo(int[])">FinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public FinderInfo(int[] a) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Construct from an array containing the creator, type, flags, and attributes.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getCreator"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getCreator()">getCreator</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getCreator() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the creator value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileType"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileType()">getFileType</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getFileType() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the file type value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFlags()">getFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getFlags() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the flags value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getAttributes"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getAttributes()">getAttributes</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public int getAttributes() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the attributes value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setCreator"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setCreator(int)">setCreator</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setCreator(int c) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the creator value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFileType"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFileType(int)">setFileType</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setFileType(int t) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the file type value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFlags"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFlags(int)">setFlags</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setFlags(int f) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the flags value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setAttributes"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setAttributes(int)">setAttributes</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void setAttributes(int a) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the attributes value.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="toArray"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="toArray(int[])">toArray</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public void toArray(int[] a) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Puts the values of this object into the given array. The array must have four elements,
+and the items are placed into the array
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="isMatch"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="isMatch(com.jconfig.FileCharacteristic)">isMatch</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public boolean isMatch(<A HREF="pow0fba5.htm">FileCharacteristic</A> fc) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+If 'fc' is a FinderInfo object, and if it has the same creator and file type values as this object, returns true.
+Otherwise, returns false. NOTE: this does not compare the flags and attributes fields.
+<P>
+<DT><B>Implements:</B>
+<DD><A HREF="pow0fba5.htm#isMatch(com.jconfig.FileCharacteristic)">isMatch</A> in interface <A HREF="pow0fba5.htm">FileCharacteristic</A>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="toString"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="toString()">toString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public String toString() </PRE>
+<BLOCKQUOTE>
+<DL>
+<DT><B>Overrides:</B>
+<DD>toString in class Object
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

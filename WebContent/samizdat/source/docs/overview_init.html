@@ -1,0 +1,615 @@
+<HTML>
+<HEAD>
+
+<TITLE>Walkthrough: FileRegistry.initialize()</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Walkthrough: FileRegistry.initialize()
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file traces the steps when you call the <B>FileRegistry.initialize()</B> method.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+
+
+
+<P>
+Let's assume that we're running on Win95 with the SunJDK, and that the 'jcfactrz.txt' file contains the following:
+
+<PRE>
+com.jconfig.mac.FileRegistryFactoryMac
+com.jconfig.win.FileRegistryFactoryWin
+</PRE>
+
+<P>
+This example will trace through the following files (the com.jconfig part of the package name is omitted):
+
+<PRE>
+FileRegistry.java
+    FileRegistryFactory.java
+        win.FileRegistryFactoryWin.java
+            win.FileRegistryMSVM.java
+</PRE>
+
+<P>
+<HR>
+
+
+
+<P>
+<BR>
+<H2>
+Step 1.
+</H2>
+<P>
+
+<P>
+The FileRegistry.initialize() method looks like:
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    public static void initialize( File curDir, int creator ) {
+        FileRegistryFactory     factory;
+
+        factory = new FileRegistryFactory();
+
+        try {
+            delegate = factory.createFileRegistry( curDir, creator );
+        }
+        catch ( Exception e ) {
+            System.out.println( "FileRegistry.initialize, can't make delegate " + e );
+            delegate = null;
+        }
+        catch ( Error ee ) {
+            System.out.println( "FileRegistry.initialize, can't make delegate " + ee );
+            delegate = null;
+        }
+    }
+
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistry.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+The 'delegate' is an object which implements the FileRegistryI interface, and most all other calls of the
+FileRegistry will be passed to this object.	If it couldn't be created, 'delegate' is set to null. The
+other FileRegistry method check whether 'delegate' is null; if it is, the method returns an error code
+(such as null or -1)
+
+
+<P>
+<BR>
+<H2>
+Step 2.
+</H2>
+<P>
+
+<P>
+If this is the first time that the FileRegistryFactory.createFileRegistry() method has been called, it
+calls its 'initialize' method to create a FileRegistryI object. Otherwise, the previously created object
+is returned. Note however that if an object was not created the first time, obj will be null.
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    public FileRegistryI createFileRegistry( File curDir, int creator ) {
+        if ( !bBeenInited )
+            initialize( curDir, creator );
+        
+        return obj;
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactory.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 3.
+</H2>
+<P>
+
+The 'initialize()' method looks like:
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    private void initialize( File curDir, int creator ) {
+        bBeenInited = true;
+
+        tryCreatePlatformObject( curDir, creator );
+
+        if ( obj == null )
+            tryCreatePlainObject( curDir, creator );
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactory.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+This first tries to create a platform specific object, and, if that fails, it tries to create a 'plain'
+object (i.e., FileRegistryPlain, the fallback object).
+
+
+
+<P>
+<BR>
+<H2>
+Step 4.
+</H2>
+<P>
+
+<P>
+The tryCreatePlatformObject() method, with error checking removed, looks like:
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    private void tryCreatePlatformObject( File curDir, int creator ) {
+        FileRegistryFactoryI        factory;
+        FileRegistryI               tempObj;
+        Class                       factoryClass;
+        File                        factoryFile;
+        String                      classNames[];
+        int                         i;
+
+        factoryFile = new File( curDir, kFactoryFileName );
+        classNames = JUtils.fileToStringArray( factoryFile );
+
+        for ( i = 0; i < classNames.length; i++ ) {
+            factoryClass = Class.forName( classNames[ i ] );
+            factory = (FileRegistryFactoryI) factoryClass.newInstance();
+            tempObj = factory.createFileRegistry( curDir, creator );
+            if ( tempObj != null ) {
+                obj = tempObj;
+                return;
+            }
+        }
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactory.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+This opens the 'jcfactrz.txt' file, and converts the lines of this file into an array of Strings (the classNames
+array). So, in this example, classNames is:
+<PRE>
+{ "com.jconfig.win.FileRegistryFactoryWin", "com.jconfig.mac.FileRegistryFactoryMac" };
+</PRE>
+
+For each element of classNames, we try to create an object of that class. This object must implement
+the FileRegistryFactoryI interface.	Then, that object's 'createFileRegistry()' method is called. If this
+method returns a non-null FileRegistryI object, FileRegistryFactory's 'obj' variable is set to that object,
+and we return: we're done.
+
+
+<P>
+<BR>
+<H2>
+Step 5.
+</H2>
+<P>
+
+<P>
+In this case, this method will call the 'FileRegistryFactoryWin.createFileRegistry()' method, which looks like:
+
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    public FileRegistryI createFileRegistry( File curDir, int creator ) {
+        if ( !bBeenInited )
+            initialize( curDir, creator );
+        
+        return obj;
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactoryWin.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+This is similar to the FileRegistryFactory.createFileRegistry() method (see step 2.)
+
+
+<P>
+<BR>
+<H2>
+Step 6.
+</H2>
+<P>
+
+The 'FileRegistryFactoryWin.initialize()' method looks like:
+
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    private void initialize( File curDir, int creator ) {
+        bBeenInited = true;
+        
+        figureOutPlatform();
+        tryCreatePlatformSpecific( curDir, creator );
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactoryWin.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+The 'figureOutPlatform()' method uses Java's environment strings to determine what platform we're running on,
+and sets some boolean variables appropriately. In this case, the variables are:
+
+<PRE>
+    bIsPlatformMSVM15
+    bIsPlatformMSVM20
+    bIsPlatformSun11
+    bIsPlatformMSVM15W
+    bIsPlatformMSVM20W
+    bIsPlatformSun11W
+</PRE>
+
+Currently, the Windows code can run on three different VMs: MSVM1.5, MSVM2.0+, and SunJDK. The ones ending in
+'W' are set if we're on NT.
+
+<P>
+The 'tryCreatePlatformSpecific()' method modifies the 'obj' variable, which is returned from the
+'FileRegistryFactoryWin.createFileRegistry()' method described in Step 5.
+
+
+
+<P>
+<BR>
+<H2>
+Step 7.
+</H2>
+<P>
+
+<P>
+The tryCreatePlatformSpecific() method has the following form:
+
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    private void tryCreatePlatformSpecific( File curDir, int creator ) {
+        if ( bIsPlatformMSVM15 )
+            obj = new FileRegistryMSVM( FileRegistryMSVM.kMSVM1, curDir, creator );
+        else if ( bIsPlatformMSVM20 )	
+                obj = new FileRegistryMSVM( FileRegistryMSVM.kMSVM2, curDir, creator );
+        //	repeat for the other four possibilities         
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryFactoryWin.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 8.
+</H2>
+<P>
+
+The 'FileRegistryMSVM' class implements the FileRegistryI interface. This first argument to its constructor
+is a number indicating which version of the native code it should load. This class' constructor looks like:
+
+
+
+
+
+<P>
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    FileRegistryMSVM( int whichLibrary, File curDir, int creator ) throws ConfigException {
+        if ( whichLibrary == kMSVM1 )
+            libName = kMSVM1LibName;
+        else if ( whichLibrary == kMSVM2 )
+            libName = kMSVM2LibName;
+        //	repeat for the other four possibilities         
+
+        Runtime.getRuntime().loadLibrary( libName );
+    }
+</PRE>
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryMSVM.java
+</I></CAPTION></CENTER>
+
+
+
+
+
+
+
+
+<P>
+This object loads the native library, and initialization is done: the FileRegistryFactoryWin.createFileRegistry()
+method will return the FileRegistryMSVM object to the FileRegistryFactory object, which will return it to
+the FileRegistry.
+
+<P>
+So, all future calls to the FileRegistry will be delegated to the FileRegistryMSVM object.
+
+<P>
+<HR>
+
+<P>
+If instead of running on the JDK, we were running on the MSVM, the FileRegistryFactoryWin.tryCreatePlatformSpecific()
+method would have created a FileRegistryMSVM object as above, except it would have told FileRegistryMSVM to load
+one of the MSVM DLLs instead of one of the Sun DLLs.
+
+<P>
+If instead of running on Windows, we were running on a PowerMac, the FileRegistryFactoryWin.createFileRegistry()
+method would have returned null. In this case, the FileRegistryFactory.tryCreatePlatformObject() method would
+have created an instance of FileRegistryFactoryMac, and given it a chance to create the FileRegistryI object.
+
+<P>
+If an error occured when trying to load one of the native DLLs or shared libraries, or if we were running on
+a platform other than Windows or a PowerMac, when the FileRegistryFactory.tryCreatePlatformObject() method
+returns, 'obj' would still be null. In this case, the FileRegistryFactory would call its 'tryCreatePlainObject'
+method, which would have created a FileRegistryPlain object. 
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

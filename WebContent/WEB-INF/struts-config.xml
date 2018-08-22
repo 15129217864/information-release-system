@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+     <form-bean name="auditCntForm" type="com.xct.cms.form.AuditCntForm" />
+     <form-bean name="createTemplateForm" type="com.xct.cms.form.CreateTemplateForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  
+   <!-- 上传文件测试页面 -->
+  <action path="/uploadfiletest" type="com.xct.cms.upload.action.UploadFileTestAction" >
+     <forward name="test" path="/admin/uploadfiletest.jsp"></forward>
+  </action>
+  
+  <!-- 节目审核状态 -->
+  <action path="/jmauditingstatus" type="com.xct.cms.program.action.ProgramAuditingStatusAction" />
+  
+  <!-- 节目下载 -->
+  <action path="/downloadprogram" type="com.xct.cms.program.action.ProgramDownloadFileAction" >
+      <forward name="download4Autding" path="/admin/program/download4Autding.jsp"></forward>
+   </action>
+  
+    <!-- 终端获取服务端其他数据 -->
+  <action path="/cmsserviceinfo" type="com.xct.cms.action.CmsServiceInfoAction" />
+  
+  <!-- 终端上传截图 -->
+  <action path="/screenCarpure" type="com.xct.cms.upload.action.UploadScreenCarpureAction" />
+  
+   <!-- 配置终端 -->
+  <action path="/setiport" type="com.xct.cms.action.UpdateClientIPAndPortAction" />
+  
+   <!-- 潍坊中级人民法院 -->
+  <action path="/wfcourt" type="com.xct.cms.custom.made.action.WeiFangCourtAction" />
+  
+  <!-- 达海集成区 -->
+  <action path="/terminalmanager" type="com.dahai.custom.app.action.TerminalManagerAction" />
+  
+   <action path="/addhtmltext" type="com.xct.cms.program.action.AddHtmlTextAction">
+     <forward name="toaddmedialist" path="/admin/program/addhtmltext.jsp"></forward>
+   </action>
+  
+   <action path="/changegbcolor" type="com.xct.cms.action.UdateBackgroundAction"></action>
+   <!-- 盐城酒店汽车，火车，飞机时刻表查询 -->
+    <action path="/hotel" type="com.xct.cms.custom.made.action.HotelBusTrainPlaneAction">
+      <forward name="introduce" path="/customer/introduce.jsp"></forward>
+      <forward name="bus" path="/customer/bus.jsp"></forward>
+      <forward name="train" path="/customer/train.jsp"></forward>
+      <forward name="plane" path="/customer/plane.jsp"></forward>
+      <forward name="index" path="/customer/index.jsp"></forward>
+    </action>
+  <!-- 以上是客户定制的 -->
+    <action
+      path="/login"
+      input="/login/login.jsp"
+      scope="request"
+      type="com.xct.cms.action.LoginAction" >
+      <forward name="loginOk" path="/admin/index.jsp"></forward>
+      <forward name="loginError" path="/login/login.jsp"></forward>
+       <forward name="relogin" path="/rq/login?initdo=1"></forward>
+      </action>
+    <action
+      path="/terminalList"
+      scope="request"
+      type="com.xct.cms.action.TerminalListAction" >
+      <forward name="monitoringList" path="/admin/terminal/monitoringList.jsp"></forward>
+      <forward name="list" path="/admin/terminal/list.jsp"></forward>
+      <forward name="list_ifrm" path="/admin/terminal/list_ifrm.jsp"></forward>
+      <forward name="list_ifrmList" path="/admin/terminal/list_ifrm.jsp"></forward>
+      <forward name="notaudit" path="/admin/terminal/notaudit.jsp"></forward>
+      </action>
+    <action path="/terminalServer" type="com.xct.cms.action.TerminalServerAction" />
+    <action
+      path="/monitoringAjax"
+      scope="request"
+      type="com.xct.cms.action.MonitoringAjaxAction" >
+      <forward name="monitoringList" path="/admin/terminal/monitoringList.jsp"></forward>
+      <forward name="list" path="/admin/terminal/list.jsp"></forward>
+      </action>
+    <action path="/searchTerminal" scope="request" type="com.xct.cms.action.SearchTerminalAction" >
+    	<forward name="TERMINAL" path="/admin/terminal/terminal_zu.jsp"></forward>
+    	<forward name="AUDIT" path="/admin/terminal/tree_zu.jsp"></forward>
+    	<forward name="MEDIA" path="/admin/media/left_category.jsp"></forward>
+    	<forward name="NEWMEDIA_ZU" path="/admin/media/tree_zu.jsp"></forward>
+    </action>
+    <action
+      path="/viwe"
+      scope="request"
+      type="com.xct.cms.action.ViweAction" >
+      <forward name="viweOk" path="/admin/terminal/view.jsp"></forward>
+       <forward name="AUDIT" path="/admin/terminal/audit.jsp"></forward>
+      </action>
+    <action
+      attribute="auditCntForm"
+      name="auditCntForm"
+      path="/auditCnt"
+      scope="request"
+      type="com.xct.cms.struts.action.AuditCntAction" >
+      <forward name="auditOk" path="/admin/terminal/audit.jsp"></forward>
+      </action>
+     
+      <action
+      attribute="createTemplateForm"
+      name="createTemplateForm"
+      path="/createTemplate"
+      scope="request"
+      type="com.xct.cms.action.CreateTemplateAction" >
+      <forward name="createOk" path="/admin/template/create_template_ok.jsp"></forward>
+      </action>
+      <action
+      attribute="createTemplateForm"
+      name="createTemplateForm"
+      path="/updateTemplate"
+      scope="request"
+      type="com.xct.cms.action.UpdateTemplateAction" >
+      <forward name="updateOk" path="/admin/template/create_template_ok.jsp"></forward>
+      </action>
+      
+    <action
+      path="/requestClientOperating"
+      scope="request"
+      type="com.xct.cms.action.RequestClientOperatingAction">
+        <forward name="STARTLED" path="/admin/terminal/print_Result.jsp"></forward>
+        <forward name="CLOSELED" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="ONCLOSE" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="SENDDEFAULTPROGRAM" path="/admin/terminal/print_Result1.jsp"></forward>
+	      <forward name="UPDATEPROGRAM" path="/admin/terminal/print_Result1.jsp"></forward>
+	      <forward name="UPDATESOFTWARE" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="UPDATE_DOWNLOAD_START_END" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="SYNCHRONIZATION" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="CLEAR" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="SENDNOTICE" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="SENDLEDNOTICE" path="/admin/terminal/print_Result.jsp"></forward>
+	      
+	      <forward name="RESTART" path="/admin/terminal/print_Result.jsp"></forward>
+	       <forward name="ONDOWN" path="/admin/terminal/print_Result.jsp"></forward>
+	       <forward name="STOPONDOWN" path="/admin/terminal/print_Result.jsp"></forward>
+	      <!--<forward name="SENDNOTICE" path="/rq/viewCntResponseResult"></forward>
+	      --><forward name="GUICAMERA" path="/rq/viewCntResponseResult"></forward>
+	      <forward name="VIEWPROJECTMENU" path="/admin/terminal/viewProjectMenu.jsp"></forward>
+	      
+	      <forward name="DELETEDEMANDPROGRAM" path="/admin/terminal/print_Result.jsp"></forward>
+	      <forward name="SENDDEMANDPROGRAM" path="/admin/terminal/print_Result1.jsp"></forward>
+	      <forward name="SENDDEMANDFILEPROGRAM" path="/admin/terminal/print_Result1.jsp"></forward>
+      </action>
+    <action
+      path="/receivingClientCmd"
+      scope="request"
+      type="com.xct.cms.action.ReceivingClientCmdAction" />
+      <action
+      path="/uploadTemplate"
+      scope="request"
+      type="com.xct.cms.action.UploadTemplateAction" />
+    <action
+      path="/viewCntResponseResult"
+      scope="request"
+      type="com.xct.cms.action.ViewCntResponseResultAction" >
+       <forward name="RESTART" path="/admin/terminal/restartResult.jsp"></forward>
+       <forward name="ONDOWN" path="/admin/terminal/restartResult.jsp"></forward>
+        <!--<forward name="SENDNOTICE" path="/admin/terminal/restartResult.jsp"></forward>
+      --><forward name="GUICAMERA" path="/admin/terminal/guiCamera.jsp"></forward>
+      <forward name="VIEWPROJECTMENU" path="/admin/terminal/viewProjectMenu.jsp"></forward>
+    </action>
+    <action
+      path="/programList"
+      scope="request"
+      type="com.xct.cms.program.action.ProgramListAction" >
+      <forward name="programs" path="/admin/program/programList.jsp"></forward>
+      </action>
+    <action
+      path="/leftmenu"
+      scope="request"
+      type="com.xct.cms.media.action.LeftmenuAction" >
+      <forward name="MEDIA" path="/admin/media/left_media.jsp"></forward>
+      <forward name="CATEGORY" path="/admin/media/left_category.jsp"></forward>
+      <forward name="DATE" path="/admin/media/left_date.jsp"></forward>
+    </action>
+    <action
+      path="/mediaList"
+      scope="request"
+      type="com.xct.cms.media.action.MediaListAction" >
+      <forward name="mediaList" path="/admin/media/media_list.jsp"></forward>
+      </action>
+    <action
+      path="/fileUpload"
+      scope="request"
+      type="com.xct.cms.upload.action.FileUploadAction" >
+      	<forward name="uploadfileOK" path="/admin/media/uploadfileok.jsp"></forward>
+      </action>
+     <action
+      path="/oppcatrgory"
+      scope="request"
+      type="com.xct.cms.media.action.OppcatrgoryAction" >
+      	<forward name="oppok" path="/admin/media/oppcatrgoryok.jsp"></forward>
+      </action>
+    <action
+      path="/progressdetail"
+      scope="request"
+      type="com.xct.cms.upload.action.ProgressdetailAction" />
+    <!-- send program start -->
+     <action path="/noticeOnLineAction" type="com.xct.cms.xy.action.NoticeOnLineActionAction">
+       <forward name="success" path="/index.jsp"></forward>
+    </action>
+    <action path="/readysend" type="com.xct.cms.xy.action.ReadysendAction">
+        <forward name="success" path="/admin/program/readysend.jsp"></forward>
+        <forward name="error" path="/admin/program/opprojecttype.jsp"></forward>
+    </action>
+    <action path="/downloadstatus" type="com.xct.cms.xy.action.DownloadStatusAction" />
+    <action path="/downloadresult" type="com.xct.cms.xy.action.DownloadResultAction" />
+    <action path="/selectproject" type="com.xct.cms.xy.action.SelectProjectAction" />
+    <action path="/viewclientproject" type="com.xct.cms.xy.action.ViewClientProjectAction">
+       <forward name="success" path="/admin/schedule/viewproject.jsp"></forward>
+    </action>
+    <action path="/checkProject" type="com.xct.cms.xy.action.CheckprojectAction" />
+    <action path="/transfer" type="com.xct.cms.xy.action.TransferAction">
+      <forward name="success" path="/admin/program/readysend.jsp"></forward>
+      <forward name="error" path="/admin/program/opprojecttype.jsp"></forward>
+    </action>
+         <action path="/updateclientip" type="com.xct.cms.action.UpdateClientIPAction" />
+     <action path="/updatedownloadstartend" type="com.xct.cms.action.UpdateClientDownloadStartEndAction" >
+     	<forward name="updateOk" path="/rq/requestClientOperating"></forward>
+     </action>
+    <action path="/getscedcule" type="com.xct.cms.xy.action.GetscedculeAction" />
+      <action path="/clearselectedproject" type="com.xct.cms.action.ClearSelectedProjectAction" >
+      	<forward name="clearOk" path="/rq/requestClientOperating"></forward>
+      </action>
+     <!-- send program end -->
+      <action
+      path="/sendNoticeaction"
+      scope="request"
+      type="com.xct.cms.action.SendNoticeAction" >
+      	<forward name="SENDNOTICE" path="/rq/requestClientOperating"></forward>
+       <forward name="SENDLEDNOTICE" path="/rq/requestClientOperating"></forward>
+      </action>
+        <action
+      path="/aheadcreateproject"
+      scope="request"
+      type="com.xct.cms.action.AheadCreateProjectAction" >
+	      <forward name="OK" path="/rq/programList?refreshtop=ok"></forward>
+      </action>
+        <action
+      path="/updateaheadcreateproject"
+      scope="request"
+      type="com.xct.cms.action.UpdateAheadCreateProjectAction" >
+      </action>
+      <action
+      path="/aheadwriteproject"
+      scope="request"
+      type="com.xct.cms.action.AheadWriteProjectAction" >
+	       <forward name="OK" path="/admin/program/auditSendProgram.jsp"></forward>
+	       <forward name="ERROR" path="/admin/program/selectclientIP.jsp"></forward>
+	       <forward name="OTHER" path="/admin/program/programList.jsp"></forward>
+      </action>
+      
+     <action path="/sendpolicesubstation" type="com.xct.cms.custom.made.action.SendpolicesubstationAction">
+       <forward name="list" path="/admin/program/policeSubstation/policeSubstation.jsp"></forward>
+    </action>
+         <action path="/livemeeting" type="com.xct.cms.action.LiveMeetingAction">
+	        <forward name="livemeeting" path="/admin/program/livemeeting.jsp"></forward>
+	        <forward name="insnquametting" path="/admin/program/livemeeting_pdiq.jsp"></forward>
+    </action>
+  </action-mappings>
+   <message-resources parameter="res.MessageResources" />  
+  <!--
+  <controller maxFileSize="8K"></controller>
+--></struts-config>
+

@@ -1,0 +1,328 @@
+<HTML><HEAD><TITLE>Native Macros</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+<BR>
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Native Macros
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file describes the native macros.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+<P>
+This file describes the macros and defines which are used to minimize the differences between the
+three native architectures supported by JConfig: JNI, JRI, and RNI.	Except as noted, these
+macros are not platform specific.
+
+<P>
+As an example:
+
+<UL>
+<LI>In JNI, a Java String is represented in native code using the <I>jstring</I> type.
+<LI>In JRI, a Java String is represented in native code using the <I>JRIStringID</I> type.
+<LI>In RNI, a Java String is represented in native code using the <I>struct Hjava_lang_String*</I> type.
+</UL>
+
+However, in the JConfig source code, a Java String is represented in native code using <I>JSTRING</I>, which is defined to be
+one of those values, depending upon which native architecture the native code is being built for.
+
+<P>
+These macros are divided into two categories:
+
+<UL>
+
+<LI>The general macros, which deal with variables in Java format (such as JSTRING), are defined
+in 'jni_macros.h', 'jri_macros.h', and 'rni_macros.h'. For example, 'jni_macros.h' defines these macros
+for all platforms which use JNI.
+These files are in the 'common' folder.
+
+<LI>The stub macros, which deal with method signatures (such as SFUNC), are defined
+in 'stub_macros.h'.
+This file is in the 'common' folder, and defines these macros for all
+platforms and native archtecture (JNI,etc.)
+
+</UL>
+
+
+<P>
+The evaluation of each of these macros depends on several factors:
+<UL>
+<LI>the platform
+<LI>the native architecture (JNI, JRI, RNI1, or RNI2)
+<LI>whether DO_SEH is defined
+</UL>
+
+See <A HREF="macros.html">macros.html</A> for more information on these defines.
+
+
+<P>
+These macros are generally used in two places: in the stub files (AppUtilsMSVM.cpp, etc.) and in
+some of the common files (CStrA.cpp, etc.)
+
+<P>
+<HR>
+<P>
+
+<H2>
+General Macros
+</H2>
+
+<P>
+<PRE>
+
+JSTRING
+JINT
+JBYTEARRAY
+JINTARRAY
+JLONGARRAY
+JOBJECTARRAY
+	java's basic types
+
+CHECKNULL(a)
+	if 'a' is null, sets 'theErr' and jumps to 'bail'
+ 
+CHECKSIZE( a, b )
+	if the array 'a' is null, or has less than 'b' elements, sets 'theErr' and jumps to 'bail'
+
+SETINTARRAYREGION(a,b,c,d)	
+SETLONGARRAYREGION(a,b,c,d)
+	sets elements of the array 'a' from the buffer 'd'
+	'b' is the start index of 'a'
+	'c' is the number of elements to set
+
+GETBYTEARRAYLEN(a)
+GETINTARRAYLEN(a)
+GETOBJECTARRAYLEN(a)
+	returns the length of 'a'
+
+LOCKBYTEARRAY(a)
+LOCKINTARRAY(a)
+	returns a pointer to the elements of the 'a' array.
+	Must be followed by a call to the corresponding
+	'UNLOCK...' routine
+
+UNLOCKBYTEARRAY(a,b)
+UNLOCKINTARRAY(a,b)
+	call these after calling the 'LOCK...' routines.
+	a is the Java array
+	b is the value returned from the 'LOCK...' routine
+	<B>NOTE:</B> don't change 'b' itself, only what it points to:
+		b = LOCK...(a);
+		++b;		//	BAD
+		UNLOCK...(a,b)
+
+GETSTRARRAYELEMENT( a, b )
+GETOBJECTARRAYELEMENT( a, b )
+	'a' is an object array
+	returns the object/JSTRING at index 'b'
+
+SETSTRARRAYELEMENT(a,b,c)
+SETOBJECTARRAYELEMENT( a, b, c )
+	'a' is an object array
+	'b' is the index to set
+	'c' is the object/JSTRING to put at 'b'
+
+SETJINT1(a,b)
+SETJINT2(a,b,c)
+SETJINT4(a,b,c,d,e)
+GETJINT2(a,b,c)
+SETJLONG1(a,b)
+SETJLONG2(a,b,c)
+	'a' is a JINT or JLONG array
+	the remaining arguments will be stored starting at index 0 in this array
+	for example, SETJINT2( jintArray, xx, yy ) will store xx at jintArray[ 0 ] and yy at jintArray[ 1 ]
+
+
+</PRE>
+
+<H2>
+Stub Macros
+</H2>
+
+<PRE>
+
+EXP
+FUNC(pkg,clz,mth)
+SFUNC(pkg,clz,mth)
+	represents the header of each native stub. 'SFUNC' is used if the native routine is
+	declared in Java as a static method, 'FUNC' otherwise.
+
+SEH_EXP
+SEH_FUNC(pkg,clz,mth)
+SEH_SFUNC(pkg,clz,mth)
+SEH_TRY
+SEH_EXCEPT(a)
+CALL_INNER(a)
+INNER_PREFIX
+	used only on Windows, these allow each native stub to be wrapped by an SEH handler.
+
+</PRE>
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>

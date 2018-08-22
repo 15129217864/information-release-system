@@ -1,0 +1,341 @@
+<HTML><HEAD><TITLE>Windows Installation and Configuration Notes</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+&nbsp; &nbsp; <A HREF="please_vote.html"><FONT SIZE="2">Please Vote!</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+<CENTER>
+<H1>
+Windows Installation and Configuration Notes
+</H1>
+<P>
+</CENTER>
+
+
+<H2>
+Platforms
+</H2>
+
+<BLOCKQUOTE>
+
+This version of JConfig is for use on Win95, Win98, and WinNT with the SunJDK ( 1.1 or higher ) and the MSIE VM.
+It has also been run with JBuilder (jdk1.1.6 version).
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<H2>
+Installation
+</H2>
+
+<BLOCKQUOTE>
+
+In the batch files described below, it is assumed that you unzipped the archive containing this file to the
+root of your C: drive, creating a c:\samizdat folder. If you unzipped this to another location, you will need
+to edit the batch files to reflect the different location, as described below.
+Other than that, no special installation is required.
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<H2>
+Running ImageMeister
+</H2>
+
+<BLOCKQUOTE>
+
+The ImageMeister application is run using 'imrunMS.bat' and 'imrunSN.bat', both of which are
+in the 'imeister' folder. To run ImageMeister, you may need to edit the first few lines of
+these files, as described in the next section.
+
+<P>
+For more information on ImageMeister, see <A HREF="imagemeister.html">imagemeister.html</A>.
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<H2>
+Running the Sample Applications
+</H2>
+
+<BLOCKQUOTE>
+
+
+<P>
+JConfig comes with two sample applications, the source code for both apps is inside
+the <CODE>source/com/tolstoy/testjc</CODE> folder.
+
+<P>
+The first application ( Tester.java ) opens up notepad.exe
+and launches your Web browser with a URL.
+
+<P>
+The second application is the predecessor to ImageMeister, and is a simple
+disk browser. The source code for this is in the files 'DiskBrowser.java' and
+'BrowserPanel.java'.
+
+<P>
+The compiled versions of these apps are in the JConfig.zip file, so you don't need to compile
+them separately.
+
+<P>
+Four batch files are provided to run the sample applications:
+<UL>
+<LI>TesterMS.bat ( the first application, for use with the MSIE VM )
+<LI>TesterSN.bat ( the first application, for use with the Sun JDK )
+<LI>BrowseMS.bat ( the disk browser, for use with the MSIE VM )
+<LI>BrowseSN.bat ( the disk browser, for use with the Sun JDK )
+</UL>
+
+<FONT COLOR="#FF0000">
+<P>
+<B>NOTE:</B> You may need to edit the first few lines of these batch files if you did not
+install the distribution to the root of your C:\ drive.
+
+<P>
+<B>NOTE:</B> If you get the message 'Out of Environment Space' when running
+the batch files, right click on the batch file, and choose 'Properties'.
+On the 'Memory' tab, in the 'Conventional Memory' area, set the 'Initial
+Environment' popup menu to its highest setting.
+</FONT>
+
+
+<P>
+In addition to Tester and DiskBrowser, three other samples are provided.
+
+<P>
+Run these in a similar fashion to running Tester. See the comments in these files for more information.
+
+<UL>
+<LI><CODE>com.tolstoy.testjc.FileAttributesTest</CODE>: Lets you view and set the attributes for files and folders.
+
+<LI><CODE>com.tolstoy.testjc.TestResFork</CODE>: shows how to copy a Mac file's data and resource forks to a new file.
+									Copying the file's attributes is left as an exercise.
+
+<LI><CODE>com.tolstoy.testjc.MakeLink</CODE>: shows how to create a Windows shortcut, but could be adapted for the Mac.
+</UL>
+ 
+</BLOCKQUOTE>
+
+
+
+<H2>
+Paths and Classpaths
+</H2>
+
+<BLOCKQUOTE>
+
+<P>
+On Windows, 
+<FONT COLOR="#FF0000">you must put JConfig.zip in your classpath,
+</FONT>
+either in autoexec.bat, or in the batch file used
+to run your app. So, if JConfig.zip is in the 'c:\myapp' directory, you could use the following line in
+your batch file:
+
+<PRE>
+    set classpath=.;c:\myapp\JConfig.zip;%classpath%
+</PRE>
+
+<FONT COLOR="#FF0000">
+Also, the native code libraries (jcnfigSN.dll, etc.) must be in the path.
+Note that the 'path' is a completely different environment variable from the classpath.
+</FONT>
+The path is initially set in your autoexec.bat file, and tells Windows where to look for
+executables.
+
+<P>
+If the JConfig DLLs are in the 'c:\myapp' directory, you could use the following line in your batch file:
+
+<PRE>
+    set path=.;c:\myapp\;%path%
+</PRE>
+
+<P>
+<B>Note:</B> you indicate the <B>directory</B> where the DLLs are stored, not the DLLs themselves.
+
+<P>
+<B>Note:</B> you can set the classpath and the path either in autoexec.bat, or in the batch file
+used to run your app, depending on your distribution method and other factors.
+
+<P>
+Another example of how to set the path and classpath is provided in the 'TesterSN.bat' batch file:
+
+<PRE>
+    set SAMDRIVE=c:
+    set SAMHOME=c:\samizdat
+    set JDKHOME=e:\jdk1.1.4
+
+    %SAMDRIVE%
+    cd %SAMHOME%\jconfig
+
+    <B>set classpath=.;%SAMHOME%\common\jconfig.zip;%JDKHOME%\lib\classes.zip</B>
+    <B>set path=%path%;%SAMHOME%\common\</B>
+
+    set LD_LIBRARY_PATH=%LD_LIBRARY_PATH%;%SAMHOME%\common\
+
+    %JDKHOME%\bin\java com.jconfig.Tester
+</PRE>
+
+The line setting 'LD_LIBRARY_PATH' is probably not needed, but it doesn't hurt either.
+ 
+</BLOCKQUOTE>
+
+
+
+
+
+<H2>
+Debugging
+</H2>
+
+<BLOCKQUOTE>
+JConfig writes debug messages to the DBWin32.exe application. This application is included
+in the file DBWin32.zip, which is in the windebug folder. Please run this application
+when using JConfig; if you have any problems with JConfig, please copy the contents of
+the DBWin32 window, and send them with your bug report.
+
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+<CENTER><HR><B><FONT size=-1>
+  <a href="http://www.tolstoy.com/samizdat/index.html">Main Page</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/jconfig.html">JConfig</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/imagemeister.html">ImageMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/sysprops.html">System Properties Repository</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Native Macros</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/Samples.html">Free Samples</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html">WordMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Java Freeware</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/links.html">Links</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/contact.html">Contact Us</a>
+</FONT></B><HR></CENTER>
+
+<font size=-2>Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+JConfig and ImageMeister are trademarks of Samizdat Productions. Other trademarks are the property of
+their respective owners.<BR>
+<A href=MAILTO:samizdat@tolstoy.com>samizdat@tolstoy.com</A></font>
+
+
+</BODY>
+</HTML>

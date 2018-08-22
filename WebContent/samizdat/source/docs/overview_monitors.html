@@ -1,0 +1,652 @@
+<HTML>
+<HEAD>
+
+<TITLE>Walkthrough: FileRegistry.getMainMonitor()</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Walkthrough: FileRegistry.getMainMonitor()
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file walks through a call to the Java and native sides of JConfig.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+    
+
+
+
+This file traces the steps when you call the <B>FileRegistry.getMainMonitor()</B> method.
+
+<P>
+Let's assume that we're running on Windows95 with the SunJDK. This will use the jcnfigSN.dll, and we'll assume
+that this DLL was compiled with the DO_SEH symbol defined (this indicates that each native method should be
+surrounded by a SEH frame.)
+
+<P>
+The sequence of routines which will be called are shown, followed by a description of each step.
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 1.
+</H2>
+<P>
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    public static Monitor getMainMonitor() {
+        Monitor	    retMon = null;
+
+        if ( delegate != null )
+            retMon = delegate.getMainMonitor();
+
+        if ( retMon == null )	    
+            retMon = new MonitorPlain();
+
+        return retMon;
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistry.java
+</I></CAPTION></CENTER>
+
+
+
+<BLOCKQUOTE>
+If delegate isn't null, it calls the delegate to obtain the user's main monitor.
+If this return null, or if delegate is null it returns a 'plain' monitor object.
+This will be initialized using the built-in Java information, which is minimal, and consists only
+of the width and height of the main monitor.
+
+<P>
+We'll assume that delegate is not null.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 2.
+</H2>
+<P>
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>                                                                              `
+
+    public Monitor getMainMonitor() {
+        return MonitorHelperMSVM.getMainMonitor();
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from FileRegistryMSVM.java
+</I></CAPTION></CENTER>
+
+
+
+<BLOCKQUOTE>
+In the current case, the delegate is a 'FileRegistryMSVM' object, which just passes the call to a static method
+of the 'MonitorHelperMSVM' class.
+
+<P>
+For a description of how the FileRegistryMSVM object was selected as the delegate, see the
+<A HREF="overview_init.html">overview_init.html</A> file.
+
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 3.
+</H2>
+<P>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    static Monitor getMainMonitor() {
+        int         monitorData[], theErr;
+
+        monitorData = new int[ AppUtilsMSVM.kMonitorInfoNumInts ];
+
+        theErr = AppUtilsMSVM.getMainMonitorInfo( monitorData );
+
+        if ( theErr != ErrCodes.kNoErr )
+            return null;
+
+        return new MonitorMSVM( monitorData, 0, AppUtilsMSVM.kMonitorInfoNumInts );
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from MonitorHelperMSVM.java
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+The 'MonitorHelperMSVM.getMainMonitor()' method	creates an int array, and passes it to a native method. The native
+method will fill out this int array with information on the main monitor. For instance, the top of the main monitor
+will be placed at offset 0 of the int array, the left of the monitor at offset 1, etc. Which data is stored where
+is defined by the 'kOffs...' constants in the 'MonitorMSVM' class.
+
+<P>
+Creation of the 'MonitorMSVM' object will be described below.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 4.
+</H2>
+<P>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    static int getMainMonitorInfo( int monitorInfo[] ) {
+        return nativeGetMainMonitorInfo( monitorInfo );
+    }
+    private static native int nativeGetMainMonitorInfo( int monitorInfo[] );
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from AppUtilsMSVM.java
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+'MonitorHelperMSVM' calls 'AppUtilsMSVM.getMainMonitorInfo()' with an array of ints.
+This method is just a wrapper around the native method 'AppUtilsMSVM.nativeGetMainMonitorInfo()'.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 5.
+</H2>
+<P>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    SEH_EXP JINT SEH_FUNC( jconfig, AppUtilsMSVM, nativeGetMainMonitorInfo ),
+    JINTARRAY pMonitorInfo )
+    {
+        SEH_TRY {
+            return CALL_INNER( nativeGetMainMonitorInfo )( INNER_PREFIX, pMonitorInfo );
+        }
+        SEH_EXCEPT( _TXL( "SEH in nativeGetMainMonitorInfo\n" ) )
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from sehstubs.cpp
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+Now, we're in native code. This is a stub routine, which installs an SEH frame, and calls the routine
+'INNER_nativeGetMainMonitorInfo' (see below.) All native methods follow the same pattern.
+
+<P>
+If we replace the SEH-related macros, this looks like:
+</BLOCKQUOTE>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    JNIEXPORT JINT JNICALL Java_COM_tolstoy_jconfig_win_AppUtilsMSVM_nativeGetMainMonitorInfo(
+    JNIEnv *pEnv,
+    jclass pObj,
+    JINTARRAY pMonitorInfo )
+    {
+        __try {
+            return INNER_nativeGetMainMonitorInfo( pEnv, pObj, pMonitorInfo );
+        }
+        __except ( EXCEPTION_EXECUTE_HANDLER ) {
+            Debugger::debug( __LINE__, _TXL( "SEH in nativeGetMainMonitorInfo\n" ) );
+            return kErrSEH;
+        }
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from sehstubs.cpp
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+'JINT' and 'JINTARRAY' are native macros; see <A HREF="nativemacros.html">nativemacros.html</A> for more
+information.
+
+<BR>
+'JNIEXPORT' and 'JNICALL' are defined by JNI.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 6.
+</H2>
+<P>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    EXP JINT FUNC( jconfig, AppUtilsMSVM, nativeGetMainMonitorInfo ),
+    JINTARRAY pMonitorInfo )
+    {
+        long            *monitorInfoP, theErr;
+
+        BEGINTRY {
+            CHECKSIZE( pMonitorInfo, SMonitors::kMonitorInfoNumInts );
+        
+            monitorInfoP = LOCKINTARRAY( pMonitorInfo );
+        
+            theErr = SMonitors::iGetMainMonitorInfo( monitorInfoP );
+        
+            UNLOCKINTARRAY( pMonitorInfo, monitorInfoP );
+        }
+        ENDTRY
+
+    bail:
+
+        return theErr;
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from AppUtilsMSVM.cpp
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+This routine is called by the previous routine which installed the SEH frame.
+If we replace the macros in this routine, it looks like:
+</BLOCKQUOTE>
+
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    jint INNER_nativeGetMainMonitorInfo,
+    JNIEnv *pEnv,
+    jclass pObj,
+    jintArray pMonitorInfo )
+    {
+        long            *monitorInfoP, theErr;
+
+        try {
+            {	//	this was the CHECKSIZE macro
+                if ( ( (pMonitorInfo) == NULL ) ||
+                        ( pEnv->GetArrayLength( (pMonitorInfo) ) < (SMonitors::kMonitorInfoNumInts) ) )
+                    {
+                        theErr = kErrParamErr;
+                        goto bail;
+                    }
+            }
+        
+                // this was the LOCKINTARRAY macro
+            monitorInfoP = pEnv->GetIntArrayElements( (pMonitorInfo), 0 );
+        
+            theErr = SMonitors::iGetMainMonitorInfo( monitorInfoP );
+        
+                //	this was the UNLOCKINTARRAY macro
+            pEnv->ReleaseIntArrayElements( (pMonitorInfo), (monitorInfoP), 0 );
+        }
+        catch ( const LPCTSTR msg ) {
+            Debugger::debug( __LINE__, _TXL( "got exception" ), msg );
+            theErr = kException;
+        }
+
+    bail:
+
+        return theErr;
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from AppUtilsMSVM.cpp
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+First, this checks that the parameter is OK. Then, it looks the array of Java ints, and calls a static method
+in the SMonitors class. If an exception occurs, it prints it out. After returning from SMonitors, it unlocks
+the Java int array, and returns a error code.
+</BLOCKQUOTE>
+
+
+
+
+<P>
+<BR>
+<H2>
+Step 7.
+</H2>
+<P>
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    long SMonitors::iGetMainMonitorInfo( long *monitorInfoP )
+    {
+        HWND            hDesk;
+        HDC             hDC;
+        RECT            rcWorkarea, rcBounds;
+        long            theErr, screenWidth, screenHeight, screenDepth;
+        BOOL            bRet;
+
+        theErr = kErrNoErr;
+
+        bRet = SystemParametersInfo( SPI_GETWORKAREA, 0, &rcWorkarea, 0 );
+        if ( !bRet ) {
+            theErr = kErrSystemParametersInfo;
+            goto bail;
+        }
+
+        screenWidth = GetSystemMetrics( SM_CXSCREEN );
+        screenHeight = GetSystemMetrics( SM_CYSCREEN );
+        SetRect( &rcBounds, 0, 0, screenWidth, screenHeight );
+    
+        hDesk = GetDesktopWindow();
+        hDC = GetDC( hDesk );
+        screenDepth = GetDeviceCaps( hDC, BITSPIXEL );
+        ReleaseDC( hDesk, hDC );
+    
+        stuffMonitorInfo( &rcBounds, &rcWorkarea, screenDepth, TRUE, 0, monitorInfoP );
+
+    bail:
+
+        return theErr;
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from SMonitors.cpp
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+This gets information on the user's main monitor, and then puts it into the appropriate locations of an int
+array.
+</BLOCKQUOTE>
+
+
+
+<CENTER><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="80%" BGCOLOR="#FFFF99"><TR><TD WIDTH="100%">
+
+<PRE>
+
+    MonitorMSVM( int data[], int dataOffset, int dataLen ) {
+        int         top, left, bot, right;
+
+        top = data[ dataOffset + kOffsBoundsTop ];
+        left = data[ dataOffset + kOffsBoundsLeft ];
+        bot = data[ dataOffset + kOffsBoundsBottom ];
+        right = data[ dataOffset + kOffsBoundsRight ];
+        boundsRect = new Rectangle( left, top, right - left, bot - top );
+
+        top = data[ dataOffset + kOffsWorkareaTop ];
+        left = data[ dataOffset + kOffsWorkareaLeft ];
+        bot = data[ dataOffset + kOffsWorkareaBottom ];
+        right = data[ dataOffset + kOffsWorkareaRight ];
+        workareaRect = new Rectangle( left, top, right - left, bot - top );
+
+        depth = data[ dataOffset + kOffsDepth ];
+        refNum = data[ dataOffset + kOffsRefNum ];
+
+        if ( data[ dataOffset + kOffsIsMainMonitor ] != 0 )
+            bIsMainMonitor = true;
+        else
+            bIsMainMonitor = false;
+    }
+</PRE>
+
+</TD></TR></TABLE><CAPTION><I>
+from MonitorMSVM.java
+</I></CAPTION></CENTER>
+
+
+
+
+<BLOCKQUOTE>
+After the native code returns, we're back in Java, in the MonitorHelperMSVM.getMainMonitor() method. If no error
+occured, we create a 'MonitorMSVM' object using the int array filled out by the native code. 'MonitorMSVM'
+implements the Monitor interface, and returns the information obtained, such as the Rectangle of the workarea.
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

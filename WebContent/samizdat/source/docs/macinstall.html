@@ -1,0 +1,340 @@
+<HTML>
+<HEAD>
+
+<TITLE>Mac Installation</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Mac Installation
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file contains installation and setup notes for Mac.
+</I>
+</CENTER>
+
+
+<HR>
+
+
+
+
+
+
+
+<P>
+<H2>
+Installation
+</H2>
+
+
+<P>
+You can leave the <CODE>source</CODE> folder inside the <CODE>samizdat</CODE> folder, or you can place it in another location,
+such as inside your CodeWarrior folder if it's more convenient.
+
+<P>
+The <CODE>source</CODE> folder contains two Stuffit archives which contain the Mac-specific files:
+
+<PRE>
+    <B><I>mac_Project.sit</I></B>               a folder containing the CodeWarrior project
+    <B><I>mac_JConfig_rsrc.sit</I></B>          the JConfig resource file (JConfig.rsrc)
+</PRE>
+
+<P>
+To install, unstuff each of these files <B>in place</B>: i.e., unstuff both of them into the 'source' folder.
+
+<P>
+<B>NOTE:</B> If Stuffit does not recognize the .sit files as Stuffit archives, you'll need to change 
+the creator of each of these files to 'SIT!', and the type of each of these files to 'SITD'.
+
+<P>
+<B>NOTE:</B> We recommend that you use Windows as your 'homebase', and only transfer files to the Mac in order
+to compile the Mac shared libraries. So, the CodeWarrior project file included with this distribution only
+compiles the native code, not Java.
+
+
+
+
+<P>
+<H2>
+Requirements
+</H2>
+
+<P>
+To compile the Mac shared libraries, you need:
+
+<UL>
+
+<LI><B>Metrowerks CodeWarrior, Pro2 or later</B>
+<BR>
+MPW might also work, however, this has not been tested.
+<BR>
+Make sure that you installed Java support when you installed CodeWarrior; the CW builds of the shared
+libraries need the JNI header files included with the CW Java installation.
+
+<P>
+<LI><B>the Internet Config SDK</B>
+<BR>
+The JConfig binaries were compiled using ICProgKit1.3.
+<BR>
+You can get this from <A HREF="http://www.tolstoy.com/samizdat/jcextras.html">www.tolstoy.com/samizdat/jcextras.html</A>
+<BR>
+The CodeWarrior project assumes that this is stored in the source folder (i.e., source:ICProgKit1.3:APIs, etc.)
+<BR>
+This SDK is used by both the CW and MRJ builds.
+
+
+<P>
+<LI><B>MoreFiles</B>
+<BR>
+The JConfig binaries were compiled using MoreFiles 1.4.5.
+<BR>
+You can get this from <A HREF="http://www.tolstoy.com/samizdat/jcextras.html">www.tolstoy.com/samizdat/jcextras.html</A>
+<BR>
+The CodeWarrior project assumes that this is stored in the source folder (i.e., source:MoreFiles 1.4.5)
+<BR>
+This SDK is used by both the CW and MRJ builds.
+
+
+<P>
+<LI><B>the FindIcon library</B>
+<BR>
+The JConfig binaries were compiled using this library from 10/28/98.
+<BR>
+You can get this from <A HREF="http://www.tolstoy.com/samizdat/jcextras.html">www.tolstoy.com/samizdat/jcextras.html</A>
+<BR>
+The CodeWarrior project assumes that this is stored in the source folder (i.e., source:Find_icon folder)
+<BR>
+This SDK is used by both the CW and MRJ builds.
+
+
+<P>
+<LI><B>the MRJ SDK version 1.0.2 or 1.5</B>
+<BR>
+This is required for the JRI header files.
+<BR>
+The CodeWarrior project assumes that this is stored in Macintosh HD:MRJ 1.0.2 SDK
+<BR>
+If you're using 1.5, or if you have this SDK at another location, you'll need to change this path in the
+CW Project Settings/Access Paths dialog.
+<BR>
+You can get this from
+<A HREF="http://developer.apple.com/java/text/download.html">http://developer.apple.com/java/text/download.html</A>
+<BR>
+This SDK is only used by the MRJ build.
+
+</UL>
+
+<P>
+To compile the Java code, you'll need a Java compiler, such as Metrowerks or the tools included with MRJ. Since
+we only support compiling the Java code on Windows, you'll need to create a project yourself.
+
+
+
+
+
+<P>
+<H2>
+Compiling
+</H2>
+
+<P>
+You'll need to edit the preferences of the CodeWarrior project to reflect the locations where you've stored
+the Internet Config and MRJ SDKs.
+
+<P>
+To compile, open the CodeWarrior project, and select the 'BuildAll' target. This will create four shared libraries:
+<UL>
+<LI>JConfigMRJ.shlb: for use with MRJ
+<LI>JConfigCW.shlb: for use with the CW VM (standard)
+<LI>JConfigCWJIT.shlb: for use with the CW VM (JIT)
+<LI>JConfig.shlb: merges the three shared libraries listed above
+</UL>
+
+<P>
+JConfig.shlb is the standard shared library distributed with JConfig, however, if you're only running on one VM,
+you might wish to use one of the other libraries.
+
+
+<P>
+<H2>
+Notes
+</H2>
+
+
+<P>
+<B>IMPORTANT NOTE:</B>
+Don't modify the relative locations of files or folders within the distribution;
+doing so may require editing the project file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,290 @@
+<html><head><title>SAppInfo Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SAppInfo</a></h1>
+<dl>
+<dd>
+	Routines for working with applications.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Windows.html">Windows</a> | 
+<a href=../../../"SAppInfo.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SAppInfo<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd>typedef enum tageMoveApp <a href="SAppInfo.html#typedef_enum_tageMoveApp_eMoveApp$"><font color=green>eMoveApp</font></a>;
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeLaunchApp(_const_CStr_*commandLine,_AppDataType_*appDataP_)$"><font color=green>iNativeLaunchApp</font></a>( const CStr *commandLine, AppDataType *appDataP );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeQuitApp(_AppDataType_*appData_)$"><font color=green>iNativeQuitApp</font></a>( AppDataType *appData );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeMoveApp(_AppDataType_*appData,_eMoveApp_selector,_long_flags_)$"><font color=green>iNativeMoveApp</font></a>( AppDataType *appData, eMoveApp selector, long flags );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeVerifyNativeAppData(_AppDataType_*appData_)$"><font color=green>iNativeVerifyNativeAppData</font></a>( AppDataType *appData );
+<dd><strong>static</strong> BOOL <a href="SAppInfo.html#BOOL_getThreadIDAndHWNDFromProcessID(_DWORD_dwProcessId,_DWORD_*lpdwThreadId,_HWND_*lphwndMainWindow_)$"><font color=green>getThreadIDAndHWNDFromProcessID</font></a>( DWORD dwProcessId, DWORD *lpdwThreadId, HWND *lphwndMainWindow );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SAppInfo <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SAppInfo</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Routines for working with applications.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SAppInfo</i><p>
+<a name="typedef_enum_tageMoveApp_eMoveApp$"><hr><p></p><h3>typedef enum tageMoveApp eMoveApp;</h3></a>
+<p>
+		    Selector value used with <a href="#ErrCode_iNativeMoveApp(_AppDataType_*appData,_eMoveApp_selector,_long_flags_)$">iNativeMoveApp</a>()
+<p>
+<p><pre>
+	typedef enum tageMoveApp {
+		kMoveAppToFront = 1,
+		kMoveAppToBack = 2,
+		kMoveAppMinimize = 3,
+		kMoveAppMaximize = 4
+	} eMoveApp;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="ErrCode_iNativeLaunchApp(_const_CStr_*commandLine,_AppDataType_*appDataP_)$"><hr><p></p><h3>ErrCode iNativeLaunchApp( const CStr *commandLine, AppDataType *appDataP );</h3></a>
+<p>
+		    Launches an app with zero or more documents.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	commandLine</strong>
+<dd>The command line, including any arguments.
+<dt><i>out</i><strong>	appDataP</strong>
+<dd>On exit, contains information from CreateProcess
+		  								no arguments.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iNativeLaunchApp(_const_CStr_*commandLine,_AppDataType_*appDataP_)$">iNativeLaunchApp</a>( const CStr *commandLine, AppDataType *appDataP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="ErrCode_iNativeQuitApp(_AppDataType_*appData_)$"><hr><p></p><h3>ErrCode iNativeQuitApp( AppDataType *appData );</h3></a>
+<p>
+		    Quits an application
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appData</strong>
+<dd>Information on the app.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iNativeQuitApp(_AppDataType_*appData_)$">iNativeQuitApp</a>( AppDataType *appData );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="ErrCode_iNativeMoveApp(_AppDataType_*appData,_eMoveApp_selector,_long_flags_)$"><hr><p></p><h3>ErrCode iNativeMoveApp( AppDataType *appData, eMoveApp selector, long flags );</h3></a>
+<p>
+		    Moves an application
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appData</strong>
+<dd>Information on the app.
+<dt><i>in</i><strong>	selector</strong>
+<dd>One of the eMoveApp constants
+<dt><i>in</i><strong>	flags</strong>
+<dd>Various flags
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iNativeMoveApp(_AppDataType_*appData,_eMoveApp_selector,_long_flags_)$">iNativeMoveApp</a>( AppDataType *appData, eMoveApp selector, long flags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="ErrCode_iNativeVerifyNativeAppData(_AppDataType_*appData_)$"><hr><p></p><h3>ErrCode iNativeVerifyNativeAppData( AppDataType *appData );</h3></a>
+<p>
+		    Verifies that an application is still running
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appData</strong>
+<dd>Information on the app.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iNativeVerifyNativeAppData(_AppDataType_*appData_)$">iNativeVerifyNativeAppData</a>( AppDataType *appData ); 
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="BOOL_getThreadIDAndHWNDFromProcessID(_DWORD_dwProcessId,_DWORD_*lpdwThreadId,_HWND_*lphwndMainWindow_)$"><hr><p></p><h3>BOOL getThreadIDAndHWNDFromProcessID( DWORD dwProcessId, DWORD *lpdwThreadId, HWND *lphwndMainWindow );</h3></a>
+<p>
+		    Uses a processID to get the primary HWND and primary thread of the process.
+		  	May not be 100% reliable; the process might not have a window,
+		  	the thread might not be the main thread, etc. etc.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	dwProcessId</strong>
+<dd>The processID.
+<dt><i>out</i><strong>	lpdwThreadId</strong>
+<dd>The primary threadID, or -1 if an error occurs.
+<dt><i>out</i><strong>	lphwndMainWindow</strong>
+<dd>The primary HWND, or -1 if an error occurs.
+<p>
+</dl></dl>
+<p><pre>
+	static	BOOL <a href="#BOOL_getThreadIDAndHWNDFromProcessID(_DWORD_dwProcessId,_DWORD_*lpdwThreadId,_HWND_*lphwndMainWindow_)$">getThreadIDAndHWNDFromProcessID</a>( DWORD dwProcessId, DWORD *lpdwThreadId, HWND *lphwndMainWindow );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SAppInfo </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd>typedef enum tageMoveApp <a href="SAppInfo.html#typedef_enum_tageMoveApp_eMoveApp$"><font color=green>eMoveApp</font></a>;
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeLaunchApp(_const_CStr_*commandLine,_AppDataType_*appDataP_)$"><font color=green>iNativeLaunchApp</font></a>( const CStr *commandLine, AppDataType *appDataP );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeQuitApp(_AppDataType_*appData_)$"><font color=green>iNativeQuitApp</font></a>( AppDataType *appData );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeMoveApp(_AppDataType_*appData,_eMoveApp_selector,_long_flags_)$"><font color=green>iNativeMoveApp</font></a>( AppDataType *appData, eMoveApp selector, long flags );
+<dd><strong>static</strong> ErrCode <a href="SAppInfo.html#ErrCode_iNativeVerifyNativeAppData(_AppDataType_*appData_)$"><font color=green>iNativeVerifyNativeAppData</font></a>( AppDataType *appData );
+<dd><strong>static</strong> BOOL <a href="SAppInfo.html#BOOL_getThreadIDAndHWNDFromProcessID(_DWORD_dwProcessId,_DWORD_*lpdwThreadId,_HWND_*lphwndMainWindow_)$"><font color=green>getThreadIDAndHWNDFromProcessID</font></a>( DWORD dwProcessId, DWORD *lpdwThreadId, HWND *lphwndMainWindow );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SAppInfo<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SAppInfo<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SAppInfo<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:07 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

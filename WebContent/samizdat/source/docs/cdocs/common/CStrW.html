@@ -1,0 +1,638 @@
+<html><head><title>CStrW Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">CStrW</a></h1>
+<dl>
+<dd>
+	Represents a Unicode string.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Common.html">Common</a> | 
+<a href=../../../"CStrW.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+<dd><a href="#MACROS">MACROS</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class CStrW <br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><a href="CStrW.html#CStrW(_JNIEnv_*pEnv,_jstring_pStr_)$"><font color=green>CStrW</font></a>( JNIEnv *pEnv, jstring pStr );
+<dd><a href="CStrW.html#CStrW(_Hjava_lang_String_*ps_)$"><font color=green>CStrW</font></a>( Hjava_lang_String *ps );
+<dd><a href="CStrW.html#CStrW(_long_len_)$"><font color=green>CStrW</font></a>( long len );
+<dd><a href="CStrW.html#CStrW(_const_wchar_t_*s_)$"><font color=green>CStrW</font></a>( const wchar_t *s );
+<dd><a href="CStrW.html#CStrW(_const_char_*s_)$"><font color=green>CStrW</font></a>( const char *s );
+<dd><a href="CStrW.html#CStrW(_const_CStrW_*cs_)$"><font color=green>CStrW</font></a>( const CStrW *cs );
+<dd>~<i><a href="CStrW.html#~CStrW()$"><font color=green>CStrW</font></a></i>();
+<dd>Hjava_lang_String *<i><a href="CStrW.html#Hjava_lang_String_*getJString()$"><font color=green>getJString</font></a></i>();
+<dd>jstring <i><a href="CStrW.html#jstring_getJString(_JNIEnv_*pEnv_)$"><font color=green>getJString</font></a></i>( JNIEnv *pEnv );
+<dd>wchar_t *<i><a href="CStrW.html#wchar_t_*getBuf()_const$"><font color=green>getBuf</font></a></i>() const;
+<dd>long <i><a href="CStrW.html#long_getLength()_const$"><font color=green>getLength</font></a></i>() const;
+<dd>void <i><a href="CStrW.html#void_toUpper()$"><font color=green>toUpper</font></a></i>();
+<dd>void <i><a href="CStrW.html#void_toLower()$"><font color=green>toLower</font></a></i>();
+<dd>void <i><a href="CStrW.html#void_setBuf(_const_wchar_t_*s_)$"><font color=green>setBuf</font></a></i>( const wchar_t *s );
+<dd>void <i><a href="CStrW.html#void_setBuf(_const_CStrW_*cs_)$"><font color=green>setBuf</font></a></i>( const CStrW *cs );
+<dd>void <i><a href="CStrW.html#void_ensureCharCapacity(_long_cap_)$"><font color=green>ensureCharCapacity</font></a></i>( long cap );
+<dd>long <i><a href="CStrW.html#long_getCharCapacity()_const$"><font color=green>getCharCapacity</font></a></i>() const;
+<dd>long <i><a href="CStrW.html#long_getByteCapacity()_const$"><font color=green>getByteCapacity</font></a></i>() const;
+<dd>void <i><a href="CStrW.html#void_concat(_const_wchar_t_*s_)$"><font color=green>concat</font></a></i>( const wchar_t *s );
+<dd>void <i><a href="CStrW.html#void_concat(_const_CStrW_*cs_)$"><font color=green>concat</font></a></i>( const CStrW *cs );
+<dd>BOOL <i><a href="CStrW.html#BOOL_contains(_const_CStrW_*cs_)_const$"><font color=green>contains</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_contains(_const_wchar_t_*s_)_const$"><font color=green>contains</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_startsWith(_const_CStrW_*cs_)_const$"><font color=green>startsWith</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_startsWith(_const_wchar_t_*s_)_const$"><font color=green>startsWith</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqual(_const_CStrW_*cs_)_const$"><font color=green>isEqual</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqual(_const_wchar_t_*s_)_const$"><font color=green>isEqual</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqualIgnoreCase(_const_CStrW_*cs_)_const$"><font color=green>isEqualIgnoreCase</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqualIgnoreCase(_const_wchar_t_*s_)_const$"><font color=green>isEqualIgnoreCase</font></a></i>( const wchar_t *s ) const;
+<dd>long <i><a href="CStrW.html#long_replaceFrom(_long_startIndex,_const_wchar_t_*searchString,_const_CStrW_*csReplace_)$"><font color=green>replaceFrom</font></a></i>( long startIndex, const wchar_t *searchString, const CStrW *csReplace );
+<dd>BOOL <i><a href="CStrW.html#BOOL_extractExeFileName(_CStrW_*csDest_)$"><font color=green>extractExeFileName</font></a></i>( CStrW *csDest );
+<dd>void <i><a href="CStrW.html#void_formatInt(_const_wchar_t_*lpszFormat,_long_num_)$"><font color=green>formatInt</font></a></i>( const wchar_t *lpszFormat, long num );
+<dd><strong>static</strong> long <a href="CStrW.html#long_countPackedStrings(_const_CStrW_*ps_)$"><font color=green>countPackedStrings</font></a>( const CStrW *ps );
+<dd><strong>static</strong> CStrW *<a href="CStrW.html#CStrW_*getPackedString(_const_CStrW_*ps,_long_i_)$"><font color=green>getPackedString</font></a>( const CStrW *ps, long i );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // CStrW <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CStrW</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Represents a Unicode string.
+	This class can be created from a Java string, and a Java string can be created from objects of this class.
+	A set of macros are used to make it easier to work with these objects.
+	See the 'string.html' file for more information.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CStrW</i><p>
+<a name="MACROS"><hr><p></p></a><h3>MACROS</h3>
+	These macros are defined in CString.h, and are defined using CStr, not CStrW
+<PRE>
+<p>
+DECLARESTR(a)
+	Allocates space for a CStr*, and sets it to null
+<p>
+MAKESTR(a,b)
+	Constructs a CStr from a Java String. If 'a' is null, or if an exception
+	occurs, sets 'theErr' and jumps to 'bail'
+	'a' is the Java string ( JSTRING )
+	'b' is the CStr*
+<p>
+DELETESTR(a)
+	If 'a' isn't null, calls 'delete' on it.
+<p>
+</PRE>
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CStrW</i><p>
+<a name="CStrW(_JNIEnv_*pEnv,_jstring_pStr_)$"><hr><p></p><h3>CStrW( JNIEnv *pEnv, jstring pStr );</h3></a>
+<p>
+		    Construct from an RNI string. Only available in RNI builds.
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( JNIEnv *pEnv, jstring pStr );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW(_Hjava_lang_String_*ps_)$"><hr><p></p><h3>CStrW( Hjava_lang_String *ps );</h3></a>
+<p>
+		    Construct from a JNI String. Only available in JNI builds.
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( Hjava_lang_String *ps );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW(_long_len_)$"><hr><p></p><h3>CStrW( long len );</h3></a>
+<p>
+		    Construct with an internal buffer able to hold 'len' characters
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( long len );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW(_const_wchar_t_*s_)$"><hr><p></p><h3>CStrW( const wchar_t *s );</h3></a>
+<p>
+		    Construct from a wchar_t string
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( const wchar_t *s );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW(_const_char_*s_)$"><hr><p></p><h3>CStrW( const char *s );</h3></a>
+<p>
+		    Construct from a C string, converting with MultiByteToWideChar().
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( const char *s );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW(_const_CStrW_*cs_)$"><hr><p></p><h3>CStrW( const CStrW *cs );</h3></a>
+<p>
+		    Construct from another CStrW.
+<p>
+<p><pre>
+	<a href="#CStrW(_Hjava_lang_String_*ps_)$">CStrW</a>( const CStrW *cs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="~CStrW()$"><hr><p></p><h3>~CStrW();</h3></a>
+<p>
+		    Destructor.
+<p>
+<p><pre>
+	virtual	~CStrW();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="Hjava_lang_String_*getJString()$"><hr><p></p><h3>Hjava_lang_String *getJString();</h3></a>
+<p>
+		    Convert to an RNI String. Only available in RNI builds.
+<p>
+<p><pre>
+	virtual	Hjava_lang_String	*<a href="#Hjava_lang_String_*getJString()$">getJString</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="jstring_getJString(_JNIEnv_*pEnv_)$"><hr><p></p><h3>jstring getJString( JNIEnv *pEnv );</h3></a>
+<p>
+		    Convert to a JNI String.  Only available in JNI builds.
+<p>
+<p><pre>
+	virtual	jstring	<a href="#Hjava_lang_String_*getJString()$">getJString</a>( JNIEnv *pEnv );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="wchar_t_*getBuf()_const$"><hr><p></p><h3>wchar_t *getBuf() const;</h3></a>
+<p>
+		    Returns a pointer to the character buffer.
+<p>
+<p><pre>
+	virtual	wchar_t	*<a href="#wchar_t_*getBuf()_const$">getBuf</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="long_getLength()_const$"><hr><p></p><h3>long getLength() const;</h3></a>
+<p>
+		    Returns the length of the string.
+<p>
+<p><pre>
+	virtual	long	<a href="#long_getLength()_const$">getLength</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_toUpper()$"><hr><p></p><h3>void toUpper();</h3></a>
+<p>
+		    Converts the string to upper case.
+<p>
+<p><pre>
+	virtual	void	<a href="#void_toUpper()$">toUpper</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_toLower()$"><hr><p></p><h3>void toLower();</h3></a>
+<p>
+		    Converts the string to lower case.
+<p>
+<p><pre>
+	virtual	void	<a href="#void_toLower()$">toLower</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_setBuf(_const_wchar_t_*s_)$"><hr><p></p><h3>void setBuf( const wchar_t *s );</h3></a>
+<p>
+		    Copies the given string into this object, expanding the internal buffer as necessary.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to copy into this object.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_setBuf(_const_CStrW_*cs_)$">setBuf</a>( const wchar_t *s );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_setBuf(_const_CStrW_*cs_)$"><hr><p></p><h3>void setBuf( const CStrW *cs );</h3></a>
+<p>
+		    Copies the given string into this object, expanding the internal buffer as necessary.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to copy into this object.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_setBuf(_const_CStrW_*cs_)$">setBuf</a>( const CStrW *cs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_ensureCharCapacity(_long_cap_)$"><hr><p></p><h3>void ensureCharCapacity( long cap );</h3></a>
+<p>
+		    Ensures that this object's internal buffer can contain the given number of characters.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cap</strong>
+<dd>The new number of characters.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_ensureCharCapacity(_long_cap_)$">ensureCharCapacity</a>( long cap );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="long_getCharCapacity()_const$"><hr><p></p><h3>long getCharCapacity() const;</h3></a>
+<p>
+		    Returns the number of characters this object's buffer can hold.
+<p>
+<p><pre>
+	virtual	long	<a href="#long_getCharCapacity()_const$">getCharCapacity</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="long_getByteCapacity()_const$"><hr><p></p><h3>long getByteCapacity() const;</h3></a>
+<p>
+		    Returns the number of bytes this object's buffer can hold.
+<p>
+<p><pre>
+	virtual	long	<a href="#long_getByteCapacity()_const$">getByteCapacity</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_concat(_const_wchar_t_*s_)$"><hr><p></p><h3>void concat( const wchar_t *s );</h3></a>
+<p>
+		    Concatenates the given string, expanding the internal buffer as necessary.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to concat.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_concat(_const_CStrW_*cs_)$">concat</a>( const wchar_t *s );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_concat(_const_CStrW_*cs_)$"><hr><p></p><h3>void concat( const CStrW *cs );</h3></a>
+<p>
+		    Concatenates the given string, expanding the internal buffer as necessary.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to concat.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_concat(_const_CStrW_*cs_)$">concat</a>( const CStrW *cs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_contains(_const_CStrW_*cs_)_const$"><hr><p></p><h3>BOOL contains( const CStrW *cs ) const;</h3></a>
+<p>
+		    Returns TRUE if this string contains 'cs', FALSE otherwise. Case significant.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to be searched for.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_contains(_const_CStrW_*cs_)_const$">contains</a>( const CStrW *cs ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_contains(_const_wchar_t_*s_)_const$"><hr><p></p><h3>BOOL contains( const wchar_t *s ) const;</h3></a>
+<p>
+		    Returns TRUE if this string contains 's', FALSE otherwise. Case significant.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to be searched for.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_contains(_const_CStrW_*cs_)_const$">contains</a>( const wchar_t *s ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_startsWith(_const_CStrW_*cs_)_const$"><hr><p></p><h3>BOOL startsWith( const CStrW *cs ) const;</h3></a>
+<p>
+		    Returns TRUE if this string starts with the given string, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to search for.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_startsWith(_const_CStrW_*cs_)_const$">startsWith</a>( const CStrW *cs ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_startsWith(_const_wchar_t_*s_)_const$"><hr><p></p><h3>BOOL startsWith( const wchar_t *s ) const;</h3></a>
+<p>
+		    Returns TRUE if this string starts with the given string, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to search for.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_startsWith(_const_CStrW_*cs_)_const$">startsWith</a>( const wchar_t *s ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_isEqual(_const_CStrW_*cs_)_const$"><hr><p></p><h3>BOOL isEqual( const CStrW *cs ) const;</h3></a>
+<p>
+		    Returns TRUE if this string equals the given string, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to compare.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_isEqual(_const_CStrW_*cs_)_const$">isEqual</a>( const CStrW *cs ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_isEqual(_const_wchar_t_*s_)_const$"><hr><p></p><h3>BOOL isEqual( const wchar_t *s ) const;</h3></a>
+<p>
+		    Returns TRUE if this string equals the given string, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to compare.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_isEqual(_const_CStrW_*cs_)_const$">isEqual</a>( const wchar_t *s ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_isEqualIgnoreCase(_const_CStrW_*cs_)_const$"><hr><p></p><h3>BOOL isEqualIgnoreCase( const CStrW *cs ) const;</h3></a>
+<p>
+		    Returns TRUE if this string equals the given string, FALSE otherwise. Not case sensitive.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	cs</strong>
+<dd>The string to compare.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_isEqualIgnoreCase(_const_CStrW_*cs_)_const$">isEqualIgnoreCase</a>( const CStrW *cs ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_isEqualIgnoreCase(_const_wchar_t_*s_)_const$"><hr><p></p><h3>BOOL isEqualIgnoreCase( const wchar_t *s ) const;</h3></a>
+<p>
+		    Returns TRUE if this string equals the given string, FALSE otherwise. Not case sensitive.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	s</strong>
+<dd>The string to compare.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_isEqualIgnoreCase(_const_CStrW_*cs_)_const$">isEqualIgnoreCase</a>( const wchar_t *s ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="long_replaceFrom(_long_startIndex,_const_wchar_t_*searchString,_const_CStrW_*csReplace_)$"><hr><p></p><h3>long replaceFrom( long startIndex, const wchar_t *searchString, const CStrW *csReplace );</h3></a>
+<p>
+		    Searches for a substring, and, if found, replaces with another string.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	startIndex</strong>
+<dd>The index in this string at which to start searching.
+<dt><i>in</i><strong>	searchString</strong>
+<dd>The string to be searched for.
+<dt><i>in</i><strong>	csReplace</strong>
+<dd>If the string is found, it will be replaced with this string.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	long	<a href="#long_replaceFrom(_long_startIndex,_const_wchar_t_*searchString,_const_CStrW_*csReplace_)$">replaceFrom</a>( long startIndex, const wchar_t *searchString, const CStrW *csReplace );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="BOOL_extractExeFileName(_CStrW_*csDest_)$"><hr><p></p><h3>BOOL extractExeFileName( CStrW *csDest );</h3></a>
+<p>
+		    If this string contains the full path of an .exe file, places it in csDest. Returns TRUE
+		  	if it succeeds, FALSE otherwise.
+<p>
+<dl><dl>
+<dt><i>out</i><strong>	csDest</strong>
+<dd>Destination of the exe file name.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	BOOL	<a href="#BOOL_extractExeFileName(_CStrW_*csDest_)$">extractExeFileName</a>( CStrW *csDest );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="void_formatInt(_const_wchar_t_*lpszFormat,_long_num_)$"><hr><p></p><h3>void formatInt( const wchar_t *lpszFormat, long num );</h3></a>
+<p>
+		    Uses sprintf to write an integer into this string. The string must be at least 10 characters
+		  	long.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	lpszFormat</strong>
+<dd>The printf-style format of the integer.
+<dt><i>in</i><strong>	num</strong>
+<dd>The integer.
+<p>
+</dl></dl>
+<p><pre>
+	virtual	void	<a href="#void_formatInt(_const_wchar_t_*lpszFormat,_long_num_)$">formatInt</a>( const wchar_t *lpszFormat, long num );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="long_countPackedStrings(_const_CStrW_*ps_)$"><hr><p></p><h3>long countPackedStrings( const CStrW *ps );</h3></a>
+<p>
+		    Returns the number of strings in the given packed string.
+		  	See getPackedString for a description of the format of packed strings.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ps</strong>
+<dd>The packed string.
+<p>
+</dl></dl>
+<p><pre>
+	static	long	<a href="#long_countPackedStrings(_const_CStrW_*ps_)$">countPackedStrings</a>( const CStrW *ps );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="CStrW_*getPackedString(_const_CStrW_*ps,_long_i_)$"><hr><p></p><h3>CStrW *getPackedString( const CStrW *ps, long i );</h3></a>
+<p>
+		    Returns a CStrW containing the i'th string in the given packed string.
+		  	Returns NULL if that string could not be found.
+		  	A "packed" string consists of a series of null-terminated c strings, followed by a null character.
+		  	If <null> represents the null character, a packed string containing "a", "b", and "c" looks like:
+		  	a<null>b<null>c<null><null>
+		  	The packed string methods are provided for use with such WinAPI routines as GetLogicalDriveStrings()
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ps</strong>
+<dd>The packed string.
+<dt><i>in</i><strong>	i</strong>
+<dd>Which string to return; 0-based.
+<p>
+</dl></dl>
+<p><pre>
+	static	CStrW	*<a href="#CStrW_*getPackedString(_const_CStrW_*ps,_long_i_)$">getPackedString</a>( const CStrW *ps, long i );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CStrW </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd>Hjava_lang_String *<i><a href="CStrW.html#Hjava_lang_String_*getJString()$"><font color=green>getJString</font></a></i>();
+<dd>jstring <i><a href="CStrW.html#jstring_getJString(_JNIEnv_*pEnv_)$"><font color=green>getJString</font></a></i>( JNIEnv *pEnv );
+<dd>wchar_t *<i><a href="CStrW.html#wchar_t_*getBuf()_const$"><font color=green>getBuf</font></a></i>() const;
+<dd>long <i><a href="CStrW.html#long_getLength()_const$"><font color=green>getLength</font></a></i>() const;
+<dd>void <i><a href="CStrW.html#void_toUpper()$"><font color=green>toUpper</font></a></i>();
+<dd>void <i><a href="CStrW.html#void_toLower()$"><font color=green>toLower</font></a></i>();
+<dd>void <i><a href="CStrW.html#void_setBuf(_const_wchar_t_*s_)$"><font color=green>setBuf</font></a></i>( const wchar_t *s );
+<dd>void <i><a href="CStrW.html#void_setBuf(_const_CStrW_*cs_)$"><font color=green>setBuf</font></a></i>( const CStrW *cs );
+<dd>void <i><a href="CStrW.html#void_ensureCharCapacity(_long_cap_)$"><font color=green>ensureCharCapacity</font></a></i>( long cap );
+<dd>long <i><a href="CStrW.html#long_getCharCapacity()_const$"><font color=green>getCharCapacity</font></a></i>() const;
+<dd>long <i><a href="CStrW.html#long_getByteCapacity()_const$"><font color=green>getByteCapacity</font></a></i>() const;
+<dd>void <i><a href="CStrW.html#void_concat(_const_wchar_t_*s_)$"><font color=green>concat</font></a></i>( const wchar_t *s );
+<dd>void <i><a href="CStrW.html#void_concat(_const_CStrW_*cs_)$"><font color=green>concat</font></a></i>( const CStrW *cs );
+<dd>BOOL <i><a href="CStrW.html#BOOL_contains(_const_CStrW_*cs_)_const$"><font color=green>contains</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_contains(_const_wchar_t_*s_)_const$"><font color=green>contains</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_startsWith(_const_CStrW_*cs_)_const$"><font color=green>startsWith</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_startsWith(_const_wchar_t_*s_)_const$"><font color=green>startsWith</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqual(_const_CStrW_*cs_)_const$"><font color=green>isEqual</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqual(_const_wchar_t_*s_)_const$"><font color=green>isEqual</font></a></i>( const wchar_t *s ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqualIgnoreCase(_const_CStrW_*cs_)_const$"><font color=green>isEqualIgnoreCase</font></a></i>( const CStrW *cs ) const;
+<dd>BOOL <i><a href="CStrW.html#BOOL_isEqualIgnoreCase(_const_wchar_t_*s_)_const$"><font color=green>isEqualIgnoreCase</font></a></i>( const wchar_t *s ) const;
+<dd>long <i><a href="CStrW.html#long_replaceFrom(_long_startIndex,_const_wchar_t_*searchString,_const_CStrW_*csReplace_)$"><font color=green>replaceFrom</font></a></i>( long startIndex, const wchar_t *searchString, const CStrW *csReplace );
+<dd>BOOL <i><a href="CStrW.html#BOOL_extractExeFileName(_CStrW_*csDest_)$"><font color=green>extractExeFileName</font></a></i>( CStrW *csDest );
+<dd>void <i><a href="CStrW.html#void_formatInt(_const_wchar_t_*lpszFormat,_long_num_)$"><font color=green>formatInt</font></a></i>( const wchar_t *lpszFormat, long num );
+<dd><strong>static</strong> long <a href="CStrW.html#long_countPackedStrings(_const_CStrW_*ps_)$"><font color=green>countPackedStrings</font></a>( const CStrW *ps );
+<dd><strong>static</strong> CStrW *<a href="CStrW.html#CStrW_*getPackedString(_const_CStrW_*ps,_long_i_)$"><font color=green>getPackedString</font></a>( const CStrW *ps, long i );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  CStrW<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CStrW<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CStrW<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:33:48 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

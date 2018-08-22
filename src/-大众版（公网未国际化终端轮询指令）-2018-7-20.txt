@@ -1,0 +1,12 @@
+    jsp页面的层级关系，复制节目举例：moveProgram.jsp 和 moveProgramDO.jsp
+    
+    //顶级首页(index.jsp)框架名称：parent.homeframe ；二级admin下的index.jsp框架名称：parent.homeframe.content
+	//三级admin/program下的index.jsp框架名称：parent.homeframe.content.content
+	parent.homeframe.content.content.location.href='${rqurl}';//从顶层一级级到programList.jsp
+
+
+
+成都鼎润用了此版本，终端是Linux和Window xp系统
+
+亨通报错
+[Microsoft][SQLServer 2000 Driver for JDBC]

@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+
+<TITLE>General Manifest</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+General Manifest
+</H1>
+<P>
+
+<I>
+This is a description of the files included in this distribution.
+</I>
+
+</CENTER>
+
+
+
+<P>
+<HR>
+<P>
+
+<UL>
+
+<P>
+<LI><B>com:</B> contains the Java source files, in four packages:
+		<UL>
+		<LI>com.jconfig
+		<LI>com.jconfig.win
+		<LI>com.jconfig.mac
+		<LI>com.jconfig.nix
+		</UL>
+
+<P>
+<LI><B>docs:</B> contains the documentation, which is linked to from 'readme.html', and which is cross-linked.
+	The root level of this folder contains general documentation
+	
+	<UL>
+	<LI>javadocs: documentation of the Java code, in PolarDoc format. These were built using the '-private' switch
+	<LI>cdocs: documentation of the native code, in the following folders:
+		<UL>
+		<LI>common
+		<LI>win
+		<LI>mac
+		<LI>nix
+		</UL>
+	</UL>
+
+<P>
+<LI><B>files:</B> contains the C++ source and header files, in the following folders
+	<UL>
+	<LI>common
+	<LI>win
+	<LI>mac
+	<LI>nix
+	</UL>
+
+<P>
+<LI><B>meta:</B> Mac-only. Used by the CodeWarrior project to build the Mac native code.
+See <A HREF="macinstall.html">macinstall.html</A> for more information.
+
+<P>
+<LI><B>testbed:</B> Windows-only. Contains an MSVC project used to test the Windows native code.
+See <A HREF="wininstall.html">wininstall.html</A> for more information.
+
+<P>
+<LI>*.bat: Windows-only batch files.
+	<UL>
+	<LI>simpcomp.bat: builds the Java code
+	<LI>buildall.bat: builds all the Windows native code DLLs using nmake and the .mak files
+	</UL>
+
+See <A HREF="wininstall.html">wininstall.html</A> for more information.
+
+<P>
+<LI>*.mak / *.mdp: Windows-only MSVC++ project files:
+	<UL>
+	<LI>jcSNA.mak / jcSNA.mdp - builds jcnfigSN.dll (SunJDK with Win95/98)
+	<LI>jcSNW.mak / jcSNW.mdp - builds jcnfigSW.dll (SunJDK with WinNT)
+	<LI>R1A.mak / R1A.mdp - builds jcnfigMS.dll (MSVM1.5 with Win95/98)
+	<LI>R1W.mak / R1W.mdp - builds jcnfigMW.dll (MSVM1.5 with WinNT)
+	<LI>R2A.mak / R2A.mdp - builds jcnfigM2.dll (MSVM2+ with Win95/98)
+	<LI>R2W.mak / R2W.mdp - builds jcnfig2W.dll (MSVM2+ with WinNT)
+	</UL>
+
+See <A HREF="wininstall.html">wininstall.html</A> for more information.
+
+
+<P>
+<LI>readme.html: Contains general information, and links to the other documentation.
+
+<P>
+<LI>mac_Project.sit: Mac-only. Contains a CodeWarrior project used to build the Mac native code in a Stuffit archive.
+ See <A HREF="macinstall.html">macinstall.html</A> for more information.
+
+<P>
+<LI>mac_JConfig_rsrc.sit: Mac-only. Contains the JConfig resource file in a Stuffit archive.
+See <A HREF="macinstall.html">macinstall.html</A> for more information.
+
+<P>
+<LI>lxmake.sh: Linux-only. A shell script used to compile the Linux native code.
+See <A HREF="nixinstall.html">nixinstall.html</A> for more information.
+
+<P>
+<LI>mm.sh: OSX-only. A shell script used to compile the OSX native code.
+See <A HREF="osxinstall.html">osxinstall.html</A> for more information.
+
+<P>
+<LI>applestubs.zip: OSX-only. Stub files needed to compile some of the java classes on a non-OSX system.
+See <A HREF="osxinstall.html">osxinstall.html</A>,
+<A HREF="nixinstall.html">nixinstall.html</A>,
+<A HREF="wininstall.html">wininstall.html</A>,
+or <A HREF="macinstall.html">macinstall.html</A> for more information.
+
+</UL>
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,349 @@
+
+/********* Common CSS Document   *******/
+
+body,table,td,select,input,form,textarea,option { font-family:"Arial", "Helvetica" ,"verdana", "sans-serif", "Geneva", ; font-size: 9pt; color:#333333; line-height:15px; }
+
+body{background-color:#F5F9FD;
+	 
+	scrollbar-face-color:#FFFFFF;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-3dlight-color:#4A6E90;
+	scrollbar-shadow-color:#4A6E90;
+	scrollbar-darkshadow-color:#FFFFFF;
+    scrollbar-arrow-color:#4D6185;
+	scrollbar-track-color:#F6F6F6;
+	
+	
+	 
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+	
+	
+.TitletextInput {
+ font-size: 12pt;
+ font-weight: bold;
+ color: #2E6CA5;
+ border: 1px solid #F0F5F9; 
+ background-color:#F0F5F9;
+ height:24px;
+ padding:2;
+}
+input.button { font-size: 12px; font-style: normal; font-weight: normal; font-variant: normal; border: 1px solid #183ead; line-height: normal; background-color: #ddddff; color: #000000; height: 18px; }
+input.text { font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; height: 18px; border: 1px solid #183ead; color: #000000; padding-right: 3px; padding-left: 3px; }
+input.button1 { font-size: 12px; border:0px;  background:url('/images/button1.jpg'); color: #000000; height: 29px; width: 75px }
+
+.TitletextInput2 {
+ font-size: 14pt;
+ color: #2E6CA5;
+ border: 1px solid #F5F9FD; 
+ background-color:#F5F9FD;
+ height:24px;
+ padding:2;
+}
+
+.NolinetextInput {
+ font-size: 8pt;
+ color: #000000;
+ border: 0px solid #F0F5F9; 
+}
+		
+.NolinetextInput2 {
+ font-size: 9pt;
+ color: #000000;
+ background-color:#F0F5F9;
+ border: 0px solid #F0F5F9; 
+}
+
+.NolinetextInput3 {
+ font-size: 9pt;
+ color: #000000;
+ border: 0px solid #F0F5F9; 
+}
+
+a:link, a:visited, a:active, a:hover{text-decoration:none; color:#333333; font-size: 9pt;}
+
+
+font.copyright {font-size:7pt; color:#4b4b4b; line-height:12px;}
+
+.ImgCursor { cursor:hand;}
+
+
+.Bold {
+	color: #333333;
+    font-size: 9pt;
+    font-weight:bold;
+}
+
+
+.WhiteBold {
+	color: #FFFFFF;
+    font-size: 10pt;
+    font-weight:bold;
+}
+
+
+
+.Title {
+	color: #2E6CA5;
+    text-align: left;
+    font-weight:bold;
+    font-size: 12pt;
+}
+
+.MenuTitle {
+	color: #333333;
+    font-weight:bold;
+    font-size: 10pt;
+}
+
+.TitleSmall {
+	color: #2E6CA5;
+    text-align: left;
+    font-weight:bold;
+    font-size: 9pt;
+}
+
+
+.InfoTitle {
+	color: #475162;
+    text-align: center;
+	font-weight:bold;
+    font-size: 9pt;
+}
+
+
+.InfoTitle2 {
+	color: #333333;
+    text-align: center;
+	font-weight:bold;
+    font-size: 8pt;
+}
+
+.InfoTitle3 {
+	color: #FF0000;
+    text-align: center;
+	font-weight:bold;
+    font-size: 9pt;
+}
+
+.InfoTitle4 {
+	color: #0000FF;
+    text-align: center;
+	font-weight:bold;
+    font-size: 9pt;
+}
+
+.InfoTitle5 {
+	color: #333333;
+    text-align: center;
+	font-weight:bold;
+    font-size: 9pt;
+}
+
+.InfoTitle6 {
+	color: #475162;
+	background-color: #F0F5F9;
+    text-align: center;
+	font-weight:bold;
+    font-size: 9pt;
+}
+
+.ItemTitle {
+	color: #2E6CA5;
+    text-align: left;
+    font-size: 8pt;
+}
+
+
+.DeviceTitle {
+	color: blue;
+    text-align: center;
+	font-weight:bold;
+   font-size: 13px;
+}
+
+.DeviceInfoTitle {
+	color: #336699;
+ 	font-weight:bold;
+    font-size: 12px;
+}
+
+
+
+.ScheduleTitle {
+	color: #333333;
+    font-size: 9pt;
+	text-align:center
+}
+
+.PopupTitle {
+	color: #2A5D90;
+    font-size: 14pt;
+	text-align:center;
+
+}
+
+
+
+/******** Main *********/
+.LastLoginTime {
+	color: #336699;
+    font-size: 9pt;
+	font-weight:bold;
+
+}
+
+.CurrentLogintime  {
+	color: #3366CC;
+    font-size: 9pt;
+	font-weight:bold;
+
+}
+
+.MainTitle01  {
+	color: #003399;
+    font-size: 12pt;
+	font-weight:bold;
+
+}
+
+.MainTitle02  {
+	color: #209DD1;
+    font-size: 12pt;
+	font-weight:bold;
+
+}
+
+.DeployedScheduleList  {
+	color: #FFFFFF;
+    font-size: 9pt;
+	font-weight:bold;
+	text-align:center;
+
+}
+
+
+.DeployedScheduleBg  {
+	background-color:84ADCC; padding-bottom:5; padding-top:5; }
+
+.MainTableTrBg01{border:0px; background-color:FFFFFF; padding-bottom:5; padding-top:5;}
+.MainTableTrBg02{border:0px; background-color:F0F5F9; padding-bottom:5; padding-top:5;}
+
+
+
+
+
+.TitleBackgroundBg{background-color:F0F5F9;}
+
+.TitleBackground{background-image:url('/images/title_background.gif'); background-repeat:repeat-X; height:30;}
+
+.InfoTable{ border:1px; border-color:#cccccc; padding:1; background-color:F5F9FD; padding-top:1; padding-bottom:1; padding-left:5; padding-right:2;}
+
+
+
+.TableTrBg01{border:0px; background-color:FFFFFF; padding-bottom:10; padding-top:10;}
+.TableTrBg02{border:0px; background-color:F0F5F9; padding-bottom:10; padding-top:10;}
+.TableTrBg03{border:0px; background-color:FFFFFF; padding-bottom:10; padding-top:10; text-align:center;}
+.TableTrBg04{border:0px; background-color:F0F5F9; padding-bottom:10; padding-top:10; text-align:center;}
+.TableTrBg05{border:0px; background-color:FFFFFF; padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+.TableTrBg06{border:0px; background-color:F0F5F9; padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+.TableTrBgFF{border:0px; background-color:#F5F9FD; height:35px; }
+.TableTrBgF0{border:0px; background-color:#F0F5F9; height:35px;}
+.TableTrBg06_{border:0px;  padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+.TableTrBg21{border:0px; background-color:FFFFFF; padding-bottom:1; padding-top:1; text-align:center; height:25px;}
+.TableTrBg22{border:0px; background-color:F0F5F9; padding-bottom:1; padding-top:1; text-align:center; height:25px;}
+.TableTrBg23{border:0px; background-color:F0F5F9; padding-bottom:1; padding-top:1; text-align:left; height:25px;}
+.TableTrBg23_{border:0px; padding-bottom:1; padding-top:1; text-align:left; height:25px;}
+.TableTrBg07{border:0px; background-color:F5F9FD; padding-bottom:7; padding-top:7; text-align:center;}
+.TableTrBg08{border:0px; background-color:F0F5F9; padding-bottom:7; padding-top:7; text-align:center;}
+.TableTrBg09{border:0px; background-color:90EE90; padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+.TableTrBg10{border:0px; background-color:DAE8F5; padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+.TableTrBg11{border:0px; background-color:C0D2E3; padding-bottom:1; padding-top:1; text-align:center; height:35px;}
+
+.TableTdBg00{border:0px; background-color:FFFFFF;}
+.TableTdBg01{border:0px; background-color:90EE90;}
+.TableTdBg02{border:0px; background-color:FFD700;}
+.TableTdBg03{background-color:FFD700;}
+.TableTdBg04{border:0px; background-color:DAE8F5;}
+.TableTdBg05{border:0px; background-color:C0D2E3;}
+
+.LFDListBg{border:0px; background-color:A2B9CE; table-layout:fixed;}
+.LFDTrBg01{border:0px; background-color:FFFFFF; padding-bottom:5; padding-top:5; text-align:center; height:43px;}
+.LFDTrBg02{border:0px; background-color:F0F5F9; padding-bottom:5; padding-top:5; text-align:center; height:43px;}
+.LFDTrBg03{border:0px; background-color:C0D2E3; padding-bottom:5; padding-top:5; text-align:center; height:43px;}
+
+
+
+.VMListBg{border:0px; background-color:A2B9CE;}
+.VMTrBg01{border:0px; background-color:FFFFFF; padding-bottom:5; padding-top:5; text-align:center;}
+.VMTrBg02{border:0px; background-color:F0F5F9; padding-bottom:5; padding-top:5; text-align:center;}
+
+
+.Line_01{background-image:url('/images/line_01.gif'); background-repeat:repeat-X; height:2;}
+.Line_02{background-image:url('/images/line_02.gif'); background-repeat:repeat-X; height:1;}
+
+.TabBackground{ background-repeat:repeat-X; height:25;}
+.TabBackgroundColor{background-color:#F5F9FD;}
+.TabLineColor{background-color:#569CCE;}
+.TileBackgroundColor{background-color:#D6EAF9;}
+
+
+.PopupBackground{border:0px; background-color:F5F9FD; padding-bottom:9; padding-top:9; padding-left:15; padding-right:15; text-align:center;}
+.Popup{border:0px; background-color:5F819B; padding-bottom:1; padding-top:1; padding-left:1; padding-right:1; text-align:center;}
+.PopupTitleBg{border:0px; background-color:F5F9FD; padding-bottom:9; padding-top:9; padding-left:10; padding-right:10; text-align:center;}
+.PopupTabBackgroundBg{background-color:F5F9FD;}
+
+
+.ScheduleBackground{border:0px; background-color:F5F9FD; padding-bottom:10; padding-top:10; padding-left:10; padding-right:10; }
+.ScheduleBackground02{border:0px; background-color:F5F9FD; padding-top:0; padding-bottom:5;}
+
+
+
+.ScheduleTableTrBgTitle{border:0px; background-color:DAE8F5;  text-align:center;}
+.ScheduleTableTrBgTime{border:0px; background-color:F3F9FF;   text-align:right;}
+.ScheduleTableTrBg{border:0px; background-color:FFFFFF;  padding-left:3; text-align:left;}
+
+
+
+.Non{border:0px; text-align:center }
+
+
+
+/******** Panel *********/
+.Table_top{background-image:url('/images/table_top.gif'); background-repeat:repeat-X;  height:2;}
+.Table_bottom{background-image:url('/images/table_bottom.gif'); background-repeat:repeat-X;  height:2;}
+.Table_left{background-image:url('/images/table_left.gif'); background-repeat:repeat-Y;  height:2;}
+.Table_right{background-image:url('/images/table_right.gif'); background-repeat:repeat-Y;  height:2;  }
+
+/******** Popup Menu *********/
+.popmenus {
+ cursor : hand;
+ position : absolute;
+ width : 100px;
+ background-color : menu;
+ line-height : 1.4;
+ padding : 4px;
+ border : 2 outset buttonhighlight;
+ visibility : hidden;
+}
+
+.menuitems {
+ padding-left : 15px;
+ padding-right : 10px;
+ font-size : 9pt;
+}
+
+.setRepeat, .setEffect, .setHWctrl{
+ cursor : default;
+ position : absolute;
+ width : 300px;
+ background-color : menu;
+ line-height : 1.4;
+ padding : 4px;
+ border : 2 outset buttonhighlight;
+ visibility : hidden;
+}
+

@@ -1,0 +1,635 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:32:12 PDT 2002 -->
+<HTML>
+<HEAD>
+<TITLE>
+K
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<A HREF="Thumb-A.htm">A</A> <A HREF="Thumb-B.htm">B</A> <A HREF="Thumb-C.htm">C</A> <A HREF="Thumb-D.htm">D</A> <A HREF="Thumb-E.htm">E</A> <A HREF="Thumb-F.htm">F</A> <A HREF="Thumb-G.htm">G</A> <A HREF="Thumb-H.htm">H</A> <A HREF="Thumb-I.htm">I</A> <A HREF="Thumb-J.htm">J</A> <A HREF="Thumb-K.htm">K</A> <A HREF="Thumb-L.htm">L</A> <A HREF="Thumb-M.htm">M</A> <A HREF="Thumb-N.htm">N</A> <A HREF="Thumb-O.htm">O</A> <A HREF="Thumb-P.htm">P</A> <A HREF="Thumb-Q.htm">Q</A> <A HREF="Thumb-R.htm">R</A> <A HREF="Thumb-S.htm">S</A> <A HREF="Thumb-T.htm">T</A> <A HREF="Thumb-U.htm">U</A> <A HREF="Thumb-V.htm">V</A> <A HREF="Thumb-W.htm">W</A> <A HREF="Thumb-Y.htm">Y</A> 
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+
+<H2>
+<A NAME="Thumb-K">
+<B>K</B></A>
+</H2>
+<DL>
+  <DT><B>kAliasFileTestBits</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0e317.htm#_Summary_">DOFactoryMRJ</A>
+  <DD>Class com.jconfig.mac.<A HREF="pow0ff46.htm#_Summary_">DiskAliasMRJ</A>
+  <DT><B>kAlphaStr</B>
+  <DD>Class com.jconfig.<A HREF="pow09d8c.htm#_Summary_">ConfigListDefault</A>
+  <DT><B>kAppCommandOpenApp</B>
+  <DD>Interface com.jconfig.<A HREF="pow0d54e.htm#_Summary_">AppCommand</A>
+  <DT><B>kAppCommandOpenDoc</B>
+  <DD>Interface com.jconfig.<A HREF="pow0d54e.htm#_Summary_">AppCommand</A>
+  <DT><B>kAppCommandPlay</B>
+  <DD>Interface com.jconfig.<A HREF="pow0d54e.htm#_Summary_">AppCommand</A>
+  <DT><B>kAppCommandPrintDoc</B>
+  <DD>Interface com.jconfig.<A HREF="pow0d54e.htm#_Summary_">AppCommand</A>
+  <DT><B>kAppCommandQuit</B>
+  <DD>Interface com.jconfig.<A HREF="pow0d54e.htm#_Summary_">AppCommand</A>
+  <DT><B>kAppDataCntThreadsOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataCntUsageOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataDefaultHeapIDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataFlagsOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataHProcessOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataHThreadOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataHWNDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataModuleIDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataNumInts</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataParentProcessIDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataPriClassBaseOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataProcessIDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kAppDataThreadIDOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0647b.htm#_Summary_">ProcessHelperMSVM</A>
+  <DT><B>kCategoryAlias</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryDirectory</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryFile</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXAliasFileBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXAppIsScriptableBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXApplicationBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXAppPrefersClassicBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXAppPrefersNativeBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXClassicAppBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXContainerBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXExtendedInfoBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXExtensionIsHiddenBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXInvisibleBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXNativeAppBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXPackageBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXPlainFileBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXSymlinkBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryOSXVolumeBit</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryUnknown</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCategoryVolume</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kCFMAppMask</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0e317.htm#_Summary_">DOFactoryMRJ</A>
+  <DT><B>kConfigFileName</B>
+  <DD>Interface com.jconfig.<A HREF="pow0956f.htm#_Summary_">ConfigList</A>
+  <DT><B>kCreateDiskObjectFile</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow05eaf.htm#_Summary_">DOCreatorNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0ebec.htm#_Summary_">DOCreatorMSVM</A>
+  <DT><B>kCreateDiskObjectFolder</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow05eaf.htm#_Summary_">DOCreatorNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0ebec.htm#_Summary_">DOCreatorMSVM</A>
+  <DT><B>kCW113</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0d5e5.htm#_Summary_">FileRegistryMRJ</A>
+  <DT><B>kDateBundleArrayLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kDefSelector</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow07c9f.htm#_Summary_">IconBundleFactoryMRJ</A>
+  <DT><B>kErrFindNextFileNoMoreFiles</B>
+  <DD>Class com.jconfig.win.<A HREF="pow06cbc.htm#_Summary_">FileIteratorMSVM</A>
+  <DT><B>KEY_BUNDLE_DOCUMENT_TYPES</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow08dc5.htm#_Summary_">CocoaUtilsOSX</A>
+  <DT><B>KEY_BUNDLE_TYPE_EXTENSIONS</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow08dc5.htm#_Summary_">CocoaUtilsOSX</A>
+  <DT><B>KEY_BUNDLE_TYPE_OSTYPES</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow08dc5.htm#_Summary_">CocoaUtilsOSX</A>
+  <DT><B>keys</B>
+  <DD>Class com.jconfig.win.<A HREF="pow03af2.htm#_Summary_">VersInfoPropsMSVM</A>
+  <DT><B>kFactoryFileName</B>
+  <DD>Class com.jconfig.<A HREF="pow080a.htm#_Summary_">FileRegistryFactory</A>
+  <DT><B>kFindAPPLMultipleMaxNameLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b961.htm#_Summary_">AppFinderMRJ</A>
+  <DT><B>kFindAppMaxNameLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0efd4.htm#_Summary_">IConfigMRJ</A>
+  <DT><B>kFinderFlagsColorMask</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kFindFirstAttrHidden</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kFindFirstAttrSystem</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kForkSizesDataOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kForkSizesLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kForkSizesRsrcOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kGetMntEntOffs_dir</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kGetMntEntOffs_fsname</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kGetMntEntOffs_opts</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kGetMntEntOffs_type</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kGetMntEntRetArrayLen</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kGetProcessesNameLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kGetVolumesMaxReturn</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0d5e5.htm#_Summary_">FileRegistryMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kGVIIntArrayLen</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIIntFileSystemFlagsOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIIntMaxComponentLengthOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIIntSerialNumberOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIStringArrayLen</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIStringFileSystemNameOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kGVIStringLabelOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kHelpText</B>
+  <DD>Class com.tolstoy.testjc.<A HREF="pow06e25.htm#_Summary_">FileAttributesTest</A>
+  <DT><B>kIntSize</B>
+  <DD>Class com.jconfig.<A HREF="pow07af9.htm#_Summary_">IConfigEntryBinary</A>
+  <DT><B>kIterateBufferSize</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateEntrySize</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateFlagsOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateIsAlias</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateIsDir</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateIsFile</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateIsHiddenMask</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateMaxEntries</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateNameSize</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kIterateTypeOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kJCPropsFileName</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0d5e5.htm#_Summary_">FileRegistryMRJ</A>
+  <DT><B>kLargeDir</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeFile</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeFileName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeFolderName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeH</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeVolume</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeVolumeName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLargeW</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kLaunchWithDocOpenDoc</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kLaunchWithDocPrintDoc</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kLinkExtension</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kLinuxX86Library</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0cf92.htm#_Summary_">FileRegistryNix</A>
+  <DT><B>kLSRolesAll</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kLSRolesEditor</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kLSRolesNone</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kLSRolesViewer</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kLSUnknownCreator</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kLSUnknownType</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow09545.htm#_Summary_">XUtilsOSX</A>
+  <DT><B>kMaxExtensionLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0efd4.htm#_Summary_">IConfigMRJ</A>
+  <DT><B>kMaxMonitors</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0cf94.htm#_Summary_">MonitorHelperMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0548f.htm#_Summary_">MonitorHelperMSVM</A>
+  <DT><B>kMaxReturns</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0c56d.htm#_Summary_">CommandLineUtilsMSVM</A>
+  <DT><B>kMonitorInfoNumInts</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kMRJJRI</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0d5e5.htm#_Summary_">FileRegistryMRJ</A>
+  <DT><B>kMRJOSX</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0d5e5.htm#_Summary_">FileRegistryMRJ</A>
+  <DT><B>kMSVM1</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM1LibName</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM1LibNameW</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM1W</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM2</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM2LibName</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM2LibNameW</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kMSVM2W</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kNoLibrary</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0cf92.htm#_Summary_">FileRegistryNix</A>
+  <DT><B>kNumCommands</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b1d8.htm#_Summary_">AppFileMRJ</A>
+  <DD>Class com.jconfig.mac.<A HREF="pow062bc.htm#_Summary_">AppFileOSX</A>
+  <DD>Class com.jconfig.mac.<A HREF="pow0287a.htm#_Summary_">AppProcessMRJ</A>
+  <DD>Class com.jconfig.nix.<A HREF="pow0503a.htm#_Summary_">AppProcessNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0bf0d.htm#_Summary_">AppProcessMSVM</A>
+  <DT><B>kNumPanels</B>
+  <DD>Class com.tolstoy.testjc.<A HREF="pow062dc.htm#_Summary_">BrowserFrame</A>
+  <DD>Class com.tolstoy.testjc.<A HREF="pow07ea3.htm#_Summary_">BrowserTestFrame</A>
+  <DT><B>kNumStr</B>
+  <DD>Class com.jconfig.<A HREF="pow09d8c.htm#_Summary_">ConfigListDefault</A>
+  <DT><B>kOffsBIHSize</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsBitCount</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsBitmapOffset</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsBoundsBottom</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsBoundsLeft</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsBoundsRight</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsBoundsTop</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsColorImp</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsColorUsed</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsCompression</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsDepth</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsEndHeader</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsFileSize</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsHeight</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsIsMainMonitor</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsRefNum</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsSizeImage</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsType</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsWidth</B>
+  <DD>Class com.jconfig.<A HREF="pow05636.htm#_Summary_">BMPReader</A>
+  <DT><B>kOffsWorkareaBottom</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsWorkareaLeft</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsWorkareaRight</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kOffsWorkareaTop</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0a44.htm#_Summary_">MonitorMRJ</A>
+  <DD>Class com.jconfig.win.<A HREF="pow064.htm#_Summary_">MonitorMSVM</A>
+  <DT><B>kParIDOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kPlainFileTestBits</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0ff46.htm#_Summary_">DiskAliasMRJ</A>
+  <DT><B>kPNameLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kPropDefault</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropFileUtilsClassName</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropFindExtensions</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropFindFinderInfo</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropGetApps</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropIgnoreIC</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropIterate</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPropLaunchURL</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0b155.htm#_Summary_">MacPropertiesMRJ</A>
+  <DT><B>kPSNHiOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kPSNLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kPSNLoOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kPTDFGotFalse</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow042e.htm#_Summary_">FileIteratorNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow06cbc.htm#_Summary_">FileIteratorMSVM</A>
+  <DT><B>kPTDFGotTrue</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow042e.htm#_Summary_">FileIteratorNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow06cbc.htm#_Summary_">FileIteratorMSVM</A>
+  <DT><B>kPTDFNotAMatch</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow042e.htm#_Summary_">FileIteratorNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow06cbc.htm#_Summary_">FileIteratorMSVM</A>
+  <DT><B>kRecordLength</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow01c51.htm#_Summary_">IConfigEntryMRJ</A>
+  <DT><B>kRefPairLen</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kResolveLinkFileNoUI</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kResolveLinkFileUI</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kResTypeSIZE</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0f3a5.htm#_Summary_">ResFileMRJ</A>
+  <DT><B>kResTypevers</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow0f3a5.htm#_Summary_">ResFileMRJ</A>
+  <DT><B>kSendAppDocsOpenDoc</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kSendAppDocsPrintDoc</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kSetForkLengthDATA</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kSetForkLengthRSRC</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DT><B>kShortSize</B>
+  <DD>Class com.jconfig.<A HREF="pow07af9.htm#_Summary_">IConfigEntryBinary</A>
+  <DT><B>kSizeofAppData</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0503a.htm#_Summary_">AppProcessNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow0bf0d.htm#_Summary_">AppProcessMSVM</A>
+  <DT><B>kSmallDir</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallFile</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallFileName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallFolderName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallH</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallVolume</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallVolumeName</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kSmallW</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0adad.htm#_Summary_">DefaultIconManager</A>
+  <DT><B>kStandardBrowsers</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kStandardFileAttrsMask</B>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStandardVolumeAttrsMask</B>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_bavail</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_bfree</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_blocks</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_bsize</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_ffree</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_files</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_fsid0</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_fsid1</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSOffs_type</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatFSRetArrayLen</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_blksize</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_blocks</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_dev</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_gid</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_ino</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_mode</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_nlink</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_rdev</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_size</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatOffs_uid</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kStatRetArrayLen</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kSun11</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kSun11LibName</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kSun11LibNameW</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kSun11W</B>
+  <DD>Class com.jconfig.win.<A HREF="pow0a20.htm#_Summary_">FileRegistryMSVM</A>
+  <DT><B>kUnused</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+  <DD>Class com.jconfig.nix.<A HREF="pow0ef05.htm#_Summary_">AppUtilsNix</A>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DD>Interface com.jconfig.nix.<A HREF="pow089a7.htm#_Summary_">AppUtilsNixI</A>
+  <DT><B>kUseLStat</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0d332.htm#_Summary_">AppUtilsNixLinux</A>
+  <DT><B>kUseStat</B>
+  <DD>Class com.jconfig.nix.<A HREF="pow0d332.htm#_Summary_">AppUtilsNixLinux</A>
+  <DT><B>kVolumeCapInfoCapacityOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kVolumeCapInfoCapacityToUserOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kVolumeCapInfoFreeSpaceOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kVolumeCapInfoFreeSpaceToUserOffset</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kVolumeCapInfoLen</B>
+  <DD>Class com.jconfig.win.<A HREF="pow034c6.htm#_Summary_">AppUtilsMSVM</A>
+  <DT><B>kVRefOffset</B>
+  <DD>Class com.jconfig.mac.<A HREF="pow04e4b.htm#_Summary_">AppUtilsMRJ</A>
+</DL><BR>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>
+</PRE>
+</BODY>
+</HTML>

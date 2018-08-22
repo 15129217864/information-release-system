@@ -1,0 +1,394 @@
+<html><head><title>SIConfig Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SIConfig</a></h1>
+<dl>
+<dd>
+	An interface to Internet Config
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Mac.html">Mac</a> | 
+<a href=../../../"SIConfig.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SIConfig<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCStart(_OSType_creator,_OurDataH_ourDataH_)$"><font color=green>iCStart</font></a>( OSType creator, OurDataH ourDataH );
+<dd><strong>static</strong> void <a href="SIConfig.html#void_iCStop(_OurDataH_ourDataH_)$"><font color=green>iCStop</font></a>( OurDataH ourDataH );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCGetSeed(_OurDataH_ourDataH,_long_*seedP_)$"><font color=green>iCGetSeed</font></a>( OurDataH ourDataH, long *seedP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCGetIndMapEntry(_OurDataH_ourDataH,_long_whichRecord,_ICMapEntry_*mapEntryP_)$"><font color=green>iCGetIndMapEntry</font></a>( OurDataH ourDataH, long whichRecord, ICMapEntry *mapEntryP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCCountMapEntries(_OurDataH_ourDataH,_long_*countP_)$"><font color=green>iCCountMapEntries</font></a>( OurDataH ourDataH, long *countP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCLaunchURL(_long_appCreator,_const_CStr_*csURL_)$"><font color=green>iCLaunchURL</font></a>( long appCreator, const CStr *csURL );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindMatchesFInfo(_long_appCreator,_long_targetCreator,_long_targetType,_long_direction,_long_*numReturned,_long_maxToReturn,_StringPtr_retData_)$"><font color=green>iCFindMatchesFInfo</font></a>( long appCreator, long targetCreator, long targetType, long direction, long *numReturned, long maxToReturn, StringPtr retData );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindAppByName(_long_appCreator,_const_CStr_*csName,_long_*creatorP,_long_*vRefP,_long_*parIDP,_StringPtr_namesP,_long_maxToReturn,_long_*numReturned)$"><font color=green>iCFindAppByName</font></a>( long appCreator, const CStr *csName, long *creatorP, long *vRefP, long *parIDP, StringPtr namesP, long maxToReturn, long *numReturned);
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindMatchesExt(_long_appCreator,_const_CStr_*csExtension,_long_direction,_long_*numReturned,_long_maxToReturn,_long_*cValsP,_long_*tValsP_)$"><font color=green>iCFindMatchesExt</font></a>( long appCreator, const CStr *csExtension, long direction, long *numReturned, long maxToReturn, long *cValsP, long *tValsP );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SIConfig <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SIConfig</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	An interface to Internet Config
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SIConfig</i><p>
+<a name="ErrCode_iCStart(_OSType_creator,_OurDataH_ourDataH_)$"><hr><p></p><h3>ErrCode iCStart( OSType creator, OurDataH ourDataH );</h3></a>
+<p>
+		  	Starts an Internet Config session. 'ourDataH' must have been created, and will be
+		  	resized and initialized for use in the other routines of this class which take
+		  	a OurDataH argument
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appCreator</strong>
+<dd>the creator code of the app calling this routine
+<dt><i>out</i><strong>	ourDataH</strong>
+<dd>on return, will be initialized for use with the other routines
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCStart(_OSType_creator,_OurDataH_ourDataH_)$">iCStart</a>( OSType creator, OurDataH ourDataH );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="void_iCStop(_OurDataH_ourDataH_)$"><hr><p></p><h3>void iCStop( OurDataH ourDataH );</h3></a>
+<p>
+		  	Shuts down an IC session.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ourDataH</strong>
+<dd>must have been previously initialized by calling iCStart
+<p>
+</dl></dl>
+<p><pre>
+	static	void <a href="#void_iCStop(_OurDataH_ourDataH_)$">iCStop</a>( OurDataH ourDataH );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCGetSeed(_OurDataH_ourDataH,_long_*seedP_)$"><hr><p></p><h3>ErrCode iCGetSeed( OurDataH ourDataH, long *seedP );</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ourDataH</strong>
+<dd>must have been previously initialized by calling iCStart
+<dt><i>out</i><strong>	seedP</strong>
+<dd>on return, will contain the seed value
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCGetSeed(_OurDataH_ourDataH,_long_*seedP_)$">iCGetSeed</a>( OurDataH ourDataH, long *seedP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCGetIndMapEntry(_OurDataH_ourDataH,_long_whichRecord,_ICMapEntry_*mapEntryP_)$"><hr><p></p><h3>ErrCode iCGetIndMapEntry( OurDataH ourDataH, long whichRecord, ICMapEntry *mapEntryP );</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ourDataH</strong>
+<dd>must have been previously initialized by calling iCStart
+<dt><i>in</i><strong>	whichRecord</strong>
+<dd>which record of the IC mapping database to retrieve
+<dt><i>out</i><strong>	mapEntryP</strong>
+<dd>the database record will be placed in this buffer
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCGetIndMapEntry(_OurDataH_ourDataH,_long_whichRecord,_ICMapEntry_*mapEntryP_)$">iCGetIndMapEntry</a>( OurDataH ourDataH, long whichRecord, ICMapEntry *mapEntryP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCCountMapEntries(_OurDataH_ourDataH,_long_*countP_)$"><hr><p></p><h3>ErrCode iCCountMapEntries( OurDataH ourDataH, long *countP );</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	ourDataH</strong>
+<dd>must have been previously initialized by calling iCStart
+<dt><i>out</i><strong>	countP</strong>
+<dd>on return, will contain the number of records in the file
+		  						mapping database
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCCountMapEntries(_OurDataH_ourDataH,_long_*countP_)$">iCCountMapEntries</a>( OurDataH ourDataH, long *countP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCLaunchURL(_long_appCreator,_const_CStr_*csURL_)$"><hr><p></p><h3>ErrCode iCLaunchURL( long appCreator, const CStr *csURL );</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appCreator</strong>
+<dd>the creator code of the app calling this routine
+<dt><i>in</i><strong>	csURL</strong>
+<dd>the fully-qualified URL to launch
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCLaunchURL(_long_appCreator,_const_CStr_*csURL_)$">iCLaunchURL</a>( long appCreator, const CStr *csURL );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCFindMatchesFInfo(_long_appCreator,_long_targetCreator,_long_targetType,_long_direction,_long_*numReturned,_long_maxToReturn,_StringPtr_retData_)$"><hr><p></p><h3>ErrCode iCFindMatchesFInfo( long appCreator, long targetCreator, long targetType, long direction, long *numReturned, long maxToReturn, StringPtr retData );</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appCreator</strong>
+<dd>the creator code of the app calling this routine
+<dt><i>in</i><strong>	targetCreator</strong>
+<dd>the creator code being searched for	
+<dt><i>in</i><strong>	targetType</strong>
+<dd>the type code being searched for
+<dt><i>in</i><strong>	direction</strong>
+<dd>unused
+<dt><i>out</i><strong>	numReturned</strong>
+<dd>on return, will contain the number of extensions returned
+<dt><i>in</i><strong>	maxToReturn</strong>
+<dd>the maximum number of extensions to return
+<dt><i>out</i><strong>	retData</strong>
+<dd>on return, this buffer will contain each extension corresponding
+		  							to targetCreator and targetType
+		  							each extension will consume kMaxExtensionLength bytes, and this
+		  							array must have at least (maxToReturn * kMaxExtensionLength)
+		  							elements
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCFindMatchesFInfo(_long_appCreator,_long_targetCreator,_long_targetType,_long_direction,_long_*numReturned,_long_maxToReturn,_StringPtr_retData_)$">iCFindMatchesFInfo</a>( long appCreator, long targetCreator, long targetType,
+										long direction, long *numReturned, long maxToReturn,
+										StringPtr retData );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCFindAppByName(_long_appCreator,_const_CStr_*csName,_long_*creatorP,_long_*vRefP,_long_*parIDP,_StringPtr_namesP,_long_maxToReturn,_long_*numReturned)$"><hr><p></p><h3>ErrCode iCFindAppByName( long appCreator, const CStr *csName, long *creatorP, long *vRefP, long *parIDP, StringPtr namesP, long maxToReturn, long *numReturned);</h3></a>
+<p>
+		  	Similar to the IC routine.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appCreator</strong>
+<dd>the creator code of the app calling this routine
+<dt><i>in</i><strong>	csName</strong>
+<dd>the app name to search for
+<dt><i>out</i><strong>	creatorP</strong>
+<dd>the creator codes of found apps will be placed in this array
+		  							must have at least maxToReturn elements
+<dt><i>out</i><strong>	vRefP</strong>
+<dd>the vRef's of found apps will be placed in this array
+		  							must have at least maxToReturn elements
+<dt><i>out</i><strong>	parIDP</strong>
+<dd>the parID's of found apps will be placed in this array
+		  							must have at least maxToReturn elements
+<dt><i>out</i><strong>	namesP</strong>
+<dd>the names of found apps will be placed in this array as
+		  							Pascal strings
+		  							must have at least (maxToReturn * kFindAppByNameMaxNameLen)
+		  							elements
+<dt><i>in</i><strong>	maxToReturn</strong>
+<dd>the maximum number of apps to return
+<dt><i>out</i><strong>	numReturned</strong>
+<dd>on return, will contain the number of apps returned
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCFindAppByName(_long_appCreator,_const_CStr_*csName,_long_*creatorP,_long_*vRefP,_long_*parIDP,_StringPtr_namesP,_long_maxToReturn,_long_*numReturned)$">iCFindAppByName</a>( long appCreator, const CStr *csName, long *creatorP,
+										long *vRefP, long *parIDP, StringPtr namesP,
+										long maxToReturn, long *numReturned);
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="ErrCode_iCFindMatchesExt(_long_appCreator,_const_CStr_*csExtension,_long_direction,_long_*numReturned,_long_maxToReturn,_long_*cValsP,_long_*tValsP_)$"><hr><p></p><h3>ErrCode iCFindMatchesExt( long appCreator, const CStr *csExtension, long direction, long *numReturned, long maxToReturn, long *cValsP, long *tValsP );</h3></a>
+<p>
+		  	Similar to the IC routine, finds the type/creator codes corresponding to
+		  	a file extension.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	appCreator</strong>
+<dd>the creator code of the app calling this routine
+<dt><i>in</i><strong>	csExtension</strong>
+<dd>the extension to search for
+<dt><i>in</i><strong>	direction</strong>
+<dd>ignored
+<dt><i>out</i><strong>	numReturned</strong>
+<dd>on return, will contain the number of apps returned
+<dt><i>in</i><strong>	maxToReturn</strong>
+<dd>the maximum number of apps to return
+<dt><i>out</i><strong>	cValsP</strong>
+<dd>on return, the creator values will be placed in this array
+		  							must have at least maxToReturn elements
+<dt><i>out</i><strong>	tValsP</strong>
+<dd>on return, the type values will be placed in this array
+		  							must have at least maxToReturn elements
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iCFindMatchesExt(_long_appCreator,_const_CStr_*csExtension,_long_direction,_long_*numReturned,_long_maxToReturn,_long_*cValsP,_long_*tValsP_)$">iCFindMatchesExt</a>( long appCreator, const CStr *csExtension,
+										long direction, long *numReturned,
+										long maxToReturn, long *cValsP, long *tValsP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SIConfig </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCStart(_OSType_creator,_OurDataH_ourDataH_)$"><font color=green>iCStart</font></a>( OSType creator, OurDataH ourDataH );
+<dd><strong>static</strong> void <a href="SIConfig.html#void_iCStop(_OurDataH_ourDataH_)$"><font color=green>iCStop</font></a>( OurDataH ourDataH );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCGetSeed(_OurDataH_ourDataH,_long_*seedP_)$"><font color=green>iCGetSeed</font></a>( OurDataH ourDataH, long *seedP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCGetIndMapEntry(_OurDataH_ourDataH,_long_whichRecord,_ICMapEntry_*mapEntryP_)$"><font color=green>iCGetIndMapEntry</font></a>( OurDataH ourDataH, long whichRecord, ICMapEntry *mapEntryP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCCountMapEntries(_OurDataH_ourDataH,_long_*countP_)$"><font color=green>iCCountMapEntries</font></a>( OurDataH ourDataH, long *countP );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCLaunchURL(_long_appCreator,_const_CStr_*csURL_)$"><font color=green>iCLaunchURL</font></a>( long appCreator, const CStr *csURL );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindMatchesFInfo(_long_appCreator,_long_targetCreator,_long_targetType,_long_direction,_long_*numReturned,_long_maxToReturn,_StringPtr_retData_)$"><font color=green>iCFindMatchesFInfo</font></a>( long appCreator, long targetCreator, long targetType, long direction, long *numReturned, long maxToReturn, StringPtr retData );
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindAppByName(_long_appCreator,_const_CStr_*csName,_long_*creatorP,_long_*vRefP,_long_*parIDP,_StringPtr_namesP,_long_maxToReturn,_long_*numReturned)$"><font color=green>iCFindAppByName</font></a>( long appCreator, const CStr *csName, long *creatorP, long *vRefP, long *parIDP, StringPtr namesP, long maxToReturn, long *numReturned);
+<dd><strong>static</strong> ErrCode <a href="SIConfig.html#ErrCode_iCFindMatchesExt(_long_appCreator,_const_CStr_*csExtension,_long_direction,_long_*numReturned,_long_maxToReturn,_long_*cValsP,_long_*tValsP_)$"><font color=green>iCFindMatchesExt</font></a>( long appCreator, const CStr *csExtension, long direction, long *numReturned, long maxToReturn, long *cValsP, long *tValsP );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SIConfig<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SIConfig<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SIConfig<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:29 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

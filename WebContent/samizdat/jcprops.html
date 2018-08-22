@@ -1,0 +1,308 @@
+<HTML><HEAD><TITLE>Configuration Using jcprops.txt</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" >
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+&nbsp; &nbsp; <A HREF="please_vote.html"><FONT SIZE="2">Please Vote!</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+
+&nbsp; &nbsp; <A HREF="source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+<CENTER>
+<H1>
+Configuration Using jcprops.txt
+</H1>
+<P>
+</CENTER>
+
+<BLOCKQUOTE>
+
+This page describes how the file <I>jcprops.txt</I> can be used to modify the default JConfig behavior.
+<I>jcprops.txt</I> contains a series of properties, such as:
+
+<PRE>
+com.jconfig.mac.FileRegistryFactoryMac.getApps=0
+com.jconfig.mac.FileRegistryFactoryMac.launchURL=0
+</PRE>
+
+<P>
+Setting properties in this file to certain values can be used to change the default behavior. This file does not
+have to exist; if the file does not exist, or if a specific property is not found, the default behavior will be
+used.
+
+<P>
+If you wish to use this file, make sure it's in the directory provided to the FileRegistry.initialize() method; i.e.,
+it should be in the same directory as <I>jconfig.cfg</I> and <I>jcfactrz.txt</I>.
+
+<P>
+The platform-specific properties are described beloe.
+
+</BLOCKQUOTE>
+
+
+
+<H2>
+Mac
+</H2>
+
+<BLOCKQUOTE>
+
+There are currently six properties, all of which are Mac-specific.
+
+The first indicates which class will be used to 
+			<B>com.jconfig.mac.FileRegistryMRJ.FileUtilsClassName</B>
+
+<P>
+The other five properties correspond to these five methods of the FileRegistry:
+
+<UL>
+<LI>findExtensions(...)
+<LI>findFinderInfo(...)
+<LI>getApps(...)
+<LI>iterate(...)
+<LI>launchURL(...)
+</UL>
+
+Note that the FileRegistry contains three getApps() methods: the only method affected by <I>jcprops.txt</I> is the
+one used for finding apps by name, FileRegistry.getApps( String appName,...) The other two FileRegistry.getApps()
+methods are not affected.
+
+<P>
+The properties associated with these methods are as follows:
+
+<UL>
+<LI>findExtensions: <B>com.jconfig.mac.FileRegistryFactoryMac.findExtensions</B>
+<LI>findFinderInfo: <B>com.jconfig.mac.FileRegistryFactoryMac.findFinderInfo</B>
+<LI>getApps: <B>com.jconfig.mac.FileRegistryFactoryMac.getApps</B>
+<LI>iterate: <B>com.jconfig.mac.FileRegistryFactoryMac.iterate</B>
+<LI>launchURL: <B>com.jconfig.mac.FileRegistryFactoryMac.launchURL</B>
+</UL>
+			
+			
+			
+			
+			
+
+<P>
+Currently, each of these properties only has two values: default, and non-default.
+
+<P>
+For each property, you can obtain the default value in <B>any one</B> of the following cases:
+
+<UL>
+<LI>The file <I>jcprops.txt</I> can't be found,
+<LI><I>jcprops.txt</I> can be found, but the property is not listed,
+<LI>the property is listed, and its value is 0 (zero), or
+<LI>the property is listed, and its value is not a number.
+</UL>
+
+<P>
+To obtain the non-default value, <B>all</B> these cases must be true:
+
+<UL>
+<LI>the file <I>jcprops.txt</I> can be found,
+<LI>the property must be listed in this file, and
+<LI>the property must have a non-zero, numeric value. For future compatibility, this number should be 1.
+</UL>
+
+<P>
+As an example, if <I>jcprops.txt</I> contains the following:
+
+<PRE>
+com.jconfig.mac.FileRegistryFactoryMac.findExtensions=0
+com.jconfig.mac.FileRegistryFactoryMac.findFinderInfo=1
+com.jconfig.mac.FileRegistryFactoryMac.getApps=aaaa
+</PRE>
+
+The properties will have the following values:
+<UL>
+<LI>findExtensions will be 0
+<LI>findFinderInfo will be 1
+<LI>getApps will be 0
+<LI>iterate will be 0
+<LI>launchURL will be 0
+</UL>
+
+
+<P>
+The effect of each property on these methods is given below in pseudo-code.
+
+<P>
+In the following, <I>icConfig</I> is a wrapper around InternetConfig.
+This will be null only if InternetConfig was not installed, or could not be loaded.
+
+<P>
+<I>plainConfig</I> is the object created using the contents of the file <I>jconfig.cfg</I>.
+Note that if <I>jconfig.cfg</I> can't be found, internally stored values are used.
+In almost all cases, <I>plainConfig</I> will not be null (unless there are severe memory problems.)
+
+<P>
+The five FileRegistry methods listed above end up being calls to either <I>icConfig</I> or <I>plainConfig</I>,
+depending on whether <I>icConfig</I> is null, and depending on the values of the five properties.
+
+<PRE>
+<B>
+findExtensions
+findFinderInfo
+iterate
+</B>
+        if ( *the property* == 0 ) {
+            if ( icConfig != null )
+                use icConfig
+            else
+                use plainConfig
+        }
+        else {
+            if ( plainConfig != null )
+                use plainConfig
+            else
+                use icConfig
+        }
+    
+<B>
+getApps
+</B>
+
+        if ( *the property* == 0 && icConfig != null )
+            use icConfig
+        else
+            use this class' iterate() method
+
+<B>
+launchURL
+</B>
+
+        if ( *the property* == 0 && icConfig != null ) {
+            try to launch using icConfig
+            if that works, return
+        }
+
+        search and launch a browser using creator codes (see the [BRWS,5000] resource in JConfig.shlb)
+</PRE>
+
+
+</BLOCKQUOTE>
+
+
+
+
+<CENTER><HR><B><FONT size=-1>
+  <a href="http://www.tolstoy.com/samizdat/index.html">Main Page</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/jconfig.html">JConfig</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/imagemeister.html">ImageMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/sysprops.html">System Properties Repository</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Native Macros</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/Samples.html">Free Samples</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html">WordMeister</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/JavaSamples.html">Java Freeware</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/links.html">Links</a> &#183;
+  <a href="http://www.tolstoy.com/samizdat/contact.html">Contact Us</a>
+</FONT></B><HR></CENTER>
+
+<font size=-2>Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+JConfig and ImageMeister are trademarks of Samizdat Productions. Other trademarks are the property of
+their respective owners.<BR>
+<A href=MAILTO:samizdat@tolstoy.com>samizdat@tolstoy.com</A></font>
+
+
+</BODY>
+</HTML>

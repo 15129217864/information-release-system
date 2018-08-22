@@ -1,0 +1,328 @@
+<html><head><title>SFileInfo Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SFileInfo</a></h1>
+<dl>
+<dd>
+	Used to get information on files.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Windows.html">Windows</a> | 
+<a href=../../../"SFileInfo.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SFileInfo<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetShortPathName(_const_CStr_*inFileName,_CStr_*outFileName_)$"><font color=green>iGetShortPathName</font></a>( const CStr *inFileName, CStr *outFileName );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileDates(_const_CStr_*fullPath,_CDateBundle_*dateBundle_)$"><font color=green>iGetFileDates</font></a>( const CStr *fullPath, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributes(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributes</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributesReadMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributesReadMask</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iSetFileAttributes(_const_CStr_*fullPath,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>iSetFileAttributes</font></a>( const CStr *fullPath, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributesWriteMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributesWriteMask</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetExecutableType(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetExecutableType</font></a>( const CStr *fullPath, unsigned long *val );
+<dd>enum <a href="SFileInfo.html#enum_eExecutableType$"><font color=green>eExecutableType</font></a>;
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SFileInfo <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFileInfo</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Used to get information on files.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFileInfo</i><p>
+<a name="ErrCode_iGetShortPathName(_const_CStr_*inFileName,_CStr_*outFileName_)$"><hr><p></p><h3>ErrCode iGetShortPathName( const CStr *inFileName, CStr *outFileName );</h3></a>
+<p>
+		    Returns the short file name of a file or directory.
+		  	I.e., "c:\program files" becomes "c:\progra~1"
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	inFileName</strong>
+<dd>The	name of the volume.
+<dt><i>out</i><strong>	outFileName</strong>
+<dd>The display name.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetShortPathName(_const_CStr_*inFileName,_CStr_*outFileName_)$">iGetShortPathName</a>( const CStr *inFileName, CStr *outFileName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iGetFileDates(_const_CStr_*fullPath,_CDateBundle_*dateBundle_)$"><hr><p></p><h3>ErrCode iGetFileDates( const CStr *fullPath, CDateBundle *dateBundle );</h3></a>
+<p>
+		    Retrieves the three dates associated with a file, and puts them in the
+		  	given CDateBundle
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	dateBundle</strong>
+<dd>On exit, contains the three dates for the file.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetFileDates(_const_CStr_*fullPath,_CDateBundle_*dateBundle_)$">iGetFileDates</a>( const CStr *fullPath, CDateBundle *dateBundle );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iGetFileAttributes(_const_CStr_*fullPath,_unsigned_long_*val_)$"><hr><p></p><h3>ErrCode iGetFileAttributes( const CStr *fullPath, unsigned long *val );</h3></a>
+<p>
+		    Returns the attributes associated with a file
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	val</strong>
+<dd>On exit, contains the file attributes, one of the eFileAttributes constants.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetFileAttributes(_const_CStr_*fullPath,_unsigned_long_*val_)$">iGetFileAttributes</a>( const CStr *fullPath, unsigned long *val );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iGetFileAttributesReadMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><hr><p></p><h3>ErrCode iGetFileAttributesReadMask( const CStr *fullPath, unsigned long *val );</h3></a>
+<p>
+		    Indicates which bits returned from iGetFileAttributes are valid.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	val</strong>
+<dd>On exit, contains the mask.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetFileAttributesReadMask(_const_CStr_*fullPath,_unsigned_long_*val_)$">iGetFileAttributesReadMask</a>( const CStr *fullPath, unsigned long *val );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iSetFileAttributes(_const_CStr_*fullPath,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><hr><p></p><h3>ErrCode iSetFileAttributes( const CStr *fullPath, unsigned long flagMask, unsigned long newFlags );</h3></a>
+<p>
+		    Sets the attributes associated with a file
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	flagMask</strong>
+<dd>Indicates which bits in newFlags are significant
+<dt><i>out</i><strong>	newFlags</strong>
+<dd>Contains the new values of each bit. (if that bit is set in flagMask.)
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_iSetFileAttributes(_const_CStr_*fullPath,_unsigned_long_flagMask,_unsigned_long_newFlags_)$">iSetFileAttributes</a>( const CStr *fullPath, unsigned long flagMask, unsigned long newFlags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iGetFileAttributesWriteMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><hr><p></p><h3>ErrCode iGetFileAttributesWriteMask( const CStr *fullPath, unsigned long *val );</h3></a>
+<p>
+		    Indicates which bits can be set by iSetFileAttributes.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	val</strong>
+<dd>On exit, contains the mask.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_iGetFileAttributesWriteMask(_const_CStr_*fullPath,_unsigned_long_*val_)$">iGetFileAttributesWriteMask</a>( const CStr *fullPath, unsigned long *val );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="ErrCode_iGetExecutableType(_const_CStr_*fullPath,_unsigned_long_*val_)$"><hr><p></p><h3>ErrCode iGetExecutableType( const CStr *fullPath, unsigned long *val );</h3></a>
+<p>
+		    Wraps GetExecutableType()
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	fullPath</strong>
+<dd>The file name.
+<dt><i>out</i><strong>	val</strong>
+<dd>On exit, contains the executable type, one of the eExecutableType constants.
+<p>
+</dl></dl>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_iGetExecutableType(_const_CStr_*fullPath,_unsigned_long_*val_)$">iGetExecutableType</a>( const CStr *fullPath, unsigned long *val );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="enum_eExecutableType$"><hr><p></p><h3>enum eExecutableType;</h3></a>
+<p>
+		    Returned by iGetExecutableType.
+<p>
+<p><pre>
+	enum {
+		kExecutableTypeWin32Exe = 0,
+		kExecutableTypeDOSExe = 1,
+		kExecutableTypeWOWExe = 2,
+		kExecutableTypePIFExe = 3,
+		kExecutableTypePOSIXExe = 4,
+		kExecutableTypeOS216Exe = 5,
+		kExecutableTypeUnknown = 9
+	} eExecutableType;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFileInfo </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetShortPathName(_const_CStr_*inFileName,_CStr_*outFileName_)$"><font color=green>iGetShortPathName</font></a>( const CStr *inFileName, CStr *outFileName );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileDates(_const_CStr_*fullPath,_CDateBundle_*dateBundle_)$"><font color=green>iGetFileDates</font></a>( const CStr *fullPath, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributes(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributes</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributesReadMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributesReadMask</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iSetFileAttributes(_const_CStr_*fullPath,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>iSetFileAttributes</font></a>( const CStr *fullPath, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetFileAttributesWriteMask(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetFileAttributesWriteMask</font></a>( const CStr *fullPath, unsigned long *val );
+<dd><strong>static</strong> ErrCode <a href="SFileInfo.html#ErrCode_iGetExecutableType(_const_CStr_*fullPath,_unsigned_long_*val_)$"><font color=green>iGetExecutableType</font></a>( const CStr *fullPath, unsigned long *val );
+<dd>enum <a href="SFileInfo.html#enum_eExecutableType$"><font color=green>eExecutableType</font></a>;
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SFileInfo<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFileInfo<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFileInfo<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:07 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

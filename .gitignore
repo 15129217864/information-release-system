@@ -1,0 +1,32 @@
+# IntelliJ IDEA Project files
+.idea
+*.iml
+*.ipr
+*.iws
+*.class
+
+
+# eclipse
+.classpath
+.project
+.settings/
+.myumldata
+
+
+
+
+
+.DS_Store
+Thumbs.db
+
+
+*.bak
+*.tem
+*.temp
+
+# gitignore
+*.log
+
+# maven target
+*/target/**
+/build/

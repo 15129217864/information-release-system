@@ -1,0 +1,296 @@
+<html><head><title>SProcesses Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SProcesses</a></h1>
+<dl>
+<dd>
+	Routines for working with processes.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Mac.html">Mac</a> | 
+<a href=../../../"SProcesses.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SProcesses<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd>typedef enum tageMoveProcess <a href="SProcesses.html#typedef_enum_tageMoveProcess_eMoveProcess$"><font color=green>eMoveProcess</font></a>;
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_getProcesses(_long_maxToReturn,_long_flags,_long_*numReturned,_long_*vRefsP,_long_*parIDsP,_StringPtr_namesP,_long_*PSNLoP,_long_*PSNHiP,_long_*proFlagsP_)$"><font color=green>getProcesses</font></a>( long maxToReturn, long flags, long *numReturned, long *vRefsP, long *parIDsP, StringPtr namesP, long *PSNLoP, long *PSNHiP, long *proFlagsP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_setFinderAsFrontProcess(_void_)$"><font color=green>setFinderAsFrontProcess</font></a>( void );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_escortProcessToTheFront(_ProcessSerialNumber_*psnP_)$"><font color=green>escortProcessToTheFront</font></a>( ProcessSerialNumber *psnP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_findProcess(_OSType_creator,_OSType_typ,_ProcessSerialNumber_*processP,_CFSpec_*specP_)$"><font color=green>findProcess</font></a>( OSType creator, OSType typ, ProcessSerialNumber *processP, <a href="CFSpec.html">CFSpec</a> *specP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_hideProcess(_ProcessSerialNumber_*psnP_)$"><font color=green>hideProcess</font></a>( ProcessSerialNumber *psnP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_hideFrontProcess(_void_)$"><font color=green>hideFrontProcess</font></a>( void );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_moveProcess(_ProcessSerialNumber_*psn,_eMoveProcess_selector,_long_flags_)$"><font color=green>moveProcess</font></a>( ProcessSerialNumber *psn, eMoveProcess selector, long flags );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_quitProcess(_ProcessSerialNumber_*thePSN,_long_flags_)$"><font color=green>quitProcess</font></a>( ProcessSerialNumber *thePSN, long flags );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_verifyPSN(_ProcessSerialNumber_*thePSN_)$"><font color=green>verifyPSN</font></a>( ProcessSerialNumber *thePSN );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SProcesses <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SProcesses</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Routines for working with processes.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SProcesses</i><p>
+<a name="typedef_enum_tageMoveProcess_eMoveProcess$"><hr><p></p><h3>typedef enum tageMoveProcess eMoveProcess;</h3></a>
+<p>
+		  	See <a href="#ErrCode_moveProcess(_ProcessSerialNumber_*psn,_eMoveProcess_selector,_long_flags_)$">moveProcess</a>().
+<p>
+<p><pre>
+	typedef enum tageMoveProcess {
+		kMoveProcessToFront = 1,
+		kMoveProcessToBack = 2,
+		kMoveProcessMinimize = 3,
+		kMoveProcessMaximize = 4
+	} eMoveProcess;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_getProcesses(_long_maxToReturn,_long_flags,_long_*numReturned,_long_*vRefsP,_long_*parIDsP,_StringPtr_namesP,_long_*PSNLoP,_long_*PSNHiP,_long_*proFlagsP_)$"><hr><p></p><h3>ErrCode getProcesses( long maxToReturn, long flags, long *numReturned, long *vRefsP, long *parIDsP, StringPtr namesP, long *PSNLoP, long *PSNHiP, long *proFlagsP );</h3></a>
+<p>
+		  	Get a list of the running processes.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getProcesses(_long_maxToReturn,_long_flags,_long_*numReturned,_long_*vRefsP,_long_*parIDsP,_StringPtr_namesP,_long_*PSNLoP,_long_*PSNHiP,_long_*proFlagsP_)$">getProcesses</a>( long maxToReturn, long flags, long *numReturned,
+								long *vRefsP, long *parIDsP, StringPtr namesP,
+								long *PSNLoP, long *PSNHiP, long *proFlagsP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_setFinderAsFrontProcess(_void_)$"><hr><p></p><h3>ErrCode setFinderAsFrontProcess( void );</h3></a>
+<p>
+		  	Bring finder to the front.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setFinderAsFrontProcess(_void_)$">setFinderAsFrontProcess</a>( void );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_escortProcessToTheFront(_ProcessSerialNumber_*psnP_)$"><hr><p></p><h3>ErrCode escortProcessToTheFront( ProcessSerialNumber *psnP );</h3></a>
+<p>
+		  	Bring a process to the front.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_escortProcessToTheFront(_ProcessSerialNumber_*psnP_)$">escortProcessToTheFront</a>( ProcessSerialNumber *psnP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_findProcess(_OSType_creator,_OSType_typ,_ProcessSerialNumber_*processP,_CFSpec_*specP_)$"><hr><p></p><h3>ErrCode findProcess( OSType creator, OSType typ, ProcessSerialNumber *processP, CFSpec *specP );</h3></a>
+<p>
+		  	Search for a running process, and return its PSN and FSSpec in 'processP' and 'specP'
+		  	if found.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_findProcess(_OSType_creator,_OSType_typ,_ProcessSerialNumber_*processP,_CFSpec_*specP_)$">findProcess</a>( OSType creator, OSType typ, ProcessSerialNumber *processP,
+								<a href="CFSpec.html">CFSpec</a> *specP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_hideProcess(_ProcessSerialNumber_*psnP_)$"><hr><p></p><h3>ErrCode hideProcess( ProcessSerialNumber *psnP );</h3></a>
+<p>
+		  	Hide a process.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_hideProcess(_ProcessSerialNumber_*psnP_)$">hideProcess</a>( ProcessSerialNumber *psnP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_hideFrontProcess(_void_)$"><hr><p></p><h3>ErrCode hideFrontProcess( void );</h3></a>
+<p>
+		  	Hide the front process.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_hideFrontProcess(_void_)$">hideFrontProcess</a>( void );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_moveProcess(_ProcessSerialNumber_*psn,_eMoveProcess_selector,_long_flags_)$"><hr><p></p><h3>ErrCode moveProcess( ProcessSerialNumber *psn, eMoveProcess selector, long flags );</h3></a>
+<p>
+		  	Move a process.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_moveProcess(_ProcessSerialNumber_*psn,_eMoveProcess_selector,_long_flags_)$">moveProcess</a>( ProcessSerialNumber *psn, eMoveProcess selector, long flags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_quitProcess(_ProcessSerialNumber_*thePSN,_long_flags_)$"><hr><p></p><h3>ErrCode quitProcess( ProcessSerialNumber *thePSN, long flags );</h3></a>
+<p>
+		  	Quit a process.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_quitProcess(_ProcessSerialNumber_*thePSN,_long_flags_)$">quitProcess</a>( ProcessSerialNumber *thePSN, long flags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="ErrCode_verifyPSN(_ProcessSerialNumber_*thePSN_)$"><hr><p></p><h3>ErrCode verifyPSN( ProcessSerialNumber *thePSN );</h3></a>
+<p>
+		  	Verify that a process is still running.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_verifyPSN(_ProcessSerialNumber_*thePSN_)$">verifyPSN</a>( ProcessSerialNumber *thePSN );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SProcesses </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd>typedef enum tageMoveProcess <a href="SProcesses.html#typedef_enum_tageMoveProcess_eMoveProcess$"><font color=green>eMoveProcess</font></a>;
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_getProcesses(_long_maxToReturn,_long_flags,_long_*numReturned,_long_*vRefsP,_long_*parIDsP,_StringPtr_namesP,_long_*PSNLoP,_long_*PSNHiP,_long_*proFlagsP_)$"><font color=green>getProcesses</font></a>( long maxToReturn, long flags, long *numReturned, long *vRefsP, long *parIDsP, StringPtr namesP, long *PSNLoP, long *PSNHiP, long *proFlagsP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_setFinderAsFrontProcess(_void_)$"><font color=green>setFinderAsFrontProcess</font></a>( void );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_escortProcessToTheFront(_ProcessSerialNumber_*psnP_)$"><font color=green>escortProcessToTheFront</font></a>( ProcessSerialNumber *psnP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_findProcess(_OSType_creator,_OSType_typ,_ProcessSerialNumber_*processP,_CFSpec_*specP_)$"><font color=green>findProcess</font></a>( OSType creator, OSType typ, ProcessSerialNumber *processP, <a href="CFSpec.html">CFSpec</a> *specP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_hideProcess(_ProcessSerialNumber_*psnP_)$"><font color=green>hideProcess</font></a>( ProcessSerialNumber *psnP );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_hideFrontProcess(_void_)$"><font color=green>hideFrontProcess</font></a>( void );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_moveProcess(_ProcessSerialNumber_*psn,_eMoveProcess_selector,_long_flags_)$"><font color=green>moveProcess</font></a>( ProcessSerialNumber *psn, eMoveProcess selector, long flags );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_quitProcess(_ProcessSerialNumber_*thePSN,_long_flags_)$"><font color=green>quitProcess</font></a>( ProcessSerialNumber *thePSN, long flags );
+<dd><strong>static</strong> ErrCode <a href="SProcesses.html#ErrCode_verifyPSN(_ProcessSerialNumber_*thePSN_)$"><font color=green>verifyPSN</font></a>( ProcessSerialNumber *thePSN );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SProcesses<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SProcesses<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SProcesses<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:31 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

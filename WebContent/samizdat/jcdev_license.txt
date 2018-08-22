@@ -1,0 +1,456 @@
+INTRODUCTION
+
+If you are using JConfig for any productive purpose (i.e., anything other
+than evaluating it), you must obtain a Developer License.
+
+This file contains the full Developer License Agreement. A Developer
+License FAQ is available online at
+http://www.tolstoy.com/samzidat/jcdev_FAQ.html
+
+ * If you are only using JConfig to develop freeware or shareware, or if
+you are a fulltime employee of an educational institution or a fulltime
+student, there is no charge for the Developer License, and you can sign up
+online to save time. Simply visit
+http://www.tolstoy.com/samzidat/jcdev_registerfree.html
+
+ * However, if you are using JConfig in a commercial product (whether
+in-house or not), or you are otherwise being paid or receiving compensation
+for using JConfig, you will need to follow the instructions below to obtain
+the Developer License. In this case, there is a $99 fee per developer for
+the Developer License. NOTE: this is *per-developer* fee, not a per-product
+fee. There is no runtime fee. See the FAQ at
+http://www.tolstoy.com/samzidat/jcdev_FAQ.html for details.
+
+
+------------------------------------------------------------
+INSTRUCTIONS
+
+1. Print out this agreement, and fill in the blanks for your name and address.
+
+2. Send the agreement, including a check or money order made out for $99
+(USD) to Chris Kelly. DO NOT make the check payable to Samizdat Productions.
+
+  ALTERNATIVELY: You can go to http://www.jconfig.com and pay using
+  PayPal. Look for the button with the Visa/Mastercard logos at that page.
+
+3. After we receive the agreement, we will send you a confirming email, and
+you're ready to go.
+
+If you have any questions or comments on the Developer License, ask in the
+JConfig Technical Support Forums at
+http://www.tolstoy.com/samizdat/jcsupport.html
+
+  Chris Kelly
+  Samizdat Productions
+  4470 Sunset Blvd. #377
+  Hollywood, CA 90027
+  310-226-8065
+  <samizdat@tolstoy.com>
+
+
+------------------------------------------------------------
+
+              JConfig DEVELOPER LICENSE AGREEMENT
+
+This Developer License Agreement ("License Agreement") is entered into as
+of _____________________ [date] by and between
+_____________________________________ ("Licensee") and Samizdat Productions
+("Samizdat").
+
+1. DEFINITIONS. 
+    a) "Software" shall mean the computer software JConfig SDK Version
+2.2.0, in whole or in part. Any previous or future versions of JConfig
+other than JConfig SDK 2.2.0, either in whole or in part, are not covered
+by this License Agreement.
+
+    b) "Source Code" shall mean those parts of the Software which
+constitute Samizdat's original, human-readable text files which are used to
+create the executable versions of JConfig, as well as any batch or project
+files used to create the executable versions of JConfig.
+
+    c) "Documentation" shall mean any human-readable documentation of the
+Software, whether in printed, electronic, or other formats.
+
+    d) "Licensed Products" shall mean Licensee's computer application(s) or
+other software product(s) that use the Derived Binaries.
+
+    e) "Modifications" shall mean i) any form of modification, addition, or
+deletion that Licensee makes to the contents of any of the files which
+comprise the Source Code, ii) the contents of any new file created by
+Licensee which contains any part of the Source Code, iii) any form of
+modification, addition, or deletion that Licensee makes to the contents of
+any new files as described in (ii), and iv) any derived works based in
+whole or in part on the Source Code or any part thereof.
+
+    f) "Modified Source Code" shall mean the Source Code, as well as the
+Source Code together with any Modifications made by Licensee.
+
+    g) "Derived Binaries" shall mean the following files supplied with the
+JConfig SDK Version 2.2.0:
+	JConfig.zip
+	JConfig.shlb
+	libjconfiglx0.so
+	jcnfigSN.dll
+	jcnfigSW.dll
+	jcnfigMS.dll
+	jcnfigMW.dll
+	jcnfigM2.dll
+	jcnfig2W.dll
+	jconfig.cfg
+	jcfactrz.txt
+as well as any executable, library, archive or other binary-format files
+produced from the Source Code or the Modified Source Code, either in whole
+or in part.
+
+    i) "Licensee" shall mean the Licensee indicated above, together with
+its heirs and successors.
+
+    j) "Samizdat" shall mean Chris Kelly dba Samizdat Productions, together
+with its heirs and successors.
+  
+    k) "Distributor" shall mean a dealer or distributor in the business of
+reselling or sublicensing Licensee's Application.
+
+2. LICENSE TO USE SOFTWARE. Samizdat hereby grants to Licensee, and
+Licensee hereby accepts, a non-exclusive, non-transferable, limited license
+to use the Software in accordance with the terms and conditions set forth
+herein.
+Samizdat grants to Licensee the right to use one copy of the Software or
+Modified Source Code on a single computer. Only one copy of the Software or
+Modified Source Code may be used at any time. Licensee may transfer the
+Software or Modified Source Code to another single computer only if no
+copies of the Software or Modified Source Code licensed herein are retained
+for use on any other computer. The Software or Modified Source Code may
+only be installed on an internal network or file server provided that any
+portion of the Software or Modified Source Code is present on only one
+computer connected to the network or file server at any time. Licensee may
+make copies of the Software or Modified Source Code solely for backup or
+archival purposes. Under no circumstances and in no manner may Licensee
+redistribute or copy the Software or Modified Source Code other than as
+specified herein. Licensee may not copy and/or distribute the Documentation
+or other written materials that accompany the Software. Licensee may not
+provide nor utilize any electronic access codes to provide the Software or
+Modified Source Code to any other entity. Licensee may not permit other
+individuals to use the Software or Modified Source Code except under the
+terms listed herein.
+
+3. RESTRICTIONS. Licensee hereby acknowledges and agrees that the Software
+is the sole, exclusive and confidential property of Samizdat, and that
+Samizdat expressly retains all rights to the Software including, but not
+limited to, copyright, patent, and trade secret protections as provided by
+federal and state laws. Licensee covenants and agrees not to encumber the
+Software or Modified Source Code in any manner, nor distribute,
+redistribute, market, sell, rent, lease, assign, license, sublicense, loan,
+grant a security interest in, or otherwise transfer rights to the Software
+or Modified Source Code, or any part or parts thereof. The Source Code may
+be modified by Licensee without the prior written permission of Samizdat.
+Licensee may not remove any copyright, trademark, or other proprietary
+notices from the Software or Modified Source Code. Samizdat reserves all
+rights that are not expressly granted to Licensee by this License Agreement.
+
+4. REVERSE GRANT. At Licensee's sole discretion, Licensee may choose to
+submit to Samizdat Modifications made by Licensee, or any part or parts
+thereof. Licensee hereby grants to Samizdat a nonexclusive, perpetual
+paid-up license to use, copy, distribute, sell, and make derivative works
+of any Modifications made by Licensee and submitted to Samizdat. Samizdat
+is under no obligation to incorporate any Modifications into future
+versions of the Software.
+
+5. LIMITED GRANT TO DISTRIBUTE PRODUCTS. Licensee or Distributors may
+reproduce, distribute, and sublicense the Derived Binaries to Sublicensees
+in object code form only and only in combination with Licensee's
+Application, provided that:
+  (a) Licensee's Application adds substantial and primary functionality to
+the Derived Binaries and the distribution of Licensee's Application does
+not function as a substitute for the Software or the Derived Binaries and
+does not compete with Samizdat's distribution of the Software.
+  (b) Licensee's Application is not a library, development tool, or
+software development kit that exposes the APIs of the Derived Binaries, or
+which enables the users of Licensee's Application to programmatically
+interact with the classes and methods of the Derived Binaries.
+  (c) Licensee shall not allow or facilitate any attempt by any person to
+reverse-engineer, recreate, or generate the Software, Modified Source Code,
+or Derived Binaries, nor shall Licensee aid or permit others to do so.
+
+In order to protect Samizdat's intellectual property rights in the
+Software, Licensee must reproduce on each copy of Licensee's Application or
+in its printed or electronic documentation a copyright notice that clearly
+states: 
+
+  "Copyright _ [Licensee Name]. Portions Copyright 1997-2000 Samizdat
+   Productions. All Rights Reserved."
+
+and Licensee must distribute Licensee's Application pursuant to a valid
+agreement that is at least as protective of Samizdat's rights in the
+Software and Derived Binaries as this License Agreement.
+
+6. CONFIDENTIAL INFORMATION. Licensee agrees to take all steps necessary to
+maintain and preserve the proprietary and confidential nature of the
+Software and the trade secrets contained therein. The Software (including
+the Documentation), the Modified Source Code, and the terms and conditions
+of this License Agreement shall be considered Confidential Information and
+as the recipient of Confidential Information Licensee agrees to the
+following provisions:
+    (a) Licensee will not disclose Confidential Information to any third
+party, nor use the same for any purpose other than as set forth in this
+License Agreement.
+    (b) Licensee will use the same degree of care Licensee uses to protect
+its own confidential information but in no event less than reasonable care
+to prevent unauthorized use, dissemination or publication of Confidential
+Information.
+    (c) Licensee may disclose Confidential Information to its employees or
+contractors provided that they have executed and delivered to Licensee a
+confidentiality or other non-disclosure agreement containing terms and
+conditions substantially similar to those stated in this paragraph.
+Licensee agrees to promptly notify Samizdat of any unauthorized disclosure
+of Confidential Information.
+    (d) This License Agreement imposes no obligation on Licensee regarding
+Confidential Information which: (i) was in its possession, or known by
+Licensee without an obligation to maintain confidentially prior to
+Licensee's receipt of Confidential Information, (ii) is or becomes
+generally known to the public without violation of this License Agreement,
+(iii) is obtained by Licensee from a third party, without an obligation to
+keep such information confidential, or (iv) is independently developed by
+Licensee without use of the Confidential Information.
+    (e) Disclosure of Confidential Information will not be prohibited, if
+Licensee gives Samizdat prior notice and such disclosure is (i) compelled
+pursuant to a legal, judicial, or administrative proceeding, or (ii)
+otherwise required by law.
+
+7. INJUNCTIVE RELIEF. Licensee acknowledges and agrees that unauthorized
+use or disclosure of Samizdat's trade secrets or Confidential Information
+(as defined in Paragraph 6) or use of the Software, Modified Source Code,
+or Derived Binaries in breach of this License Agreement is likely to cause
+Samizdat harm for which damages may not be an adequate remedy. Accordingly,
+Samizdat shall be entitled to preliminary and permanent injunctive relief
+and other equitable relief for any breach of this License Agreement,
+without prejudice to any other right or remedy to which Samizdat may be
+entitled. The parties agree that in the event of a breach or threatened
+breach of this License Agreement, that immediate injunctive relief shall be
+appropriate. The parties agree that Samizdat shall be released from any
+requirement to post any bond, cash or security as a condition of obtaining
+injunctive relief, to the extent permitted by law.
+
+9. ASSIGNMENT BY LICENSEE. This License Agreement, in whole or in part, may
+not be assigned by Licensee in any manner whatsoever. Any rights granted
+herein may not be sublicensed, assigned, given away, or sold except as
+provided in this License Agreement without the prior written consent of
+Samizdat which may be withheld in its sole and absolute discretion.
+
+10. ASSIGNMENT BY SAMIZDAT. Samizdat may at any time assign or transfer all
+or part of its interests in any rights to the Software, to the Source Code,
+and to this License Agreement to an affiliated or unaffiliated company or
+person.
+
+11. WARRANTIES. LICENSEE EXPRESSLY ACKNOWLEDGES AND AGREES THAT USE OF THE
+SOFTWARE IS AT LICENSEE'S SOLE RISK. THE SOFTWARE IS PROVIED "AS IS" AND
+WITHOUT WARRANTY OF ANY KIND AND SAMIZDAT EXPRESSLY DISCLAIMS ALL OTHER
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. SAMIZDAT DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN
+THE SOFTWARE WILL MEET LICENSEE'S REQUIREMENTS, OR THAT THE OPERATION OF
+THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE
+SOFTWARE WILL BE CORRECTED. FURTHERMORE, SAMIZDAT DOES NOT WARRANT OR MAKE
+ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE
+SOFTWARE IN TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR
+OTHERWISE. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY SAMIZDAT SHALL
+CREATE A WARRANTY OR IN ANY WAY INCREASE THE SCOPE OF THIS WARRANTY. SHOULD
+THE SOFTWARE PROVE DEFECTIVE, LICENSEE (AND NOT SAMIZDAT OR A SAMIZDAT
+AUTHORIZED REPRESENTATIVE) ASSUME THE ENTIRE COST OF ALL NECESSARY
+SERVICING, REPAIR OR CORRECTION. UNDER NO CIRCUMSTANCES INCLUDING
+NEGLIGENCE, SHALL SAMIZDAT OR ANY SUPPLIER BE LIABLE FOR ANY INDIRECT,
+SPECIAL, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND
+(INCLUDING LOST PROFITS, LOSS OF USE OR INTERRUPTION OF BUSINESS), OR FOR
+LEGAL FEES, ARISING OUT OF THE USE OF THE SOFTWARE OR THE INABILITY TO USE
+THE SOFTWARE, REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT
+(INCLUDING NEGLIGENCE), STRICT PRODUCT LIABILITY OR OTHERWISE, EVEN IF
+SAMIZDAT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT
+WILL SAMIZDAT'S AGGREGATE LIABILITY FOR ANY CLAIM EXCEED THE AMOUNT PAID BY
+LICENSEE FOR THE SOFTWARE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF
+IMPLIED WARRANTIES OR DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION(S) OR
+EXCLUSION(S) MAY NOT APPLY.
+
+12. LIMITATION OF LIABILITY. SAMIZDAT'S MAXIMUM AGGREGATE LIABILITY TO
+LICENSEE (AND THAT OF ITS AGENTS, DEALERS, DISTRIBUTORS, EMPLOYEES,
+LICENSORS OR SUPPLIERS) SHALL NOT EXCEED THE AMOUNT PAID BY LICENSEE FOR
+THE SOFTWARE. SAMIZDAT'S ENTIRE LIABILITY AND LICENSEE'S EXCLUSIVE REMEDY
+SHALL BE, AT SAMIZDAT'S SOLE OPTION, THE REPLACEMENT OF THE SOFTWARE OR THE
+REFUND OF LICENSEE'S PURCHASE PRICE. UNDER NO CIRCUMSTANCES SHALL SAMIZDAT
+(OR ITS AGENTS, DEALERS, DISTRIBUTORS, EMPLOYEES, LICENSORS OR SUPPLIERS)
+BE LIABLE TO LICENSEE FOR ANY DAMAGES, INCLUDING ANY BUSINESS INTERRUPTION,
+LOST PROFITS, LOST SAVINGS, WORK STOPPAGE, LOSS OF GOODWILL, COMPUTER
+FAILURE OR MALFUNCTION, LOST OR DAMAGED DATA, OR ANY AND ALL OTHER
+INCIDENTAL, CONSEQUENTIAL, INDIRECT OR SPECIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE SOFTWARE (EVEN IF SAMIZDAT OR ITS AUTHORIZED
+REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR THEY
+ARE FORESEEABLE), OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF
+LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE
+EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT
+ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR
+CONSEQUENTIAL DAMAGES SO THIS LIMITATION OR EXCLUSION MAY NOT APPLY. EXCEPT
+AS OTHERWISE PROVIDED BY APPLICABLE LAW, NO CLAIM, REGARDLESS OF FORM,
+ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE MAY BE BROUGHT BY
+LICENSEE MORE THAN ONE (1) YEAR AFTER THE CAUSE OF ACTION HAS OCCURRED. THE
+WARRANTY DISCLAIMER, EXCLUSIVE REMEDIES AND LIMITED LIABILITY SET FORTH IN
+THIS LICENSE ARE FUNDAMENTAL ELEMENTS OF THE AGREEMENT BETWEEN LICENSEE AND
+SAMIZDAT, AND LICENSEE AGREES THAT SAMIZDAT COULD NOT PROVIDE THE SOFTWARE
+ON AN ECONOMICAL BASIS WITHOUT SUCH LIMITATIONS.
+
+13. HIGH-RISK ACTIVITIES. The Software is not fault-tolerant. It is not
+designed, licensed, manufactured or intended for use with or resale as
+online control equipment in hazardous environments requiring fail-safe
+performance (such as nuclear facilities, aircraft navigation or
+communications systems, air traffic control systems, life support machines,
+or weapons systems) in which the failure of the Software could lead
+directly to death, personal injury or severe physical or environmental
+damage ("High Risk Activities"). SAMIZDAT AND ITS SUPPLIERS SPECIFICALLY
+DISCLAIM ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH-RISK ACTIVITIES.
+
+14. EFFECTIVE DATE AND TERM. The effective date of this License Agreement
+shall be the date of Samizdat's delivery of the Software to Licensee. The
+term of this License Agreement continues from year to year as long as the
+Licensed Products are distributed by Licensee or Distributors. The
+foregoing shall not affect Samizdat's right to terminate the License
+Agreement sooner for cause as set forth elsewhere in this License Agreement.
+
+15. TERMINATION. Without prejudice to any other rights, Samizdat may
+terminate this License Agreement immediately without notice from Samizdat
+if Licensee fails to comply with any provision of this License Agreement.
+Licensee agrees that, upon such termination, Licensee will destroy or
+permanently erase all copies of the Software, Modified Source Code, and
+Derived Binaries, and that Licensee will immediately cease and cause any of
+Licensee's distributors to cease any redistribution of the Derived
+Binaries. Provisions which, by their nature, must remain in effect beyond
+the termination of this License Agreement shall survive.
+
+16. PAYMENT AND DELIVERY OF SOFTWARE. Samizdat makes no guarantees or
+commitments that the Software is or will continue to be available from
+Samizdat. Samizdat reserves the right to refuse to enter into this License
+Agreement at Samizdat's sole and absolute discretion. If Samizdat does not
+wish to enter into this License Agreement, Samizdat shall be under no
+obligation to indicate any reasons for Samizdat's decision. If Samizdat
+wishes to enter into this License Agreement, Samizdat will, within a
+reasonable time after Samizdat receives the fee specified in this License
+Agreement for the Software and a copy of this License Agreement executed by
+Licensee, provide email verification to Licensee. The total fee for this
+License shall be US $99.00. Payment shall be made in U.S. dollars, by
+International Money Order or by check drawn on a U.S. bank.
+
+17. EXPENSES. Licensee shall be solely responsible for all expenses
+incurred in the development and distribution of the Licensed Products.
+
+18. DISCLAIMER OF AGENCY. This License Agreement shall not be construed as
+creating an agency, partnership or any other form of legal association
+between the parties. Nothing contained in this License Agreement shall
+authorize either party to make any commitment or agreement on the other's
+behalf.
+
+19. DISTRIBUTION TO THE U.S. GOVERNMENT. The Software (including the
+Documentation) provided under this License Agreement is commercial computer
+software developed exclusively at private expense. Use, duplication, and
+disclosure by civilian agencies of the U.S. Government shall be in
+accordance with FAR 52.227-19 (c) or other agency data rights provisions,
+as may be applicable. Use, duplication and disclosure by Department of
+Defense agencies is subject solely to the terms of standard software
+License Agreement as stated in DFARS 227.7202. 
+
+20. ENTIRE AGREEMENT. This License Agreement is the entire agreement
+between the parties relative to its subject matter, and supersedes all
+prior statements, proposals or agreements relative to its subject matter,
+written or oral. It may be modified only by a writing executed by an
+authorized representative of Samizdat. Any waiver or amendment of any
+provision of this
+License Agreement shall be effective only in writing and signed by both
+parties. No vendor, distributor, dealer, retailer, sales person or other
+person is authorized to modify this License Agreement or to make any
+warranty, representation, or promise which is different than, or in
+addition to, the representations or promises of this License Agreement.
+
+21. CONTROLLING LAW AND SEVERABILITY. This License Agreement shall be
+governed by and construed in accordance with the laws of the United States
+and the State of California, as applied to agreements entered into and to
+be performed entirely within California between California residents,
+without giving effect to any principles of conflicts of law. If for any
+reason a court of competent jurisdiction finds any provision of this
+License Agreement, or portion thereof, to be unenforceable, that provision
+of the License Agreement shall be enforced to the maximum extent
+permissible so as to effect the intent of the parties, and the remainder of
+this License Agreement shall continue in full force and effect. This
+License Agreement shall not be governed by the United Nations Convention on
+Contracts for the International Sale of Goods and its application is
+expressly excluded.
+
+22. JURISDICTION AND VENUE. Licensee expressly agrees that jurisdiction and
+venue for any dispute arising from this License Agreement or relating to
+the Software shall be brought exclusively in the county, state, or federal
+courts located in Los Angeles County, California. Licensee expressly
+consents and submits to the personal jurisdiction of such courts and
+expressly waives any venue, jurisidictional, or inconvenient forum
+objections to such courts. Licensee expressly consents to service of
+process by overnight courier at Licensee's last known address. The
+prevailing party in any litigation or proceedings between the parties
+arising from this License Agreement shall be entitled to recover, in
+addition to any other relief awarded, its reasonable costs and expenses
+(including fees and expenses for attorneys and expert witnesses), court
+costs and collection costs incurred in the proceeding. The failure of
+either party to enforce any rights granted by this License Agreement or to
+take action against the other party in the event of any breach of this
+License Agreement shall not be deemed a waiver by that party of its right
+to enforce such rights in the future. Licensee expressly agrees to
+indemnify and hold harmless Samizdat (and its agents, affiliates, dealers,
+distributors, employees, licensors, subsidiaries, and suppliers) against
+any and all claims, damages, costs or expenses that arise directly or
+indirectly out of or from Licensee's breach of this License Agreement or
+Licensee's use or operation of the Software. 
+
+23. NOTICES. Any notice required under this License Agreement shall be
+given by first class mail, postage prepaid with return receipt requested
+when sent to the addresses specified in this License Agreement. Each party
+to this License Agreement may change an address relating to it by written
+notice to the other party.
+
+24. TRADEMARK. JConfig is a trademark of Samizdat Productions. Other
+trademarks are the property of their respective owners. No right is granted
+hereunder to use the name JConfig or any other Samizdat trademark, except
+as provided herein.
+
+25. EXPORT CONTROLS. None of the Software or underlying information or
+technology may be exported or reexported (i) into (or to a national or
+resident of) Cuba, Iraq, Libya, North Korea, Iran, Syria or any other
+country to which the U.S. has embargoed goods; or (ii) to anyone on the
+U.S. Treasury Department's list of Specially Designated Nationals or the
+U.S. Commerce Department's Table of Denial Orders. Licensee agrees to the
+foregoing and represents and warrants that Licensee is not located in,
+under the control of, or a national or resident of any such country or on
+any such list.
+
+LICENSEE:                               SAMIZDAT PRODUCTIONS
+
+__________________________________      By:_________________________________
+Name                   Title                
+
+__________________________________      ____________________________________
+Address                                 Printed name and title
+
+__________________________________      ____________________________________
+Address                    
+
+__________________________________
+Address                           
+
+__________________________________
+Date
+
+__________________________________      Samizdat Productions        
+By                                      4470 Sunset Blvd. #377        
+                                        Hollywood, CA 90027
+__________________________________      310-226-8065
+Printed name and title                  <samizdat@tolstoy.com>
+                                        
+__________________________________
+Phone and FAX
+
+__________________________________
+Email address
+

@@ -1,0 +1,357 @@
+<html><head><title>CFSpec Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">CFSpec</a></h1>
+<dl>
+<dd>
+	Represents an FSSpec.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Mac.html">Mac</a> | 
+<a href=../../../"CFSpec.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+<dd><a href="#MACROS">MACROS</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class CFSpec<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><a href="CFSpec.html#CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$"><font color=green>CFSpec</font></a>( JNIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );
+<dd><a href="CFSpec.html#CFSpec(_JRIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$"><font color=green>CFSpec</font></a>( JRIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );
+<dd><a href="CFSpec.html#CFSpec(_long_vr,_long_pi,_StringPtr_ps_)$"><font color=green>CFSpec</font></a>( long vr, long pi, StringPtr ps );
+<dd><a href="CFSpec.html#CFSpec(_const_CFSpec_*cfs_)$"><font color=green>CFSpec</font></a>( const CFSpec *cfs );
+<dd>~<i><a href="CFSpec.html#~CFSpec()$"><font color=green>CFSpec</font></a></i>();
+<dd>long <i><a href="CFSpec.html#long_getVRef()_const$"><font color=green>getVRef</font></a></i>() const;
+<dd>long <i><a href="CFSpec.html#long_getParID()_const$"><font color=green>getParID</font></a></i>() const;
+<dd>StringPtr <i><a href="CFSpec.html#StringPtr_getName()$"><font color=green>getName</font></a></i>();
+<dd>FSSpec *<i><a href="CFSpec.html#FSSpec_*getSpecP()$"><font color=green>getSpecP</font></a></i>();
+<dd>ErrCode <i><a href="CFSpec.html#ErrCode_verifySpec()$"><font color=green>verifySpec</font></a></i>();
+<dd>BOOL <i><a href="CFSpec.html#BOOL_isNameNull()_const$"><font color=green>isNameNull</font></a></i>() const;
+<dd>void <i><a href="CFSpec.html#void_setFrom(_const_CFSpec_*cfs_)$"><font color=green>setFrom</font></a></i>( const CFSpec *cfs );
+<dd>void <i><a href="CFSpec.html#void_setFrom(_long_vr,_long_pi,_StringPtr_ps_)$"><font color=green>setFrom</font></a></i>( long vr, long pi, StringPtr ps );
+<dd>void <i><a href="CFSpec.html#void_putInto(_FSSpec_*toSpec_)_const$"><font color=green>putInto</font></a></i>( FSSpec *toSpec ) const;
+<dd>void <i><a href="CFSpec.html#void_dumpInfo(_long_theErr,_const_LPCTSTR_message_)_const$"><font color=green>dumpInfo</font></a></i>( long theErr, const LPCTSTR message ) const;
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // CFSpec <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CFSpec</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Represents an FSSpec. This is constructed from a vRef, a parID, and either
+	a JBYTEARRAY containing a Pascal string or a Pascal string.
+	A set of macros is provided to make declaration, construction, and deletion easier
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CFSpec</i><p>
+<a name="MACROS"><hr><p></p></a><h3>MACROS</h3>
+<PRE>
+<p>
+DECLARECFSPEC(a)
+	Allocates space for a CFSpec*, and sets it to null
+<p>
+MAKECFSPEC(a,b,c,d)
+	Constructs a CFSpec from two jints and a JBYTEARRAY
+	'a' is the CFSpec*
+	'b' is the vRefNum
+	'c' is the parID
+	'd' is the JBYTEARRAY
+<p>
+DELETECFSPEC(a)
+	If 'a' isn't null, calls 'delete' on it.
+<p>
+</PRE>
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>CFSpec</i><p>
+<a name="CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$"><hr><p></p><h3>CFSpec( JNIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );</h3></a>
+<p>
+		  	Construct using a JNI byte array. Available only in JNI builds.
+		  	if pNm is NULL, the FSSpec's name will be set to an empty string.
+<p>
+<p><pre>
+	<a href="#CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$">CFSpec</a>( JNIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="CFSpec(_JRIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$"><hr><p></p><h3>CFSpec( JRIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );</h3></a>
+<p>
+		  	Construct using a JRI byte array. Available only in JRI builds.
+		  	if pNm is NULL, the FSSpec's name will be set to an empty string.
+<p>
+<p><pre>
+	<a href="#CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$">CFSpec</a>( JRIEnv *pEnv, long vr, long pi, JBYTEARRAY pNm );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="CFSpec(_long_vr,_long_pi,_StringPtr_ps_)$"><hr><p></p><h3>CFSpec( long vr, long pi, StringPtr ps );</h3></a>
+<p>
+		  	Construct using a Pascal string
+		  	if ps is NULL, the FSSpec's name will be set to an empty string.
+<p>
+<p><pre>
+	<a href="#CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$">CFSpec</a>( long vr, long pi, StringPtr ps );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="CFSpec(_const_CFSpec_*cfs_)$"><hr><p></p><h3>CFSpec( const CFSpec *cfs );</h3></a>
+<p>
+		  	Copy constructor
+<p>
+<p><pre>
+	<a href="#CFSpec(_JNIEnv_*pEnv,_long_vr,_long_pi,_JBYTEARRAY_pNm_)$">CFSpec</a>( const CFSpec *cfs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="~CFSpec()$"><hr><p></p><h3>~CFSpec();</h3></a>
+<p>
+		  	Destructor
+<p>
+<p><pre>
+	virtual	~CFSpec();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="long_getVRef()_const$"><hr><p></p><h3>long getVRef() const;</h3></a>
+<p>
+		  	Return vRefNum
+<p>
+<p><pre>
+	virtual	long		<a href="#long_getVRef()_const$">getVRef</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="long_getParID()_const$"><hr><p></p><h3>long getParID() const;</h3></a>
+<p>
+		  	Returns parID
+<p>
+<p><pre>
+	virtual	long		<a href="#long_getParID()_const$">getParID</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="StringPtr_getName()$"><hr><p></p><h3>StringPtr getName();</h3></a>
+<p>
+		  	Returns a pointer to the name
+<p>
+<p><pre>
+	virtual	StringPtr	<a href="#StringPtr_getName()$">getName</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="FSSpec_*getSpecP()$"><hr><p></p><h3>FSSpec *getSpecP();</h3></a>
+<p>
+		  	Returns a pointer to the FSSpec
+<p>
+<p><pre>
+	virtual	FSSpec		*<a href="#FSSpec_*getSpecP()$">getSpecP</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="ErrCode_verifySpec()$"><hr><p></p><h3>ErrCode verifySpec();</h3></a>
+<p>
+		  	Calls FSMakeFSSpec(), returns return value.
+<p>
+<p><pre>
+	virtual	ErrCode		<a href="#ErrCode_verifySpec()$">verifySpec</a>();
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="BOOL_isNameNull()_const$"><hr><p></p><h3>BOOL isNameNull() const;</h3></a>
+<p>
+		  	Indicates whether name[0] == 0
+<p>
+<p><pre>
+	virtual	BOOL		<a href="#BOOL_isNameNull()_const$">isNameNull</a>() const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="void_setFrom(_const_CFSpec_*cfs_)$"><hr><p></p><h3>void setFrom( const CFSpec *cfs );</h3></a>
+<p>
+		  	Reinitialize from another CFSpec.
+<p>
+<p><pre>
+	virtual	void		<a href="#void_setFrom(_const_CFSpec_*cfs_)$">setFrom</a>( const CFSpec *cfs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="void_setFrom(_long_vr,_long_pi,_StringPtr_ps_)$"><hr><p></p><h3>void setFrom( long vr, long pi, StringPtr ps );</h3></a>
+<p>
+		  	Reinitialize from a Pascal string.
+<p>
+<p><pre>
+	virtual	void		<a href="#void_setFrom(_const_CFSpec_*cfs_)$">setFrom</a>( long vr, long pi, StringPtr ps );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="void_putInto(_FSSpec_*toSpec_)_const$"><hr><p></p><h3>void putInto( FSSpec *toSpec ) const;</h3></a>
+<p>
+		  	Copy to an FSSpec
+<p>
+<p><pre>
+	virtual	void		<a href="#void_putInto(_FSSpec_*toSpec_)_const$">putInto</a>( FSSpec *toSpec ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="void_dumpInfo(_long_theErr,_const_LPCTSTR_message_)_const$"><hr><p></p><h3>void dumpInfo( long theErr, const LPCTSTR message ) const;</h3></a>
+<p>
+		  	Write info on the spec to the debugger
+<p>
+<p><pre>
+	virtual	void		<a href="#void_dumpInfo(_long_theErr,_const_LPCTSTR_message_)_const$">dumpInfo</a>( long theErr, const LPCTSTR message ) const;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> CFSpec </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd>long <i><a href="CFSpec.html#long_getVRef()_const$"><font color=green>getVRef</font></a></i>() const;
+<dd>long <i><a href="CFSpec.html#long_getParID()_const$"><font color=green>getParID</font></a></i>() const;
+<dd>StringPtr <i><a href="CFSpec.html#StringPtr_getName()$"><font color=green>getName</font></a></i>();
+<dd>FSSpec *<i><a href="CFSpec.html#FSSpec_*getSpecP()$"><font color=green>getSpecP</font></a></i>();
+<dd>ErrCode <i><a href="CFSpec.html#ErrCode_verifySpec()$"><font color=green>verifySpec</font></a></i>();
+<dd>BOOL <i><a href="CFSpec.html#BOOL_isNameNull()_const$"><font color=green>isNameNull</font></a></i>() const;
+<dd>void <i><a href="CFSpec.html#void_setFrom(_const_CFSpec_*cfs_)$"><font color=green>setFrom</font></a></i>( const CFSpec *cfs );
+<dd>void <i><a href="CFSpec.html#void_setFrom(_long_vr,_long_pi,_StringPtr_ps_)$"><font color=green>setFrom</font></a></i>( long vr, long pi, StringPtr ps );
+<dd>void <i><a href="CFSpec.html#void_putInto(_FSSpec_*toSpec_)_const$"><font color=green>putInto</font></a></i>( FSSpec *toSpec ) const;
+<dd>void <i><a href="CFSpec.html#void_dumpInfo(_long_theErr,_const_LPCTSTR_message_)_const$"><font color=green>dumpInfo</font></a></i>( long theErr, const LPCTSTR message ) const;
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  CFSpec<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CFSpec<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  CFSpec<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:26 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

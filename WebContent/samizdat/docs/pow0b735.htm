@@ -1,0 +1,434 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:26:32 PDT 2002 -->
+<!-- com.tolstoy.imagemeister.PluginI | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Interface com.tolstoy.imagemeister.PluginI
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../source/readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../source/docs/javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../source/docs/cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../source/docs/commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../source/docs/winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../source/docs/strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../source/docs/macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../source/docs/nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../source/docs/overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../source/docs/overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../source/docs/wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../source/docs/macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../source/docs/nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../source/docs/osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../source/docs/distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-6cfc.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Interface com.tolstoy.imagemeister.PluginI
+</FONT></B>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public interface  <STRONG>PluginI</STRONG>
+{
+          // Fields 4
+     public static final String <A HREF="#copyright">copyright</A>;
+     public static final int <A HREF="#kDisplayName">kDisplayName</A>;
+     public static final int <A HREF="#kMacStyleName">kMacStyleName</A>;
+     public static final int <A HREF="#kWinStyleName">kWinStyleName</A>;
+
+          // Methods 12
+     public abstract boolean <A HREF="#canCreateImageViewer(com.tolstoy.imagemeister.FileSpecifier)">canCreateImageViewer</A>(FileSpecifier);
+     public abstract boolean <A HREF="#canCreateInfoViewer(com.tolstoy.imagemeister.FileSpecifier)">canCreateInfoViewer</A>(FileSpecifier);
+     public abstract ImageViewerI <A HREF="#createImageViewer(com.tolstoy.imagemeister.OwnedFrame, com.tolstoy.imagemeister.ImageViewerOwner, com.tolstoy.imagemeister.FileSpecifier, java.awt.Rectangle)">createImageViewer</A>(OwnedFrame, ImageViewerOwner, FileSpecifier, Rectangle);
+     public abstract InfoViewerI <A HREF="#createInfoViewer(com.tolstoy.imagemeister.OwnedFrame, com.tolstoy.imagemeister.InfoViewerOwner, com.tolstoy.imagemeister.FileSpecifier, java.awt.Rectangle)">createInfoViewer</A>(OwnedFrame, InfoViewerOwner, FileSpecifier, Rectangle);
+     public abstract PluginI[] <A HREF="#getChildren()">getChildren</A>();
+     public abstract FileExtension[] <A HREF="#getFileExtension()">getFileExtension</A>();
+     public abstract FinderInfo[] <A HREF="#getFinderInfo()">getFinderInfo</A>();
+     public abstract IconPanel <A HREF="#getIconPanel()">getIconPanel</A>();
+     public abstract MIMEType[] <A HREF="#getMIMEType()">getMIMEType</A>();
+     public abstract String <A HREF="#getName(int)">getName</A>(int);
+     public abstract PluginI <A HREF="#getParent()">getParent</A>();
+     public abstract VersionInfo <A HREF="#getVersionInfo()">getVersionInfo</A>();
+}
+</PRE>
+<P>
+<DL>
+<P>
+This interface is used to represent plugins. Objects which implement this interface are used
+to create instances of image and info viewers, indicate which file types this plugin supports,
+and return other information on the plugin.
+
+Copyright (c) 1998-2002 Samizdat Productions. All Rights Reserved. ImageMeister is a Trademark of Samizdat Productions.
+<P>
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Returned By: </B>
+<DD>PluginI.<A HREF="pow0b735.htm#getChildren()">getChildren()</A>, PluginI.<A HREF="pow0b735.htm#getParent()">getParent()</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyright"><FONT COLOR="#0000FF">&middot;</FONT> copyright</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String copyright
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="kDisplayName"><FONT COLOR="#0000FF">&middot;</FONT> kDisplayName</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int kDisplayName
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the getName() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="kMacStyleName"><FONT COLOR="#0000FF">&middot;</FONT> kMacStyleName</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int kMacStyleName
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the getName() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="kWinStyleName"><FONT COLOR="#0000FF">&middot;</FONT> kWinStyleName</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int kWinStyleName
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the getName() method.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFinderInfo()">getFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow07e8d.htm">FinderInfo</A>[] getFinderInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return an array of FinderInfo objects, representing the Mac file types this plugin supports. May
+return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileExtension"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileExtension()">getFileExtension</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0aba7.htm">FileExtension</A>[] getFileExtension() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return an array of FileExtension objects, representing the non-Mac file types this plugin
+supports. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getMIMEType"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getMIMEType()">getMIMEType</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow05ec7.htm">MIMEType</A>[] getMIMEType() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return an array of MIMEType objects, representing the MIME types this plugin
+supports. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="canCreateImageViewer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="canCreateImageViewer(com.tolstoy.imagemeister.FileSpecifier)">canCreateImageViewer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract boolean canCreateImageViewer(<A HREF="pow0649e.htm">FileSpecifier</A> spec) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Given a FileSpecifier representing a file, return a boolean value indicating whether this plugin
+can create an image viewer for that file. Note that any object contained by the FileSpecifier
+may be null, with the exception that not both the DiskObject and the File contained by the
+FileSpecifier will be null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="canCreateInfoViewer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="canCreateInfoViewer(com.tolstoy.imagemeister.FileSpecifier)">canCreateInfoViewer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract boolean canCreateInfoViewer(<A HREF="pow0649e.htm">FileSpecifier</A> spec) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Given a FileSpecifier representing a file, return a boolean value indicating whether this plugin
+can create an info viewer for that file. Note that any object contained by the FileSpecifier
+may be null, with the exception that not both the DiskObject and the File contained by the
+FileSpecifier will be null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createImageViewer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createImageViewer(com.tolstoy.imagemeister.OwnedFrame, com.tolstoy.imagemeister.ImageViewerOwner, com.tolstoy.imagemeister.FileSpecifier, java.awt.Rectangle)">createImageViewer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow024e.htm">ImageViewerI</A> createImageViewer(<A HREF="pow0a5f3.htm">OwnedFrame</A> frame, 
+                                                  <A HREF="pow0dfa1.htm">ImageViewerOwner</A> onr, 
+                                                  <A HREF="pow0649e.htm">FileSpecifier</A> spec, 
+                                                  Rectangle rect) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Given a FileSpecifier representing a file, create an image viewer for that file. This method may
+return null if the image viewer could not be created.
+Note that any object contained by the FileSpecifier may be null, with the exception that
+not both the DiskObject and the File contained by the FileSpecifier will be null.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> frame</I></TD> <TD>if this is not null, show the file in this frame. Otherwise, create a new OwnedFrame,
+and show the file in the new frame.</TD></TR>
+<TR VALIGN=TOP> <TD><I> onr</I></TD> <TD>the object which owns this viewer</TD></TR>
+<TR VALIGN=TOP> <TD><I> spec</I></TD> <TD>specifies the file to be shown</TD></TR>
+<TR VALIGN=TOP> <TD><I> rect</I></TD> <TD>the suggested location and dimensions of the viewer. If the frame argument is null,
+the WindowManager should be used to correctly place the new frame. Otherwise, the current
+location and dimensions of the supplied frame should be used.</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="createInfoViewer"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="createInfoViewer(com.tolstoy.imagemeister.OwnedFrame, com.tolstoy.imagemeister.InfoViewerOwner, com.tolstoy.imagemeister.FileSpecifier, java.awt.Rectangle)">createInfoViewer</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0507a.htm">InfoViewerI</A> createInfoViewer(<A HREF="pow0a5f3.htm">OwnedFrame</A> frame, 
+                                                <A HREF="pow07450.htm">InfoViewerOwner</A> onr, 
+                                                <A HREF="pow0649e.htm">FileSpecifier</A> spec, 
+                                                Rectangle rect) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Given a FileSpecifier representing a file, create an info viewer for that file. This method may
+return null if the info viewer could not be created.
+Note that any object contained by the FileSpecifier may be null, with the exception that
+not both the DiskObject and the File contained by the FileSpecifier will be null.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> frame</I></TD> <TD>if this is not null, show the file in this frame. Otherwise, create a new OwnedFrame,
+and show the file in the new frame.</TD></TR>
+<TR VALIGN=TOP> <TD><I> onr</I></TD> <TD>the object which owns this viewer</TD></TR>
+<TR VALIGN=TOP> <TD><I> spec</I></TD> <TD>specifies the file to be shown</TD></TR>
+<TR VALIGN=TOP> <TD><I> rect</I></TD> <TD>the suggested location and dimensions of the viewer. If the frame argument is null,
+the WindowManager should be used to correctly place the new frame. Otherwise, the current
+location and dimensions of the supplied frame should be used.</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVersionInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVersionInfo()">getVersionInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow03821.htm">VersionInfo</A> getVersionInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return version information about this plugin. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getName(int)">getName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String getName(int which) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return the name of this plugin.
+<P>
+<TABLE WIDTH="87%" BORDER=1 CELLPADDING=3 CELLSPACING=0> <TR VALIGN=TOP BGCOLOR="#CCCCCC"> <TD><B>Parameter</B></TD> <TD><B>Description</B></TD> </TR>
+<TR VALIGN=TOP> <TD><I> which</I></TD> <TD>if this is 'kDisplayName', return the generic name of this plugin. If this is
+'kMacStyleName', return the Mac-style name, and if this is 'kWinStyleName', return the
+Windows-style name. If 'which' is not one of these values, return null.</TD></TR>
+</TABLE><P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getParent"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getParent()">getParent</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b735.htm">PluginI</A> getParent() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+For a hierarchy of plugins, return the parent of this plugin. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getChildren"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getChildren()">getChildren</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0b735.htm">PluginI</A>[] getChildren() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+For a hierarchy of plugins, return an array of this plugin's child plugins. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getIconPanel"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getIconPanel()">getIconPanel</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0a5e7.htm">IconPanel</A> getIconPanel() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Return an IconPanel which shows the icon representing this plugin. May return null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-6cfc.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

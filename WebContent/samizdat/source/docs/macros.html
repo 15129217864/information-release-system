@@ -1,0 +1,361 @@
+<HTML>
+<HEAD>
+
+<TITLE>Macros and Defines</TITLE>
+
+</HEAD>
+
+
+<BODY bgcolor="#FFFFFF" >
+
+
+
+
+
+
+
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+
+<P>
+<CENTER>
+<H1>
+Macros and Defines
+</H1>
+</CENTER>
+
+<P>
+<CENTER>
+<I>
+This file describes general macros and global defines.
+</I>
+</CENTER>
+
+
+<HR>
+
+<P>
+<H2>
+Macros
+</H2>
+
+<P>
+In addition to the <A HREF="nativemacros.html">native macros</A>, macros
+are defined for working with CDateBundle's, CStringVector's, and CStr's.
+Mac-specific macros are also defined for working with CFSpec's.
+
+<P>
+The CStr macros are described in <A HREF="strings.html">strings.html</A>,
+as well as in the 
+<A HREF="cdocs/common/CStrA.html#MACROS">CStrA</A> and  
+<A HREF="cdocs/common/CStrW.html#MACROS">CStrW</A>
+header files.
+
+<P>
+The CDateBundle macros are described in the
+<A HREF="cdocs/common/CDateBundle.html#MACROS">CDateBundle</A> header file.
+
+<P>
+The CStringVector macros are described in the
+<A HREF="cdocs/common/CStringVector.html#MACROS">CStringVector</A> header file.
+
+<P>
+The Mac-only CFSpec macros are described in the
+<A HREF="cdocs/mac/CFSpec.html#MACROS">CFSpec</A> header file.
+
+
+
+
+
+
+<P>
+<H2>
+Defines
+</H2>
+
+The following defines are used to control various aspects of compilation.
+
+<P>
+<BR>
+<BR>
+<B>
+<UL>
+<LI>DO_JNI (defined for JNI builds)
+<LI>DO_JRI (defined for JRI builds)
+<LI>DO_RNI1 (defined for RNI builds using MSVM SDK 1.5 or less)
+<LI>DO_RNI2 (defined for RNI builds using MSVM SDK 2.0 or greater)
+<LI>DO_JDK10 (not used)
+</UL>
+</B>
+
+<P>
+These control which native architecture is used.
+
+<P>
+On Mac, the appropriate value is set in the files in the 'meta' folder: 'meta_inc_CWS.h', etc.
+Those files are preprocessed by the CodeWarrior project. If you compile using a different compiler
+or project, you need to set the appropriate symbols from those files.
+
+<P>
+On Windows, the appropriate value is set in the 'Preprocessor Definitions' box, which is in the
+C++/general section of the 'Project Settings' dialog. This dialog is reachable from the 'Build:Settings'
+menu.
+
+<P>
+On Linux, the appropriate value is set in the shell script used to build the shared object.
+
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>__linux__
+<LI>macintosh
+<LI>_WIN32
+</UL>
+</B>
+
+<P>
+These values should be set by the compiler, and indicate which platform we're running on.
+
+
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>USING_UNICODE_ON_W95_FOR_TESTING_ONLY
+</UL>
+</B>
+
+<P>
+This Windows-only value enables a Unicode build which will run on Win95.
+See the file 'files\win\unicodeOn95.h' for details
+
+
+
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>DO_SEH
+</UL>
+</B>
+
+<P>
+Windows-only. If defined, each native stub is surrounded by an SEH frame.
+This is set in the same location as the 'DO_JNI', etc. values.
+
+<P>
+If this is not defined, the routines in AppUtilsMSVM.cpp are the actual native code entry points.
+
+<P>
+If this is defined, the native code entry points are contained in the file 'sehstubs.cpp'. These
+routines set up an SEH frame, and call through to the corresponding routines in the AppUtilsMSVM.cpp file
+
+
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>UNICODE
+<LI>_UNICODE
+</UL>
+</B>
+
+<P>
+Windows-only. If defined, we're building for WinNT.
+This is set in the same location as the 'DO_JNI', etc. values.
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>RNIVER
+</UL>
+</B>
+
+<P>
+Windows-only. This value is defined in the MSVM SDK 2.0 or greater, and is only used in DO_RNI2 builds.
+This is the value which will be returned from the exported routine 'RNIGetCompatibleVersion'.
+
+
+<P>
+<BR>
+<BR>
+<B>
+<P>
+<UL>
+<LI>__MWERKS__
+</UL>
+</B>
+
+<P>
+Windows-only. While JConfig no longer supports building the DLLs using Metrowerks, this is still kept
+in CStrA for old times sake.
+
+
+
+
+
+
+
+
+
+
+
+
+<BR>
+<BR>
+<P>
+<HR ALIGN="CENTER">
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+
+
+</BODY>
+</HTML>
+

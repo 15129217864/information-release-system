@@ -1,0 +1,1 @@
+image-图片#video-视频#flash-Flash#htmltext-滚动文本#scroll-滚动文字#weather-天气#clock-模拟时钟#led-LED时钟#tvclock-数字时钟#web-网页#ppt-PPT#word-WORD#excel-Excel#

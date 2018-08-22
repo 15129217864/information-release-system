@@ -1,0 +1,606 @@
+<!-- Automatically generated with polardoc Version 1.0.7 on Fri Aug 23 12:32:12 PDT 2002 -->
+<!-- com.jconfig.DiskFile | Do not remove or edit this line! -->
+<HTML>
+<HEAD>
+<TITLE>
+  Interface com.jconfig.DiskFile
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot;
+<A HREF="../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../cdocs/common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../cdocs/win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../cdocs/mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../cdocs/nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+
+
+
+<A NAME="_top_"></A>
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<B><FONT FACE="Arial,Helvetica" SIZE=+2>
+     Interface com.jconfig.DiskFile
+</FONT></B>
+<P><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Summary</B></FONT></TD> </TR> </TABLE>
+<A NAME="_Summary_"></A>
+<PRE>
+public interface  <STRONG>DiskFile</STRONG>
+     extends com.jconfig.<A HREF="pow087fb.htm">DiskObject</A>
+{
+          // Fields 22
+     public static final int <A HREF="#FILE_ARCHIVE">FILE_ARCHIVE</A>;
+     public static final int <A HREF="#FILE_BEEN_INITED">FILE_BEEN_INITED</A>;
+     public static final int <A HREF="#FILE_COMPRESSED">FILE_COMPRESSED</A>;
+     public static final int <A HREF="#FILE_CUSTOM_ICON">FILE_CUSTOM_ICON</A>;
+     public static final int <A HREF="#FILE_DEVICE">FILE_DEVICE</A>;
+     public static final int <A HREF="#FILE_DIR">FILE_DIR</A>;
+     public static final int <A HREF="#FILE_ENCRYPTED">FILE_ENCRYPTED</A>;
+     public static final int <A HREF="#FILE_EXECUTABLE">FILE_EXECUTABLE</A>;
+     public static final int <A HREF="#FILE_HAS_BNDL">FILE_HAS_BNDL</A>;
+     public static final int <A HREF="#FILE_HIDDEN">FILE_HIDDEN</A>;
+     public static final int <A HREF="#FILE_NAME_LOCKED">FILE_NAME_LOCKED</A>;
+     public static final int <A HREF="#FILE_NOT_CONTENT_INDEXED">FILE_NOT_CONTENT_INDEXED</A>;
+     public static final int <A HREF="#FILE_NO_INITS">FILE_NO_INITS</A>;
+     public static final int <A HREF="#FILE_OFFLINE">FILE_OFFLINE</A>;
+     public static final int <A HREF="#FILE_READONLY">FILE_READONLY</A>;
+     public static final int <A HREF="#FILE_REPARSEPOINT">FILE_REPARSEPOINT</A>;
+     public static final int <A HREF="#FILE_SHARED">FILE_SHARED</A>;
+     public static final int <A HREF="#FILE_SPARSE">FILE_SPARSE</A>;
+     public static final int <A HREF="#FILE_STATIONERY">FILE_STATIONERY</A>;
+     public static final int <A HREF="#FILE_SYSTEM">FILE_SYSTEM</A>;
+     public static final int <A HREF="#FILE_TEMP">FILE_TEMP</A>;
+     public static final String <A HREF="#copyrightString">copyrightString</A>;
+
+          // Methods 10
+     public abstract String <A HREF="#diskFileFlagsToString(int)">diskFileFlagsToString</A>(int);
+     public abstract long <A HREF="#getFileSize()">getFileSize</A>();
+     public abstract FinderInfo <A HREF="#getFinderInfo()">getFinderInfo</A>();
+     public abstract int[] <A HREF="#getPlatformData()">getPlatformData</A>();
+     public abstract ResourceFork <A HREF="#getResourceFork()">getResourceFork</A>();
+     public abstract long <A HREF="#getResourceForkSize()">getResourceForkSize</A>();
+     public abstract String <A HREF="#getShortName()">getShortName</A>();
+     public abstract VersionInfo <A HREF="#getVersion()">getVersion</A>();
+     public abstract DiskVolume <A HREF="#getVolume()">getVolume</A>();
+     public abstract int <A HREF="#setFinderInfo(com.jconfig.FinderInfo)">setFinderInfo</A>(FinderInfo);
+}
+</PRE>
+<P>
+<DL>
+<P>
+Represents a file.
+<P>
+<DT><B>Author:</B>
+<DD>
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.
+
+</DL>
+<P>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Cross Reference</B></FONT></TD> </TR> </TABLE>
+<BR><DL>
+<DT><B>Extended By: </B>
+<DD><A HREF="pow0b796.htm">AppFile</A>, <A HREF="pow09de4.htm">DiskAlias</A><P>
+<DT><B>Returned By: </B>
+<DD>ResourceFork.<A HREF="pow0dbbd.htm#getDiskFile()">getDiskFile()</A>, ResourceForkMRJ.<A HREF="pow0bb65.htm#getDiskFile()">getDiskFile()</A><P>
+<DT><B>Implemented By: </B>
+<DD><A HREF="pow0208.htm">DiskFileMRJ</A>, <A HREF="pow0a346.htm">DiskFileNix</A>, <A HREF="pow04c2d.htm">DiskFileMSVM</A><P>
+</DL><BR>
+<BR><BR>
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Fields</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="copyrightString"><FONT COLOR="#0000FF">&middot;</FONT> copyrightString</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final String copyrightString
+</PRE>
+<BLOCKQUOTE>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_EXECUTABLE"><FONT COLOR="#0000FF">&middot;</FONT> FILE_EXECUTABLE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_EXECUTABLE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_DIR"><FONT COLOR="#0000FF">&middot;</FONT> FILE_DIR</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_DIR
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_HIDDEN"><FONT COLOR="#0000FF">&middot;</FONT> FILE_HIDDEN</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_HIDDEN
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_STATIONERY"><FONT COLOR="#0000FF">&middot;</FONT> FILE_STATIONERY</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_STATIONERY
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_HAS_BNDL"><FONT COLOR="#0000FF">&middot;</FONT> FILE_HAS_BNDL</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_HAS_BNDL
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_BEEN_INITED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_BEEN_INITED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_BEEN_INITED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_NO_INITS"><FONT COLOR="#0000FF">&middot;</FONT> FILE_NO_INITS</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_NO_INITS
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_SHARED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_SHARED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_SHARED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_NAME_LOCKED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_NAME_LOCKED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_NAME_LOCKED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_CUSTOM_ICON"><FONT COLOR="#0000FF">&middot;</FONT> FILE_CUSTOM_ICON</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_CUSTOM_ICON
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_SYSTEM"><FONT COLOR="#0000FF">&middot;</FONT> FILE_SYSTEM</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_SYSTEM
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_ARCHIVE"><FONT COLOR="#0000FF">&middot;</FONT> FILE_ARCHIVE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_ARCHIVE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_DEVICE"><FONT COLOR="#0000FF">&middot;</FONT> FILE_DEVICE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_DEVICE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_TEMP"><FONT COLOR="#0000FF">&middot;</FONT> FILE_TEMP</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_TEMP
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_SPARSE"><FONT COLOR="#0000FF">&middot;</FONT> FILE_SPARSE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_SPARSE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_REPARSEPOINT"><FONT COLOR="#0000FF">&middot;</FONT> FILE_REPARSEPOINT</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_REPARSEPOINT
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_COMPRESSED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_COMPRESSED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_COMPRESSED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_OFFLINE"><FONT COLOR="#0000FF">&middot;</FONT> FILE_OFFLINE</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_OFFLINE
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_NOT_CONTENT_INDEXED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_NOT_CONTENT_INDEXED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_NOT_CONTENT_INDEXED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_ENCRYPTED"><FONT COLOR="#0000FF">&middot;</FONT> FILE_ENCRYPTED</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_ENCRYPTED
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html
+<P>
+<P> </BLOCKQUOTE>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3> <A NAME="FILE_READONLY"><FONT COLOR="#0000FF">&middot;</FONT> FILE_READONLY</A></H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public static final int FILE_READONLY
+</PRE>
+<BLOCKQUOTE>
+<P>
+See the file types table in overview.html.
+<P>
+<P> </BLOCKQUOTE>
+
+<P>
+
+<BR><TABLE BGCOLOR="#00ccff" WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD><FONT FACE="arial,helvetica" SIZE=+1><B>&nbsp;&nbsp;Methods</B></FONT></TD> </TR> </TABLE>
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFileSize"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFileSize()">getFileSize</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract long getFileSize() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the length of this file. Note that on Mac, this includes both forks. If this object is a
+directory, or if an error occurs, 0 is returned.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getResourceForkSize"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getResourceForkSize()">getResourceForkSize</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract long getResourceForkSize() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the size of this file's resource fork, if any. On Windows, zero is returned.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVolume"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVolume()">getVolume</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0917b.htm">DiskVolume</A> getVolume() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the DiskVolume object which contains this file or directory.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getVersion"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getVersion()">getVersion</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow03821.htm">VersionInfo</A> getVersion() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the VersionInfo object which is associated with this file. Returns null if
+no version information is available.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getPlatformData"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getPlatformData()">getPlatformData</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int[] getPlatformData() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Retrieves platform-specific data for this file. On Mac, the vRef is at offset 0, and the
+parID is at offset 1.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getFinderInfo()">getFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow07e8d.htm">FinderInfo</A> getFinderInfo() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Retrieves the FinderInfo associated with this file. Returns null or throws an exception if an error occurs.
+<P>
+<DT> <B>Returns:</B>
+<DD> a value containing the creator and file type of this file.
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="setFinderInfo"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="setFinderInfo(com.jconfig.FinderInfo)">setFinderInfo</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract int setFinderInfo(<A HREF="pow07e8d.htm">FinderInfo</A> newFI) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Sets the FinderInfo of this file. The FinderInfo is the creator and file
+type of this file. This only works for files, not directories. Returns zero if no error occured;
+non-zero otherwise.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getShortName"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getShortName()">getShortName</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String getShortName() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the the short version of the file's name, if applicable
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="diskFileFlagsToString"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="diskFileFlagsToString(int)">diskFileFlagsToString</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract String diskFileFlagsToString(int f) </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Convenience method which converts a given set of DiskFile flags into a string representation.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=1 BORDER=0> <TR> <TD WIDTH=80%>
+<BR><H3><A NAME="getResourceFork"><FONT COLOR="#FF0000">&middot;</FONT></A>
+<A NAME="getResourceFork()">getResourceFork</A> </H3>
+</TD> <TD ALIGN=right WIDTH=20%> <FONT SIZE="-2"><A HREF="#_Summary_">Summary</A> &nbsp;|&nbsp; <A HREF=#_top_>Top</A></FONT> </TD> </TR> </TABLE>
+<PRE>
+   public abstract <A HREF="pow0dbbd.htm">ResourceFork</A> getResourceFork() </PRE>
+<BLOCKQUOTE>
+<DL>
+<P>
+Returns the ResourceFork object for this file. Only valid on Mac; on other platforms, returns null.
+<P>
+</DL>
+</BLOCKQUOTE> <BR>
+
+
+<HR SIZE=1 ALIGN=left WIDTH="98%">
+<PRE>
+<A HREF="packages.htm">All Packages</A>  <A HREF="pak-76b1.htm">This Package</A>  <A HREF="tree.htm">Class Hierarchy</A>  <A HREF="search.htm">Class Search</A>  <A HREF="index.htm">Index</A>
+</PRE>
+<FONT FACE="Arial,Helvetica" SIZE=-2>
+Freshly brewed Java API Documentation automatically generated with <A HREF="http://www.ualberta.ca/~tgee/polardoc">polardoc</A> Version 1.0.7
+<BR>
+</FONT>
+</BODY>
+</HTML>

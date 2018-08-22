@@ -1,0 +1,1 @@
+java -Xmx512m -jar LEDControl_SX.jar SendSingleLineText#192.168.10.200#0#0#128#16#свт╡#12#255#false#false#false#32#20#led.txt

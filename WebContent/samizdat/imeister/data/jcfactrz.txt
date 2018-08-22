@@ -1,0 +1,3 @@
+com.jconfig.win.FileRegistryFactoryWin
+com.jconfig.mac.FileRegistryFactoryMac
+com.jconfig.nix.FileRegistryFactoryNix

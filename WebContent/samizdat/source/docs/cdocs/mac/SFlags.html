@@ -1,0 +1,338 @@
+<html><head><title>SFlags Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SFlags</a></h1>
+<dl>
+<dd>
+	Returns flags for disk objects.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Mac.html">Mac</a> | 
+<a href=../../../"SFlags.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SFlags<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeFlags(_long_vRef,_unsigned_long_*flags_)$"><font color=green>getDiskVolumeFlags</font></a>( long vRef, unsigned long *flags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_setDiskVolumeFlags(_long_vRef,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>setDiskVolumeFlags</font></a>( long vRef, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeReadFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><font color=green>getDiskVolumeReadFlagsMask</font></a>( long vRef, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeWriteFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><font color=green>getDiskVolumeWriteFlagsMask</font></a>( long vRef, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_*flags_)$"><font color=green>getDiskFileFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *flags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_setDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>setDiskFileFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileReadFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><font color=green>getDiskFileReadFlagsMask</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileWriteFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><font color=green>getDiskFileWriteFlagsMask</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_isShared(_const_CFSpec_*theSpec,_long_finderFlags,_long_attribs,_long_type,_BOOL_*bIsShared_)$"><font color=green>isShared</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long finderFlags, long attribs, long type, BOOL *bIsShared );
+<dd>enum <a href="SFlags.html#enum_eDiskVolumeFlags$"><font color=green>eDiskVolumeFlags</font></a>;
+<dd>Unnamed_Enum <a href="SFlags.html#Unnamed_Enum_UEnum_SFlags_h_1$"><font color=green>UEnum_SFlags_h_1</font></a>;
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SFlags <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFlags</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Returns flags for disk objects.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFlags</i><p>
+<a name="ErrCode_getDiskVolumeFlags(_long_vRef,_unsigned_long_*flags_)$"><hr><p></p><h3>ErrCode getDiskVolumeFlags( long vRef, unsigned long *flags );</h3></a>
+<p>
+		  	Get flags associated with a volume.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskVolumeFlags(_long_vRef,_unsigned_long_*flags_)$">getDiskVolumeFlags</a>( long vRef, unsigned long *flags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_setDiskVolumeFlags(_long_vRef,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><hr><p></p><h3>ErrCode setDiskVolumeFlags( long vRef, unsigned long flagMask, unsigned long newFlags );</h3></a>
+<p>
+		  	Set flags associated with a volume.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setDiskVolumeFlags(_long_vRef,_unsigned_long_flagMask,_unsigned_long_newFlags_)$">setDiskVolumeFlags</a>( long vRef, unsigned long flagMask, unsigned long newFlags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_getDiskVolumeReadFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><hr><p></p><h3>ErrCode getDiskVolumeReadFlagsMask( long vRef, unsigned long *masks );</h3></a>
+<p>
+		  	Get the mask indicating which bits of 'getDiskVolumeFlags' are significant.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskVolumeReadFlagsMask(_long_vRef,_unsigned_long_*masks_)$">getDiskVolumeReadFlagsMask</a>( long vRef, unsigned long *masks );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_getDiskVolumeWriteFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><hr><p></p><h3>ErrCode getDiskVolumeWriteFlagsMask( long vRef, unsigned long *masks );</h3></a>
+<p>
+		  	Get the mask indicating which bits of 'setDiskVolumeFlags' are significant.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskVolumeWriteFlagsMask(_long_vRef,_unsigned_long_*masks_)$">getDiskVolumeWriteFlagsMask</a>( long vRef, unsigned long *masks );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_getDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_*flags_)$"><hr><p></p><h3>ErrCode getDiskFileFlags( const CFSpec *theSpec, unsigned long *flags );</h3></a>
+<p>
+		  	Get flags associated with a file or folder.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_*flags_)$">getDiskFileFlags</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *flags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_setDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><hr><p></p><h3>ErrCode setDiskFileFlags( const CFSpec *theSpec, unsigned long flagMask, unsigned long newFlags );</h3></a>
+<p>
+		  	Set flags associated with a file or folder.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_flagMask,_unsigned_long_newFlags_)$">setDiskFileFlags</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long flagMask, unsigned long newFlags );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_getDiskFileReadFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><hr><p></p><h3>ErrCode getDiskFileReadFlagsMask( const CFSpec *theSpec, unsigned long *masks );</h3></a>
+<p>
+		  	Get the mask indicating which bits of 'getDiskFileFlags' are significant.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskFileReadFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$">getDiskFileReadFlagsMask</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_getDiskFileWriteFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><hr><p></p><h3>ErrCode getDiskFileWriteFlagsMask( const CFSpec *theSpec, unsigned long *masks );</h3></a>
+<p>
+		  	Get the mask indicating which bits of 'setDiskFileFlags' are significant.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getDiskFileWriteFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$">getDiskFileWriteFlagsMask</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="ErrCode_isShared(_const_CFSpec_*theSpec,_long_finderFlags,_long_attribs,_long_type,_BOOL_*bIsShared_)$"><hr><p></p><h3>ErrCode isShared( const CFSpec *theSpec, long finderFlags, long attribs, long type, BOOL *bIsShared );</h3></a>
+<p>
+		  	Indicates whether the given file/dir is "shared".
+		  	For .exe's, "shared" means the kIsShared finder flag is set
+		  	For regular files, the status of the containing folder is checked.
+		  	For folders, whether the 3rd bit of ioDirAttrib is set
+<p>
+<p><pre>
+	static	ErrCode	<a href="#ErrCode_isShared(_const_CFSpec_*theSpec,_long_finderFlags,_long_attribs,_long_type,_BOOL_*bIsShared_)$">isShared</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long finderFlags, long attribs, long type, BOOL *bIsShared );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="enum_eDiskVolumeFlags$"><hr><p></p><h3>enum eDiskVolumeFlags;</h3></a>
+<p>
+		  	Flags for DiskVolume's.
+<p>
+<p><pre>
+	enum {
+		kMaskCaseIsPreserved = 0x01,
+		kMaskCaseSensitive = 0x02,
+		kMaskUnicodeSupported = 0x04,
+		kMaskFilesCompressed = 0x08,
+		kMaskVolumeCompressed = 0x10,
+		kMaskRemovable = 0x20,
+		kMaskFixed = 0x40,
+		kMaskRemote = 0x80,
+		kMaskCDROM = 0x100,
+		kMaskRAM = 0x200,
+		kMaskSystem = 0x400,
+		kStdDiskVolumeReadFlagsMask = ( kMaskCaseIsPreserved | kMaskCaseSensitive |
+										kMaskRemovable | kMaskFixed |
+										kMaskRemote | kMaskCDROM |
+										kMaskSystem ),
+		kStdDiskVolumeWriteFlagsMask = 0
+	} eDiskVolumeFlags;
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="Unnamed_Enum_UEnum_SFlags_h_1$"><hr><p></p><h3>Unnamed_Enum UEnum_SFlags_h_1;</h3></a>
+<p>
+		  	Flags for DiskFile's (files or folders).
+<p>
+<p><pre>
+	enum {
+		kFileAttributes_FILE_EXECUTABLE = 0x01,
+		kFileAttributes_FILE_DIR = 0x02,
+		kFileAttributes_FILE_HIDDEN = 0x04,
+		kFileAttributes_FILE_STATIONERY = 0x08,
+		kFileAttributes_FILE_HAS_BNDL = 0x10,
+		kFileAttributes_FILE_BEEN_INITED = 0x20,
+		kFileAttributes_FILE_NO_INITS = 0x40,
+		kFileAttributes_FILE_SHARED = 0x80,
+		kFileAttributes_FILE_NAME_LOCKED = 0x100,
+		kFileAttributes_FILE_CUSTOM_ICON = 0x200,
+		kFileAttributes_FILE_SYSTEM = 0x400,
+		kFileAttributes_FILE_ARCHIVE = 0x800,
+		kFileAttributes_FILE_DEVICE = 0x1000,
+		kFileAttributes_FILE_TEMP = 0x2000,
+		kFileAttributes_FILE_SPARSE = 0x4000,
+		kFileAttributes_FILE_REPARSEPOINT = 0x8000,
+		kFileAttributes_FILE_COMPRESSED = 0x10000,
+		kFileAttributes_FILE_OFFLINE = 0x20000,
+		kFileAttributes_FILE_NOT_CONTENT_INDEXED = 0x40000,
+		kFileAttributes_FILE_ENCRYPTED = 0x80000,
+		kFileAttributes_FILE_READONLY = 0x100000,
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFlags </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeFlags(_long_vRef,_unsigned_long_*flags_)$"><font color=green>getDiskVolumeFlags</font></a>( long vRef, unsigned long *flags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_setDiskVolumeFlags(_long_vRef,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>setDiskVolumeFlags</font></a>( long vRef, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeReadFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><font color=green>getDiskVolumeReadFlagsMask</font></a>( long vRef, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskVolumeWriteFlagsMask(_long_vRef,_unsigned_long_*masks_)$"><font color=green>getDiskVolumeWriteFlagsMask</font></a>( long vRef, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_*flags_)$"><font color=green>getDiskFileFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *flags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_setDiskFileFlags(_const_CFSpec_*theSpec,_unsigned_long_flagMask,_unsigned_long_newFlags_)$"><font color=green>setDiskFileFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long flagMask, unsigned long newFlags );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileReadFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><font color=green>getDiskFileReadFlagsMask</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_getDiskFileWriteFlagsMask(_const_CFSpec_*theSpec,_unsigned_long_*masks_)$"><font color=green>getDiskFileWriteFlagsMask</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned long *masks );
+<dd><strong>static</strong> ErrCode <a href="SFlags.html#ErrCode_isShared(_const_CFSpec_*theSpec,_long_finderFlags,_long_attribs,_long_type,_BOOL_*bIsShared_)$"><font color=green>isShared</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long finderFlags, long attribs, long type, BOOL *bIsShared );
+<dd>enum <a href="SFlags.html#enum_eDiskVolumeFlags$"><font color=green>eDiskVolumeFlags</font></a>;
+<dd>Unnamed_Enum <a href="SFlags.html#Unnamed_Enum_UEnum_SFlags_h_1$"><font color=green>UEnum_SFlags_h_1</font></a>;
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SFlags<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFlags<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFlags<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:29 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

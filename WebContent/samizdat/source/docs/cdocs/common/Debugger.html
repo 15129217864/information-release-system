@@ -1,0 +1,284 @@
+<html><head><title>Debugger Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">Debugger</a></h1>
+<dl>
+<dd>
+	Used to write debugging messages.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Common.html">Common</a> | 
+<a href=../../../"Debugger.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class Debugger<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_LPCTSTR_s1_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const LPCTSTR s1 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2, long n3 );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // Debugger <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>Debugger</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Used to write debugging messages.
+	All tracing messages should go through this class.
+	Different signatures are provided for various sets of arguments, as follows:
+<p>
+	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long, char* );
+	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long, char*, char* );
+	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long, char*, CStr*, CStr* );
+	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long, char*, CStr*, CStr*, long, long );
+	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long, char*, CStr*, CStr*, long, long, long );
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>Debugger</i><p>
+<a name="void_debug(_long_line,_const_LPCTSTR_msg_)$"><hr><p></p><h3>void debug( long line, const LPCTSTR msg );</h3></a>
+<p>
+		    Write the message to the debugging window.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	msg</strong>
+<dd>the message; This is a plain string, not a printf-style string. May be NULL
+<p>
+</dl></dl>
+<p><pre>
+	static	void	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long line, const LPCTSTR msg );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> Debugger </i> <p>
+<a name="void_debug(_long_line,_const_LPCTSTR_msg,_const_LPCTSTR_s1_)$"><hr><p></p><h3>void debug( long line, const LPCTSTR msg, const LPCTSTR s1 );</h3></a>
+<p>
+		    Write the message and s1 to the debugging window.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	msg</strong>
+<dd>the message; This is a plain string, not a printf-style string. May be NULL
+<dt><i>in</i><strong>	s1</strong>
+<dd>may be NULL
+<p>
+</dl></dl>
+<p><pre>
+	static	void	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long line, const LPCTSTR msg, const LPCTSTR s1 );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> Debugger </i> <p>
+<a name="void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2_)$"><hr><p></p><h3>void debug( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2 );</h3></a>
+<p>
+		    Write the message, cs1, and cs2 to the debugging window.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	msg</strong>
+<dd>the message; This is a plain string, not a printf-style string. May be NULL
+<dt><i>in</i><strong>	cs1</strong>
+<dd>may be NULL
+<dt><i>in</i><strong>	cs2</strong>
+<dd>may be NULL
+<p>
+</dl></dl>
+<p><pre>
+	static	void	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2 );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> Debugger </i> <p>
+<a name="void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2_)$"><hr><p></p><h3>void debug( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2 );</h3></a>
+<p>
+		    Write the message, cs1, cs2, n1, and n2 to the debugging window.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	msg</strong>
+<dd>the message; This is a plain string, not a printf-style string. May be NULL
+<dt><i>in</i><strong>	cs1</strong>
+<dd>may be NULL
+<dt><i>in</i><strong>	cs2</strong>
+<dd>may be NULL
+<p>
+</dl></dl>
+<p><pre>
+	static	void	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2 );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> Debugger </i> <p>
+<a name="void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$"><hr><p></p><h3>void debug( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2, long n3 );</h3></a>
+<p>
+		    Write the message, cs1, cs2, n1, n2, and n3 to the debugging window.
+<p>
+<dl><dl>
+<dt><i>in</i><strong>	msg</strong>
+<dd>the message; This is a plain string, not a printf-style string. May be NULL
+<dt><i>in</i><strong>	cs1</strong>
+<dd>may be NULL
+<dt><i>in</i><strong>	cs2</strong>
+<dd>may be NULL
+<p>
+</dl></dl>
+<p><pre>
+	static	void	<a href="#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$">debug</a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2, long n3 );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> Debugger </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_LPCTSTR_s1_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const LPCTSTR s1 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2 );
+<dd><strong>static</strong> void <a href="Debugger.html#void_debug(_long_line,_const_LPCTSTR_msg,_const_CStr_*cs1,_const_CStr_*cs2,_long_n1,_long_n2,_long_n3_)$"><font color=green>debug</font></a>( long line, const LPCTSTR msg, const CStr *cs1, const CStr *cs2, long n1, long n2, long n3 );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  Debugger<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  Debugger<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  Debugger<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:33:50 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>

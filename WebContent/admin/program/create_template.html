@@ -1,0 +1,44 @@
+    <script type="text/javascript">
+var Web_program;
+function loadprogram()
+{
+	try{
+		Web_program = new ActiveXObject("Jar.CLS");
+		var fso = new ActiveXObject("Scripting.FileSystemObject"); 
+		var a = fso.CreateTextFile("c://conf.txt", true); 
+		a.WriteLine("192.168.10.88"); 
+		a.Close(); 
+	}catch(e){
+		if(confirm("友情提示：第一次运行需要下载客户端软件\r\r马上下载？")){
+			window.open("/admin/program/setup/xct.exe");
+		}
+		return;
+	}
+	Web_program.calljar();
+}
+loadprogram();  
+    </script>
+    <style>
+<!--
+td{font-size: 13px;}
+-->
+</style>
+    <body>
+    <table width="90%" align="center" >
+    	<tr><td height="20px"></td></tr>
+    	<tr><td style="font-weight: bold" height="30px">操作步骤：</td></tr>
+    	<tr><td style="font-size: 12px;font-weight: bold" height="30px">第一步</td></tr>
+    	<tr><td style="font-size: 12px;" height="30px">
+    		友情提示：第一次运行需要下载客户端软件，<a href="/admin/program/setup/xct.exe" style="color: blue" target="_blank">手动下载</a>
+    		<br/>
+    	</td></tr>
+    	<tr><td style="font-size: 12px;font-weight: bold" height="30px">第二步</td></tr>
+    	<tr><td style="font-size: 12px;" height="30px">
+    		友情提示：请按照以下步骤设置IE的安全设置
+    		<br/>
+    	</td></tr>
+    	<tr><td><img src="1.jpg"/></td></tr>
+    	<tr><td><img src="2.jpg"/></td></tr>
+    	<tr><td><img src="3.jpg"/></td></tr>
+    </table>
+    </body>

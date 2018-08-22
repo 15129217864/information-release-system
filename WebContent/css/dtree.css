@@ -1,0 +1,100 @@
+
+body,table,td,select,input,form,textarea,option { font-family:"Arial", "Helvetica" ,"verdana", "sans-serif", "Geneva", ; font-size: 9pt; color:#333333; line-height:15px; }
+
+body{background-color:#F5F9FD;
+	 
+	scrollbar-face-color:#FFFFFF;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-3dlight-color:#4A6E90;
+	scrollbar-shadow-color:#4A6E90;
+	scrollbar-darkshadow-color:#FFFFFF;
+    scrollbar-arrow-color:#4D6185;
+	scrollbar-track-color:#F6F6F6;
+}
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	font-size: 9pt;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #F0F8FF;
+	font-weight: bold;
+	font-size: 9pt;
+	text-decoration: none;	
+}
+.dtree .clip {
+	overflow: hidden;
+}
+
+
+a:link, a:visited, a:active, a:hover{text-decoration:none; color:#333333; font-size: 9pt;}
+
+.Bold {
+	font-family:"Arial", "Helvetica" ,"verdana", "sans-serif", "Geneva";
+	color: #333333;
+    font-size: 8pt;
+    font-weight:bold;
+}
+
+.Line_01{background-image:url('../images/line_01.gif'); background-repeat:repeat-X; height:2;}
+
+
+.PopupTitle {
+	color: #2A5D90;
+    font-size: 8pt;
+	text-align:center;
+
+}
+
+.PopupBackground{border:0px; background-color:F5F9FD; padding-bottom:9; padding-top:9; padding-left:15; padding-right:15; text-align:center;}
+.Popup{border:0px; background-color:5F819B; padding-bottom:1; padding-top:1; padding-left:1; padding-right:1; text-align:center;}
+.PopupTitleBg{border:0px; background-color:F5F9FD; padding-bottom:9; padding-top:9; padding-left:10; padding-right:10; text-align:center;}
+.PopupTabBackgroundBg{background-color:F5F9FD;}
+
+/******** Popup Menu *********/
+.popmenus {
+ cursor : hand;
+ position : absolute;
+ width : 100px;
+ background-color : menu;
+ line-height : 1.4;
+ padding : 4px;
+ border : 2 outset buttonhighlight;
+ visibility : hidden;
+}
+
+.menuitems {
+ padding-left : 15px;
+ padding-right : 10px;
+ font-size : 9pt;
+}
+
+.setRepeat, .setEffect, .setHWctrl{
+ cursor : default;
+ position : absolute;
+ width : 300px;
+ background-color : menu;
+ line-height : 1.4;
+ padding : 4px;
+ border : 2 outset buttonhighlight;
+ visibility : hidden;
+}

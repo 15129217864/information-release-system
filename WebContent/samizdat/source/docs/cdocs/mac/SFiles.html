@@ -1,0 +1,351 @@
+<html><head><title>SFiles Documentation</title></head>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#0000FF" ALINK="#0000FF">
+
+
+<BR>
+<P>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFBB"><TR><TD WIDTH="100%">
+
+<B>
+<A HREF="../../../../readme.html"><FONT SIZE="2">Main Page</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../overview.html"><FONT SIZE="2">Cookbook/Overview</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../imagemeister.html"><FONT SIZE="2">ImageMeister</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../jcprops.html"><FONT SIZE="2">the jcprops file</FONT></A>
+
+&nbsp; &nbsp; <A HREF="../../../../licensing.html"><FONT SIZE="2">Licensing</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Binary Installation & Configuration</FONT></I><B> 
+[
+<A HREF="../../../../wininfo.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../../../macinfo.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../../../nixinfo.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../../../osxinfo.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../../../changes.html"><FONT SIZE="2">Changes</FONT></A>
+
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../../docs/pak-76b1.htm"><FONT SIZE="2">Public API</FONT></A>
+
+<BR>
+&nbsp; &nbsp; <A HREF="../../../readme.html"><FONT SIZE="2">Source Code Main Page</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Java</FONT></I><B> 
+[
+<A HREF="../../javadocs/pak-76b1.htm"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-bd9a.htm"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-545a.htm"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../javadocs/pak-c96f.htm"><FONT SIZE="2">Nix</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Native Code</FONT></I><B>
+[
+<A HREF="../common/Common.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../win/Windows.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../mac/Mac.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../nix/Linux.html"><FONT SIZE="2">Nix</FONT></A>
+]
+
+&nbsp; &nbsp; <A HREF="../../manifest.html"><FONT SIZE="2">Manifest</FONT></A>
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Native Code Overviews</FONT></I><B>
+[
+<A HREF="../../commonnative.html"><FONT SIZE="2">Common</FONT></A> &middot; 
+<A HREF="../../winnative.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macnative.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixnative.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../strings.html"><FONT SIZE="2">Strings</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Macros</FONT></I><B>
+[
+<A HREF="../../macros.html"><FONT SIZE="2">General</FONT></A> &middot; 
+<A HREF="../../nativemacros.html"><FONT SIZE="2">Native Macros</FONT></A> 
+]
+
+<BR>
+</B><I>
+&nbsp; &nbsp; &nbsp; &nbsp; <FONT SIZE="2">Walkthroughs</FONT></I><B> 
+[
+<A HREF="../../overview_init.html"><FONT SIZE="2">Java only</FONT></A> &middot; 
+<A HREF="../../overview_monitors.html"><FONT SIZE="2">Java and native</FONT></A> 
+]
+
+</B><I>
+&nbsp; &nbsp; <FONT SIZE="2">Building</FONT></I><B> 
+[
+<A HREF="../../wininstall.html"><FONT SIZE="2">Win</FONT></A> &middot; 
+<A HREF="../../macinstall.html"><FONT SIZE="2">Mac</FONT></A> &middot; 
+<A HREF="../../nixinstall.html"><FONT SIZE="2">Nix</FONT></A> &middot; 
+<A HREF="../../osxinstall.html"><FONT SIZE="2">OSX</FONT></A> 
+]
+
+&nbsp; &nbsp; <A HREF="../../distribution.html"><FONT SIZE="2">Distribution Issues</FONT></A>
+
+<BR>
+
+</TD></TR></TABLE>
+
+
+<h1>
+
+
+
+
+<a name="topofdoc">SFiles</a></h1>
+<dl>
+<dd>
+	Routines for working with files.
+
+</dl>
+<hr><p></p>
+<p><strong>[ 
+<a href="Mac.html">Mac</a> | 
+<a href=../../../"SFiles.h">Source</a> | 
+<a href="keyweb.html">Keywords</a> | 
+<a href="#aag">Summary</a> | <a href="#parents">Ancestors</a> | <a href="#flat">All Members</a> | <a href="#children">Descendants</a>  ]</strong><p>
+<h2><a name="quickind">Quick Index</a></h2>
+<dl>
+<dd><a href="#DESCRIPTION">DESCRIPTION</a>
+</dl>
+<a name="aag"><hr><p></p></a><h2>Class Summary</h2>
+class SFiles<br>
+<br>
+ {
+<br>
+<br><i><b>public</b></i>:
+<dl>
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_fullPathNameToSpec(_const_CStr_*csFullPath,_CFSpec_*theSpecP_)$"><font color=green>fullPathNameToSpec</font></a>( const CStr *csFullPath, <a href="CFSpec.html">CFSpec</a> *theSpecP );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_specToFullPathName(_const_CFSpec_*theSpec,_short_*len,_Handle_*hFullPath_)$"><font color=green>specToFullPathName</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, short *len, Handle *hFullPath );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getContainer(_const_CFSpec_*theSpec,_long_*contParID,_StringPtr_contName_)$"><font color=green>getContainer</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *contParID, StringPtr contName );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setColorCoding(_const_CFSpec_*theSpec,_long_newCoding_)$"><font color=green>setColorCoding</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long newCoding );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getFinderInfo(_const_CFSpec_*theSpec,_long_*creator,_long_*type,_long_*flags,_long_*attribs_)$"><font color=green>getFinderInfo</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *creator, long *type, long *flags, long *attribs );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setCreatorAndType(_const_CFSpec_*theSpec,_long_creator,_long_type,_long_flags,_long_attributes_)$"><font color=green>setCreatorAndType</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long creator, long type, long flags, long attributes );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><font color=green>setFileDate</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_verifyFile(_const_CFSpec_*theSpec_)$"><font color=green>verifyFile</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><font color=green>getFileDate</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setFinderFlags(_const_CFSpec_*theSpec,_unsigned_short_firstAnd,_unsigned_short_thenOr_)$"><font color=green>setFinderFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned short firstAnd, unsigned short thenOr );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getForkSizes(_const_CFSpec_*theSpec,_UnsignedWide_*dataLen,_UnsignedWide_*rsrcLen_)$"><font color=green>getForkSizes</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide *dataLen, UnsignedWide *rsrcLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_renameFile(_const_CFSpec_*theSpec,_const_CStr_*csNewName,_StringPtr_outName,_long_outNameLen_)$"><font color=green>renameFile</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, const CStr *csNewName, StringPtr outName, long outNameLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_updateContainer(_const_CFSpec_*containedSpec_)$"><font color=green>updateContainer</font></a>( const <a href="CFSpec.html">CFSpec</a> *containedSpec );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><font color=green>getRawResourceFork</font></a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><font color=green>setRawResourceFork</font></a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setForkLength(_long_flags,_long_whichFork,_CFSpec_*theSpec,_UnsignedWide_newLen_)$"><font color=green>setForkLength</font></a>( long flags, long whichFork, <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide newLen );
+</dl>
+<i><b>protected</b></i>:
+<dl>
+</dl>
+}; // SFiles <p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFiles</i><p>
+<a name="DESCRIPTION"><hr><p></p></a><h3>DESCRIPTION</h3>
+	Routines for working with files.
+<p>
+<p>Back to the <a href="#topofdoc">top</a> of  <i>SFiles</i><p>
+<a name="ErrCode_fullPathNameToSpec(_const_CStr_*csFullPath,_CFSpec_*theSpecP_)$"><hr><p></p><h3>ErrCode fullPathNameToSpec( const CStr *csFullPath, CFSpec *theSpecP );</h3></a>
+<p>
+		  	Convert an MRJ full path to a <a href="CFSpec.html">CFSpec</a>.
+		  	An MRJ path is like: "/Macintosh%20HD/Photoshop%AC"
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_fullPathNameToSpec(_const_CStr_*csFullPath,_CFSpec_*theSpecP_)$">fullPathNameToSpec</a>( const CStr *csFullPath, <a href="CFSpec.html">CFSpec</a> *theSpecP );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_specToFullPathName(_const_CFSpec_*theSpec,_short_*len,_Handle_*hFullPath_)$"><hr><p></p><h3>ErrCode specToFullPathName( const CFSpec *theSpec, short *len, Handle *hFullPath );</h3></a>
+<p>
+		  	Convert a <a href="CFSpec.html">CFSpec</a> to an MRJ full path. See the preceding routine.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_specToFullPathName(_const_CFSpec_*theSpec,_short_*len,_Handle_*hFullPath_)$">specToFullPathName</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, short *len, Handle *hFullPath );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_getContainer(_const_CFSpec_*theSpec,_long_*contParID,_StringPtr_contName_)$"><hr><p></p><h3>ErrCode getContainer( const CFSpec *theSpec, long *contParID, StringPtr contName );</h3></a>
+<p>
+		  	Get the parID and name of the <a href="CFSpec.html">CFSpec</a>'s parent.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getContainer(_const_CFSpec_*theSpec,_long_*contParID,_StringPtr_contName_)$">getContainer</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *contParID, StringPtr contName );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setColorCoding(_const_CFSpec_*theSpec,_long_newCoding_)$"><hr><p></p><h3>ErrCode setColorCoding( const CFSpec *theSpec, long newCoding );</h3></a>
+<p>
+		  	Set a file's color coding.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setColorCoding(_const_CFSpec_*theSpec,_long_newCoding_)$">setColorCoding</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long newCoding );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_getFinderInfo(_const_CFSpec_*theSpec,_long_*creator,_long_*type,_long_*flags,_long_*attribs_)$"><hr><p></p><h3>ErrCode getFinderInfo( const CFSpec *theSpec, long *creator, long *type, long *flags, long *attribs );</h3></a>
+<p>
+		  	Get a file's creator, type, flags, and attributes.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getFinderInfo(_const_CFSpec_*theSpec,_long_*creator,_long_*type,_long_*flags,_long_*attribs_)$">getFinderInfo</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *creator, long *type, long *flags, long *attribs );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setCreatorAndType(_const_CFSpec_*theSpec,_long_creator,_long_type,_long_flags,_long_attributes_)$"><hr><p></p><h3>ErrCode setCreatorAndType( const CFSpec *theSpec, long creator, long type, long flags, long attributes );</h3></a>
+<p>
+		  	Set a file's creator and type.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setCreatorAndType(_const_CFSpec_*theSpec,_long_creator,_long_type,_long_flags,_long_attributes_)$">setCreatorAndType</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long creator, long type, long flags, long attributes );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><hr><p></p><h3>ErrCode setFileDate( const CFSpec *theSpec, CDateBundle *dateBundle );</h3></a>
+<p>
+		  	Set the dates of a file from the given CDateBundle.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$">setFileDate</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_verifyFile(_const_CFSpec_*theSpec_)$"><hr><p></p><h3>ErrCode verifyFile( const CFSpec *theSpec );</h3></a>
+<p>
+		  	Verify a file exists.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_verifyFile(_const_CFSpec_*theSpec_)$">verifyFile</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_getFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><hr><p></p><h3>ErrCode getFileDate( const CFSpec *theSpec, CDateBundle *dateBundle );</h3></a>
+<p>
+		  	Get the creation, modification, and backup dates of a file into the
+		  	given CDateBundle.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$">getFileDate</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setFinderFlags(_const_CFSpec_*theSpec,_unsigned_short_firstAnd,_unsigned_short_thenOr_)$"><hr><p></p><h3>ErrCode setFinderFlags( const CFSpec *theSpec, unsigned short firstAnd, unsigned short thenOr );</h3></a>
+<p>
+		  	Set the finder flags of a file. The current flags will be AND'ed with 'firstAnd',
+		  	and the OR'ed with 'thenOr'
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setFinderFlags(_const_CFSpec_*theSpec,_unsigned_short_firstAnd,_unsigned_short_thenOr_)$">setFinderFlags</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned short firstAnd, unsigned short thenOr );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_getForkSizes(_const_CFSpec_*theSpec,_UnsignedWide_*dataLen,_UnsignedWide_*rsrcLen_)$"><hr><p></p><h3>ErrCode getForkSizes( const CFSpec *theSpec, UnsignedWide *dataLen, UnsignedWide *rsrcLen );</h3></a>
+<p>
+		  	Get the sizes of a files res and data forks.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getForkSizes(_const_CFSpec_*theSpec,_UnsignedWide_*dataLen,_UnsignedWide_*rsrcLen_)$">getForkSizes</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide *dataLen, UnsignedWide *rsrcLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_renameFile(_const_CFSpec_*theSpec,_const_CStr_*csNewName,_StringPtr_outName,_long_outNameLen_)$"><hr><p></p><h3>ErrCode renameFile( const CFSpec *theSpec, const CStr *csNewName, StringPtr outName, long outNameLen );</h3></a>
+<p>
+		  	Rename a file.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_renameFile(_const_CFSpec_*theSpec,_const_CStr_*csNewName,_StringPtr_outName,_long_outNameLen_)$">renameFile</a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, const CStr *csNewName,
+								StringPtr outName, long outNameLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_updateContainer(_const_CFSpec_*containedSpec_)$"><hr><p></p><h3>ErrCode updateContainer( const CFSpec *containedSpec );</h3></a>
+<p>
+		  	Set the modification date of the folder containing a file to the current time.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_updateContainer(_const_CFSpec_*containedSpec_)$">updateContainer</a>( const <a href="CFSpec.html">CFSpec</a> *containedSpec );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_getRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><hr><p></p><h3>ErrCode getRawResourceFork( long flags, CFSpec *theSpec, char *buffer, long bufferLen );</h3></a>
+<p>
+		  	Read the raw resource fork into the given buffer.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_getRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$">getRawResourceFork</a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><hr><p></p><h3>ErrCode setRawResourceFork( long flags, CFSpec *theSpec, char *buffer, long bufferLen );</h3></a>
+<p>
+		  	Overwrite the resource fork from the given buffer.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$">setRawResourceFork</a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="ErrCode_setForkLength(_long_flags,_long_whichFork,_CFSpec_*theSpec,_UnsignedWide_newLen_)$"><hr><p></p><h3>ErrCode setForkLength( long flags, long whichFork, CFSpec *theSpec, UnsignedWide newLen );</h3></a>
+<p>
+		  	Set the length of the data or resource fork.
+<p>
+<p><pre>
+	static	ErrCode <a href="#ErrCode_setForkLength(_long_flags,_long_whichFork,_CFSpec_*theSpec,_UnsignedWide_newLen_)$">setForkLength</a>( long flags, long whichFork, <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide newLen );
+</pre>
+<br><p>Back to the <a href="#topofdoc">top</a> of  <i> SFiles </i> <p>
+<a name="flat"><hr><p></p></a>
+<h2>All Members</h2>
+<dl>
+<dt><strong>public:</strong>
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_fullPathNameToSpec(_const_CStr_*csFullPath,_CFSpec_*theSpecP_)$"><font color=green>fullPathNameToSpec</font></a>( const CStr *csFullPath, <a href="CFSpec.html">CFSpec</a> *theSpecP );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_specToFullPathName(_const_CFSpec_*theSpec,_short_*len,_Handle_*hFullPath_)$"><font color=green>specToFullPathName</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, short *len, Handle *hFullPath );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getContainer(_const_CFSpec_*theSpec,_long_*contParID,_StringPtr_contName_)$"><font color=green>getContainer</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *contParID, StringPtr contName );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setColorCoding(_const_CFSpec_*theSpec,_long_newCoding_)$"><font color=green>setColorCoding</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long newCoding );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getFinderInfo(_const_CFSpec_*theSpec,_long_*creator,_long_*type,_long_*flags,_long_*attribs_)$"><font color=green>getFinderInfo</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long *creator, long *type, long *flags, long *attribs );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setCreatorAndType(_const_CFSpec_*theSpec,_long_creator,_long_type,_long_flags,_long_attributes_)$"><font color=green>setCreatorAndType</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, long creator, long type, long flags, long attributes );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><font color=green>setFileDate</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_verifyFile(_const_CFSpec_*theSpec_)$"><font color=green>verifyFile</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getFileDate(_const_CFSpec_*theSpec,_CDateBundle_*dateBundle_)$"><font color=green>getFileDate</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, CDateBundle *dateBundle );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setFinderFlags(_const_CFSpec_*theSpec,_unsigned_short_firstAnd,_unsigned_short_thenOr_)$"><font color=green>setFinderFlags</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, unsigned short firstAnd, unsigned short thenOr );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getForkSizes(_const_CFSpec_*theSpec,_UnsignedWide_*dataLen,_UnsignedWide_*rsrcLen_)$"><font color=green>getForkSizes</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide *dataLen, UnsignedWide *rsrcLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_renameFile(_const_CFSpec_*theSpec,_const_CStr_*csNewName,_StringPtr_outName,_long_outNameLen_)$"><font color=green>renameFile</font></a>( const <a href="CFSpec.html">CFSpec</a> *theSpec, const CStr *csNewName, StringPtr outName, long outNameLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_updateContainer(_const_CFSpec_*containedSpec_)$"><font color=green>updateContainer</font></a>( const <a href="CFSpec.html">CFSpec</a> *containedSpec );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_getRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><font color=green>getRawResourceFork</font></a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setRawResourceFork(_long_flags,_CFSpec_*theSpec,_char_*buffer,_long_bufferLen_)$"><font color=green>setRawResourceFork</font></a>( long flags, <a href="CFSpec.html">CFSpec</a> *theSpec, char *buffer, long bufferLen );
+<dd><strong>static</strong> ErrCode <a href="SFiles.html#ErrCode_setForkLength(_long_flags,_long_whichFork,_CFSpec_*theSpec,_UnsignedWide_newLen_)$"><font color=green>setForkLength</font></a>( long flags, long whichFork, <a href="CFSpec.html">CFSpec</a> *theSpec, UnsignedWide newLen );
+<dt><strong>protected:</strong>
+</dl>
+<p>Back to the <a href="#topofdoc">top</a> of  SFiles<p>
+<a name="parents"><hr><p></p></a>
+<h2>Ancestors</h2>
+Class does not inherit from any other class.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFiles<p>
+<a name="children"><hr><p></p></a>
+<h2>Descendants</h2>
+Class is not inherited by any others.<p>
+<p>Back to the <a href="#topofdoc">top</a> of  SFiles<p>
+<hr><p></p>
+Generated from source by the <i><a href="http://www.stratasys.com/software/cocoon/index.htm">Cocoon</a></i> utilities on Fri Aug 23 12:34:29 2002
+.<p>
+<address>Report <a href="mailto:jkotula@stratasys.com">problems</a> to jkotula@stratasys.com</address>
+</body></html>
+<P>
+<HR>
+<P>
+<CENTER>
+<A HREF="http://www.tolstoy.com/samizdat/index.html"><FONT SIZE="2"><B>Main Page</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/jconfig.html"><FONT SIZE="2"><B>JConfig</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/imagemeister.html"><FONT SIZE="2"><B>ImageMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/sysprops.html"><FONT SIZE="2"><B>System Properties Repository</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/WordMeister/WordMeister.html"><FONT SIZE="2"><B>WordMeister</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/Samples.html"><FONT SIZE="2"><B>Free Samples</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/JavaSamples.html"><FONT SIZE="2"><B>Java Freeware</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/contact.html"><FONT SIZE="2"><B>Contact Us</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/FAQ.html"><FONT SIZE="2"><B>FAQ</B></FONT></A><FONT SIZE="2"><B> &middot; </B></FONT>
+<A HREF="http://www.tolstoy.com/samizdat/links.html"><FONT SIZE="2"><B>Links</B></FONT></A>
+</CENTER>
+
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="1">
+Copyright (c) 1997-2002 Samizdat Productions. All Rights Reserved.<BR>
+WarpMovie, TileMovie, JConfig, ImageMeister and MovieShredder are Trademarks of Samizdat Productions.
+<BR>
+</FONT>
+
+</BODY>
+</HTML>
